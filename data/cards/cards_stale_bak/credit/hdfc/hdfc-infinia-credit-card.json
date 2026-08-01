@@ -1,0 +1,296 @@
+{
+  "id": "hdfc-infinia-credit-card",
+  "name": "HDFC Infinia Credit Card",
+  "tagline": "India's most exclusive credit card with unlimited rewards and lounge",
+  "description": "The HDFC Infinia is an invite-only super-premium credit card offering 5 Reward Points per ₹150 (10X on SmartBuy up to 25k/month cap), unlimited domestic lounge access, 6 international lounge visits via Priority Pass, 2% forex markup, golf privileges, 24/7 concierge, and ₹1 crore air accident cover.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "World Elite",
+  "variant": "Credit Card",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "#1a1a1a and #3a3a3a gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": true,
+    "notes": [
+      "Stable income required",
+      "Good credit history preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 12500,
+      "amountWithGst": 14750,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 12500,
+      "amountWithGst": 14750,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 3000000,
+    "permanentDisabilityCover": 2400000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 1000000,
+    "airAccidentCover": 6000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Insurance applicable on card usage"
+    ],
+    "provider": "HDFC Bank"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 5 RP per ₹150; 10X on SmartBuy on all spends",
+      "valueStr": "5 RP per ₹150; 10X on SmartBuy",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic lounge access: Unlimited",
+      "valueStr": "Unlimited",
+      "valueNum": 2000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 1,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400-₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400-₹5,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 1500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 6,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 3000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Luxury",
+      "RuPay Privilege"
+    ],
+    "conditions": [
+      "Valid on prior day transaction basis"
+    ]
+  },
+  "rewardProgram": {
+    "name": "HDFC Bank Rewards",
+    "earnRate": "5 RP per ₹150; 10X on SmartBuy",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "5 RP per ₹150; 10X on SmartBuy"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 bonus reward points",
+    "valueStr": "10,000 bonus reward points",
+    "valueNum": 6250,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus on reaching annual spend milestone",
+      "spendRequired": 1250000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Bonus Reward Points",
+      "rewardNum": 25000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹6,25,000 in preceding year",
+      "annualSpendRequired": 625000,
+      "waives": "Annual fee of ₹12500"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Tap and pay enabled",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#3a3a3a"
+  ],
+  "value": {
+    "highestValue": 250000,
+    "averageValue": 125000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 110250,
+    "tenYearNetValue": 1102500,
+    "totalAnnualCharges": 14750,
+    "totalAnnualBenefits": 150000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Ultra-Premium",
+    "Unlimited Lounge",
+    "High Spenders",
+    "SmartBuy Users"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com"
+    ],
+    "lastVerified": "2026-04-09"
+  },
+  "customerCareNumber": "1800-180-2222",
+  "applyUrl": "https://www.hdfcbank.com",
+  "lastUpdated": "2026-04-09",
+  "type": "credit",
+  "slug": "hdfc-infinia-credit-card"
+}

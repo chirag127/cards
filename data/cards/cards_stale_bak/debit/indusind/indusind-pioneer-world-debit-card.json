@@ -1,0 +1,283 @@
+{
+  "id": "indusind-pioneer-world-debit-card",
+  "name": "IndusInd Bank Pioneer World Debit Card",
+  "tagline": "Visa World debit card with international usage and premium features",
+  "description": "The IndusInd Bank Pioneer World Debit Card is a Visa World tier debit card offering international acceptance, high transaction limits, and premium benefits. Designed for affluent customers, it features generous ATM and POS limits, comprehensive insurance coverage, airport lounge access, and accelerated reward points on travel and dining spends.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "World",
+  "variant": "Pioneer World",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to IndusInd Bank Pioneer Banking customers",
+      "International usage enabled by default"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "HP"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 150000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 150000,
+    "internationalPosPerDay": 300000,
+    "upiDailyLimit": 200000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 12,
+      "frequency": "3 per quarter",
+      "frequencyPerYear": 12,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 6,
+      "frequency": "6 per year",
+      "frequencyPerYear": 6,
+      "valuePerVisit": 5000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Luxury Hotels",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "12 complimentary domestic lounge visits per year",
+      "6 complimentary international lounge visits per year",
+      "Card must be active and used in preceding quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "12 complimentary domestic airport lounge visits per year",
+      "valueStr": "12 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "3 per quarter",
+      "frequencyPerYear": 12,
+      "annualValue": 30000,
+      "conditions": [
+        "Active card usage required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "6 complimentary international airport lounge visits per year",
+      "valueStr": "6 visits/year",
+      "valueNum": 5000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 30000,
+      "conditions": [
+        "Active card usage required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Death Cover",
+      "description": "₹50 Lakh accidental death insurance cover",
+      "valueStr": "₹50 Lakh",
+      "valueNum": 5000000,
+      "frequencyStr": "Annual cover",
+      "frequencyPerYear": 1,
+      "annualValue": 5000000,
+      "conditions": [
+        "Active on card usage"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IndusInd Bank Reward Points",
+    "earnRate": "2 RP per ₹200",
+    "pointsPer100": 1,
+    "pointValue": 0.3,
+    "effectiveCashbackPercent": 0.3,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 3,
+        "description": "3x reward points on travel bookings"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 3,
+        "description": "3x reward points on dining"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback",
+      "Air Miles",
+      "Flights & Hotels"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.3% to 0.9%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Visa World tier",
+    "International acceptance",
+    "12 domestic lounge visits/year",
+    "6 intl lounge visits/year",
+    "₹50 Lakh accidental cover",
+    "Fuel surcharge waiver",
+    "Contactless payments",
+    "UPI enabled",
+    "High transaction limits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 75000,
+    "averageValue": 45000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 45000,
+    "tenYearNetValue": 450000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 75000,
+    "roiPercent": 999
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Lounge Access",
+    "Premium Benefits",
+    "Zero Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal-banking/cards/debit-cards/pioneer-world-debit-card.html"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1860 267 7777",
+  "applyUrl": "https://www.indusind.com/in/en/personal-banking/cards/debit-cards/pioneer-world-debit-card.html",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "indusind-pioneer-world-debit-card"
+}

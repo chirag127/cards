@@ -1,0 +1,419 @@
+{
+  "id": "bob-eterna-credit-card",
+  "name": "Bank of Baroda Eterna Credit Card",
+  "tagline": "Accelerated rewards on dining, travel, and international spends",
+  "description": "The Bank of Baroda Eterna Credit Card is a premium lifestyle card offering 5X reward points on dining, travel, and international transactions, along with 8 complimentary domestic airport lounge visits per year. With a moderate annual fee of ₹2,499+GST and milestone bonuses, it delivers strong value for frequent diners and travellers.",
+  "bank": "Bank of Baroda",
+  "bankCode": "bob",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Eterna",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 500000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹5 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2499,
+      "amountWithGst": 2948.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2499,
+      "amountWithGst": 2948.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 1500000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹1 Crore",
+      "Travel insurance: ₹15 Lakh",
+      "Lost card liability: ₹5 Lakh"
+    ],
+    "provider": "Bank of Baroda"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "8 per year",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Lounge Access",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "8 complimentary domestic airport lounge visits per year",
+      "Swipe card at participating lounges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "dining",
+      "title": "5X RP on Dining",
+      "description": "Earn 5X reward points on all dining spends including restaurants and food delivery",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Restaurants, cafes, and food delivery platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "5X RP on Travel",
+      "description": "Earn 5X reward points on all travel spends including flights, hotels, and travel bookings",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every travel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Flights, hotels, car rentals, and travel agencies"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "5X RP on International Spends",
+      "description": "Earn 5X reward points on all international transactions",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every international transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "All international and foreign currency transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X RP on All Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail spends",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "8 per year",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "Swipe card at participating airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "BOB Reward Points",
+    "earnRate": "5X on dining, travel, international; 1 RP per ₹100 on others",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 5,
+        "description": "5X reward points on dining spends"
+      },
+      {
+        "category": "Travel",
+        "multiplier": 5,
+        "description": "5X reward points on travel spends"
+      },
+      {
+        "category": "International",
+        "multiplier": 5,
+        "description": "5X reward points on international spends"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1 reward point per ₹100 on other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights and hotels via BOB rewards portal",
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 1.25%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, balance transfers"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "2,000 bonus reward points on card activation",
+    "valueStr": "2,000 Reward Points",
+    "valueNum": 500,
+    "conditions": [
+      "Card activation and first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "5,000 bonus reward points on spending ₹2 Lakh annually",
+      "spendRequired": 200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 Reward Points",
+      "rewardNum": 1250
+    },
+    {
+      "description": "Additional 5,000 bonus reward points on spending ₹4 Lakh annually",
+      "spendRequired": 400000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 Reward Points",
+      "rewardNum": 1250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹2 Lakh in the preceding year",
+      "annualSpendRequired": 200000,
+      "waives": "Annual fee of ₹2,499 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Government bank — wide branch network",
+    "Dining and travel accelerated rewards",
+    "Visa Signature benefits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 22000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 19051,
+    "tenYearNetValue": 190510,
+    "totalAnnualCharges": 2949,
+    "totalAnnualBenefits": 22000,
+    "roiPercent": 746
+  },
+  "diningBenefits": {
+    "available": true,
+    "discountDescription": "5X reward points on dining spends",
+    "discountPercent": 0,
+    "partnerRestaurants": [
+      "All restaurants accepting Visa"
+    ]
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Select hotel programmes"
+    ],
+    "flightPrivileges": [
+      "5X reward points on flight bookings"
+    ],
+    "otherPerks": [
+      "5X reward points on international transactions",
+      "Visa Signature global concierge"
+    ]
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bankofbaroda.in/personal-banking/cards/credit-cards/eterna",
+      "https://www.paisabazaar.com/credit-card/bob-eterna-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 258 4455",
+  "applyUrl": "https://www.bankofbaroda.in/personal-banking/cards/credit-cards/eterna",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "bob-eterna-credit-card"
+}

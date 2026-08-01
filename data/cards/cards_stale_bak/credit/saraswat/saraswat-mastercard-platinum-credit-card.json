@@ -1,0 +1,328 @@
+{
+  "id": "saraswat-mastercard-platinum-credit-card",
+  "name": "Saraswat Bank Mastercard Platinum Credit Card",
+  "tagline": "International card with lounge access and rewards",
+  "description": "The Saraswat Bank Mastercard Platinum Credit Card offers international acceptance, domestic lounge access, and accelerated rewards for frequent travelers and shoppers.",
+  "bank": "Saraswat Bank",
+  "bankCode": "saraswat",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Mastercard Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 3 Lakh+",
+      "Self-Employed: ITR of Rs 3 Lakh+",
+      "Age 21–60 years",
+      "Minimum credit score of 700 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1500,
+      "amountWithGst": 1770,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1500,
+      "amountWithGst": 1770,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic lounge access for primary cardholder"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 400 and Rs 5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Complimentary Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per quarter",
+      "valueStr": "4 per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 24,
+      "annualValue": 24000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Accelerated Reward Points",
+      "description": "Earn 3 reward points per Rs 100 on travel, shopping",
+      "valueStr": "3 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Comprehensive air accident insurance coverage when ticket is booked using the card",
+      "valueStr": "Rs 25 Lakh",
+      "valueNum": 2500000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 2500000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on spending Rs 2.5 Lakh annually",
+      "valueStr": "Fee waiver",
+      "valueNum": 1500,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 1500,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Saraswat Reward Points",
+    "earnRate": "3 RP per Rs 100 on travel and shopping",
+    "pointsPer100": 3,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.75,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 3,
+        "description": "3 RP per Rs 100"
+      },
+      {
+        "category": "Shopping",
+        "multiplier": 3,
+        "description": "3 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Air miles"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.75%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "1,000 bonus reward points on first transaction",
+    "valueStr": "1,000 RP",
+    "valueNum": 1000,
+    "conditions": [
+      "First transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 2,000 bonus points on annual spend of Rs 2.5 Lakh",
+      "spendRequired": 250000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 bonus points",
+      "rewardNum": 2000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 2.5 Lakh",
+      "annualSpendRequired": 250000,
+      "waives": "Annual fee of Rs 1,500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Complimentary lounge access",
+    "Enhanced reward points",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#263238",
+    "#78909c"
+  ],
+  "value": {
+    "highestValue": 20000,
+    "averageValue": 14000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 12230,
+    "tenYearNetValue": 122300,
+    "totalAnnualCharges": 1770,
+    "totalAnnualBenefits": 14000,
+    "roiPercent": 791
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Rewards",
+    "Lifestyle"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.saraswat.in/credit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 209 5555",
+  "applyUrl": "https://www.saraswatbank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "saraswat-mastercard-platinum-credit-card"
+}

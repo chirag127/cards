@@ -1,0 +1,152 @@
+{
+  "id": "razorpay-prepaid-card",
+  "name": "Razorpay Prepaid Card",
+  "tagline": "Developer-friendly prepaid card from Razorpay",
+  "description": "The Razorpay Prepaid Card is a Visa Classic prepaid card integrated with the Razorpay ecosystem. Ideal for startups, freelancers, and businesses looking for a simple prepaid solution with online-first features and easy management via the Razorpay dashboard.",
+  "bank": "Razorpay",
+  "bankCode": "razorpay",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available for Indian residents and businesses",
+      "Full KYC verification required",
+      "Linked to Razorpay account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via Razorpay dashboard"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Dashboard Management",
+      "description": "Manage cards and track spending via Razorpay dashboard",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Virtual card for online use",
+    "Razorpay dashboard integration",
+    "Instant reload",
+    "Expense tracking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0066ff",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Business Expenses",
+    "Online Payments"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://razorpay.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://razorpay.com",
+  "lastUpdated": "2026-03-27",
+  "type": "prepaid",
+  "slug": "razorpay-prepaid-card"
+}

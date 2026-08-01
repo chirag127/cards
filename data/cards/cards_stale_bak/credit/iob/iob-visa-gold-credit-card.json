@@ -1,0 +1,297 @@
+{
+  "id": "iob-visa-gold-credit-card",
+  "name": "Indian Overseas Bank Visa Gold Credit Card",
+  "tagline": "Entry-level international card with basic benefits",
+  "description": "The IOB Visa Gold Credit Card is an entry-level international credit card with basic rewards and travel insurance.",
+  "bank": "Indian Overseas Bank",
+  "bankCode": "iob",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Visa Gold",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Gold and red",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "minAnnualIncome": 150000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 1.5 Lakh+",
+      "Self-Employed: ITR of Rs 1.5 Lakh+",
+      "Age 18-60 years",
+      "Minimum credit score of 650 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 400 and Rs 5000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 1.5 reward points per Rs 100 on all transactions",
+      "valueStr": "1.5 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Air accident insurance coverage when ticket is booked using the card",
+      "valueStr": "Rs 50 Lakh",
+      "valueNum": 5000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 5000000,
+      "conditions": [
+        "Valid when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on spending Rs 1 Lakh annually",
+      "valueStr": "Fee waiver",
+      "valueNum": 500,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 500,
+      "conditions": [
+        "Annual spend of Rs 1 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Indian Reward Points",
+    "earnRate": "1.5 RP per Rs 100 on all spends",
+    "pointsPer100": 1.5,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.3,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 1.5,
+        "description": "1.5 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.3%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 1 Lakh",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of Rs 500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#c62828",
+    "#ffd54f"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 15000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2410,
+    "tenYearNetValue": 24100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 508
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.bank.in/credit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 425 6060",
+  "applyUrl": "https://www.iob.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "iob-visa-gold-credit-card"
+}

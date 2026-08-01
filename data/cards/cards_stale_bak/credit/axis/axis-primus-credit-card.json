@@ -1,0 +1,322 @@
+{
+  "id": "axis-primus-credit-card",
+  "name": "Axis Bank Primus Credit Card",
+  "tagline": "India's most exclusive invite-only credit card",
+  "description": "The Axis Primus Credit Card is the most exclusive card in India, available only by invitation to ultra-high-net-worth individuals. A Visa Infinite card offering 1 mile per ₹100, unmatched concierge services, and privileges that redefine luxury in the Indian banking space.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Infinite",
+  "variant": "Primus",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and platinum",
+  "virtualCardAvailable": false,
+  "eligibility": {
+    "minAge": 25,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": true,
+    "notes": [
+      "Invitation only — extended by Axis Bank to select ultra-high-net-worth clients",
+      "Minimum relationship value: ₹25 Crore",
+      "Requires personal banking relationship with Axis Bank"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 300000,
+      "note": "By invitation"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 300000,
+      "note": "No GST applicable"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "interestRatePerMonth": 2.5,
+    "annualInterestRate": 30
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 0,
+    "maxTransactionAmount": 999999,
+    "maxWaiverPerCycle": 999999,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 5000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 100000000,
+    "permanentDisabilityCover": 100000000,
+    "lostCardLiability": 0,
+    "lostCardLiabilityWindow": 0,
+    "travelInsuranceCover": 50000000,
+    "airAccidentCover": 100000000,
+    "baggageCover": 200000,
+    "conditions": [
+      "Air accident cover: ₹10 Crore",
+      "Travel insurance: ₹5 Crore",
+      "Zero lost card liability — full protection",
+      "Global medical emergency cover"
+    ],
+    "provider": "Axis Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 0,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 0,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Priority Pass",
+      "Plaza Premium",
+      "LoungKey",
+      "Dreamfolks",
+      "Centurion"
+    ],
+    "conditions": [
+      "Unlimited domestic and international lounge access with guest"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Rewards on All Spends",
+      "description": "Earn 1 reward mile per ₹100 on all transactions",
+      "valueStr": "1 mile/₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Global Lounge",
+      "description": "Unlimited complimentary lounge access worldwide for cardholder and guests",
+      "valueStr": "Unlimited global",
+      "valueNum": 0,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 0,
+      "conditions": [
+        "Guest access included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "Dedicated Relationship Manager",
+      "description": "Personal relationship manager and 24/7 global concierge for all needs",
+      "valueStr": "Dedicated RM",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Global Golf Access",
+      "description": "Complimentary rounds at world-class golf courses globally",
+      "valueStr": "Global access",
+      "valueNum": 0,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis EDGE Miles",
+    "earnRate": "1 mile per ₹100",
+    "pointsPer100": 1,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "No expiry",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Flights & Hotels",
+      "Air miles transfer",
+      "Luxury experiences",
+      "Charity donations"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "1%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Luxury welcome package curated by Axis Private Banking",
+    "valueStr": "Curated luxury package",
+    "valueNum": 50000,
+    "conditions": [
+      "Extended upon card acceptance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Ultra-exclusive metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Zero forex markup",
+    "Unlimited lounge access worldwide",
+    "Personal relationship manager",
+    "24/7 global concierge",
+    "Comprehensive luxury insurance",
+    "Global golf access",
+    "Invite-only"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 5,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d0d0d",
+    "#e5e4e2"
+  ],
+  "value": {
+    "highestValue": 500000,
+    "averageValue": 300000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 300000,
+    "totalAnnualBenefits": 300000,
+    "roiPercent": 100
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Dedicated relationship manager",
+    "services": [
+      "Travel booking",
+      "Dining reservations",
+      "Event tickets",
+      "Luxury gourcing",
+      "Property assistance",
+      "Investment advisory referrals"
+    ]
+  },
+  "golfPrivileges": {
+    "available": true,
+    "complimentaryRounds": 999,
+    "courses": [
+      "Global course access"
+    ],
+    "conditions": [
+      "Subject to availability at partner courses worldwide"
+    ]
+  },
+  "category": "co-branded",
+  "internationalUsable": true,
+  "bestFor": [
+    "Ultra-High Net Worth",
+    "Luxury Travel",
+    "Concierge",
+    "Invite-Only"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860-419-5555",
+  "applyUrl": "https://www.axisbank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-primus-credit-card"
+}

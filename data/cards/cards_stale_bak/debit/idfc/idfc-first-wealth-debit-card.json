@@ -1,0 +1,215 @@
+{
+  "id": "idfc-first-wealth-debit-card",
+  "name": "IDFC First Wealth Debit Card",
+  "tagline": "World tier debit for affluent customers",
+  "description": "The IDFC First Wealth Debit Card is a Visa World tier debit card offering premium lifestyle benefits, higher reward points, complimentary airport lounge access, and exclusive merchant partnerships.",
+  "bank": "IDFC First Bank",
+  "bankCode": "idfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "World",
+  "variant": "First Wealth",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and platinum",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "mab": 100000,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Wealth"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires minimum average monthly balance of ₹1,00,000"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 15,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 8,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Premium Reward Points",
+      "description": "Earn 4 Reward Points per ₹200 spent",
+      "valueStr": "4 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic and international airport lounge access",
+      "valueStr": "2 visits per quarter domestic, 1 international per year",
+      "valueNum": 8000,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 12,
+      "annualValue": 8000,
+      "conditions": [
+        "Valid at Visa partner lounges worldwide"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accident Insurance",
+      "description": "Complimentary personal accident insurance cover",
+      "valueStr": "₹10 lakh cover",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 2000,
+      "conditions": [
+        "Active card required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDFC Reward Points",
+    "earnRate": "4 RP per ₹200",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "3 years from accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 2,
+        "description": "8 RP per ₹200 on travel spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback",
+      "Travel"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on first transaction",
+    "valueStr": "1000 bonus RP",
+    "valueNum": 250,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "World tier privileges",
+    "Airport lounge access",
+    "Personal accident insurance",
+    "Dedicated relationship manager",
+    "Concierge services"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d0d0d",
+    "#b8b8b8"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8821,
+    "tenYearNetValue": 88210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 10000,
+    "roiPercent": 748
+  },
+  "category": "super-premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "High Net Worth",
+    "Lounge Access",
+    "Premium Benefits"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits",
+      "loungeAccess"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.idfcfirstbank.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 10 888",
+  "applyUrl": "https://www.idfcfirstbank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "idfc-first-wealth-debit-card"
+}

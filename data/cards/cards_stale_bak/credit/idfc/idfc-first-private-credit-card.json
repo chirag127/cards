@@ -1,0 +1,373 @@
+{
+  "id": "idfc-first-private-credit-card",
+  "name": "IDFC First Private Credit Card",
+  "tagline": "Premium Signature card with 10X online, 6X intl, unlimited lounge",
+  "description": "The IDFC First Private Credit Card is a premium Visa Signature card offering 10X reward points on online transactions, 6X on international spends, unlimited domestic and international airport lounge access, and comprehensive travel benefits. Designed for premium travelers who want the best in class rewards.",
+  "bank": "IDFC First Bank",
+  "bankCode": "idfc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "First Private",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and premium gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 100000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹1 Lakh",
+      "Self-Employed: ITR > ₹12 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 1000000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 1000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 5000000,
+    "airAccidentCover": 5000000,
+    "baggageCover": 100000,
+    "conditions": [
+      "Air accident cover: ₹50 Lakh",
+      "Travel insurance: ₹50 Lakh",
+      "Purchase protection: ₹10 Lakh for 90 days",
+      "Lost card liability: ₹10 Lakh"
+    ],
+    "provider": "IDFC First Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Dreamfolks",
+      "Visa LoungeKey"
+    ],
+    "conditions": [
+      "Domestic: Unlimited complimentary visits at all partner lounges",
+      "International: Unlimited via Visa LoungeKey",
+      "Guest access available at applicable charges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits per year",
+      "valueStr": "Unlimited visits",
+      "valueNum": 2500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 50000,
+      "conditions": [
+        "At all Dreamfolks partner domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited International Lounge Access",
+      "description": "Unlimited complimentary international airport lounge visits via Visa LoungeKey",
+      "valueStr": "Unlimited visits",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 50000,
+      "conditions": [
+        "Visa LoungeKey membership included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "10X Reward Points on Online Spends",
+      "description": "Earn 10X reward points on online transactions",
+      "valueStr": "10X points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on online purchases"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "6X Reward Points on International Spends",
+      "description": "Earn 6X reward points on international transactions",
+      "valueStr": "6X points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on international spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDFC First Rewards",
+    "earnRate": "10X online, 6X intl, 1X others",
+    "pointsPer100": 0,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 2,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Online",
+        "multiplier": 10,
+        "description": "10X reward points on online"
+      },
+      {
+        "category": "International",
+        "multiplier": 6,
+        "description": "6X reward points on international"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels via IDFC Rewards",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "2% on online",
+    "conditions": [
+      "Excluded: rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in the preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹3,000 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Unlimited domestic & international lounge access",
+    "10X reward points on online spends",
+    "6X reward points on international spends",
+    "Low forex markup at 2%"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "creditLimitMin": 300000,
+    "creditLimitMax": 1500000,
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 4,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 106000,
+    "averageValue": 75000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 71460,
+    "tenYearNetValue": 714600,
+    "totalAnnualCharges": 3540,
+    "totalAnnualBenefits": 75000,
+    "roiPercent": 1918
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 5000,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.2,
+    "processingFeePercent": 0.5
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Premium",
+    "Travel",
+    "Rewards",
+    "International"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.idfcfirstbank.com/personal-banking/cards/credit-cards/first-private"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Complimentary hotel upgrades"
+    ],
+    "flightPrivileges": [
+      "Priority check-in"
+    ],
+    "otherPerks": [
+      "Complimentary travel insurance",
+      "Low forex markup"
+    ]
+  },
+  "customerCareNumber": "1800 258 2580",
+  "applyUrl": "https://www.idfcfirstbank.com/personal-banking/cards/credit-cards/first-private",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "idfc-first-private-credit-card"
+}

@@ -1,0 +1,254 @@
+{
+  "id": "axis-priority-debit-card",
+  "name": "Axis Priority Debit Card",
+  "tagline": "Premium debit card with 5X rewards and complimentary lounge access",
+  "description": "The Axis Priority Debit Card is an exclusive debit card for Axis Priority banking customers offering 5X reward points on dining and travel, complimentary domestic airport lounge access, and premium transaction limits. With zero issuance and annual fees for Priority customers, it provides exceptional value.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Signature",
+  "variant": "Priority",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and purple gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "mab": 1000000,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Priority Savings",
+      "Priority Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Exclusively for Axis Priority Banking customers",
+      "Requires minimum average quarterly balance of ₹10 Lakh"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free for Priority customers"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free for Priority customers"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "4 per year",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "4 complimentary domestic lounge visits per year",
+      "Card must be active with at least one transaction per quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "5X Rewards on Dining & Travel",
+      "description": "Earn 5X reward points on all dining and travel transactions",
+      "valueStr": "5X rewards",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on dining and travel categories only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per year",
+      "valueStr": "4 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "4 per year",
+      "frequencyPerYear": 4,
+      "annualValue": 10000,
+      "conditions": [
+        "4 visits per year",
+        "Card must be active"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis Edge Reward Points",
+    "earnRate": "1 RP per ₹200 (5X on dining & travel)",
+    "pointsPer100": 0.5,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.1,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 5,
+        "description": "5X reward points on dining"
+      },
+      {
+        "category": "Travel",
+        "multiplier": 5,
+        "description": "5X reward points on travel"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Travel bookings",
+      "Air miles conversion"
+    ],
+    "minRedemptionPoints": 300,
+    "rewardRateStr": "0.1% to 0.5%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Complimentary airport lounge access",
+    "5X rewards on dining and travel",
+    "Premium transaction limits",
+    "Priority banking privileges"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#6a0dad"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 15000,
+    "tenYearNetValue": 150000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 15000,
+    "roiPercent": 999
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Rewards",
+    "Lounge Access",
+    "Premium"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/debit-card/priority-debit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/debit-card/priority-debit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "axis-priority-debit-card"
+}

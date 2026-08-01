@@ -1,0 +1,222 @@
+{
+  "id": "sbi-multicurrency-travel-prepaid-card",
+  "name": "SBI Multicurrency Travel Card",
+  "tagline": "India's largest bank forex card with 7 currencies",
+  "description": "The SBI Multicurrency Travel Card is a Visa Platinum forex card from India's largest bank, supporting 7 major currencies. With competitive exchange rates, comprehensive travel insurance, ATM withdrawal facilities worldwide, and the trust of SBI's banking network, it is a reliable choice for international travelers. Features chip-and-PIN security, emergency card replacement, and 24/7 customer support.",
+  "bank": "SBI",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Multicurrency Travel",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Valid passport required",
+      "Available at select SBI branches and online",
+      "FEMA compliance documentation needed",
+      "Travel visa or ticket may be required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 200,
+      "note": "Plus applicable taxes"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via net banking"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 200,
+      "note": "Plus taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 250000,
+    "posEcomPerDay": 1500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 250000,
+    "internationalPosPerDay": 1500000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1500000,
+    "permanentDisabilityCover": 1500000,
+    "travelInsuranceCover": 1875000,
+    "lostCardLiability": 50000,
+    "lostCardLiabilityWindow": 24,
+    "baggageCover": 250000,
+    "airAccidentCover": 3000000,
+    "conditions": [
+      "Insurance valid when card is used for travel bookings",
+      "Coverage for 90 days per trip",
+      "Lost card liability subject to prompt reporting"
+    ],
+    "provider": "SBI General Insurance"
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "7 Currency Support",
+      "description": "Load and spend in USD, GBP, EUR, AED, SGD, AUD, and THB with SBI's competitive exchange rates",
+      "valueStr": "7 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Travel Insurance up to USD 25,000",
+      "description": "Comprehensive travel insurance covering medical emergencies, baggage loss, and flight delays",
+      "valueStr": "USD 25,000",
+      "valueNum": 1875000,
+      "frequencyStr": "Per trip",
+      "frequencyPerYear": 0,
+      "annualValue": 1875000,
+      "conditions": [
+        "Valid for 90 days per trip",
+        "Must use card for travel bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Activate insurance by calling SBI customer care before travel"
+    },
+    {
+      "category": "other",
+      "title": "SBI Branch Network",
+      "description": "Access SBI's extensive domestic and international branch network for card services and emergency support",
+      "valueStr": "Global network",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At participating SBI branches"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "7 currency support",
+    "Competitive SBI exchange rates",
+    "Travel insurance coverage",
+    "ATM withdrawal worldwide",
+    "Chip and PIN security",
+    "Contactless payments",
+    "Emergency card replacement",
+    "Online balance tracking",
+    "24/7 customer support",
+    "Branch-level service access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1565c0",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1875000,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 200,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 900
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "SBI Trust",
+    "Multi-Currency",
+    "Branch Support"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "insurance",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbi.co.in/web/personal-banking/forex-foreign-exchange/forex-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800-111-103",
+  "applyUrl": "https://www.sbi.co.in/web/personal-banking/forex-foreign-exchange/forex-cards",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "sbi-multicurrency-travel-prepaid-card"
+}

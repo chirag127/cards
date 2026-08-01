@@ -1,0 +1,519 @@
+{
+  "id": "idbi-euphoria-world-credit-card",
+  "name": "IDBI Bank Euphoria World Credit Card",
+  "tagline": "Premium travel-focused card with high reward rates and insurance",
+  "description": "The IDBI Bank Euphoria World Credit Card is a premium Visa World credit card designed for frequent travellers and high-spend users. With accelerated reward rates on travel (6 DP per Rs 100), hotel and IRCTC bookings (3 DP per Rs 100), comprehensive air travel insurance, and fuel surcharge waiver, this card delivers strong value for travel enthusiasts.",
+  "bank": "IDBI Bank",
+  "bankCode": "idbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "World",
+  "variant": "Visa World",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Emerald green and rose gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Recommended annual income of Rs 6 Lakh+",
+      "Age 21-65 years",
+      "Salaried or self-employed applicants eligible",
+      "Minimum credit score of 700 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1499,
+      "amountWithGst": 1769,
+      "note": "Plus applicable GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1499,
+      "amountWithGst": 1769,
+      "note": "Plus applicable GST from second year"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 300,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 300,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 2.9,
+    "annualInterestRate": 34.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "Hindustan Petroleum",
+      "Reliance Petroleum",
+      "Shell"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 6,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 16,
+      "valuePerVisit": 3000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Airport Lounge Program",
+      "LoungeKey"
+    ],
+    "conditions": [
+      "Complimentary domestic and international lounge access",
+      "Visa World cardholder benefits",
+      "Lounge visits subject to availability",
+      "Guest access available at additional charge"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Welcome Benefit - Delight Points",
+      "description": "Earn 4,000 Delight Points on first transaction of Rs 1,500 or more within 60 days of card issuance.",
+      "valueStr": "4,000 DP",
+      "valueNum": 4000,
+      "frequencyStr": "One-time on first usage",
+      "frequencyPerYear": 1,
+      "annualValue": 4000,
+      "conditions": [
+        "First transaction of Rs 1,500+ within 60 days",
+        "Points credited within 30 days of qualifying spend",
+        "No welcome benefit if threshold not met within 60 days"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Accelerated Rewards on Travel",
+      "description": "Earn 6 Delight Points for every Rs 100 spent on travel bookings including flights, hotels, and holiday packages.",
+      "valueStr": "6 DP per Rs 100",
+      "valueNum": 6,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on airline tickets, hotel bookings, holiday packages",
+        "MCC codes for travel merchants must be recognized",
+        "Points credited within 30 days of transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Reward Points on Hotel & IRCTC",
+      "description": "Earn 3 Delight Points for every Rs 100 spent on hotel bookings, IRCTC train tickets, and bus bookings.",
+      "valueStr": "3 DP per Rs 100",
+      "valueNum": 3,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on hotel, IRCTC, and bus bookings",
+        "Points credited within 30 days of transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on Other Spends",
+      "description": "Earn 2 Delight Points for every Rs 150 spent on all other merchant categories.",
+      "valueStr": "2 DP per Rs 150",
+      "valueNum": 2,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on retail, dining, entertainment, and online spends",
+        "Fuel, wallet loads, and utility bills may be excluded"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between Rs 400 and Rs 5,000 at all fuel stations across India. Maximum waiver of Rs 500 per statement cycle.",
+      "valueStr": "1% waiver up to Rs 500/month",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Applicable on fuel transactions between Rs 400 and Rs 5,000",
+        "Maximum waiver of Rs 500 per statement cycle",
+        "Available at all fuel stations in India"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Travel Accident Insurance",
+      "description": "Comprehensive air travel accident insurance cover of Rs 25 Lakh when flight tickets are booked using the IDBI Euphoria World Credit Card.",
+      "valueStr": "Rs 25 Lakh",
+      "valueNum": 2500000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 2500000,
+      "conditions": [
+        "Applicable when air tickets are booked using the card",
+        "Coverage valid for the primary cardholder only",
+        "Claims must be filed within 30 days of incident"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Interest-Free Credit Period",
+      "description": "Enjoy up to 48 days of interest-free credit period on all retail transactions.",
+      "valueStr": "Up to 48 days",
+      "valueNum": 48,
+      "frequencyStr": "Per billing cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on retail purchases only",
+        "Cash advances attract interest from day one"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Global Merchant Acceptance",
+      "description": "Accepted at over 9 Lakh merchants across India and 29 million merchants worldwide through the Visa network.",
+      "valueStr": "9 Lakh+ India, 29M+ global",
+      "valueNum": 0,
+      "frequencyStr": "Always",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Visa network acceptance worldwide",
+        "Subject to merchant terminal compatibility"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDBI Delight Points",
+    "earnRate": "6 DP per Rs 100 on travel, 3 DP per Rs 100 on hotel/IRCTC/bus",
+    "pointsPer100": 6,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 6,
+        "description": "6 Delight Points per Rs 100 on travel bookings"
+      },
+      {
+        "category": "Hotel",
+        "multiplier": 3,
+        "description": "3 Delight Points per Rs 100 on hotel bookings"
+      },
+      {
+        "category": "IRCTC",
+        "multiplier": 3,
+        "description": "3 Delight Points per Rs 100 on IRCTC bookings"
+      },
+      {
+        "category": "Bus",
+        "multiplier": 3,
+        "description": "3 Delight Points per Rs 100 on bus bookings"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 1.33,
+        "description": "2 Delight Points per Rs 150 on all other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Air miles conversion",
+      "Travel bookings",
+      "Product catalogue",
+      "Voucher redemption"
+    ],
+    "minRedemptionPoints": 500,
+    "redemptionRatios": [
+      {
+        "partnerTarget": "Statement Credit",
+        "pointsRequired": 500,
+        "valueReceived": 125,
+        "description": "500 DP = Rs 125 statement credit"
+      },
+      {
+        "partnerTarget": "Air Miles",
+        "pointsRequired": 1000,
+        "valueReceived": 300,
+        "description": "1000 DP = 300 air miles"
+      },
+      {
+        "partnerTarget": "Travel Bookings",
+        "pointsRequired": 1000,
+        "valueReceived": 250,
+        "description": "1000 DP = Rs 250 travel booking credit"
+      },
+      {
+        "partnerTarget": "Gift Vouchers",
+        "pointsRequired": 500,
+        "valueReceived": 125,
+        "description": "500 DP = Rs 125 gift voucher"
+      }
+    ],
+    "rewardRateStr": "Up to 1.5% on travel",
+    "conditions": [
+      "Points credited within 30 days of transaction posting",
+      "Points expire 2 years from accrual date",
+      "Minimum 500 points required for redemption",
+      "Bonus categories earn at specified rates"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Earn 4,000 Delight Points on first transaction of Rs 1,500+ within 60 days of card issuance.",
+    "valueStr": "4,000 Delight Points",
+    "valueNum": 4000,
+    "conditions": [
+      "First transaction of Rs 1,500+ within 60 days",
+      "Points credited within 30 days of qualifying spend",
+      "No benefit if threshold not met within 60 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 2,000 bonus Delight Points on annual spend of Rs 3 Lakh",
+      "spendRequired": 300000,
+      "spendPeriod": "Annual",
+      "rewardStr": "2,000 Delight Points",
+      "rewardNum": 2000
+    },
+    {
+      "description": "Earn 5,000 bonus Delight Points on annual spend of Rs 5 Lakh",
+      "spendRequired": 500000,
+      "spendPeriod": "Annual",
+      "rewardStr": "5,000 Delight Points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 3 Lakh",
+      "annualSpendRequired": 300000,
+      "waives": "Annual fee of Rs 1,499 + GST"
+    }
+  ],
+  "features": [
+    "Premium Visa World credit card",
+    "Contactless payments enabled",
+    "EMV chip security",
+    "Accelerated rewards on travel (6 DP per Rs 100)",
+    "3 DP per Rs 100 on hotel, IRCTC, bus bookings",
+    "Fuel surcharge waiver up to Rs 500/month",
+    "Air travel accident insurance of Rs 25 Lakh",
+    "Up to 48 days interest-free credit period",
+    "Domestic and international lounge access",
+    "Global acceptance at 9 Lakh+ India, 29M+ worldwide merchants",
+    "Milestone bonus rewards",
+    "Annual fee waiver on Rs 3 Lakh spend"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#1b5e20",
+    "#f48fb1"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 33231,
+    "tenYearNetValue": 332310,
+    "totalAnnualCharges": 1769,
+    "totalAnnualBenefits": 35000,
+    "roiPercent": 1979
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.2,
+    "processingFeePercent": 1
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travellers",
+    "Flight bookings",
+    "Hotel bookings",
+    "IRCTC train tickets",
+    "Fuel spends",
+    "High-value spenders"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits",
+      "fuelSurcharge",
+      "welcomeBonus",
+      "rewardProgram",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [
+      "creditCardDetails"
+    ],
+    "sourceUrls": [
+      "https://www.idbibank.in/credit-cards.aspx",
+      "https://www.wishfin.com/credit-card/idbi-bank/idbi-euphoria-world-credit-card/",
+      "https://www.bankbazaar.com/credit-cards/idbi-bank-euphoria-world-credit-card.html",
+      "https://www.paisabazaar.com/credit-cards/idbi-bank-euphoria-world-credit-card/"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "reviews": [
+    {
+      "provider": "BankBazaar",
+      "overallRating": 4.3,
+      "maxRating": 5,
+      "categoryRatings": [
+        {
+          "category": "Rewards",
+          "rating": 4.5,
+          "maxRating": 5
+        },
+        {
+          "category": "Benefits",
+          "rating": 4.5,
+          "maxRating": 5
+        },
+        {
+          "category": "Value for Money",
+          "rating": 4,
+          "maxRating": 5
+        }
+      ],
+      "summary": "Excellent travel-focused card with high reward rates on travel spends, strong welcome bonus, and comprehensive insurance.",
+      "pros": [
+        "High reward rate of 6 DP per Rs 100 on travel",
+        "Strong welcome bonus of 4,000 DP",
+        "Domestic and international lounge access",
+        "Comprehensive air travel insurance"
+      ],
+      "cons": [
+        "Joining and annual fees apply",
+        "Fee waiver requires Rs 3 Lakh annual spend"
+      ],
+      "reviewUrl": "https://www.bankbazaar.com/credit-cards/idbi-bank-euphoria-world-credit-card.html",
+      "lastUpdated": "2026-04-08"
+    }
+  ],
+  "customerCareNumber": "1800 425 7600 / 022-40426013",
+  "applyUrl": "https://www.idbibank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "idbi-euphoria-world-credit-card"
+}

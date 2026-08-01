@@ -1,0 +1,194 @@
+{
+  "id": "myntra-gift-prepaid-card",
+  "name": "Myntra Gift Card Prepaid",
+  "tagline": "Fashion-forward gifting for style enthusiasts",
+  "description": "The Myntra Gift Card Prepaid is a closed-loop prepaid instrument for India's leading fashion and lifestyle e-commerce platform. Redeemable across 1,500+ Indian and international fashion brands, it is the ideal gift for style-conscious recipients. Available in denominations from Rs 250 to Rs 10,000 with instant digital delivery.",
+  "bank": "Myntra",
+  "bankCode": "myntra",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Gift Card",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Myntra pink and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No KYC required for purchase",
+      "Myntra account needed for redemption",
+      "Available for all Indian residents"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Face value only"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Not applicable"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 10000,
+    "contactlessPerTxn": 0,
+    "contactlessDailyLimit": 0,
+    "upiDailyLimit": 0
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Fashion Brand Redemption",
+      "description": "Shop from 1,500+ brands including H&M, Levi's, Nike, Adidas, Mango, and exclusive Myntra labels",
+      "valueStr": "Full face value",
+      "valueNum": 0,
+      "frequencyStr": "Per redemption",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Myntra.in only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "End of Reason Sale Access",
+      "description": "Maximize value during Myntra's End of Reason Sale with deepest discounts on premium brands",
+      "valueStr": "Full value",
+      "valueNum": 0,
+      "frequencyStr": "Semi-annual event",
+      "frequencyPerYear": 2,
+      "annualValue": 0,
+      "conditions": [
+        "During sale events only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Myntra Insider Perks",
+      "description": "Gift card users earn Myntra Insider points on purchases for early sale access and exclusive drops",
+      "valueStr": "Insider points",
+      "valueNum": 0,
+      "frequencyStr": "Per purchase",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Myntra Insider program"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Digital and physical card options",
+    "Flexible denominations (Rs 250 - Rs 10,000)",
+    "Instant digital delivery",
+    "1-year validity",
+    "1,500+ fashion brands",
+    "Corporate gifting available",
+    "Custom gift packaging",
+    "Myntra Insider program eligible"
+  ],
+  "validity": "1 year from purchase",
+  "contactless": false,
+  "ncmc": false,
+  "gradientColors": [
+    "#e53935",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 1500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1500,
+    "tenYearNetValue": 15000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1500,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Fashion Gifting",
+    "Myntra Shopping",
+    "Style Enthusiasts"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.myntra.com/gift-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.myntra.com/gift-card",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "myntra-gift-prepaid-card"
+}

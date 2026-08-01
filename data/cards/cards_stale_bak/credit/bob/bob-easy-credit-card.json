@@ -1,0 +1,281 @@
+{
+  "id": "bob-easy-credit-card",
+  "name": "Bank of Baroda Easy Credit Card",
+  "tagline": "Zero annual fee RuPay card with UPI integration",
+  "description": "The BOB Easy Credit Card is a lifetime-free card on the RuPay network offering 1 reward point per ₹100 and full UPI integration. With zero annual fee and the ability to link to UPI apps, it's an accessible entry-level card for everyday domestic transactions.",
+  "bank": "Bank of Baroda",
+  "bankCode": "bob",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "Easy",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and white with RuPay branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 10000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 150000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Min gross monthly income ₹10,000",
+      "Self-Employed: Min ITR ₹1.5 Lakh p.a.",
+      "Easy to obtain — ideal for first-time credit card users"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 15000,
+    "posEcomPerDay": 75000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "1 RP per ₹100 on All Spends",
+      "description": "Earn 1 reward point per ₹100 on all retail purchases",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "RuPay UPI Integration",
+      "description": "Link card to UPI apps for seamless payments via BHIM, PhonePe, and other UPI platforms",
+      "valueStr": "Available",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available on RuPay cards"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "BOB Reward Points",
+    "earnRate": "1 reward point per ₹100",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus — lifetime free card",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "No annual fee — lifetime free card",
+      "annualSpendRequired": 0,
+      "waives": "N/A — card is free"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "RuPay UPI integration",
+    "Zero annual fee",
+    "Ideal for first-time credit card users",
+    "Net banking & mobile app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 100,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#e65100",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 3000,
+    "averageValue": 1500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1500,
+    "tenYearNetValue": 15000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1500,
+    "roiPercent": 9999
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "UPI",
+    "Entry Level",
+    "No Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bankofbaroda.in/personal-banking/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 102 7788",
+  "applyUrl": "https://www.bankofbaroda.in/personal-banking/cards/credit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "bob-easy-credit-card"
+}

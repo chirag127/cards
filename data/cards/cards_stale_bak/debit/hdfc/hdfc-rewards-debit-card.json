@@ -1,0 +1,167 @@
+{
+  "id": "hdfc-rewards-debit-card",
+  "name": "HDFC Rewards Debit Card",
+  "tagline": "Earn reward points on every transaction",
+  "description": "The HDFC Rewards Debit Card is a Visa Gold card that earns reward points on everyday spends. Enjoy 3 free ATM withdrawals per month at other banks, accelerated rewards on dining and travel, and redeem points for cashback, vouchers, or air miles. Perfect for customers who want to maximize value from regular spending.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Rewards",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and amber gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank savings account holders",
+      "Minimum balance of ₹25,000 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 15,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on Spends",
+      "description": "Earn 2 reward points per ₹150 spent",
+      "valueStr": "2 RP per ₹150",
+      "valueNum": 2,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3000,
+      "conditions": [
+        "1 RP = ₹0.25 value when redeemed",
+        "Accelerated 4x rewards on dining and travel"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "500 bonus reward points on first transaction",
+    "valueStr": "500 Reward Points",
+    "valueNum": 500,
+    "conditions": [
+      "Credited within 30 days of first transaction",
+      "Valid for first-time cardholders only"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1,00,000 per year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Reward points on spends",
+    "3 free ATM withdrawals/month at other banks",
+    "Accelerated rewards on dining/travel",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "gradientColors": [
+    "#7c3aed",
+    "#f59e0b"
+  ],
+  "value": {
+    "highestValue": 12000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 5410,
+    "tenYearNetValue": 54100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 1017
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use",
+    "Rewards seekers",
+    "Dining enthusiasts"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards/rewards-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 25000,
+  "customerCareNumber": "1860 266 0333",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "hdfc-rewards-debit-card"
+}

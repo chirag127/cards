@@ -1,0 +1,199 @@
+{
+  "id": "hdfc-ru-pay-platinum-debit-card",
+  "name": "HDFC RuPay Platinum Debit Card",
+  "tagline": "Domestic Platinum card with NCMC support",
+  "description": "The HDFC RuPay Platinum Debit Card offers premium domestic banking features with NCMC (National Common Mobility Card) support for transit payments. Enjoy domestic airport lounge access, comprehensive insurance cover, and seamless metro/bus travel. Designed for customers who prefer a domestic-only card with transit integration.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "RuPay Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and gold gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank savings account holders",
+      "NCMC wallet requires separate load"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 200,
+      "amountWithGst": 236
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 15,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 4000,
+      "conditions": [
+        "Available at major domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Insurance",
+      "description": "Comprehensive accidental death and disability cover",
+      "valueStr": "₹5,00,000",
+      "valueNum": 500000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 2000,
+      "conditions": [
+        "Cover active when card is used at least once per quarter"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "NCMC Transit Payments",
+      "description": "Use card for metro, bus, and toll payments",
+      "valueStr": "NCMC enabled",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 500,
+      "conditions": [
+        "NCMC wallet requires separate load"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹50,000 per year",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Domestic lounge access",
+    "Accidental insurance",
+    "NCMC enabled",
+    "Contactless payments",
+    "UPI enabled",
+    "Transit payments"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "gradientColors": [
+    "#059669",
+    "#d97706"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 5764,
+    "tenYearNetValue": 57640,
+    "totalAnnualCharges": 236,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 2542
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Domestic travel",
+    "Transit users",
+    "Budget-conscious premium"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "ncmc"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards/ru-pay-platinum-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 10000,
+  "customerCareNumber": "1860 266 0333",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "hdfc-ru-pay-platinum-debit-card"
+}

@@ -1,0 +1,148 @@
+{
+  "id": "pnb-ru-pay-select-debit-card",
+  "name": "PNB RuPay Select Debit Card",
+  "tagline": "Premium RuPay Select with lifestyle benefits",
+  "description": "The PNB RuPay Select Debit Card is a premium debit card offering exclusive lifestyle benefits including airport lounge access, insurance coverage, wellness perks, and OTT memberships.",
+  "bank": "Punjab National Bank",
+  "bankCode": "pnb",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "RuPay Select",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and gold gradient",
+  "virtualCardAvailable": false,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to PNB savings account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 150000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 100000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "NCMC enabled",
+    "UPI compatible",
+    "Airport lounge access",
+    "Insurance coverage",
+    "OTT membership",
+    "Golf privileges",
+    "Gym membership",
+    "Health check-up",
+    "Spa/salon service",
+    "Cab coupons",
+    "24/7 concierge"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "gradientColors": [
+    "#6B21A8",
+    "#D97706"
+  ],
+  "value": {
+    "highestValue": 45000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 44115,
+    "tenYearNetValue": 441150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 45000,
+    "roiPercent": 4979
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Lifestyle Benefits",
+    "Airport Lounge",
+    "Insurance",
+    "OTT",
+    "Golf"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.pnbindia.in",
+      "https://www.loansjagat.com/debit-card/pnb-rupay-select-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 1800 2222",
+  "applyUrl": "https://www.pnbindia.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "pnb-ru-pay-select-debit-card"
+}

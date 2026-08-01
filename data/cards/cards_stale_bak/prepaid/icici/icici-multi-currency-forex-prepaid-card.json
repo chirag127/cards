@@ -1,0 +1,234 @@
+{
+  "id": "icici-multi-currency-forex-prepaid-card",
+  "name": "ICICI Bank Multi-Currency Forex Prepaid Card",
+  "tagline": "15 currencies with dining and shopping discounts worldwide",
+  "description": "The ICICI Bank Multi-Currency Forex Prepaid Card enables travellers to load 15 currencies and spend globally with zero markup on loaded currencies. Enjoy dining discounts up to 20 percent at partner restaurants worldwide, shopping discounts, and comprehensive travel insurance up to Rs 10 Lakh.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Multi-Currency",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Valid passport required",
+      "FEMA documentation compliance required",
+      "Card delivered within 2 business days"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via net banking or app"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 200,
+      "note": "Plus taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 375000,
+    "posEcomPerDay": 1500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 375000,
+    "internationalPosPerDay": 1500000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1000000,
+    "permanentDisabilityCover": 1000000,
+    "travelInsuranceCover": 1000000,
+    "lostCardLiability": 50000,
+    "lostCardLiabilityWindow": 24,
+    "baggageCover": 250000,
+    "conditions": [
+      "Insurance valid when card is used for travel bookings",
+      "Coverage for 90 days per trip"
+    ],
+    "provider": "ICICI Lombard General Insurance"
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero Forex Markup",
+      "description": "No markup on transactions in 15 loaded currencies at interbank rates",
+      "valueStr": "0% markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Applicable only for loaded currencies"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Dining Discounts Worldwide",
+      "description": "Up to 20 percent discount at partner restaurants across 150+ countries",
+      "valueStr": "Up to 20%",
+      "valueNum": 2000,
+      "frequencyStr": "Per dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "At partner restaurants only",
+        "Valid card present required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Shopping Discounts",
+      "description": "Exclusive shopping discounts at partner stores worldwide",
+      "valueStr": "Varies",
+      "valueNum": 1000,
+      "frequencyStr": "Per shopping transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 1000,
+      "conditions": [
+        "At partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "15 Currency Support",
+      "description": "Load and spend in USD, GBP, EUR, AED, SGD, AUD, CAD, JPY, CHF, SAR, THB, SEK, ZAR, NZD, HKD",
+      "valueStr": "15 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Chip and PIN technology",
+    "Contactless payments",
+    "Reload via net banking, mobile app, or branch",
+    "Card delivery in 2 business days",
+    "Emergency card replacement",
+    "Real-time balance alerts",
+    "PIN regeneration at ATMs",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#004b87",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1000000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3000,
+    "tenYearNetValue": 30000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 9999
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Dining Discounts",
+    "Shopping Benefits",
+    "Multi-Currency"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "insurance",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/personal-banking/cards/forex-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1860-120-7777",
+  "applyUrl": "https://www.icicibank.com/personal-banking/cards/forex-card",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "icici-multi-currency-forex-prepaid-card"
+}

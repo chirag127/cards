@@ -1,0 +1,42 @@
+{
+  "id": "paytm-wallet-prepaid",
+  "slug": "paytm-wallet-prepaid",
+  "name": "Paytm Wallet Prepaid Card",
+  "tagline": "Virtual + physical RuPay prepaid card linked to a Paytm Wallet balance.",
+  "description": "Sample seed data — replace with verified figures from paytm.com. RBI-licensed PPI prepaid card issued by Paytm Payments Bank, loadable up to ₹2 lakh (full-KYC).",
+  "bank": "Paytm Payments Bank",
+  "bankCode": "paytm",
+  "network": "rupay",
+  "cardType": "prepaid",
+  "tier": "entry",
+  "fees": {
+    "joining": 0,
+    "annual": 0,
+    "forexMarkup": 0
+  },
+  "rewards": {
+    "pointsPerINR": 0,
+    "welcomeBonus": "Cashback on first load (varies by promo)"
+  },
+  "eligibility": {
+    "minAge": 18,
+    "employment": ["salaried", "self-employed", "student", "homemaker"],
+    "notes": ["Full KYC required to load >₹10,000 / month"]
+  },
+  "limits": {
+    "creditLimitMin": 0,
+    "creditLimitMax": 200000,
+    "posEcomPerDay": 100000
+  },
+  "internationalUsable": false,
+  "contactless": true,
+  "ncmc": true,
+  "virtualCardAvailable": true,
+  "applyUrl": "https://paytm.com/paytm-wallet",
+  "lastUpdated": "2026-06-22",
+  "dataQuality": {
+    "status": "unverified",
+    "sourceUrls": ["https://paytm.com"],
+    "lastVerified": "2026-06-22"
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "id": "idbi-imperium-platinum-credit-card",
+  "name": "IDBI Bank Imperium Platinum Credit Card",
+  "tagline": "Secured credit card against fixed deposit with rewards and Visa benefits",
+  "description": "The IDBI Bank Imperium Platinum Credit Card is a secured credit card issued against a Fixed Deposit, offering up to 85% of the FD value as credit limit. Ideal for first-time credit users, students, and those building credit history. Earn Delight Points on shopping, movies, and travel spends while enjoying exclusive Visa benefits and special offers on car rentals, hotels, and airport shopping.",
+  "bank": "IDBI Bank",
+  "bankCode": "idbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Visa Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Deep navy and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Fixed Deposit"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Secured card against Fixed Deposit with IDBI Bank",
+      "Credit limit up to 85% of FD value",
+      "Minimum FD amount may apply",
+      "Age 18-70 years",
+      "Suitable for credit building"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Plus applicable GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Plus applicable GST from second year"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 300,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 300,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Welcome Benefit - Delight Points",
+      "description": "Earn 500 Delight Points on spending Rs 1,500 or more in a single transaction within 30 days of card issuance, or 300 Delight Points if spend is achieved between 30-90 days.",
+      "valueStr": "500 DP (within 30 days) / 300 DP (30-90 days)",
+      "valueNum": 500,
+      "frequencyStr": "One-time on first usage",
+      "frequencyPerYear": 1,
+      "annualValue": 500,
+      "conditions": [
+        "Spend Rs 1,500+ in a single transaction within 30 days for 500 DP",
+        "Spend Rs 1,500+ in a single transaction between 30-90 days for 300 DP",
+        "No welcome benefit if spend threshold not met within 90 days"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on Shopping, Movies & Travel",
+      "description": "Earn 2 Delight Points for every Rs 150 spent on shopping, movies, and travel categories.",
+      "valueStr": "2 DP per Rs 150",
+      "valueNum": 2,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to shopping, movies, and travel categories",
+        "Other categories may earn reduced points",
+        "Fuel, wallet loads, and utility bills may be excluded"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Visa Benefits - Car Rentals & Hotels",
+      "description": "Enjoy special offers on car rentals, hotel bookings, and airport shopping through the Visa benefits program.",
+      "valueStr": "Exclusive Visa offers",
+      "valueNum": 0,
+      "frequencyStr": "Ongoing",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Offers subject to Visa partner availability",
+        "Discounts vary by merchant and season",
+        "Must book through Visa benefits portal"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Visa Airport Shopping Benefits",
+      "description": "Get exclusive discounts at participating airport retail outlets through the Visa benefits program.",
+      "valueStr": "Airport retail discounts",
+      "valueNum": 0,
+      "frequencyStr": "Ongoing",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable at participating airport outlets only",
+        "Discount percentage varies by merchant",
+        "Present card at time of purchase"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "FD-Backed Credit Limit",
+      "description": "Get a credit limit of up to 85% of your Fixed Deposit value with IDBI Bank. Your FD continues to earn interest.",
+      "valueStr": "Up to 85% of FD",
+      "valueNum": 0,
+      "frequencyStr": "Lifetime of FD",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Credit limit up to 85% of FD value",
+        "FD must be maintained with IDBI Bank",
+        "FD continues to earn interest as per applicable rates",
+        "Card valid as long as FD is active"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Cash Withdrawal Facility",
+      "description": "Withdraw cash up to 70% of your total credit limit from any ATM in India and abroad.",
+      "valueStr": "Up to 70% of credit limit",
+      "valueNum": 0,
+      "frequencyStr": "Per withdrawal",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Cash withdrawal up to 70% of credit limit",
+        "Interest applicable from day of withdrawal",
+        "ATM charges as per applicable schedule"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDBI Delight Points",
+    "earnRate": "2 DP per Rs 150 on shopping, movies, travel",
+    "pointsPer100": 1.33,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.27,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Shopping",
+        "multiplier": 1.33,
+        "description": "2 Delight Points per Rs 150 on shopping"
+      },
+      {
+        "category": "Movies",
+        "multiplier": 1.33,
+        "description": "2 Delight Points per Rs 150 on movie tickets"
+      },
+      {
+        "category": "Travel",
+        "multiplier": 1.33,
+        "description": "2 Delight Points per Rs 150 on travel bookings"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Air miles conversion",
+      "Product catalogue",
+      "Voucher redemption"
+    ],
+    "minRedemptionPoints": 500,
+    "redemptionRatios": [
+      {
+        "partnerTarget": "Statement Credit",
+        "pointsRequired": 500,
+        "valueReceived": 100,
+        "description": "500 DP = Rs 100 statement credit"
+      },
+      {
+        "partnerTarget": "Air Miles",
+        "pointsRequired": 1000,
+        "valueReceived": 250,
+        "description": "1000 DP = 250 air miles"
+      },
+      {
+        "partnerTarget": "Gift Vouchers",
+        "pointsRequired": 500,
+        "valueReceived": 100,
+        "description": "500 DP = Rs 100 gift voucher"
+      }
+    ],
+    "rewardRateStr": "0.27%",
+    "conditions": [
+      "Points credited within 30 days of transaction posting",
+      "Points expire 2 years from accrual date",
+      "Minimum 500 points required for redemption"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Earn 500 Delight Points on spending Rs 1,500+ in a single transaction within 30 days, or 300 DP between 30-90 days.",
+    "valueStr": "500 Delight Points",
+    "valueNum": 500,
+    "conditions": [
+      "Spend Rs 1,500+ in single transaction within 30 days: 500 DP",
+      "Spend Rs 1,500+ in single transaction between 30-90 days: 300 DP",
+      "No benefit if threshold not met within 90 days"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 50,000",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee of Rs 499 + GST"
+    }
+  ],
+  "features": [
+    "Secured card against Fixed Deposit",
+    "Contactless payments enabled",
+    "EMV chip security",
+    "Credit limit up to 85% of FD value",
+    "Cash withdrawal up to 70% of credit limit",
+    "EMI conversion facility",
+    "Visa benefits on car rentals, hotels, airport shopping",
+    "Reward points on shopping, movies, travel",
+    "Ideal for building credit history"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "creditLimitMin": 10000,
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": false,
+    "maxAddOnCards": 0,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a237e",
+    "#ffc107"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4411,
+    "tenYearNetValue": 44110,
+    "totalAnnualCharges": 589,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 849
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.3,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "Credit building",
+    "First-time credit users",
+    "FD-backed secured card",
+    "Shopping and travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits",
+      "welcomeBonus",
+      "rewardProgram"
+    ],
+    "unverifiedFields": [
+      "creditCardDetails"
+    ],
+    "sourceUrls": [
+      "https://www.idbibank.in/credit-cards.aspx",
+      "https://www.wishfin.com/credit-card/idbi-bank/idbi-imperium-platinum-credit-card/",
+      "https://www.bankbazaar.com/credit-cards/idbi-bank-imperium-platinum-credit-card.html",
+      "https://www.paisabazaar.com/credit-cards/idbi-bank-imperium-platinum-credit-card/"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "reviews": [
+    {
+      "provider": "Wishfin",
+      "overallRating": 3.7,
+      "maxRating": 5,
+      "categoryRatings": [
+        {
+          "category": "Rewards",
+          "rating": 3.5,
+          "maxRating": 5
+        },
+        {
+          "category": "Benefits",
+          "rating": 3.5,
+          "maxRating": 5
+        },
+        {
+          "category": "Value for Money",
+          "rating": 4,
+          "maxRating": 5
+        }
+      ],
+      "summary": "Good entry-level secured credit card for those building credit with FD backing and decent rewards.",
+      "pros": [
+        "FD-backed with up to 85% credit limit",
+        "Visa benefits on travel and shopping",
+        "Helps build credit history"
+      ],
+      "cons": [
+        "Joining and annual fees apply",
+        "No lounge access",
+        "Limited to FD value for credit"
+      ],
+      "reviewUrl": "https://www.wishfin.com/credit-card/idbi-bank/idbi-imperium-platinum-credit-card/",
+      "lastUpdated": "2026-04-08"
+    }
+  ],
+  "customerCareNumber": "1800 425 7600 / 022-40426013",
+  "applyUrl": "https://www.idbibank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "idbi-imperium-platinum-credit-card"
+}

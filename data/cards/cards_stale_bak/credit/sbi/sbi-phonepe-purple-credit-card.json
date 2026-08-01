@@ -1,0 +1,321 @@
+{
+  "id": "sbi-phonepe-purple-credit-card",
+  "name": "PhonePe SBI PURPLE Credit Card",
+  "tagline": "Earn 3X rewards on PhonePe with 2X on online shopping",
+  "description": "The PhonePe SBI PURPLE Credit Card is a co-branded digital payment card offering 3 reward points per ₹100 on PhonePe transactions, 2 reward points per ₹100 on online shopping, and 1 reward point per ₹100 on all other spends. Ideal for PhonePe users who want accelerated rewards on digital payments.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "PhonePe PURPLE",
+  "usage": "Domestic",
+  "bin": "4591",
+  "material": "Plastic",
+  "colorScheme": "Purple and white with PhonePe branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹20,000",
+      "Self-Employed: Minimum ITR of ₹2.4 Lakh p.a.",
+      "Age 21–60 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 950,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Lost card liability cover up to ₹1 Lakh"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "3 Reward Points per ₹100 on PhonePe",
+      "description": "Earn 3 reward points per ₹100 on PhonePe transactions",
+      "valueStr": "3 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on PhonePe app transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "2 Reward Points per ₹100 on Online Shopping",
+      "description": "Earn 2 reward points per ₹100 on online shopping transactions",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on online/e-commerce transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1 Reward Point per ₹100 on All Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail spends",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Reward Points",
+    "earnRate": "1 RP per ₹100 (3X PhonePe, 2X online)",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "PhonePe",
+        "multiplier": 3,
+        "description": "3 reward points per ₹100 on PhonePe"
+      },
+      {
+        "category": "Online Shopping",
+        "multiplier": 2,
+        "description": "2 reward points per ₹100 on online shopping"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers (1 RP = ₹0.25)",
+      "Cashback (1 RP = ₹0.20)",
+      "Statement Credit"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.25% to 0.75%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "N/A",
+    "valueStr": "N/A",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹499 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "PhonePe ecosystem rewards",
+    "Online shopping rewards"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#6a1b9a",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2411,
+    "tenYearNetValue": 24110,
+    "totalAnnualCharges": 589,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 409
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "PhonePe",
+    "Online Shopping",
+    "Digital Payments"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/shopping/phonepe-sbi-purple-credit-card.page"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/shopping/phonepe-sbi-purple-credit-card.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-phonepe-purple-credit-card"
+}

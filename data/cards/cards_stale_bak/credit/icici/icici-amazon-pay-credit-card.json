@@ -1,0 +1,307 @@
+{
+  "id": "icici-amazon-pay-credit-card",
+  "name": "ICICI Bank Amazon Pay Credit Card",
+  "tagline": "Shop on Amazon and earn cashback as Amazon Pay balance",
+  "description": "The ICICI Bank Amazon Pay Credit Card is a co-branded cashback card offering up to 5% cashback on Amazon purchases for Prime members, 3% for non-Prime members, 2% on Amazon Pay partner merchants, and 1% on all other spends. Cashback is credited as Amazon Pay balance with no upper limit on earning. The card comes with zero joining and annual fees.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Amazon Pay",
+  "usage": "Domestic",
+  "bin": "4030",
+  "material": "Plastic",
+  "colorScheme": "Dark grey with Amazon orange accent",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Amazon customers; Prime members get higher cashback",
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "5% Cashback on Amazon (Prime Members)",
+      "description": "Earn 5% cashback as Amazon Pay balance on all Amazon purchases for Prime members",
+      "valueStr": "5%",
+      "valueNum": 0,
+      "frequencyStr": "Every Amazon transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Must be an Amazon Prime member",
+        "No upper limit on cashback earning"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "3% Cashback on Amazon (Non-Prime)",
+      "description": "Earn 3% cashback as Amazon Pay balance on all Amazon purchases for non-Prime members",
+      "valueStr": "3%",
+      "valueNum": 0,
+      "frequencyStr": "Every Amazon transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "For non-Prime Amazon customers",
+        "No upper limit on cashback earning"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "2% Cashback on Amazon Pay Partner Merchants",
+      "description": "Earn 2% cashback on Amazon Pay partner merchant transactions",
+      "valueStr": "2%",
+      "valueNum": 0,
+      "frequencyStr": "Every partner merchant transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Partner merchants using Amazon Pay"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1% Cashback on All Other Spends",
+      "description": "Earn 1% cashback as Amazon Pay balance on all other domestic and international transactions",
+      "valueStr": "1%",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, EMI, cash advances, and wallet loads"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Amazon Pay Cashback",
+    "earnRate": "Up to 5% on Amazon, 2% on partners, 1% on others",
+    "pointsPer100": 5,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Amazon Pay balance does not expire",
+    "bonusCategories": [
+      {
+        "category": "Amazon Purchases (Prime)",
+        "multiplier": 5,
+        "description": "5% cashback"
+      },
+      {
+        "category": "Amazon Purchases (Non-Prime)",
+        "multiplier": 3,
+        "description": "3% cashback"
+      },
+      {
+        "category": "Amazon Pay Partners",
+        "multiplier": 2,
+        "description": "2% cashback"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 1,
+        "description": "1% cashback"
+      }
+    ],
+    "redemptionOptions": [
+      "Amazon Pay balance (auto-credited)",
+      "Use across Amazon.in and partner merchants"
+    ],
+    "minRedemptionPoints": 1,
+    "rewardRateStr": "1% to 5%",
+    "conditions": [
+      "Cashback credited as Amazon Pay balance",
+      "Excludes fuel, EMI, cash advances, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "No annual or joining fee",
+    "Unlimited cashback as Amazon Pay balance",
+    "Auto-credit to Amazon Pay account",
+    "Online application via Amazon.in",
+    "Virtual card available instantly"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#232f3e",
+    "#ff9900"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8000,
+    "tenYearNetValue": 80000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 100
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Cashback",
+    "Online Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "cashback",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/amazon-pay-credit-card",
+      "https://www.amazon.in/ICICI-Credit-Card"
+    ],
+    "lastVerified": "2026-03-28"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/amazon-pay-credit-card",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "icici-amazon-pay-credit-card"
+}

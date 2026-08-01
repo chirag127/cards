@@ -1,0 +1,162 @@
+{
+  "id": "jupiter-edge-prepaid-card",
+  "name": "Jupiter Edge Prepaid Card",
+  "tagline": "Instant UPI top-up with real-time card controls",
+  "description": "The Jupiter Edge Prepaid Card is a RuPay prepaid card from the Jupiter neo-bank platform. It offers instant top-up via UPI, real-time notifications, comprehensive card controls via the Jupiter app, and Edge Rewards on every spend for modern digital-first money management.",
+  "bank": "Jupiter",
+  "bankCode": "jupiter",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Edge",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and orange",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Full KYC verification required",
+      "Jupiter app download required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Edge Rewards",
+      "description": "Earn Edge Rewards on every transaction redeemable for various benefits",
+      "valueStr": "Edge Rewards",
+      "valueNum": 500,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 500,
+      "conditions": [
+        "Via Jupiter app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Instant top-up via UPI",
+    "Real-time push notifications",
+    "Card lock/unlock via app",
+    "Spending limits control",
+    "Contactless payments",
+    "Virtual and physical card",
+    "Edge Rewards on spends",
+    "Spending insights and analytics",
+    "Merchant category controls"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#ff6d00"
+  ],
+  "value": {
+    "highestValue": 500,
+    "averageValue": 300,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 300,
+    "tenYearNetValue": 3000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 300,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Digital Payments",
+    "Card Controls",
+    "Neo-Bank Experience"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://jupiter.money"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "080-6886-9000",
+  "applyUrl": "https://jupiter.money",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "jupiter-edge-prepaid-card"
+}

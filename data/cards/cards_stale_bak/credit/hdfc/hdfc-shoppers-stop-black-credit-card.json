@@ -1,0 +1,300 @@
+{
+  "id": "hdfc-shoppers-stop-black-credit-card",
+  "name": "Shoppers Stop Black HDFC Bank Credit Card",
+  "tagline": "Premium shopping with up to 7% cashback at Shoppers Stop",
+  "description": "The Shoppers Stop Black HDFC Bank Credit Card is a premium co-branded credit card offering 7% cashback on all Shoppers Stop purchases and 2% on all other retail spends. Comes with exclusive VIP benefits including priority access to sales, personal shopping assistance, and complimentary alterations.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Shoppers Stop Black",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and gold gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 75000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 900000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹75,000",
+      "Self-Employed: ITR > ₹9 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 4500,
+      "amountWithGst": 5310,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 4500,
+      "amountWithGst": 5310,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 400000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Shoppers Stop Premium Cashback",
+      "description": "7% cashback on all purchases at Shoppers Stop stores and online",
+      "valueStr": "7% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at Shoppers Stop stores and online"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "All Other Spends",
+      "description": "2% cashback on all other retail purchases",
+      "valueStr": "2% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "VIP Sale Access",
+      "description": "Priority access to Shoppers Stop sales with exclusive early-bird discounts",
+      "valueStr": "VIP access",
+      "valueNum": 0,
+      "frequencyStr": "Periodic",
+      "frequencyPerYear": 4,
+      "annualValue": 5000,
+      "conditions": [
+        "During Shoppers Stop sale events"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Personal Shopping Assistance",
+      "description": "Complimentary personal shopping assistant at select Shoppers Stop stores",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available at select Shoppers Stop flagship stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Complimentary Alterations",
+      "description": "Free basic alterations on purchases at Shoppers Stop",
+      "valueStr": "Free alterations",
+      "valueNum": 0,
+      "frequencyStr": "Per purchase",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "Basic alterations only",
+        "Within 30 days of purchase"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Shoppers Stop Black Cashback",
+    "earnRate": "7% on Shoppers Stop, 2% other",
+    "pointsPer100": 0,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 2,
+    "pointsExpiry": "Cashback credited as statement credit",
+    "bonusCategories": [
+      {
+        "category": "Shoppers Stop",
+        "multiplier": 7,
+        "description": "7% cashback at Shoppers Stop"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit (automatic)"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "2% to 7%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "₹2,000 Shoppers Stop gift voucher on card activation",
+    "valueStr": "₹2,000 SS Gift Voucher",
+    "valueNum": 2000,
+    "conditions": [
+      "Activate card and complete first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "₹2,000 Shoppers Stop voucher on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "₹2,000 SS Voucher",
+      "rewardNum": 2000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹4 Lakh in the preceding year",
+      "annualSpendRequired": 400000,
+      "waives": "Annual fee of ₹4,500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Metal card",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Shoppers Stop First Citizen VIP integration",
+    "Priority sale access",
+    "Complimentary alterations"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0a0a0a",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 20000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 14690,
+    "tenYearNetValue": 146900,
+    "totalAnnualCharges": 5310,
+    "totalAnnualBenefits": 20000,
+    "roiPercent": 277
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "cashback",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-credit-card",
+      "https://www.paisabazaar.com/credit-card/shoppers-stop-black-hdfc-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-shoppers-stop-black-credit-card"
+}

@@ -1,0 +1,271 @@
+{
+  "id": "bob-select-credit-card",
+  "name": "Bank of Baroda Select Credit Card",
+  "tagline": "2 RP per ₹100 with fuel surcharge waiver",
+  "description": "The BOB Select Credit Card offers a balanced rewards program with 2 reward points per ₹100 on all spends and a fuel surcharge waiver. With a moderate annual fee and reliable rewards, it's a solid mid-range card for everyday spenders who want consistent value.",
+  "bank": "Bank of Baroda",
+  "bankCode": "bob",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Select",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 250000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Min gross monthly income ₹20,000",
+      "Self-Employed: Min ITR ₹2.5 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 30000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "2 RP per ₹100 on All Spends",
+      "description": "Earn 2 reward points per ₹100 on all retail purchases",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, EMI, cash advances"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "BOB Reward Points",
+    "earnRate": "2 RP per ₹100",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers from rewards catalogue",
+      "Statement credit",
+      "Air miles"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "300 reward points on first transaction within 30 days",
+    "valueStr": "300 RP",
+    "valueNum": 75,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "1,000 bonus points on spending ₹1 Lakh annually",
+      "spendRequired": 100000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 Reward Points",
+      "rewardNum": 250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹75,000 in the preceding year",
+      "annualSpendRequired": 75000,
+      "waives": "Annual fee of ₹750 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Fuel surcharge waiver",
+    "Net banking & mobile app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 100,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#003366",
+    "#6699cc"
+  ],
+  "value": {
+    "highestValue": 6000,
+    "averageValue": 3500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2615,
+    "tenYearNetValue": 26150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 3500,
+    "roiPercent": 395
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Rewards",
+    "Fuel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bankofbaroda.in/personal-banking/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 102 7788",
+  "applyUrl": "https://www.bankofbaroda.in/personal-banking/cards/credit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "bob-select-credit-card"
+}

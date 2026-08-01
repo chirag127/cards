@@ -1,0 +1,254 @@
+{
+  "id": "hdfc-pixel-credit-card",
+  "name": "Pixel HDFC Bank Credit Card",
+  "tagline": "Digital-first card with 5% cashback on select merchants",
+  "description": "The Pixel HDFC Bank Credit Card offers 5% cashback on select merchants (capped ₹500/category/month), Pixel Coins redemption, PayZapp managed platform, minimum salary requirement of ₹25K, and is designed for digital-savvy users.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "Credit Card",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "#3a2a5e and #7F5EBF gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Stable income required",
+      "Good credit history preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 500000,
+    "permanentDisabilityCover": 400000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 250000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 1000000,
+    "baggageCover": 0,
+    "conditions": [
+      "Insurance applicable on card usage"
+    ],
+    "provider": "HDFC Bank"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 5% cashback select (capped ₹500/cat/month) on all spends",
+      "valueStr": "5% cashback select (capped ₹500/cat/month)",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400-₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400-₹5,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC Bank Rewards",
+    "earnRate": "5% cashback select (capped ₹500/cat/month)",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "5% cashback select (capped ₹500/cat/month)"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "500 Pixel Coins",
+    "valueStr": "500 Pixel Coins",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus on reaching annual spend milestone",
+      "spendRequired": 50000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Bonus Reward Points",
+      "rewardNum": 1000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹25,000 in preceding year",
+      "annualSpendRequired": 25000,
+      "waives": "Annual fee of ₹500"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Tap and pay enabled",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#3a2a5e",
+    "#7F5EBF"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4410,
+    "tenYearNetValue": 44100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 1500,
+    "roiPercent": 154
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": true,
+  "bestFor": [
+    "Digital Users",
+    "Online Shopping",
+    "Cashback",
+    "PayZapp Users"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com"
+    ],
+    "lastVerified": "2026-04-09"
+  },
+  "customerCareNumber": "1800-180-2222",
+  "applyUrl": "https://www.hdfcbank.com",
+  "lastUpdated": "2026-04-09",
+  "type": "credit",
+  "slug": "hdfc-pixel-credit-card"
+}

@@ -1,0 +1,133 @@
+{
+  "id": "au-classic-debit-card",
+  "name": "AU Small Finance Bank Classic Debit Card",
+  "tagline": "Basic debit for everyday transactions",
+  "description": "The AU Small Finance Bank Classic Debit Card is an affordable entry-level Visa debit card with standard ATM and POS limits for daily banking needs.",
+  "bank": "AU Small Finance Bank",
+  "bankCode": "au",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Classic",
+  "variant": "Classic",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to AU Small Finance Bank savings account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 150,
+      "amountWithGst": 177,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 150,
+      "amountWithGst": 177,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#ff6600",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1200,
+    "averageValue": 800,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 623,
+    "tenYearNetValue": 6230,
+    "totalAnnualCharges": 177,
+    "totalAnnualBenefits": 800,
+    "roiPercent": 352
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Basic Banking",
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.aubank.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1200 1200",
+  "applyUrl": "https://www.aubank.in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "au-classic-debit-card"
+}

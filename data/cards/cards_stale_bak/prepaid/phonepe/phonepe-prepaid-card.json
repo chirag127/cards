@@ -1,0 +1,196 @@
+{
+  "id": "phonepe-prepaid-card",
+  "name": "PhonePe Prepaid Card",
+  "tagline": "India's largest UPI platform goes prepaid",
+  "description": "The PhonePe Prepaid Card is a RuPay Platinum prepaid card from India's leading digital payments platform. It enables seamless spending across PhonePe's 500+ million user ecosystem including bill payments, recharges, merchant payments, and online shopping. With zero annual charges, instant UPI reloads, and PhonePe Switch benefits, it is designed for the digitally-savvy Indian consumer.",
+  "bank": "PhonePe",
+  "bankCode": "phonepe",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "Full KYC via Aadhaar/PAN",
+      "Requires PhonePe account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "PhonePe Cashback",
+      "description": "Earn scratch cards and cashback on bill payments, recharges, and merchant transactions",
+      "valueStr": "Up to Rs 100",
+      "valueNum": 100,
+      "frequencyStr": "Per eligible transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 1200,
+      "conditions": [
+        "Subject to ongoing offers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "PhonePe Switch Discounts",
+      "description": "Get exclusive discounts on PhonePe Switch platform across electronics, fashion, and travel",
+      "valueStr": "Up to 10%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "On PhonePe Switch partner brands"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "Zero-Cost Bill Payments",
+      "description": "Pay electricity, gas, broadband, and mobile bills with zero convenience fees",
+      "valueStr": "Zero fees",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Rs 50 cashback on first transaction above Rs 200",
+    "valueStr": "Rs 50",
+    "valueNum": 50,
+    "conditions": [
+      "First card transaction above Rs 200"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Zero annual charges",
+    "PhonePe ecosystem integration",
+    "Bill payment cashback",
+    "PhonePe Switch discounts",
+    "Instant UPI reloads",
+    "Wide RuPay acceptance",
+    "Contactless payments",
+    "Real-time transaction alerts",
+    "Insurance and investment purchases via PhonePe"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#5f259f",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1200,
+    "averageValue": 600,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 600,
+    "tenYearNetValue": 6000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 600,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Digital Payments",
+    "Bill Payments",
+    "PhonePe Ecosystem"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.phonepe.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.phonepe.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "phonepe-prepaid-card"
+}

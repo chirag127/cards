@@ -1,0 +1,157 @@
+{
+  "id": "indusind-signature-debit-card",
+  "name": "IndusInd Signature Debit Card",
+  "tagline": "Premium debit with global usage",
+  "description": "The IndusInd Signature Debit Card offers premium benefits including international usage, higher transaction limits, and exclusive privileges. Designed for discerning customers.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Signature",
+  "variant": "Signature",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Premium black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to IndusInd Bank account holders",
+      "International usage enabled"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 250,
+      "amountWithGst": 295,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 150000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 100000,
+    "internationalPosPerDay": 300000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "International Usage",
+      "description": "Global acceptance at millions of merchants worldwide",
+      "valueStr": "Global acceptance",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "International transactions enabled"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Higher transaction limits",
+    "Global usage enabled",
+    "Premium benefits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 7500,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3821,
+    "tenYearNetValue": 38210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 324
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "International Spending"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.indusind.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 500 5000",
+  "applyUrl": "https://www.indusind.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "indusind-signature-debit-card"
+}

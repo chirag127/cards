@@ -1,0 +1,164 @@
+{
+  "id": "hdfc-business-debit-card",
+  "name": "HDFC Business Debit Card",
+  "tagline": "Dedicated debit card for business banking needs",
+  "description": "The HDFC Business Debit Card is designed for entrepreneurs and business owners who need higher transaction limits and dedicated business expense tracking. Enjoy international usage, higher daily limits, and comprehensive business banking features. Perfect for managing business expenses with ease.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Business",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and slate gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank current account holders",
+      "Business registration documents required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 350,
+      "amountWithGst": 413
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 150,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 500000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Business Expense Tracking",
+      "description": "Detailed business expense categorization and reports",
+      "valueStr": "Monthly reports",
+      "valueNum": 0,
+      "frequencyStr": "Monthly",
+      "frequencyPerYear": 12,
+      "annualValue": 2000,
+      "conditions": [
+        "Available via net banking and mobile app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹1 lakh average balance",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Higher transaction limits",
+    "Business expense tracking",
+    "International usage",
+    "Contactless payments",
+    "UPI enabled",
+    "Net banking integration"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e40af",
+    "#64748b"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 7587,
+    "tenYearNetValue": 75870,
+    "totalAnnualCharges": 413,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 1937
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "Business owners",
+    "Current account holders",
+    "International travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/business-banking/pay/cards/debit-cards/business-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 100000,
+  "customerCareNumber": "1860 266 0333",
+  "applyUrl": "https://www.hdfcbank.com/business-banking/pay/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "hdfc-business-debit-card"
+}

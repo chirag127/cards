@@ -1,0 +1,196 @@
+{
+  "id": "niyo-global-prepaid-card-2",
+  "name": "Niyo Global Prepaid Card",
+  "tagline": "Zero forex markup for travel with multi-currency support",
+  "description": "The Niyo Global Prepaid Card is a RuPay/Visa prepaid card designed for international travellers. It offers zero forex markup on international transactions, multi-currency support, and travel-focused features including real-time exchange rates, instant reload via UPI, and comprehensive travel analytics.",
+  "bank": "Niyo",
+  "bankCode": "niyo",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Global",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Valid passport required",
+      "FEMA documentation compliance required",
+      "Full KYC verification required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI or net banking"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 375000,
+    "posEcomPerDay": 1500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 375000,
+    "internationalPosPerDay": 1500000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero Forex Markup",
+      "description": "No forex markup on international transactions at interbank exchange rates",
+      "valueStr": "0% markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Valid on international transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Multi-Currency Support",
+      "description": "Load multiple currencies and spend globally with automatic conversion",
+      "valueStr": "Multi-currency",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Real-Time Exchange Rates",
+      "description": "View live exchange rates in the Niyo app before making transactions",
+      "valueStr": "Live rates",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Niyo app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Zero forex markup",
+    "Multi-currency support",
+    "Contactless payments",
+    "Instant reload via UPI",
+    "Real-time exchange rates in app",
+    "Virtual and physical card",
+    "Travel analytics dashboard",
+    "Card lock/unlock via app",
+    "Global acceptance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#00c853"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 9999
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Zero Forex Markup",
+    "Multi-Currency"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "forex markup",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.goniyo.com/cards/global"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.goniyo.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "niyo-global-prepaid-card-2"
+}

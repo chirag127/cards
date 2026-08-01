@@ -1,0 +1,77 @@
+---
+/*
+ * Banks index — every issuer in the catalog, alphabetical, with card counts.
+ * Links to each per-bank page.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { getRowsByBank, inr, listIssuers } from '~/lib/cards'
+import { SITE_CONFIG } from '~/lib/siteConfig'
+
+const issuers = listIssuers().map((i) => {
+  const rows = getRowsByBank(i.code)
+  return {
+    ...i,
+    credit: rows.filter((r) => r.cardType === 'credit').length,
+    debit: rows.filter((r) => r.cardType === 'debit').length,
+    prepaid: rows.filter((r) => r.cardType === 'prepaid').length,
+  }
+})
+const title = 'Card issuers in India — every bank, by card count · oriz · cards'
+const description = `All ${issuers.length} banks and issuers in the catalog — browse every credit, debit and prepaid card by issuer.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Card issuers',
+  url: `${SITE_CONFIG.origin}/banks/`,
+  description,
+  isPartOf: { '@type': 'WebSite', name: 'oriz · cards', url: SITE_CONFIG.origin },
+}
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <section class="cat spine">
+    <p class="cat-eyebrow mono"><a href="/">cards</a> / banks</p>
+    <h1 class="cat-h1">Issuers</h1>
+    <p class="cat-tag">{description}</p>
+  </section>
+  <section class="banks spine">
+    <ul class="bank-grid">
+      {
+        issuers.map((i) => (
+          <li>
+            <a href={`/banks/${i.code}/`} class="bank-card">
+              <span class="bank-name">{i.name}</span>
+              <span class="bank-count num mono">{inr(i.count, { keepZero: true })}</span>
+              <span class="bank-break mono">
+                {i.credit > 0 && <span>{i.credit} credit</span>}
+                {i.debit > 0 && <span>{i.debit} debit</span>}
+                {i.prepaid > 0 && <span>{i.prepaid} prepaid</span>}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .cat { padding-block: 2rem 1.5rem; border-bottom: 1px solid var(--rule); }
+  .cat-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-mute); margin: 0 0 1rem; }
+  .cat-eyebrow a { color: var(--ink-mute); }
+  .cat-eyebrow a:hover { color: var(--accent); }
+  .cat-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.75rem, 3.4vw, 2.5rem); margin: 0; color: var(--ink); }
+  .cat-tag { margin: 0.5rem 0 0; color: var(--ink-mute); font-size: 0.9375rem; line-height: 1.55; max-width: 64ch; }
+
+  .banks { padding-block: 2rem 4rem; }
+  .bank-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem; }
+  .bank-card {
+    display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; column-gap: 0.75rem;
+    padding: 0.875rem 1rem; border: 1px solid var(--rule); text-decoration: none; color: inherit;
+  }
+  .bank-card:hover { border-color: var(--accent); }
+  .bank-name { font-size: 14px; font-weight: 600; color: var(--ink); align-self: center; }
+  .bank-count { font-family: var(--font-mono); font-size: 18px; color: var(--accent); text-align: right; align-self: center; }
+  .bank-break { grid-column: 1 / -1; margin-top: 0.4rem; display: flex; gap: 0.75rem; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); }
+</style>

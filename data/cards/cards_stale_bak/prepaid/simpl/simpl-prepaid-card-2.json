@@ -1,0 +1,188 @@
+{
+  "id": "simpl-prepaid-card-2",
+  "name": "Simpl Prepaid Card",
+  "tagline": "One-click checkout with bill consolidation",
+  "description": "The Simpl Prepaid Card is a RuPay prepaid card offering one-click checkout at partner merchants and intelligent bill consolidation. Designed for seamless digital commerce, it eliminates the need to enter payment details repeatedly and consolidates all monthly expenses into a single easy-to-manage bill.",
+  "bank": "Simpl",
+  "bankCode": "simpl",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Teal and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Simpl account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Simpl users",
+      "Basic KYC verification required",
+      "Credit assessment may apply"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "One-Click Checkout",
+      "description": "Instant checkout at partner merchants without re-entering payment details",
+      "valueStr": "Instant",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Bill Consolidation",
+      "description": "All monthly expenses consolidated into a single bill for easy tracking and payment",
+      "valueStr": "Single bill",
+      "valueNum": 0,
+      "frequencyStr": "Monthly",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Partner Merchant Rewards",
+      "description": "Earn rewards on transactions at Simpl partner merchants",
+      "valueStr": "Rewards",
+      "valueNum": 300,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 300,
+      "conditions": [
+        "At partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "One-click checkout",
+    "Bill consolidation",
+    "Partner merchant network",
+    "Contactless payments",
+    "Virtual and physical card",
+    "Real-time notifications",
+    "Expense tracking",
+    "Simpl app integration"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#008080",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 300,
+    "averageValue": 150,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 150,
+    "tenYearNetValue": 1500,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 150,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "One-Click Checkout",
+    "Bill Consolidation",
+    "Merchant Payments"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://getsimpl.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://getsimpl.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "simpl-prepaid-card-2"
+}

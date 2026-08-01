@@ -1,0 +1,270 @@
+{
+  "id": "indusind-platinum-credit-card",
+  "name": "IndusInd Platinum Credit Card",
+  "tagline": "Lifetime Free Platinum card with 1.5 RP per ₹100",
+  "description": "The IndusInd Platinum Credit Card is a Lifetime Free (LTF) entry-level Visa Platinum card offering 1.5 reward points per ₹100 on all spends. It provides essential benefits including fuel surcharge waiver and basic insurance coverage, making it an excellent choice for first-time credit card users seeking premium tier benefits.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Silver and platinum",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.4 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime Free"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 500000,
+    "permanentDisabilityCover": 500000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 50000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Credit liability cover: ₹5 Lakh"
+    ],
+    "provider": "IndusInd Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "1.5 Reward Points per ₹100 spent on all retail purchases",
+      "valueStr": "1.5 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IndusInd Reward Points",
+    "earnRate": "1.5 RP per ₹100",
+    "pointsPer100": 1.5,
+    "pointValue": 0.3,
+    "effectiveCashbackPercent": 0.45,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Flights & Hotels via IndusInd Rewards",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.30)"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "0.45%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "EMI conversion facility",
+    "Fuel surcharge waiver",
+    "Lifetime Free"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#c0c0c0",
+    "#808080"
+  ],
+  "value": {
+    "highestValue": 6000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 6000,
+    "tenYearNetValue": 60000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Entry-level",
+    "Rewards",
+    "Fuel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal/cards/credit-card/platinum-credit-card.html"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 267 7777",
+  "applyUrl": "https://www.indusind.com/in/en/personal/cards/credit-card/platinum-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "indusind-platinum-credit-card"
+}

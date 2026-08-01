@@ -1,0 +1,420 @@
+{
+  "id": "sbi-krisflyer-apex-credit-card",
+  "name": "KrisFlyer SBI Apex Credit Card",
+  "tagline": "Earn up to 10 KrisFlyer miles per ₹200 on Singapore Airlines with super-premium travel privileges",
+  "description": "The KrisFlyer SBI Apex Credit Card is a super-premium co-branded airline card offering 10 KrisFlyer miles per ₹200 on Singapore Airlines and Scoot bookings, 8 miles abroad, and 2 miles on all other spends. Comes with unlimited lounge access, Priority Pass membership, complimentary KrisFlyer Silver status, and comprehensive travel insurance for the global elite traveler.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Premium",
+  "variant": "KrisFlyer Apex",
+  "usage": "International",
+  "bin": "5436",
+  "material": "Metal",
+  "colorScheme": "Navy blue and gold with Singapore Airlines branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 150000,
+    "minAge": 25,
+    "maxAge": 65,
+    "minAnnualIncome": 1800000,
+    "minCreditScore": 780,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹1,50,000",
+      "Self-Employed: Minimum ITR of ₹18 Lakh p.a.",
+      "Age 25–65 years",
+      "Excellent credit history required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 9999,
+      "amountWithGst": 11799,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 9999,
+      "amountWithGst": 11799,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.25,
+    "annualInterestRate": 39
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 100000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 200000,
+    "purchaseProtectionDays": 180,
+    "lostCardLiability": 2000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 15000000,
+    "airAccidentCover": 15000000,
+    "baggageCover": 100000,
+    "conditions": [
+      "Air accident cover: ₹1.5 Crore",
+      "Travel insurance: ₹1.5 Crore",
+      "Purchase protection: ₹2 Lakh for 180 days",
+      "Lost card liability: ₹20 Lakh",
+      "Baggage delay/loss: ₹1 Lakh",
+      "Flight delay: Up to ₹50,000"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": -1,
+      "frequency": "Unlimited via Priority Pass",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Priority Pass",
+      "Dreamfolks",
+      "Mastercard Lounge",
+      "Singapore Airlines Lounge"
+    ],
+    "conditions": [
+      "Domestic: Unlimited complimentary visits",
+      "International: Unlimited via Priority Pass",
+      "Singapore Airlines lounge access at select airports",
+      "Guest access available at nominal charge"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "10 KrisFlyer Miles per ₹200 on Singapore Airlines & Scoot",
+      "description": "Earn 10 KrisFlyer miles per ₹200 on Singapore Airlines and Scoot flight bookings",
+      "valueStr": "10 miles per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Singapore Airlines and Scoot bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "8 KrisFlyer Miles per ₹200 on International Spends",
+      "description": "Earn 8 KrisFlyer miles per ₹200 on all international spends abroad",
+      "valueStr": "8 miles per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on international spends abroad"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2 KrisFlyer Miles per ₹200 on All Other Spends",
+      "description": "Earn 2 KrisFlyer miles per ₹200 on all other retail spends",
+      "valueStr": "2 miles per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic & International Lounge Access",
+      "description": "Unlimited complimentary domestic and international airport lounge visits",
+      "valueStr": "Unlimited visits",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 80,
+      "annualValue": 280000,
+      "conditions": [
+        "Unlimited access via Priority Pass and Dreamfolks"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Complimentary KrisFlyer Silver Status",
+      "description": "Complimentary KrisFlyer Silver membership with priority check-in and extra baggage",
+      "valueStr": "KrisFlyer Silver",
+      "valueNum": 0,
+      "frequencyStr": "Annual membership",
+      "frequencyPerYear": 1,
+      "annualValue": 0,
+      "conditions": [
+        "Valid as long as card is active"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Dedicated Travel Concierge",
+      "description": "24/7 dedicated travel concierge for bookings, reservations, and travel planning",
+      "valueStr": "24/7 concierge",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available via phone and email"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "KrisFlyer Miles",
+    "earnRate": "2 miles per ₹200 (10X on SQ/Scoot, 4X abroad)",
+    "pointsPer100": 1,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Singapore Airlines",
+        "multiplier": 5,
+        "description": "10 KrisFlyer miles per ₹200 on SQ/Scoot"
+      },
+      {
+        "category": "International",
+        "multiplier": 4,
+        "description": "8 KrisFlyer miles per ₹200 on international spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Singapore Airlines flight bookings",
+      "Scoot flights",
+      "Star Alliance partner flights",
+      "Hotel bookings via KrisFlyer",
+      "KrisShop purchases"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.5% to 2.5%",
+    "conditions": [
+      "Miles credited to KrisFlyer account",
+      "Miles redeemable on SQ/Star Alliance"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "15,000 KrisFlyer miles and complimentary KrisFlyer Silver status",
+    "valueStr": "15,000 KrisFlyer miles + Silver status",
+    "valueNum": 15000,
+    "conditions": [
+      "Available on payment of joining fee",
+      "Silver status valid as long as card is active"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "20,000 bonus KrisFlyer miles on spending ₹15 Lakh annually",
+      "spendRequired": 1500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "20,000 KrisFlyer miles",
+      "rewardNum": 10000
+    },
+    {
+      "description": "Additional 30,000 bonus KrisFlyer miles on spending ₹30 Lakh annually",
+      "spendRequired": 3000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "30,000 KrisFlyer miles",
+      "rewardNum": 15000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹20 Lakh in the preceding year",
+      "annualSpendRequired": 2000000,
+      "waives": "Annual fee of ₹9,999 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Unlimited lounge access",
+    "KrisFlyer Silver status",
+    "Dedicated concierge",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Exclusive Singapore Airlines benefits",
+    "Star Alliance network"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d1b3e",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 350000,
+    "averageValue": 250000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 238201,
+    "tenYearNetValue": 2382010,
+    "totalAnnualCharges": 11799,
+    "totalAnnualBenefits": 250000,
+    "roiPercent": 2019
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24,
+      36
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 0.5
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Singapore Airlines",
+    "International",
+    "Flights"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/travel/krisflyer-sbi-apex-credit-card.page"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/travel/krisflyer-sbi-apex-credit-card.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-krisflyer-apex-credit-card"
+}

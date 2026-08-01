@@ -1,0 +1,371 @@
+{
+  "id": "rbl-world-safari-credit-card",
+  "name": "RBL Bank World Safari Credit Card",
+  "tagline": "Travel the world with low forex and 5X rewards",
+  "description": "The RBL Bank World Safari Credit Card is a travel-focused card featuring an industry-leading 2% forex markup, 5X reward points on travel spends, and 8 complimentary international airport lounge visits per year via Priority Pass. Designed for frequent international travellers who want to earn accelerated rewards while saving on currency conversion costs.",
+  "bank": "RBL Bank",
+  "bankCode": "rbl",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "World",
+  "variant": "World Safari",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and black",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 75000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 750000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹75,000",
+      "Self-Employed: ITR > ₹7.5 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1250,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 2000000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 100000,
+    "conditions": [
+      "Air accident cover: ₹1 Crore",
+      "Travel insurance: ₹20 Lakh",
+      "Lost card liability: ₹5 Lakh"
+    ],
+    "provider": "RBL Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 8,
+      "frequency": "8 per year via Priority Pass",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 3500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Priority Pass"
+    ],
+    "conditions": [
+      "8 complimentary international lounge visits per year via Priority Pass",
+      "Priority Pass membership card provided separately"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "5X Reward Points on Travel",
+      "description": "Earn 5X reward points on all travel spends including flights, hotels, and international transactions",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every travel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Flights, hotels, car rentals, and travel bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "2% Forex Markup",
+      "description": "Industry-leading 2% currency markup on international transactions — one of the lowest in India",
+      "valueStr": "2%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on all international and foreign currency transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "8 complimentary international airport lounge visits per year via Priority Pass",
+      "valueStr": "8 visits/year",
+      "valueNum": 3500,
+      "frequencyStr": "8 per year",
+      "frequencyPerYear": 8,
+      "annualValue": 28000,
+      "conditions": [
+        "Via Priority Pass membership"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "2 reward points per ₹100 on all other retail spends",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances, quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "RBL Reward Points",
+    "earnRate": "5X on travel, 2 RP per ₹100 on others",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 5,
+        "description": "5X reward points on all travel spends"
+      },
+      {
+        "category": "Others",
+        "multiplier": 2,
+        "description": "2 reward points per ₹100 on other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights and hotels via RBL rewards portal",
+      "Air miles transfer",
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5% to 2.5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, EMI conversions"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "3,000 bonus reward points on card activation",
+    "valueStr": "3,000 Reward Points",
+    "valueNum": 750,
+    "conditions": [
+      "Card activation and first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "5,000 bonus reward points on spending ₹3 Lakh annually",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 Reward Points",
+      "rewardNum": 1250
+    },
+    {
+      "description": "Additional 5,000 bonus reward points on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 Reward Points",
+      "rewardNum": 1250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹2.5 Lakh in the preceding year",
+      "annualSpendRequired": 250000,
+      "waives": "Annual fee of ₹3,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Priority Pass membership",
+    "Low forex markup for international travel",
+    "Mastercard World tier benefits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#e65100",
+    "#1a1a1a"
+  ],
+  "value": {
+    "highestValue": 40000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 21460,
+    "tenYearNetValue": 214600,
+    "totalAnnualCharges": 3540,
+    "totalAnnualBenefits": 25000,
+    "roiPercent": 707
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "International Transactions"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.rblbank.com/credit-cards/world-safari-credit-card",
+      "https://www.paisabazaar.com/credit-card/rbl-world-safari-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "022 6232 7777",
+  "applyUrl": "https://www.rblbank.com/credit-cards/world-safari-credit-card",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "rbl-world-safari-credit-card"
+}

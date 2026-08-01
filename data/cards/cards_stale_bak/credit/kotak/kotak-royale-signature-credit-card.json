@@ -1,0 +1,352 @@
+{
+  "id": "kotak-royale-signature-credit-card",
+  "name": "Kotak Royale Signature Credit Card",
+  "tagline": "Premium rewards with 10X on dining and lounge access",
+  "description": "The Kotak Royale Signature Credit Card is a premium offering from Kotak Mahindra Bank that provides accelerated reward points on dining spends (10X), complimentary domestic and international airport lounge access via Priority Pass, and a comprehensive rewards program. Ideal for frequent diners and travellers seeking elevated rewards.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Royale Signature",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 100000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹1 Lakh",
+      "Self-Employed: ITR > ₹12 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Credit liability cover: ₹5 Lakh",
+      "Fraud protection on lost/stolen card"
+    ],
+    "provider": "Kotak Mahindra Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 2,
+      "frequency": "Via Priority Pass",
+      "frequencyPerYear": 2,
+      "valuePerVisit": 3500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass"
+    ],
+    "conditions": [
+      "Domestic: 2 complimentary visits per quarter",
+      "International: Via Priority Pass membership"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "2 visits per quarter at domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "Complimentary international airport lounge access via Priority Pass",
+      "valueStr": "2 visits/year",
+      "valueNum": 3500,
+      "frequencyStr": "Via Priority Pass",
+      "frequencyPerYear": 2,
+      "annualValue": 7000,
+      "conditions": [
+        "Priority Pass membership included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "10X Rewards on Dining",
+      "description": "Earn 10X reward points on all dining spends",
+      "valueStr": "10X RP on dining",
+      "valueNum": 0,
+      "frequencyStr": "Every dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on restaurant and dining spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "4 Reward Points per ₹150 spent on all retail purchases",
+      "valueStr": "4 RP per ₹150",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Kotak Reward Points",
+    "earnRate": "4 RP per ₹150",
+    "pointsPer100": 2.67,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.67,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 10,
+        "description": "10X reward points on dining spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers via Kotak Rewards Catalogue",
+      "Airline miles transfer",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.67% to 6.67%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion, insurance"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus reward points on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 Reward Points",
+      "rewardNum": 1250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹2 Lakh in the preceding year",
+      "annualSpendRequired": 200000,
+      "waives": "Annual fee of ₹999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "10X rewards on dining",
+    "Priority Pass membership"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a2e",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 30000,
+    "averageValue": 18000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 16821,
+    "tenYearNetValue": 168210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 18000,
+    "roiPercent": 1428
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Rewards",
+    "Dining"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.kotak.com/en/personal-banking/cards/credit-cards/royale-signature-credit-card.html",
+      "https://www.paisabazaar.com/credit-card/kotak-royale-signature-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 266 2666",
+  "applyUrl": "https://www.kotak.com/en/personal-banking/cards/credit-cards/royale-signature-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "kotak-royale-signature-credit-card"
+}

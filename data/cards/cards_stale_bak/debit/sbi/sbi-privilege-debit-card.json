@@ -1,0 +1,210 @@
+{
+  "id": "sbi-privilege-debit-card",
+  "name": "SBI Privilege Debit Card",
+  "tagline": "Premium banking with lounge access",
+  "description": "The SBI Privilege Debit Card offers premium benefits including 4 lounge accesses per year, higher transaction limits, and enhanced rewards. Designed for discerning customers who want exclusive privileges.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Signature",
+  "variant": "Privilege",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Premium black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to SBI savings account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 200,
+      "amountWithGst": 236,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8,
+    "ownBankCharge": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "Per year",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Lounge Access"
+    ],
+    "conditions": [
+      "4 lounge access per year"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on Purchases",
+      "description": "Earn 2 Reward Points per ₹200 spent on all purchases",
+      "valueStr": "2 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Lounge Access",
+      "description": "4 complimentary lounge visits per year",
+      "valueStr": "4 visits/year",
+      "valueNum": 500,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 2000,
+      "conditions": [
+        "Valid at domestic lounges",
+        "Guest not allowed"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Reward Points",
+    "earnRate": "2 RP per ₹200",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Lounge access",
+    "Higher transaction limits",
+    "Premium benefits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 7000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4410,
+    "tenYearNetValue": 44100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 747
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use",
+    "Higher Spending",
+    "Lounge Access"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbi.co.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 11 2211",
+  "applyUrl": "https://www.sbi.co.in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "sbi-privilege-debit-card"
+}

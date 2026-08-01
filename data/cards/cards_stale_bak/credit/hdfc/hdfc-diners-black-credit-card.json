@@ -1,0 +1,408 @@
+{
+  "id": "hdfc-diners-black-credit-card",
+  "name": "HDFC Diners Club Black Metal Edition Credit Card",
+  "tagline": "Premium travel & rewards with unlimited lounge access and air miles transfer",
+  "description": "The HDFC Diners Club Black Metal Edition is a premium credit card offering unlimited domestic and international lounge access, complimentary Club Marriott, Amazon Prime, Times Prime, and MMT BLACK Elite memberships. Features 5 Reward Points per ₹150 with 1:1 air miles transfer to 6 airline and hotel partners.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "DinersClub",
+  "cardType": "credit",
+  "tier": "Premium",
+  "variant": "Diners Club Black Metal",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black metal",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 250000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 3000000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹2.5 Lakh",
+      "Self-Employed: ITR > ₹30 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 1.99,
+    "annualInterestRate": 23.88
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 1000,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 20000000,
+    "permanentDisabilityCover": 20000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 900000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 5000000,
+    "airAccidentCover": 20000000,
+    "baggageCover": 55000,
+    "conditions": [
+      "Air accident cover: ₹2 Crore",
+      "Emergency hospitalization: ₹50 Lakh",
+      "Credit liability cover: ₹9 Lakh",
+      "Baggage delay cover: ₹55,000"
+    ],
+    "provider": "HDFC Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Priority Pass",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Unlimited for primary + add-on cardholders"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic & International Lounge Access",
+      "description": "Unlimited complimentary airport lounge visits worldwide for primary + add-on cardholders",
+      "valueStr": "Unlimited",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 52,
+      "annualValue": 182000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Complimentary Memberships",
+      "description": "Club Marriott, Amazon Prime, Times Prime, MMT BLACK Elite Tier, 3-month Swiggy One",
+      "valueStr": "₹25,000+ value",
+      "valueNum": 25000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 25000,
+      "conditions": [
+        "On spending ₹1.5L in 90 days or fee realization"
+      ],
+      "isSellable": true,
+      "sellValue": 15000,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Spend ₹1.5L in first 90 days"
+    },
+    {
+      "category": "golf",
+      "title": "Complimentary Golf Games",
+      "description": "6 complimentary golf games per quarter at select courses",
+      "valueStr": "24 rounds/year",
+      "valueNum": 5000,
+      "frequencyStr": "6 per quarter",
+      "frequencyPerYear": 24,
+      "annualValue": 120000,
+      "conditions": [
+        "At select golf courses"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "5 Reward Points per ₹150",
+      "description": "On all retail spends including insurance, utilities, education",
+      "valueStr": "5 RP per ₹150",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Up to 10X on SmartBuy"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Fast Track Airport Services",
+      "description": "Priority check-in and baggage assistance at select airports",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Every trip",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "24/7 Concierge Service",
+      "description": "Dedicated concierge for travel, dining, entertainment",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC Reward Points",
+    "earnRate": "5 RP per ₹150",
+    "pointsPer100": 3.33,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 3.33,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "SmartBuy",
+        "multiplier": 10,
+        "description": "Up to 10X on SmartBuy platform"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels via SmartBuy (1 RP = ₹1)",
+      "Air Miles — 1:1 transfer (SpiceClub, AirAsia, Flying Blue, IHG, Wyndham)",
+      "Products & Vouchers (1 RP = up to ₹0.50)",
+      "Cashback (1 RP = ₹0.30)"
+    ],
+    "minRedemptionPoints": 500,
+    "redemptionRatios": [
+      {
+        "partnerTarget": "SpiceClub",
+        "pointsRequired": 1,
+        "valueReceived": 1,
+        "description": "1:1 transfer"
+      },
+      {
+        "partnerTarget": "AirAsia",
+        "pointsRequired": 1,
+        "valueReceived": 1,
+        "description": "1:1 transfer"
+      },
+      {
+        "partnerTarget": "Flying Blue",
+        "pointsRequired": 1,
+        "valueReceived": 1,
+        "description": "1:1 transfer"
+      },
+      {
+        "partnerTarget": "IHG One Rewards",
+        "pointsRequired": 1,
+        "valueReceived": 1,
+        "description": "1:1 transfer"
+      },
+      {
+        "partnerTarget": "Wyndham Rewards",
+        "pointsRequired": 1,
+        "valueReceived": 1,
+        "description": "1:1 transfer"
+      },
+      {
+        "partnerTarget": "Finnair Plus",
+        "pointsRequired": 1,
+        "valueReceived": 1,
+        "description": "1:1 transfer"
+      }
+    ],
+    "rewardRateStr": "3.33% to 33% (SmartBuy)"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Complimentary annual memberships: Club Marriott, Amazon Prime, Times Prime, MMT BLACK Elite, 3-month Swiggy One",
+    "valueStr": "₹25,000+ in memberships",
+    "valueNum": 25000,
+    "conditions": [
+      "On spending ₹1.5L in first 90 days or fee realization"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "2 monthly vouchers worth ₹500 on spending ₹80,000/month (cult.fit/BMS/TataCLiQ/Ola)",
+      "spendRequired": 80000,
+      "spendPeriod": "Monthly",
+      "rewardStr": "₹500 vouchers x2",
+      "rewardNum": 1000
+    },
+    {
+      "description": "Annual fee waiver + membership renewals on spending ₹8 Lakh annually",
+      "spendRequired": 800000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Annual fee waiver + memberships",
+      "rewardNum": 11800
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹8 Lakh in the preceding year",
+      "annualSpendRequired": 800000,
+      "waives": "Annual fee of ₹10,000 + GST"
+    }
+  ],
+  "features": [
+    "Metal card construction",
+    "Contactless payments",
+    "Global Diners Club acceptance",
+    "SmartBuy 10X rewards",
+    "Air miles 1:1 transfer",
+    "Priority check-in at airports"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d0d0d",
+    "#333333"
+  ],
+  "value": {
+    "highestValue": 350000,
+    "averageValue": 150000,
+    "isSellable": true,
+    "marketPrice": {
+      "minSellPrice": 10000,
+      "maxSellPrice": 25000,
+      "averageMarketValue": 15000
+    },
+    "annualNetValue": 138200,
+    "tenYearNetValue": 1382000,
+    "totalAnnualCharges": 11800,
+    "totalAnnualBenefits": 150000,
+    "roiPercent": 1171
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Premium Lifestyle",
+    "Rewards",
+    "Golf"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance",
+      "memberships"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black-credit-card",
+      "https://www.paisabazaar.com/credit-card/hdfc-diners-club-black-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-diners-black-credit-card"
+}

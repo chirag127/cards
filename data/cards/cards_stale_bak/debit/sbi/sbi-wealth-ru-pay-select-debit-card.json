@@ -1,0 +1,302 @@
+{
+  "id": "sbi-wealth-ru-pay-select-debit-card",
+  "name": "SBI Wealth RuPay Select Debit Card",
+  "tagline": "Exclusive wealth-tier RuPay Select with premium perks",
+  "description": "The SBI Wealth RuPay Select Debit Card is an exclusive international contactless debit card for SBI Wealth clients (Total Relationship Value > ₹50 lakh or ₹30 lakh). Enjoy generous lounge access, golf privileges, movie tickets, OTT subscriptions, spa access, and comprehensive insurance coverage.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Wealth",
+  "usage": "International",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Navy-gold gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": true,
+    "notes": [
+      "Available to SBI Wealth clients with TRV > ₹50 lakh or ₹30 lakh",
+      "By invitation only",
+      "Subject to wealth banking relationship"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free for Wealth clients"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Waived for Wealth clients"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 100000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access at participating lounges across India.",
+      "valueStr": "16 visits/year",
+      "valueNum": 16,
+      "frequencyStr": "Max 4 per quarter",
+      "frequencyPerYear": 16,
+      "annualValue": 32000,
+      "conditions": [
+        "Max 4 visits per quarter",
+        "Valid at participating domestic lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary international airport lounge access at participating lounges worldwide.",
+      "valueStr": "2 visits/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "2 visits per year",
+        "Valid at participating international lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Complimentary Golf Games",
+      "description": "Enjoy complimentary golf games at select courses.",
+      "valueStr": "2 games/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to availability at partner golf courses",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Contact SBI Wealth concierge to book"
+    },
+    {
+      "category": "movies",
+      "title": "BookMyShow Movie Tickets",
+      "description": "Free movie tickets on BookMyShow up to ₹500 per month.",
+      "valueStr": "2 tickets/month up to ₹500",
+      "valueNum": 500,
+      "frequencyStr": "2 per month",
+      "frequencyPerYear": 24,
+      "annualValue": 12000,
+      "conditions": [
+        "Max 2 tickets per month",
+        "Up to ₹500 per ticket",
+        "Valid on BookMyShow platform"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register on BookMyShow with your SBI card"
+    },
+    {
+      "category": "ott",
+      "title": "Amazon Prime Video Subscription",
+      "description": "Complimentary 12-month Amazon Prime Video subscription.",
+      "valueStr": "12 months",
+      "valueNum": 1499,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 1499,
+      "conditions": [
+        "Valid for 12 months from activation",
+        "One subscription per card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Activate via SBI Wealth portal"
+    },
+    {
+      "category": "health",
+      "title": "Spa Access",
+      "description": "Complimentary spa visit at partner wellness centers.",
+      "valueStr": "1 visit/year",
+      "valueNum": 1,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid at partner spa centers",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Contact concierge for booking"
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accident Insurance",
+      "description": "Personal accident insurance cover for cardholders.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through SBI insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Air Accident Insurance (AAI)",
+      "description": "Air accident insurance cover for cardholders traveling by air.",
+      "valueStr": "₹1 crore",
+      "valueNum": 10000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 10000,
+      "conditions": [
+        "Cover valid during air travel",
+        "Ticket must be purchased using the card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Amazon Prime Video 12-month subscription on card activation",
+    "valueStr": "₹1,499",
+    "valueNum": 1499,
+    "conditions": [
+      "Activate card within 30 days of issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "International acceptance",
+    "High ATM and POS limits",
+    "Domestic and international lounge access",
+    "Golf privileges",
+    "Movie ticket benefits",
+    "OTT subscription",
+    "Spa access",
+    "Comprehensive insurance coverage",
+    "Wealth banking exclusive"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1E3A5F",
+    "#C0A060"
+  ],
+  "value": {
+    "highestValue": 87499,
+    "averageValue": 70000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 77499,
+    "tenYearNetValue": 774990,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 77499,
+    "roiPercent": 0
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Lounge Access",
+    "Wealth Banking",
+    "Lifestyle",
+    "Movies"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbi.co.in"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 11 2211",
+  "applyUrl": "https://www.sbi.co.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "sbi-wealth-ru-pay-select-debit-card"
+}

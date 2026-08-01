@@ -1,0 +1,296 @@
+{
+  "id": "hdfc-diners-club-black-credit-card",
+  "name": "HDFC Diners Club Black Credit Card",
+  "tagline": "Premium lifestyle card with unlimited lounge and dining benefits",
+  "description": "The HDFC Diners Club Black Credit Card offers 3.3 RP per ₹150 (base), 10X on SmartBuy and direct partners, unlimited domestic and international lounge access (700+ lounges), 6 golf rounds per year, 2% forex markup, 24/7 concierge, and enhanced dining privileges.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "DinersClub",
+  "cardType": "credit",
+  "tier": "Black",
+  "variant": "Credit Card",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "#0a0a0a and #2a2a2a gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Stable income required",
+      "Good credit history preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2000000,
+    "permanentDisabilityCover": 1600000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 1000000,
+    "airAccidentCover": 4000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Insurance applicable on card usage"
+    ],
+    "provider": "HDFC Bank"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 3.3 RP per ₹150; 10X SmartBuy on all spends",
+      "valueStr": "3.3 RP per ₹150; 10X SmartBuy",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic lounge access: Unlimited",
+      "valueStr": "Unlimited",
+      "valueNum": 2000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 1,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400-₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400-₹5,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 1500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 999,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 3000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Luxury",
+      "RuPay Privilege"
+    ],
+    "conditions": [
+      "Valid on prior day transaction basis"
+    ]
+  },
+  "rewardProgram": {
+    "name": "HDFC Bank Rewards",
+    "earnRate": "3.3 RP per ₹150; 10X SmartBuy",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "3.3 RP per ₹150; 10X SmartBuy"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 bonus reward points",
+    "valueStr": "10,000 bonus reward points",
+    "valueNum": 5000,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus on reaching annual spend milestone",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Bonus Reward Points",
+      "rewardNum": 20000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5,00,000 in preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹10000"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Tap and pay enabled",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0a0a0a",
+    "#2a2a2a"
+  ],
+  "value": {
+    "highestValue": 200000,
+    "averageValue": 100000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 88200,
+    "tenYearNetValue": 882000,
+    "totalAnnualCharges": 11800,
+    "totalAnnualBenefits": 120000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Lounge Access",
+    "Dining",
+    "Lifestyle",
+    "Golf"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com"
+    ],
+    "lastVerified": "2026-04-09"
+  },
+  "customerCareNumber": "1800-180-2222",
+  "applyUrl": "https://www.hdfcbank.com",
+  "lastUpdated": "2026-04-09",
+  "type": "credit",
+  "slug": "hdfc-diners-club-black-credit-card"
+}

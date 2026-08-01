@@ -1,0 +1,330 @@
+{
+  "id": "hsbc-visa-infinite-credit-card",
+  "name": "HSBC Bank Visa Infinite Credit Card",
+  "tagline": "Ultra-premium metal card with unlimited lounge access",
+  "description": "The HSBC Visa Infinite Credit Card is the bank's ultra-premium offering with unlimited lounge access, comprehensive travel insurance, and accelerated rewards.",
+  "bank": "HSBC Bank",
+  "bankCode": "hsbc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Infinite",
+  "variant": "Visa Infinite",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black titanium",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1500000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 15 Lakh+",
+      "Self-Employed: ITR of Rs 15 Lakh+",
+      "Age 21-65 years",
+      "Minimum credit score of 750 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 10000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 12,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 12,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Priority Pass",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Unlimited domestic lounge access"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited domestic airport lounge visits",
+      "valueStr": "Unlimited",
+      "valueNum": 2000,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 52,
+      "annualValue": 432000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "Unlimited international lounge access via Priority Pass",
+      "valueStr": "Unlimited",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 52,
+      "annualValue": 672000,
+      "conditions": [
+        "Priority Pass membership included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 5 reward points per Rs 100 on all transactions",
+      "valueStr": "5 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Air accident insurance when ticket booked using card",
+      "valueStr": "Rs 200 Lakh",
+      "valueNum": 200000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 200000000,
+      "conditions": [
+        "Valid when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HSBC Reward Points",
+    "earnRate": "5 RP per Rs 100",
+    "pointsPer100": 5,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 2.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 5,
+        "description": "5 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "2.50%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 bonus reward points",
+    "valueStr": "10,000 RP",
+    "valueNum": 10000,
+    "conditions": [
+      "Spend within 30-60 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 10,000 bonus points on annual spend of Rs 10 Lakh",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 bonus points",
+      "rewardNum": 10000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 10 Lakh",
+      "annualSpendRequired": 1000000,
+      "waives": "Annual fee of Rs 10,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Complimentary lounge access",
+    "Fuel surcharge waiver",
+    "Accelerated reward points"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 500,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0a0a0a",
+    "#546e7a"
+  ],
+  "value": {
+    "highestValue": 80000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 471200,
+    "tenYearNetValue": 4712000,
+    "totalAnnualCharges": 11800,
+    "totalAnnualBenefits": 483000,
+    "roiPercent": 4093
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.35,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Rewards",
+    "Lifestyle"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.hsbc.com/credit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 209 4722",
+  "applyUrl": "https://www.hsbc.co.in/credit-cards",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "hsbc-visa-infinite-credit-card"
+}

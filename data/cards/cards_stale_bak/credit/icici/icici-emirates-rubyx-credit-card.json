@@ -1,0 +1,276 @@
+{
+  "id": "icici-emirates-rubyx-credit-card",
+  "name": "Emirates Skywards ICICI Bank Rubyx Credit Card",
+  "tagline": "Earn Skywards Miles on every spend",
+  "description": "The Emirates Skywards ICICI Rubyx Credit Card is a co-branded travel card on the Visa World network. It earns 1 Skyward mile per ₹100 spent domestically and offers travel benefits including lounge access and Emirates flight privileges.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Emirates Rubyx",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹6 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 400000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 2,
+      "frequency": "1 per quarter",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 1 visit per quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Skywards Miles on Spends",
+      "description": "Earn 1 Skyward mile per ₹100 spent on all domestic transactions",
+      "valueStr": "1 mile/₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Domestic transactions only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per year",
+      "valueStr": "4 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 10000,
+      "conditions": [
+        "1 visit per quarter"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Emirates Skywards Miles",
+    "earnRate": "1 Skyward mile per ₹100",
+    "pointsPer100": 1,
+    "pointValue": 0.8,
+    "effectiveCashbackPercent": 0.8,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Emirates flights",
+      "Upgrade to Business/First Class",
+      "Hotel stays"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.8%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "2,500 Skywards Miles on first transaction within 30 days",
+    "valueStr": "2,500 Miles",
+    "valueNum": 2000,
+    "conditions": [
+      "Complete first transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Emirates Skywards membership",
+    "Lounge access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 6820,
+    "tenYearNetValue": 68200,
+    "totalAnnualCharges": 1180,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 578
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": true,
+  "bestFor": [
+    "Air Travel",
+    "Emirates Flights"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "miles",
+      "loungeAccess"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/personal-banking/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800-1080",
+  "applyUrl": "https://www.icicibank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-emirates-rubyx-credit-card"
+}

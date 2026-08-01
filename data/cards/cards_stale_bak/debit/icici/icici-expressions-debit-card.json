@@ -1,0 +1,166 @@
+{
+  "id": "icici-expressions-debit-card",
+  "name": "ICICI Expressions Debit Card",
+  "tagline": "Creative debit with reward points",
+  "description": "The ICICI Expressions Debit Card offers reward points on purchases with customizable card designs. A great everyday debit card with competitive benefits.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Expressions",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Creative pink and purple",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to ICICI Bank account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 100,
+      "amountWithGst": 118,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 250,
+      "amountWithGst": 295,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on Purchases",
+      "description": "Earn 1 Reward Point per ₹200 spent on all purchases",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "1 RP per ₹200",
+    "pointsPer100": 0.5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.125,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.125%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Customizable card design"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#e91e63",
+    "#9c27b0"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2200,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2205,
+    "tenYearNetValue": 22050,
+    "totalAnnualCharges": 295,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 647
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use",
+    "Custom Design"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 2100",
+  "applyUrl": "https://www.icicibank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "icici-expressions-debit-card"
+}

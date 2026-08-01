@@ -1,0 +1,345 @@
+{
+  "id": "sbi-bpcl-credit-card",
+  "name": "BPCL SBI Credit Card",
+  "tagline": "Maximize fuel savings with 13X rewards at BPCL pumps",
+  "description": "The BPCL SBI Credit Card is a co-branded fuel card offering 13X reward points on BPCL fuel purchases, 5X reward points on dining, movies, and groceries, and 1 reward point per ₹100 on all other spends. Designed for frequent BPCL fuel buyers who also want rewards on everyday spending.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "BPCL",
+  "usage": "Domestic",
+  "bin": "4582",
+  "material": "Plastic",
+  "colorScheme": "Green and yellow with BPCL branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹20,000",
+      "Self-Employed: Minimum ITR of ₹2.4 Lakh p.a.",
+      "Age 21–60 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 950,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 3.25,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": [
+      "BPCL"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Lost card liability cover up to ₹1 Lakh"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "13X Reward Points on BPCL Fuel",
+      "description": "Earn 13X reward points on fuel purchases at BPCL pumps",
+      "valueStr": "13X RP at BPCL",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at all BPCL fuel stations"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "5X Reward Points on Dining, Movies & Groceries",
+      "description": "Earn 5X reward points on dining, movie, and grocery transactions",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on dining, movie, and grocery transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail spends",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "3.25% fuel surcharge waiver at BPCL pumps on transactions ₹400–₹5,000",
+      "valueStr": "3.25% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000 at BPCL",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Reward Points",
+    "earnRate": "1 RP per ₹100 (13X at BPCL, 5X on dining/movies/grocery)",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "BPCL Fuel",
+        "multiplier": 13,
+        "description": "13X reward points at BPCL fuel stations"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 5,
+        "description": "5X reward points on dining spends"
+      },
+      {
+        "category": "Movies",
+        "multiplier": 5,
+        "description": "5X reward points on movie spends"
+      },
+      {
+        "category": "Groceries",
+        "multiplier": 5,
+        "description": "5X reward points on grocery spends"
+      }
+    ],
+    "redemptionOptions": [
+      "BPCL Fuel (1 RP = ₹0.25)",
+      "Products & Vouchers",
+      "Flights & Hotels",
+      "Cashback (1 RP = ₹0.20)"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.25% to 3.25%",
+    "conditions": [
+      "Excluded: rent, wallet loads, EMI conversion, insurance"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "2,000 bonus reward points on first transaction within 30 days",
+    "valueStr": "2,000 Reward Points",
+    "valueNum": 500,
+    "conditions": [
+      "First transaction must be within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "1,000 bonus reward points on spending ₹50,000 annually",
+      "spendRequired": 50000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 Reward Points",
+      "rewardNum": 250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹50,000 in the preceding year",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee of ₹499 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "BPCL fuel rewards"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#2e7d32",
+    "#f9a825"
+  ],
+  "value": {
+    "highestValue": 7500,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4411,
+    "tenYearNetValue": 44110,
+    "totalAnnualCharges": 589,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 749
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "fuel",
+  "internationalUsable": false,
+  "bestFor": [
+    "Fuel",
+    "Dining",
+    "Movies",
+    "Groceries"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "fuelSurcharge",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/fuel/bpcl-sbi-card.page"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/fuel/bpcl-sbi-card.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-bpcl-credit-card"
+}

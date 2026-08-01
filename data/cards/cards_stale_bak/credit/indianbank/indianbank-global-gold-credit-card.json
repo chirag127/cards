@@ -1,0 +1,280 @@
+{
+  "id": "indianbank-global-gold-credit-card",
+  "name": "Indian Bank Global Gold Credit Card",
+  "tagline": "Affordable gold-tier card with higher limits and one-time fee",
+  "description": "The Indian Bank Global Gold Credit Card offers enhanced credit limits\nand higher rewards compared to the Classic variant, with only a one-time\njoining fee of Rs 250 and no annual fee. Suitable for users seeking a\nstep-up from entry-level cards.",
+  "bank": "Indian Bank",
+  "bankCode": "indianbank",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Global Gold",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Gold and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 80,
+    "minAnnualIncome": 150000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Monthly income of Rs 12,500+",
+      "Self-Employed: Annual income of Rs 1.5 Lakh+",
+      "Age 18-80 years",
+      "Minimum credit score of 650 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "One-time Fee",
+      "amount": 250,
+      "amountWithGst": 295,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Nil"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 600,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 1.99,
+    "annualInterestRate": 23.88
+  },
+  "fuelSurcharge": {
+    "available": false,
+    "waiverPercent": 0,
+    "minTransactionAmount": 0,
+    "maxTransactionAmount": 0,
+    "maxWaiverPerCycle": 0,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not available on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Cashback on Spends",
+      "description": "Earn 50 paisa cashback per Rs 100 spent with higher credit limits than Classic. Cashback credited once minimum Rs 500 is accumulated",
+      "valueStr": "50 paisa per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Minimum Rs 500 cashback required for payout",
+        "Higher credit limits than Classic variant"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "No Annual Fee",
+      "description": "After the one-time joining fee of Rs 250, no annual fee is charged",
+      "valueStr": "No annual fee",
+      "valueNum": 0,
+      "frequencyStr": "Forever after joining",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "emi",
+      "title": "Add-on Cards",
+      "description": "Up to 4 add-on cards for family members at no extra cost",
+      "valueStr": "Up to 4 cards",
+      "valueNum": 0,
+      "frequencyStr": "Per account",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Family members only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Indian Bank Cashback",
+    "earnRate": "50 paisa per Rs 100 on all spends",
+    "pointsPer100": 0.5,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "No expiry - cashback based",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Statement credit",
+      "Direct cashback to account"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5%",
+    "conditions": [
+      "Cashback credited when accumulated amount reaches Rs 500",
+      "Higher credit limits than Classic card"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus available",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "No annual fee after one-time joining fee",
+      "annualSpendRequired": 0,
+      "waives": "N/A - No annual fee charged"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available (up to 4)",
+    "EMI conversion facility",
+    "International acceptance",
+    "No annual fee after joining",
+    "Higher credit limits than Classic",
+    "Up to 45 days interest-free credit"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 45,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 4,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#d4a017",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 600,
+    "tenYearNetValue": 6000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 600,
+    "roiPercent": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "Everyday spends",
+    "Step-up from Classic",
+    "Higher limits"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards"
+    ],
+    "sourceUrls": [
+      "https://www.indianbank.in/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 425 00000",
+  "applyUrl": "https://www.indianbank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "indianbank-global-gold-credit-card"
+}

@@ -1,0 +1,183 @@
+{
+  "id": "axis-bank-multi-currency-forex-card",
+  "name": "Axis Bank Multi-Currency Forex Card",
+  "tagline": "16 currencies for seamless global spending",
+  "description": "The Axis Bank Multi-Currency Forex Card is a Visa prepaid card supporting 16 currencies for international travellers. With competitive exchange rates, zero markup on loaded currencies, and comprehensive travel features, it is a reliable companion for global spending.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Multi-Currency",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Valid passport required",
+      "FEMA compliance documentation needed"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 300,
+      "note": "Plus applicable taxes"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via net banking"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 200,
+      "note": "Plus taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 375000,
+    "posEcomPerDay": 1500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 375000,
+    "internationalPosPerDay": 1500000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero Forex Markup",
+      "description": "No markup fee on transactions in loaded currencies at competitive interbank rates",
+      "valueStr": "0% markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Applicable only for loaded currencies"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "16 Currency Support",
+      "description": "Load and spend in 16 currencies including USD, GBP, EUR, AED, SGD, AUD, CAD, JPY, CHF, and more",
+      "valueStr": "16 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Chip and PIN technology",
+    "Contactless payments",
+    "Zero markup on loaded currencies",
+    "Reload via net banking or mobile app",
+    "Real-time transaction alerts",
+    "Emergency card replacement",
+    "PIN regeneration at ATMs",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#6f2da8",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 300,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 567
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Multi-Currency",
+    "Competitive Rates"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/retail/cards/forex-travel-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1860-419-5555",
+  "applyUrl": "https://www.axisbank.com/retail/cards/forex-travel-card",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "axis-bank-multi-currency-forex-card"
+}

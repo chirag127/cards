@@ -1,0 +1,285 @@
+{
+  "id": "hdfc-swiggy-ornge-credit-card",
+  "name": "Swiggy HDFC Bank Ornge Credit Card",
+  "tagline": "Up to 10% cashback on Swiggy with premium perks",
+  "description": "The Swiggy HDFC Bank Ornge Credit Card is a premium co-branded credit card offering 5% cashback on Swiggy orders, 5% on online shopping, and 1% on all other spends. With a low annual fee and Swiggy One membership, it's perfect for foodies and online shoppers.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Swiggy Ornge",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and black gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Swiggy Cashback",
+      "description": "5% cashback on all Swiggy orders including food delivery, Instamart, and Dineout",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Swiggy, Instamart, Dineout"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Online Shopping Cashback",
+      "description": "5% cashback on select online shopping merchants",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Select online merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "All Other Spends",
+      "description": "1% cashback on all other retail purchases",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Swiggy HDFC Cashback",
+    "earnRate": "5% Swiggy, 5% online, 1% other",
+    "pointsPer100": 0,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Cashback credited as statement credit",
+    "bonusCategories": [
+      {
+        "category": "Swiggy",
+        "multiplier": 5,
+        "description": "5% cashback on Swiggy"
+      },
+      {
+        "category": "Online Shopping",
+        "multiplier": 5,
+        "description": "5% on select online merchants"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit (automatic)"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Complimentary Swiggy One membership for 3 months on card activation",
+    "valueStr": "Swiggy One 3 months",
+    "valueNum": 999,
+    "conditions": [
+      "Activate card and complete first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Swiggy One membership benefits",
+    "Instant card issuance via Swiggy app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#ff6600"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4410,
+    "tenYearNetValue": 44100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 747
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Dining",
+    "Cashback",
+    "Online Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "cashback",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-swiggy-ornge-credit-card"
+}

@@ -1,0 +1,194 @@
+{
+  "id": "gyftr-prepaid-card",
+  "name": "GyFTR Gift Voucher Prepaid Card",
+  "tagline": "India's largest multi-brand gift voucher platform",
+  "description": "The GyFTR Gift Voucher Prepaid Card is a versatile multi-brand gift voucher instrument from GyFTR (Give You Free The Reward). It offers access to 350+ brand vouchers including Amazon, Flipkart, Myntra, Croma, Tanishq, and more. Ideal for corporate incentives, festive rewards, and personal gifting with instant digital delivery and flexible denominations.",
+  "bank": "GyFTR",
+  "bankCode": "gyftr",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Gift Voucher",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Gradient multi-color",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No KYC required for purchase",
+      "Individual brand redemption may require account",
+      "Available for all Indian residents"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Face value only"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Not applicable"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 50000,
+    "contactlessPerTxn": 0,
+    "contactlessDailyLimit": 0,
+    "upiDailyLimit": 0
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "350+ Brand Vouchers",
+      "description": "Choose from 350+ brand vouchers including Amazon, Flipkart, Myntra, Croma, Tanishq, Big Bazaar, and more",
+      "valueStr": "350+ brands",
+      "valueNum": 0,
+      "frequencyStr": "Per voucher",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to brand availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Corporate Incentive Platform",
+      "description": "Bulk corporate gifting with custom branding, employee reward programs, and automated distribution",
+      "valueStr": "Enterprise solution",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via GyFTR corporate portal"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Discounted Purchase",
+      "description": "Occasionally available at discounted rates (2-5% off face value) during promotional periods",
+      "valueStr": "Up to 5% off",
+      "valueNum": 0,
+      "frequencyStr": "Promotional",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "During GyFTR promotional campaigns"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Digital voucher delivery",
+    "350+ brand options",
+    "Flexible denominations",
+    "Instant delivery",
+    "1-year validity",
+    "Corporate gifting platform",
+    "Custom branding for bulk orders",
+    "Automated employee distribution"
+  ],
+  "validity": "1 year from purchase",
+  "contactless": false,
+  "ncmc": false,
+  "gradientColors": [
+    "#e91e63",
+    "#9c27b0"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Multi-Brand Gifting",
+    "Corporate Incentives",
+    "Voucher Flexibility"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.gyftr.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.gyftr.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "gyftr-prepaid-card"
+}

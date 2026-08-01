@@ -1,0 +1,177 @@
+{
+  "id": "flipkart-gift-prepaid-card",
+  "name": "Flipkart Gift Card Prepaid",
+  "tagline": "India's homegrown e-commerce gift card",
+  "description": "The Flipkart Gift Card Prepaid is a closed-loop prepaid instrument for India's leading homegrown e-commerce platform. Redeemable across Flipkart's vast catalog of electronics, fashion, home essentials, and more, it is available in denominations from Rs 25 to Rs 10,000. Ideal for festive gifting, employee rewards, and personal use across India's most trusted online marketplace.",
+  "bank": "Flipkart",
+  "bankCode": "flipkart",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Gift Card",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Flipkart blue and yellow",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No KYC required for purchase",
+      "Flipkart account needed for redemption",
+      "Available for all Indian residents"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Face value only"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Not applicable"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 10000,
+    "contactlessPerTxn": 0,
+    "contactlessDailyLimit": 0,
+    "upiDailyLimit": 0
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Flipkart Catalog Redemption",
+      "description": "Redeem across Flipkart's vast product range including smartphones, fashion, home appliances, books, and more",
+      "valueStr": "Full face value",
+      "valueNum": 0,
+      "frequencyStr": "Per redemption",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Flipkart.in only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Big Billion Day Access",
+      "description": "Use gift card balance during Flipkart's Big Billion Day sale for maximum value",
+      "valueStr": "Full value",
+      "valueNum": 0,
+      "frequencyStr": "Annual event",
+      "frequencyPerYear": 1,
+      "annualValue": 0,
+      "conditions": [
+        "During sale events only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Digital and physical card options",
+    "Flexible denominations (Rs 25 - Rs 10,000)",
+    "Instant digital delivery",
+    "1-year validity from purchase",
+    "Corporate gifting available",
+    "Custom gift messages",
+    "Flipkart Plus eligible",
+    "Wide product catalog"
+  ],
+  "validity": "1 year from purchase",
+  "contactless": false,
+  "ncmc": false,
+  "gradientColors": [
+    "#2874f0",
+    "#ffe500"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "E-Commerce Gifting",
+    "Flipkart Shopping",
+    "Festive Gifting"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.flipkart.com/the-gift-card-store"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.flipkart.com/the-gift-card-store",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "flipkart-gift-prepaid-card"
+}

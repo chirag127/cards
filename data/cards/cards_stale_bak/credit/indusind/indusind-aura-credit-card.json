@@ -1,0 +1,319 @@
+{
+  "id": "indusind-aura-credit-card",
+  "name": "IndusInd Aura Credit Card",
+  "tagline": "Platinum card with 5X entertainment rewards and 2X on other spends",
+  "description": "The IndusInd Aura Credit Card is a premium Visa Platinum card offering 5X reward points on entertainment spends including movies, concerts, and streaming platforms, plus 2X on dining and other categories. It is designed for entertainment enthusiasts who want elevated rewards on their lifestyle spend.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Aura",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹6 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2499,
+      "amountWithGst": 2949,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2499,
+      "amountWithGst": 2949,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": false,
+    "waiverPercent": 0,
+    "minTransactionAmount": 0,
+    "maxTransactionAmount": 0,
+    "maxWaiverPerCycle": 0,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2000000,
+    "permanentDisabilityCover": 2000000,
+    "purchaseProtectionCover": 250000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 200000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Air accident cover: ₹20 Lakh",
+      "Purchase protection: ₹2.5 Lakh for 90 days",
+      "Lost card liability: ₹2 Lakh"
+    ],
+    "provider": "IndusInd Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "5X Reward Points on Entertainment",
+      "description": "Earn 5X reward points on movies, concerts, and streaming platforms",
+      "valueStr": "5X points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on entertainment"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2X Reward Points on Other Spends",
+      "description": "Earn 2X reward points on all other retail transactions",
+      "valueStr": "2X points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on other retail spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "movies",
+      "title": "Entertainment Benefits",
+      "description": "Special offers on movie tickets and entertainment bookings",
+      "valueStr": "Entertainment offers",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At partner platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IndusInd Reward Points",
+    "earnRate": "5X on entertainment, 2X others",
+    "pointsPer100": 0,
+    "pointValue": 0.3,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Entertainment",
+        "multiplier": 5,
+        "description": "5X reward points on movies, concerts, streaming"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 2,
+        "description": "2X reward points on dining"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels via IndusInd Rewards",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.30)"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "1% on entertainment",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹3 Lakh in the preceding year",
+      "annualSpendRequired": 300000,
+      "waives": "Annual fee of ₹2,499 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "5X reward points on entertainment",
+    "2X reward points on other spends"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#7c3aed",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2051,
+    "tenYearNetValue": 20510,
+    "totalAnnualCharges": 2949,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 70
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "lifestyle",
+  "internationalUsable": true,
+  "bestFor": [
+    "Entertainment",
+    "Movies",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal/cards/credit-card/aura-credit-card.html"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "movieEntertainment": {
+    "available": true,
+    "platforms": [
+      "BookMyShow",
+      "PVR",
+      "INOX"
+    ],
+    "offerDescription": "5X reward points on entertainment",
+    "monthlyLimit": 0,
+    "annualCap": 0
+  },
+  "customerCareNumber": "1860 267 7777",
+  "applyUrl": "https://www.indusind.com/in/en/personal/cards/credit-card/aura-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "indusind-aura-credit-card"
+}

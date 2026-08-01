@@ -1,0 +1,296 @@
+{
+  "id": "pnb-rupay-luxura-metal-credit-card",
+  "name": "PNB RuPay Luxura Metal Credit Card",
+  "tagline": "India's premier metal credit card with unlimited lounge and luxury benefits",
+  "description": "The PNB RuPay Luxura Metal is the flagship ultra-premium metal credit card from Punjab National Bank offering unlimited domestic and international airport lounge access, 4 Reward Points per ₹100, zero forex markup fee, complimentary ITC hotel stays, HoteLux Elite Plus membership, and comprehensive travel insurance.",
+  "bank": "Punjab National Bank",
+  "bankCode": "pnb",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Infinite",
+  "variant": "Credit Card",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "#1a1a1a and #4a4a4a gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Stable income required",
+      "Good credit history preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 9000,
+      "amountWithGst": 10620,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 7500,
+      "amountWithGst": 8850,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 4000000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 1000000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Insurance applicable on card usage"
+    ],
+    "provider": "Punjab National Bank"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 4 RP per ₹100 on all spends",
+      "valueStr": "4 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic lounge access: Unlimited",
+      "valueStr": "Unlimited",
+      "valueNum": 2000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 1,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400-₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400-₹5,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 1500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 999,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 3000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Luxury",
+      "RuPay Privilege"
+    ],
+    "conditions": [
+      "Valid on prior day transaction basis"
+    ]
+  },
+  "rewardProgram": {
+    "name": "Punjab National Bank Rewards",
+    "earnRate": "4 RP per ₹100",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "4 RP per ₹100"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "40,000 RPs on spend of ₹50,000 in 90 days",
+    "valueStr": "40,000 RPs on spend of ₹50,000 in 90 days",
+    "valueNum": 4500,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus on reaching annual spend milestone",
+      "spendRequired": 750000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Bonus Reward Points",
+      "rewardNum": 15000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹3,75,000 in preceding year",
+      "annualSpendRequired": 375000,
+      "waives": "Annual fee of ₹7500"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Tap and pay enabled",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#4a4a4a"
+  ],
+  "value": {
+    "highestValue": 150000,
+    "averageValue": 75000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 66150,
+    "tenYearNetValue": 661500,
+    "totalAnnualCharges": 8850,
+    "totalAnnualBenefits": 90000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Luxury Travel",
+    "Premium Lifestyle",
+    "High Spenders",
+    "Hotel Benefits"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://pnbcard.in/types16.html"
+    ],
+    "lastVerified": "2026-04-09"
+  },
+  "customerCareNumber": "1800-180-2222",
+  "applyUrl": "https://pnbcard.in/types16.html",
+  "lastUpdated": "2026-04-09",
+  "type": "credit",
+  "slug": "pnb-rupay-luxura-metal-credit-card"
+}

@@ -1,0 +1,343 @@
+{
+  "id": "idfc-first-select-credit-card",
+  "name": "IDFC First Select Credit Card",
+  "tagline": "Lifetime free with 10X online rewards and lounge access",
+  "description": "The IDFC First Select Credit Card is a lifetime-free Visa Platinum card offering 10X reward points on online spends and 3X on offline spends. With 2 complimentary domestic lounge visits per quarter and zero annual fees, it is an excellent entry-level card for online shoppers seeking value without any recurring cost.",
+  "bank": "IDFC First Bank",
+  "bankCode": "idfc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "First Select",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "White and blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹6 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime free"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Credit liability cover: ₹5 Lakh",
+      "Fraud protection on lost/stolen card"
+    ],
+    "provider": "IDFC First Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 2 complimentary visits per quarter at partner lounges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year (2 per quarter)",
+      "valueStr": "8 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 16000,
+      "conditions": [
+        "2 visits per quarter at domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "10X Rewards on Online Spends",
+      "description": "Earn 10X reward points on all online transactions",
+      "valueStr": "10X RP on online",
+      "valueNum": 0,
+      "frequencyStr": "Every online transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on all online merchant transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "3X Rewards on Offline Spends",
+      "description": "Earn 3X reward points on all offline transactions",
+      "valueStr": "3X RP on offline",
+      "valueNum": 0,
+      "frequencyStr": "Every offline transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on all POS and offline transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Lifetime Free Card",
+      "description": "No joining fee, no annual fee — lifetime free",
+      "valueStr": "₹0 forever",
+      "valueNum": 2360,
+      "frequencyStr": "Every year",
+      "frequencyPerYear": 1,
+      "annualValue": 2360,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDFC Reward Points",
+    "earnRate": "10X on online, 3X on offline",
+    "pointsPer100": 3,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.75,
+    "pointsExpiry": "Never expire",
+    "bonusCategories": [
+      {
+        "category": "Online",
+        "multiplier": 10,
+        "description": "10X reward points on online spends"
+      },
+      {
+        "category": "Offline",
+        "multiplier": 3,
+        "description": "3X reward points on offline spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers via IDFC Rewards Catalogue",
+      "Flights & Hotels",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.75% to 2.5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Lifetime free — no joining or annual fee",
+    "Never-expiring reward points",
+    "10X rewards on online spends"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#f5f5f5",
+    "#1565c0"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 18000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 18000,
+    "tenYearNetValue": 180000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 18000,
+    "roiPercent": 9999
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Online Shopping",
+    "Cashback",
+    "No Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.idfcfirstbank.com/credit-card/first-select-credit-card",
+      "https://www.paisabazaar.com/credit-card/idfc-first-select-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 10 888",
+  "applyUrl": "https://www.idfcfirstbank.com/credit-card/first-select-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "idfc-first-select-credit-card"
+}

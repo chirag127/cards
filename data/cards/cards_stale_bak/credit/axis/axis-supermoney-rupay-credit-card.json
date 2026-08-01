@@ -1,0 +1,278 @@
+{
+  "id": "axis-supermoney-rupay-credit-card",
+  "name": "Axis Bank SuperMoney RuPay Credit Card",
+  "tagline": "3% cashback on super.money UPI payments, lifetime free",
+  "description": "The Axis SuperMoney RuPay Credit Card is a lifetime-free RuPay Classic tier card offering 3% cashback on super.money UPI transactions and 1% on all other spends. With zero annual fee and RuPay UPI compatibility, it is the perfect entry-level card for users who want cashback on UPI payments without any cost.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "SuperMoney",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 12000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 144000,
+    "minCreditScore": 600,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹12,000",
+      "Self-Employed: ITR > ₹1.44 Lakh p.a.",
+      "Age 18–65 years",
+      "Lifetime free card with no annual fee",
+      "RuPay card supports UPI payments"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil (LTF)"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "lostCardLiability": 50000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Lost card liability: ₹50,000",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "3% Cashback on super.money UPI",
+      "description": "Earn 3% cashback on all transactions made via super.money UPI",
+      "valueStr": "3% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on super.money UPI transactions only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1% Cashback on Other Spends",
+      "description": "Earn 1% cashback on all other retail transactions",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to all other spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SuperMoney Cashback",
+    "earnRate": "1%–3% cashback",
+    "pointsPer100": 3,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 3,
+    "pointsExpiry": "Cashback credited directly to statement, no expiry",
+    "bonusCategories": [
+      {
+        "category": "super.money UPI",
+        "multiplier": 3,
+        "description": "3% cashback"
+      },
+      {
+        "category": "Other spends",
+        "multiplier": 1,
+        "description": "1% cashback"
+      }
+    ],
+    "redemptionOptions": [
+      "Auto-credited to credit card statement"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 3%",
+    "conditions": [
+      "Excluded: fuel, EMI, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Lifetime free (LTF)",
+    "RuPay UPI compatible",
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Cashback auto-credited to statement",
+    "Zero annual fee"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#6B21A8",
+    "#C084FC"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3000,
+    "tenYearNetValue": 30000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 0
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "UPI",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/supermoney-rupay-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-bank-supermoney-rupay-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/supermoney-rupay-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-supermoney-rupay-credit-card"
+}

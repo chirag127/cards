@@ -1,0 +1,195 @@
+{
+  "id": "happay-corporate-prepaid-card",
+  "name": "Happay Corporate Prepaid Card",
+  "tagline": "Corporate expense management with real-time reconciliation",
+  "description": "The Happay Corporate Prepaid Card is a Visa prepaid card designed for corporate expense management. With preset spending limits, real-time reconciliation, automated expense reporting, and multi-level approval workflows, it simplifies employee spend management for organizations of all sizes.",
+  "bank": "Happay",
+  "bankCode": "happay",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Corporate",
+  "variant": "Corporate",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "accountType": [
+      "Corporate account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to corporate clients only",
+      "Employer-sponsored program",
+      "Individual KYC required for each employee"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Per Card Fee",
+      "amount": 0,
+      "note": "Bundled in corporate plan"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Preset Spending Limits",
+      "description": "Administrators can set individual and category-based spending limits per card",
+      "valueStr": "Customizable",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Configurable via admin dashboard"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Real-Time Reconciliation",
+      "description": "Automatic expense categorization and real-time reconciliation with accounting systems",
+      "valueStr": "Automated",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Integration with ERP/accounting software"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Configure integration via Happay admin dashboard"
+    },
+    {
+      "category": "other",
+      "title": "Automated Expense Reporting",
+      "description": "Auto-generated expense reports with category-wise breakdowns and analytics",
+      "valueStr": "Automated",
+      "valueNum": 0,
+      "frequencyStr": "Monthly",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Corporate expense management platform",
+    "Preset spending limits per employee",
+    "Real-time transaction reconciliation",
+    "Automated expense reporting",
+    "Multi-level approval workflows",
+    "Category-based spending controls",
+    "Integration with ERP systems",
+    "Virtual and physical cards",
+    "Real-time notifications",
+    "Admin dashboard for management"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0066cc",
+    "#00cc66"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "business",
+  "internationalUsable": false,
+  "bestFor": [
+    "Corporate Expenses",
+    "Employee Spend Management",
+    "Reconciliation"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.happay.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.happay.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "happay-corporate-prepaid-card"
+}

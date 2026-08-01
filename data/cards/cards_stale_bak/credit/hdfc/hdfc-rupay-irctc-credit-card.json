@@ -1,0 +1,280 @@
+{
+  "id": "hdfc-rupay-irctc-credit-card",
+  "name": "HDFC RuPay IRCTC Credit Card",
+  "tagline": "5X reward points on IRCTC bookings with RuPay convenience",
+  "description": "The HDFC RuPay IRCTC Credit Card is a co-branded card offering 5X reward points on IRCTC bookings and 1 reward point per ₹100 on all other spends. With UPI integration via RuPay and a low annual fee, it's ideal for frequent train travellers.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "IRCTC",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and orange",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "5X Reward Points on IRCTC",
+      "description": "Earn 5X reward points on IRCTC train ticket bookings",
+      "valueStr": "5X RP on IRCTC",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on IRCTC website/app bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1 RP per ₹100 on All Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail purchases",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "RuPay UPI Integration",
+      "description": "Link card to UPI apps for seamless payments",
+      "valueStr": "Available",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available on RuPay cards"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC IRCTC Reward Points",
+    "earnRate": "5X on IRCTC, 1 RP per ₹100 other",
+    "pointsPer100": 1,
+    "pointValue": 0.35,
+    "effectiveCashbackPercent": 0.35,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "IRCTC",
+        "multiplier": 5,
+        "description": "5X reward points on IRCTC bookings"
+      }
+    ],
+    "redemptionOptions": [
+      "IRCTC bookings",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.20)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.35% to 1.75%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "RuPay UPI integration",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "5X rewards on IRCTC bookings"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#004c8f",
+    "#ff6600"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2410,
+    "tenYearNetValue": 24100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 408
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Train Travel",
+    "Rewards",
+    "UPI"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-rupay-irctc-credit-card"
+}

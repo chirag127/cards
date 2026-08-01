@@ -1,0 +1,396 @@
+{
+  "id": "idbi-aspire-platinum-credit-card",
+  "name": "IDBI Bank Aspire Platinum Credit Card",
+  "tagline": "Lifetime free platinum card with solid rewards and global acceptance",
+  "description": "The IDBI Bank Aspire Platinum Credit Card is a lifetime free Visa Platinum credit card designed for everyday users who want reliable rewards, fuel surcharge savings, and global merchant acceptance without any annual charges.",
+  "bank": "IDBI Bank",
+  "bankCode": "idbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Visa Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Cool blue and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No minimum income requirement",
+      "Age 21-65 years",
+      "Salaried or self-employed applicants eligible",
+      "Good credit history recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 300,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 300,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 2.9,
+    "annualInterestRate": 34.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 300,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "Hindustan Petroleum",
+      "Reliance Petroleum",
+      "Shell"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Welcome Benefit - Delight Points",
+      "description": "Earn 500 Delight Points on first card usage after activation.",
+      "valueStr": "500 DP",
+      "valueNum": 500,
+      "frequencyStr": "One-time on first usage",
+      "frequencyPerYear": 1,
+      "annualValue": 500,
+      "conditions": [
+        "Points credited after first successful transaction",
+        "Must be within 60 days of card issuance"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 2 Delight Points for every Rs 150 spent across all merchant categories in India and abroad.",
+      "valueStr": "2 DP per Rs 150",
+      "valueNum": 2,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Points credited on retail, online, and international spends",
+        "Fuel, wallet loads, rent payments, and utility bills may be excluded"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between Rs 400 and Rs 4,000 at all fuel stations across India. Maximum waiver of Rs 300 per statement cycle.",
+      "valueStr": "1% waiver up to Rs 300/month",
+      "valueNum": 300,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3600,
+      "conditions": [
+        "Applicable on fuel transactions between Rs 400 and Rs 4,000",
+        "Maximum waiver of Rs 300 per statement cycle",
+        "Available at all fuel stations in India"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Interest-Free Credit Period",
+      "description": "Enjoy up to 48 days of interest-free credit period on all retail transactions.",
+      "valueStr": "Up to 48 days",
+      "valueNum": 48,
+      "frequencyStr": "Per billing cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on retail purchases only",
+        "Cash advances attract interest from day one"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Global Merchant Acceptance",
+      "description": "Accepted at over 9 Lakh merchants across India and 29 million merchants worldwide through the Visa network.",
+      "valueStr": "9 Lakh+ India, 29M+ global",
+      "valueNum": 0,
+      "frequencyStr": "Always",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Visa network acceptance worldwide",
+        "Subject to merchant terminal compatibility"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Add-On Cards",
+      "description": "Get complimentary add-on credit cards for eligible family members above 18 years of age.",
+      "valueStr": "Add-on cards available",
+      "valueNum": 0,
+      "frequencyStr": "Lifetime",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Family members above 18 years eligible",
+        "Add-on cards share primary card credit limit"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDBI Delight Points",
+    "earnRate": "2 DP per Rs 150 on all spends",
+    "pointsPer100": 1.33,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.27,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 1.33,
+        "description": "2 Delight Points per Rs 150 on all spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Air miles conversion",
+      "Product catalogue",
+      "Voucher redemption"
+    ],
+    "minRedemptionPoints": 500,
+    "redemptionRatios": [
+      {
+        "partnerTarget": "Statement Credit",
+        "pointsRequired": 500,
+        "valueReceived": 100,
+        "description": "500 DP = Rs 100 statement credit"
+      },
+      {
+        "partnerTarget": "Air Miles",
+        "pointsRequired": 1000,
+        "valueReceived": 250,
+        "description": "1000 DP = 250 air miles"
+      },
+      {
+        "partnerTarget": "Gift Vouchers",
+        "pointsRequired": 500,
+        "valueReceived": 100,
+        "description": "500 DP = Rs 100 gift voucher"
+      }
+    ],
+    "rewardRateStr": "0.27%",
+    "conditions": [
+      "Points credited within 30 days of transaction posting",
+      "Points expire 2 years from accrual date",
+      "Minimum 500 points required for redemption"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Earn 500 Delight Points on first card usage after activation.",
+    "valueStr": "500 Delight Points",
+    "valueNum": 500,
+    "conditions": [
+      "Points credited after first successful transaction",
+      "Must be within 60 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Lifetime free card - no annual fee ever",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee (Lifetime Free)"
+    }
+  ],
+  "features": [
+    "Lifetime free credit card",
+    "Contactless payments enabled",
+    "EMV chip security",
+    "Add-on cards available for family",
+    "EMI conversion facility",
+    "Fuel surcharge waiver up to Rs 300/month",
+    "Up to 48 days interest-free credit period",
+    "Global acceptance at 9 Lakh+ India, 29M+ worldwide merchants",
+    "Reward points on all spends"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1565c0",
+    "#64b5f6"
+  ],
+  "value": {
+    "highestValue": 12000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8000,
+    "tenYearNetValue": 80000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.3,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "Lifetime free seekers",
+    "Everyday retail spends",
+    "Fuel savings",
+    "Global travellers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits",
+      "fuelSurcharge",
+      "welcomeBonus",
+      "rewardProgram"
+    ],
+    "unverifiedFields": [
+      "creditCardDetails"
+    ],
+    "sourceUrls": [
+      "https://www.idbibank.in/credit-cards.aspx",
+      "https://www.wishfin.com/credit-card/idbi-bank/idbi-aspire-platinum-credit-card/",
+      "https://www.bankbazaar.com/credit-cards/idbi-bank-aspire-platinum-credit-card.html",
+      "https://www.paisabazaar.com/credit-cards/idbi-bank-aspire-platinum-credit-card/"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "reviews": [
+    {
+      "provider": "Paisabazaar",
+      "overallRating": 3.9,
+      "maxRating": 5,
+      "categoryRatings": [
+        {
+          "category": "Rewards",
+          "rating": 3.5,
+          "maxRating": 5
+        },
+        {
+          "category": "Benefits",
+          "rating": 4,
+          "maxRating": 5
+        },
+        {
+          "category": "Value for Money",
+          "rating": 4.5,
+          "maxRating": 5
+        }
+      ],
+      "summary": "Solid lifetime free platinum card with decent rewards and fuel surcharge benefits.",
+      "pros": [
+        "No joining or annual fees",
+        "Decent reward earning rate",
+        "Global Visa acceptance"
+      ],
+      "cons": [
+        "No lounge access",
+        "Lower reward multiplier than premium cards"
+      ],
+      "reviewUrl": "https://www.paisabazaar.com/credit-cards/idbi-bank-aspire-platinum-credit-card/",
+      "lastUpdated": "2026-04-08"
+    }
+  ],
+  "customerCareNumber": "1800 425 7600 / 022-40426013",
+  "applyUrl": "https://www.idbibank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "idbi-aspire-platinum-credit-card"
+}

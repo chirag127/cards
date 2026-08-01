@@ -1,0 +1,331 @@
+{
+  "id": "kotak-mojo-credit-card",
+  "name": "Kotak Mojo Credit Card",
+  "tagline": "Cashback on online shopping and bill payments",
+  "description": "The Kotak Mojo Credit Card is designed for online shoppers, offering 5% cashback on online shopping and 2X reward points on bill payments. With an affordable annual fee of ₹1,000+GST, it provides solid value for users who spend primarily through digital channels.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Mojo",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and black",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹6 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2000000,
+    "permanentDisabilityCover": 2000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 250000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Credit liability cover: ₹2.5 Lakh",
+      "Fraud protection on lost/stolen card"
+    ],
+    "provider": "Kotak Mahindra Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "1 per quarter",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 1 complimentary visit per quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "5% Cashback on Online Shopping",
+      "description": "Earn 5% cashback on all online shopping transactions",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every online transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on online shopping merchants",
+        "Monthly cap may apply"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2X on Bill Payments",
+      "description": "Earn 2X reward points on all bill payment transactions",
+      "valueStr": "2X RP on bills",
+      "valueNum": 0,
+      "frequencyStr": "Every bill payment",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on utility and bill payment transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per year",
+      "valueStr": "4 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter at domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Kotak Reward Points",
+    "earnRate": "1 RP per ₹200",
+    "pointsPer100": 0.5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.125,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Online Shopping",
+        "multiplier": 0,
+        "description": "5% direct cashback instead of RP"
+      },
+      {
+        "category": "Bill Payments",
+        "multiplier": 2,
+        "description": "2X reward points on bill payments"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers via Kotak Rewards Catalogue",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.125% to 5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹1,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "5% cashback on online shopping",
+    "2X rewards on bill payments"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#2d1b69",
+    "#6b21a8"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8820,
+    "tenYearNetValue": 88200,
+    "totalAnnualCharges": 1180,
+    "totalAnnualBenefits": 10000,
+    "roiPercent": 747
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Cashback",
+    "Online Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "loungeAccess",
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.kotak.com/en/personal-banking/cards/credit-cards/mojo-credit-card.html"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 266 2666",
+  "applyUrl": "https://www.kotak.com/en/personal-banking/cards/credit-cards/mojo-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "kotak-mojo-credit-card"
+}

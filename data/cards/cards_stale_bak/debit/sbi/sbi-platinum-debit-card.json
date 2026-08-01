@@ -1,0 +1,148 @@
+{
+  "id": "sbi-platinum-debit-card",
+  "name": "SBI Card Platinum Debit Card",
+  "tagline": "platinum debit card from SBI Card.",
+  "description": "platinum debit card from SBI Card.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Card",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "invitationOnly": false,
+    "notes": [
+      "Account with SBI Card required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Reward Points",
+      "description": "Earn reward points on purchases",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining minimum balance",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "ATM withdrawals",
+    "POS transactions",
+    "Online shopping",
+    "Contactless payments",
+    "International usage"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#4F9EFF"
+  ],
+  "value": {
+    "highestValue": 2000,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 169
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Daily Use",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://www.sbi.com/debit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "sbi-platinum-debit-card"
+}

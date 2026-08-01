@@ -1,0 +1,324 @@
+{
+  "id": "indusind-eazydiner-credit-card",
+  "name": "IndusInd EazyDiner Credit Card",
+  "tagline": "Premium dining card with 10X rewards on EazyDiner and 2X on other dining",
+  "description": "The IndusInd EazyDiner Credit Card is a co-branded Visa Gold card designed for food lovers. Enjoy 10X reward points on EazyDiner restaurant bookings, 2X on other dining transactions, complimentary EazyDiner Prime membership, and exclusive dining privileges across premium restaurants in India.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "EazyDiner",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Gold and black",
+  "virtualCardAvailable": false,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 30000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 360000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹30,000",
+      "Self-Employed: ITR > ₹3.6 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1999,
+      "amountWithGst": 2359,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1999,
+      "amountWithGst": 2359,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": false,
+    "waiverPercent": 0,
+    "minTransactionAmount": 0,
+    "maxTransactionAmount": 0,
+    "maxWaiverPerCycle": 0,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1000000,
+    "permanentDisabilityCover": 1000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Credit liability cover: ₹10 Lakh"
+    ],
+    "provider": "IndusInd Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "10X Reward Points on EazyDiner",
+      "description": "Earn 10X reward points on EazyDiner restaurant bookings",
+      "valueStr": "10X points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on EazyDiner platform"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2X Reward Points on Other Dining",
+      "description": "Earn 2X reward points on dining at other restaurants",
+      "valueStr": "2X points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on other dining spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "EazyDiner Prime Membership",
+      "description": "Complimentary EazyDiner Prime membership with exclusive deals",
+      "valueStr": "Prime included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Access to exclusive dining deals and offers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IndusInd Reward Points",
+    "earnRate": "10X on EazyDiner, 2X on dining, 1X on others",
+    "pointsPer100": 0,
+    "pointValue": 0.3,
+    "effectiveCashbackPercent": 2,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "EazyDiner",
+        "multiplier": 10,
+        "description": "10X reward points"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 2,
+        "description": "2X reward points"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels via IndusInd Rewards",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.30)"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "2% on dining",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹2 Lakh in the preceding year",
+      "annualSpendRequired": 200000,
+      "waives": "Annual fee of ₹1,999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "10X reward points on EazyDiner",
+    "2X reward points on other dining",
+    "EazyDiner Prime membership"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#d4af37",
+    "#1a1a1a"
+  ],
+  "coBrandDetails": {
+    "partnerName": "EazyDiner",
+    "partnerCategory": "Dining",
+    "specialPerks": [
+      "10X rewards on EazyDiner",
+      "EazyDiner Prime membership",
+      "Exclusive dining deals"
+    ]
+  },
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2641,
+    "tenYearNetValue": 26410,
+    "totalAnnualCharges": 2359,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 112
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Dining",
+    "Entertainment"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "coBrandDetails"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal/cards/credit-card/eazydiner-credit-card.html"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "diningBenefits": {
+    "available": true,
+    "discountDescription": "10X reward points on EazyDiner, 2X on other dining",
+    "discountPercent": 0,
+    "partnerRestaurants": [
+      "All EazyDiner partner restaurants"
+    ],
+    "annualCap": 0
+  },
+  "customerCareNumber": "1860 267 7777",
+  "applyUrl": "https://www.indusind.com/in/en/personal/cards/credit-card/eazydiner-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "indusind-eazydiner-credit-card"
+}

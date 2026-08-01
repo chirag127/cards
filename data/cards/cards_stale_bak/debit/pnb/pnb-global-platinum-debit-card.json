@@ -1,0 +1,233 @@
+{
+  "id": "pnb-global-platinum-debit-card",
+  "name": "PNB Global Platinum Debit Card",
+  "tagline": "International platinum debit card from Punjab National Bank",
+  "description": "The PNB Global Platinum Debit Card is a Visa Platinum offering from Punjab National Bank designed for customers who need international transaction capabilities. With competitive ATM and POS limits, reward points on everyday spends, airport lounge access, and comprehensive insurance coverage, it delivers premium banking features at an affordable annual fee.",
+  "bank": "Punjab National Bank",
+  "bankCode": "pnb",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Global Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and silver gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to PNB savings and current account holders",
+      "International usage enabled by default"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "internationalAtmPerDay": 100000,
+    "internationalPosPerDay": 250000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 6,
+      "frequency": "6 per year",
+      "frequencyPerYear": 6,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "6 complimentary domestic lounge visits per year",
+      "Card must be active in the preceding quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on Spends",
+      "description": "Earn 1 Reward Point per ₹200 spent on all purchases",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "Valid on POS and e-commerce transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "6 complimentary domestic airport lounge visits per year",
+      "valueStr": "6 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 15000,
+      "conditions": [
+        "Active card usage required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Death Cover",
+      "description": "₹10 Lakh accidental death insurance cover",
+      "valueStr": "₹10 Lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual cover",
+      "frequencyPerYear": 1,
+      "annualValue": 1000000,
+      "conditions": [
+        "Active on card usage"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "PNB Reward Points",
+    "earnRate": "1 RP per ₹200",
+    "pointsPer100": 0.5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.125,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.125%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Visa Platinum tier",
+    "International acceptance",
+    "6 domestic lounge visits/year",
+    "₹10 Lakh accidental cover",
+    "Contactless payments",
+    "Reward points on spends",
+    "EMV chip security"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e3a5f",
+    "#94a3b8"
+  ],
+  "value": {
+    "highestValue": 18000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 9410,
+    "tenYearNetValue": 94100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 18000,
+    "roiPercent": 2951
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Lounge Access",
+    "Everyday Banking"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.pnbindia.in/personal-banking/cards/debit-cards/global-platinum-debit-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 180 2222",
+  "applyUrl": "https://www.pnbindia.in/personal-banking/cards/debit-cards/global-platinum-debit-card",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "pnb-global-platinum-debit-card"
+}

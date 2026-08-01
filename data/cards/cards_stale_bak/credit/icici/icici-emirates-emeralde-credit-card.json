@@ -1,0 +1,301 @@
+{
+  "id": "icici-emirates-emeralde-credit-card",
+  "name": "Emirates Skywards ICICI Bank Emeralde Credit Card",
+  "tagline": "Ultra-premium travel card with 2 miles per ₹100",
+  "description": "The Emirates Skywards ICICI Emeralde Credit Card is an ultra-premium co-branded travel card on the Visa World Elite network. It earns 2 Skyward miles per ₹100 and offers top-tier travel benefits including unlimited lounge access, Emirates Gold tier fast-track, and comprehensive insurance.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "WorldElite",
+  "variant": "Emirates Emeralde",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and emerald green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 200000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 2400000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹2 Lakh",
+      "Self-Employed: ITR > ₹24 Lakh p.a.",
+      "High net worth individuals"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 1000,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 20000000,
+    "permanentDisabilityCover": 20000000,
+    "lostCardLiability": 2000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 10000000,
+    "airAccidentCover": 20000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹2 Crore",
+      "Travel insurance: ₹1 Crore",
+      "Credit liability cover: ₹20 Lakh",
+      "Baggage delay/loss cover: ₹50,000"
+    ],
+    "provider": "ICICI Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": 6,
+      "frequency": "Via Priority Pass",
+      "frequencyPerYear": 6,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass",
+      "Plaza Premium"
+    ],
+    "conditions": [
+      "Domestic: 2 visits per quarter",
+      "International: Via Priority Pass"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Skywards Miles on Spends",
+      "description": "Earn 2 Skyward miles per ₹100 spent on all domestic transactions",
+      "valueStr": "2 miles/₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Lounge Access",
+      "description": "8 domestic and 6 international lounge visits per year with guest access",
+      "valueStr": "14 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "Multiple per quarter",
+      "frequencyPerYear": 14,
+      "annualValue": 35000,
+      "conditions": [
+        "Guests charged at visit rate"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 1000,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 12000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹1,000 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Emirates Skywards Miles",
+    "earnRate": "2 Skyward miles per ₹100",
+    "pointsPer100": 2,
+    "pointValue": 0.8,
+    "effectiveCashbackPercent": 1.6,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Emirates flights",
+      "Upgrade to Business/First Class",
+      "Hotel stays"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1.6%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 Skywards Miles on first transaction within 30 days",
+    "valueStr": "10,000 Miles",
+    "valueNum": 8000,
+    "conditions": [
+      "Complete first transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Emirates Skywards Gold fast-track",
+    "Priority Pass lounge access",
+    "Comprehensive insurance coverage",
+    "Concierge services"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d1b2a",
+    "#2e7d32"
+  ],
+  "value": {
+    "highestValue": 60000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 23200,
+    "tenYearNetValue": 232000,
+    "totalAnnualCharges": 11800,
+    "totalAnnualBenefits": 35000,
+    "roiPercent": 197
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": true,
+  "bestFor": [
+    "Air Travel",
+    "Emirates Flights",
+    "Luxury Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "miles",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/personal-banking/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800-1080",
+  "applyUrl": "https://www.icicibank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-emirates-emeralde-credit-card"
+}

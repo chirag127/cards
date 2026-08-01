@@ -1,0 +1,207 @@
+{
+  "id": "razorpayx-corporate-prepaid-card",
+  "name": "RazorpayX Corporate Prepaid Card",
+  "tagline": "Enterprise-grade expense management with payouts integration",
+  "description": "The RazorpayX Corporate Prepaid Card is a Visa Platinum prepaid card built for enterprises and startups. It integrates seamlessly with RazorpayX's payout and banking stack, offering real-time spend controls, automated reconciliation, multi-level approvals, and API-driven expense workflows. Designed for companies that need programmatic control over corporate spending.",
+  "bank": "RazorpayX",
+  "bankCode": "razorpayx",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Corporate",
+  "usage": "Global",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Teal and dark navy",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Business Owner"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "RazorpayX Current Account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires RazorpayX business account",
+      "Company incorporation documents needed",
+      "Individual KYC per employee cardholder",
+      "Available for registered Indian entities"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via RazorpayX"
+    },
+    {
+      "label": "Forex Markup",
+      "amount": 0,
+      "note": "2% on international spends"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 150,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 100000,
+    "internationalAtmPerDay": 500000,
+    "internationalPosPerDay": 1000000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "API-Driven Expense Controls",
+      "description": "Programmatic card creation, limit management, and transaction monitoring via RazorpayX APIs",
+      "valueStr": "Full API access",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via RazorpayX developer dashboard"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Enable API access in RazorpayX dashboard"
+    },
+    {
+      "category": "other",
+      "title": "Multi-Level Approval Workflows",
+      "description": "Configure hierarchical approval chains for transactions exceeding thresholds",
+      "valueStr": "Configurable",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Set via RazorpayX admin console"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "International Usage",
+      "description": "Use the card globally for business travel with competitive forex rates and real-time conversion",
+      "valueStr": "2% markup",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Visa network coverage worldwide"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical cards",
+    "API-driven card management",
+    "Multi-level approval workflows",
+    "Real-time spend controls",
+    "Automated reconciliation",
+    "International usage enabled",
+    "Integration with RazorpayX payouts",
+    "Webhook-based transaction alerts",
+    "Custom merchant category controls",
+    "Enterprise dashboard and analytics"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#004d40",
+    "#0d1b2a"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "business",
+  "internationalUsable": true,
+  "bestFor": [
+    "Enterprise Expense Management",
+    "API Integration",
+    "Global Business Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.razorpay.com/x"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.razorpay.com/x",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "razorpayx-corporate-prepaid-card"
+}

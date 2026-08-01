@@ -1,0 +1,310 @@
+{
+  "id": "axis-spicejet-voyage-credit-card",
+  "name": "SpiceJet Axis Bank Voyage Credit Card",
+  "tagline": "Earn Spiceclub points on every SpiceJet and online spend",
+  "description": "The SpiceJet Axis Bank Voyage Credit Card is a Visa Gold tier co-branded airline card offering 18 Spiceclub points per ₹200 on SpiceJet bookings, 6 points on online spends, and 3 points on all other transactions. With an annual fee of ₹750+GST, it is designed for frequent SpiceJet flyers who want to accumulate airline points faster through everyday spending.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "SpiceJet Voyage",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.4 Lakh p.a.",
+      "Age 18–65 years",
+      "Ideal for frequent SpiceJet flyers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2000000,
+    "permanentDisabilityCover": 2000000,
+    "travelInsuranceCover": 500000,
+    "lostCardLiability": 200000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Air accident cover: ₹20 Lakh",
+      "Travel insurance: ₹5 Lakh",
+      "Lost card liability: ₹2 Lakh",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "coBrandDetails": {
+    "partnerName": "SpiceJet",
+    "partnerCategory": "Airlines",
+    "specialPerks": [
+      "18 Spiceclub points per ₹200 on SpiceJet bookings",
+      "Complimentary SpiceJet priority check-in"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "18 Spiceclub Points per ₹200 on SpiceJet",
+      "description": "Earn 18 Spiceclub loyalty points per ₹200 spent on SpiceJet flight bookings",
+      "valueStr": "18 Spiceclub/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on SpiceJet website and app bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "6 Spiceclub Points per ₹200 Online",
+      "description": "Earn 6 Spiceclub points per ₹200 on all online transactions",
+      "valueStr": "6 Spiceclub/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on online transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "3 Spiceclub Points per ₹200 on Other Spends",
+      "description": "Earn 3 Spiceclub loyalty points per ₹200 on all other retail transactions",
+      "valueStr": "3 Spiceclub/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to all other spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Spiceclub Loyalty Points",
+    "earnRate": "3–18 Spiceclub points per ₹200",
+    "pointsPer100": 3,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.375,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "SpiceJet",
+        "multiplier": 6,
+        "description": "18 Spiceclub points per ₹200"
+      },
+      {
+        "category": "Online",
+        "multiplier": 2,
+        "description": "6 Spiceclub points per ₹200"
+      },
+      {
+        "category": "Other",
+        "multiplier": 1,
+        "description": "3 Spiceclub points per ₹200"
+      }
+    ],
+    "redemptionOptions": [
+      "Free SpiceJet flights",
+      "SpiceJet upgrades",
+      "SpiceJet merchandise"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.375% to 2.25%",
+    "conditions": [
+      "Points valid for SpiceJet redemptions only"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "SpiceJet co-branded airline rewards",
+    "Priority check-in at SpiceJet"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#E31837",
+    "#FF6B6B"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4115,
+    "tenYearNetValue": 41150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 465
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/spicejet-axis-bank-voyage-credit-card",
+      "https://www.paisabazaar.com/credit-card/spicejet-axis-bank-voyage-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/spicejet-axis-bank-voyage-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-spicejet-voyage-credit-card"
+}

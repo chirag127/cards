@@ -1,0 +1,184 @@
+{
+  "id": "yes-premia-debit-card",
+  "name": "Yes Bank Premia Debit Card",
+  "tagline": "Signature privileges for the discerning",
+  "description": "The Yes Bank Premia Debit Card is a Visa Signature debit card offering enhanced ATM and POS limits, premium merchant offers, and higher reward earning potential. Designed for high-value customers.",
+  "bank": "Yes Bank",
+  "bankCode": "yes",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Signature",
+  "variant": "Premia Signature",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "mab": 100000,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires average monthly balance of ₹1,00,000"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 150000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Enhanced Reward Points",
+      "description": "Earn 3 Reward Points per ₹200 spent on all purchases",
+      "valueStr": "3 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "2 visits per quarter",
+      "valueNum": 3000,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 8,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid at select domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Yes Rewardz",
+    "earnRate": "3 RP per ₹200",
+    "pointsPer100": 1.5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.375,
+    "pointsExpiry": "2 years from accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.375%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Higher ATM and POS limits",
+    "Signature tier privileges",
+    "Airport lounge access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3821,
+    "tenYearNetValue": 38210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 324
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "High Spenders",
+    "Lounge Access"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.yesbank.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1200",
+  "applyUrl": "https://www.yesbank.in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "yes-premia-debit-card"
+}

@@ -1,0 +1,320 @@
+{
+  "id": "axis-my-zone-credit-card",
+  "name": "Axis Bank MY ZONE Credit Card",
+  "tagline": "Lifestyle perks with movie offers and lounge access at zero annual fee",
+  "description": "The Axis MY ZONE Credit Card is a lifestyle credit card with zero annual fee, offering 1% cashback on all spends, 2 complimentary domestic lounge visits per quarter, and Buy 1 Get 1 free on movie tickets. It is designed for young professionals who enjoy dining, entertainment, and travel perks.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "My Zone",
+  "variant": "MY ZONE",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and black gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 180000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹1.8 Lakh p.a.",
+      "Age 18–65 years",
+      "No annual fee makes it easy to retain"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "One-time joining fee excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil — no annual fee from second year onwards"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "lostCardLiability": 50000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Lost card liability: ₹50,000",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "2 complimentary domestic lounge visits per quarter",
+      "Swipe card at lounge terminal for access"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "1% Cashback on All Spends",
+      "description": "Earn 1% cashback on all retail transactions",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, EMI, wallet loads"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year (2 per quarter)",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "2 visits per quarter",
+        "Swipe card at lounge terminal"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "movies",
+      "title": "Buy 1 Get 1 on Movie Tickets",
+      "description": "Buy one movie ticket and get one free on BookMyShow",
+      "valueStr": "BOGO",
+      "valueNum": 200,
+      "frequencyStr": "Up to 1 per month",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on BookMyShow",
+        "Max discount ₹200 per transaction",
+        "1 transaction per month"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "MY ZONE Cashback",
+    "earnRate": "1% cashback on all spends",
+    "pointsPer100": 1,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Cashback credited directly to statement, no expiry",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Auto-credited to credit card statement"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1%",
+    "conditions": [
+      "Excluded: fuel, EMI, wallet loads, insurance premiums"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Buy 1 Get 1 movie tickets on BookMyShow",
+    "Zero annual fee from second year"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "movieEntertainment": {
+    "available": true,
+    "platforms": [
+      "BookMyShow"
+    ],
+    "offerDescription": "Buy 1 Get 1 free on movie tickets via BookMyShow",
+    "monthlyLimit": 1,
+    "annualCap": 2400
+  },
+  "gradientColors": [
+    "#6B21A8",
+    "#1F1F1F"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 12000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 11410,
+    "tenYearNetValue": 114100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 12000,
+    "roiPercent": 1934
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "lifestyle",
+  "internationalUsable": true,
+  "bestFor": [
+    "Lifestyle",
+    "Movies",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/my-zone-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-bank-my-zone-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/my-zone-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-my-zone-credit-card"
+}

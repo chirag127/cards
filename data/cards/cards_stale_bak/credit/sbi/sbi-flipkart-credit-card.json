@@ -1,0 +1,356 @@
+{
+  "id": "sbi-flipkart-credit-card",
+  "name": "Flipkart SBI Credit Card",
+  "tagline": "Earn 5% cashback on Flipkart and Cleartrip, 7.5% on Myntra",
+  "description": "The Flipkart SBI Credit Card is a co-branded shopping card offering 5% cashback on Flipkart and Cleartrip, 7.5% on Myntra, and 4% on partner merchants. Cashback is credited as Flipkart vouchers. Designed for online shoppers who frequently buy from the Flipkart ecosystem.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "Flipkart",
+  "usage": "Domestic",
+  "bin": "4590",
+  "material": "Plastic",
+  "colorScheme": "Yellow and blue with Flipkart branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹20,000",
+      "Self-Employed: Minimum ITR of ₹2.4 Lakh p.a.",
+      "Age 21–60 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 950,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Lost card liability cover up to ₹1 Lakh"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "7.5% Cashback on Myntra",
+      "description": "Earn 7.5% cashback as Flipkart vouchers on Myntra spends",
+      "valueStr": "7.5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Credited as Flipkart vouchers",
+        "Valid on Myntra app and website"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "5% Cashback on Flipkart & Cleartrip",
+      "description": "Earn 5% cashback as Flipkart vouchers on Flipkart and Cleartrip spends",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Credited as Flipkart vouchers",
+        "Valid on Flipkart and Cleartrip"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "4% Cashback on Partner Merchants",
+      "description": "Earn 4% cashback as Flipkart vouchers at select partner merchants",
+      "valueStr": "4% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Select partner merchants only",
+        "Credited as Flipkart vouchers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1% Cashback on All Other Spends",
+      "description": "Earn 1% cashback as Flipkart vouchers on all other retail spends",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Credited as Flipkart vouchers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Flipkart Vouchers",
+    "earnRate": "1% cashback (7.5% Myntra, 5% Flipkart/Cleartrip, 4% partners)",
+    "pointsPer100": 1,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "1 year from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Myntra",
+        "multiplier": 7.5,
+        "description": "7.5% cashback on Myntra"
+      },
+      {
+        "category": "Flipkart",
+        "multiplier": 5,
+        "description": "5% cashback on Flipkart"
+      },
+      {
+        "category": "Cleartrip",
+        "multiplier": 5,
+        "description": "5% cashback on Cleartrip"
+      },
+      {
+        "category": "Partner Merchants",
+        "multiplier": 4,
+        "description": "4% cashback at partner merchants"
+      }
+    ],
+    "redemptionOptions": [
+      "Flipkart vouchers (auto-credited)",
+      "Valid on Flipkart, Myntra, Cleartrip"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "1% to 7.5%",
+    "conditions": [
+      "Cashback credited as Flipkart vouchers",
+      "Excluded: fuel, rent, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Flipkart voucher worth ₹500 on first Flipkart transaction within 30 days",
+    "valueStr": "₹500 Flipkart voucher",
+    "valueNum": 500,
+    "conditions": [
+      "First Flipkart transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Flipkart ecosystem cashback",
+    "Instant voucher rewards"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#ffc107",
+    "#1565c0"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 5410,
+    "tenYearNetValue": 54100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Shopping",
+    "Flipkart",
+    "Myntra",
+    "Online"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/shopping/flipkart-sbi-credit-card.page"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/shopping/flipkart-sbi-credit-card.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-flipkart-credit-card"
+}

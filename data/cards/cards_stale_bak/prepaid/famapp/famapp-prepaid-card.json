@@ -1,0 +1,167 @@
+{
+  "id": "famapp-prepaid-card",
+  "name": "FamApp Prepaid Card",
+  "tagline": "Teen-friendly prepaid card with family controls",
+  "description": "The FamApp Prepaid Card is a Visa Classic prepaid card designed for teens and families. Parents can add money, set spending limits, and monitor transactions while teens learn financial independence with a real card.",
+  "bank": "FamApp",
+  "bankCode": "famapp",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Student"
+    ],
+    "minAge": 13,
+    "maxAge": 24,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available from age 13",
+      "Parental approval required for minors",
+      "Parent must have FamApp account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 5000,
+    "posEcomPerDay": 25000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 10000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Parental Controls",
+      "description": "Parents can set spending limits, block categories, and monitor transactions in real-time",
+      "valueStr": "Full controls",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Financial Education",
+      "description": "In-app financial literacy modules for teens",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Parental spending controls",
+    "Real-time notifications for parents",
+    "Savings goals",
+    "Financial literacy tools",
+    "Virtual and physical card"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#7c4dff",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Teens",
+    "Family Finance"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://famapp.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://famapp.in",
+  "lastUpdated": "2026-03-27",
+  "type": "prepaid",
+  "slug": "famapp-prepaid-card"
+}

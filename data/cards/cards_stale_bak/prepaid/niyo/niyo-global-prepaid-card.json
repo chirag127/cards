@@ -1,0 +1,173 @@
+{
+  "id": "niyo-global-prepaid-card",
+  "name": "Niyo Global Prepaid Card",
+  "tagline": "Zero forex markup for international spending",
+  "description": "The Niyo Global Prepaid Card is a Visa Classic prepaid card designed for international travellers, offering zero forex markup on all foreign currency transactions. Load INR and spend globally at interbank exchange rates with no hidden charges.",
+  "bank": "Niyo",
+  "bankCode": "niyo",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Global",
+  "usage": "Global",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available for all Indian residents above 18 years",
+      "Full KYC verification required",
+      "Ideal for international travellers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI/net banking"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero Forex Markup",
+      "description": "No forex markup on international transactions — spend at interbank exchange rates",
+      "valueStr": "0% forex markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Valid on all international transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Global Acceptance",
+      "description": "Accepted at millions of Visa merchants worldwide",
+      "valueStr": "Worldwide",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Zero forex markup",
+    "Contactless payments",
+    "EMV chip security",
+    "Real-time exchange rates in app",
+    "Instant reload via UPI",
+    "Virtual and physical card",
+    "Spending analytics",
+    "Card lock/unlock via app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#00c853"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Zero Forex"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "forex markup",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.goniyo.com/cards/global"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://www.goniyo.com",
+  "lastUpdated": "2026-03-27",
+  "type": "prepaid",
+  "slug": "niyo-global-prepaid-card"
+}

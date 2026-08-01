@@ -1,0 +1,196 @@
+{
+  "id": "itzcash-corporate-prepaid-card",
+  "name": "ItzCash Corporate Prepaid Card",
+  "tagline": "Enterprise expense management with wide merchant acceptance",
+  "description": "The ItzCash Corporate Prepaid Card is a Visa Platinum prepaid card designed for enterprise expense management and employee benefit distribution. With preset spending limits, category-based controls, real-time monitoring, and integration with ItzCash's extensive retail network, it simplifies corporate spending across India. Built for organizations managing employee travel, entertainment, and operational expenses.",
+  "bank": "ItzCash",
+  "bankCode": "itzcash",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Corporate",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and navy",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "accountType": [
+      "Corporate account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to corporate clients only",
+      "Employer-sponsored program",
+      "Individual KYC for each cardholder",
+      "Minimum 10 cards for corporate onboarding"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Per Card Fee",
+      "amount": 0,
+      "note": "Bundled in corporate plan"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Spending Limits & Controls",
+      "description": "Administrators can set per-employee, per-category, and per-merchant spending limits with real-time enforcement",
+      "valueStr": "Fully customizable",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via ItzCash corporate dashboard"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Retail Network Integration",
+      "description": "Leverage ItzCash's extensive retail partner network for bill payments, recharges, and DTH top-ups at 25,000+ touchpoints",
+      "valueStr": "25,000+ touchpoints",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At ItzCash partner outlets"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Automated Reporting",
+      "description": "Real-time expense reports, category-wise breakdowns, and automated reconciliation for finance teams",
+      "valueStr": "Real-time",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical cards",
+    "Preset spending limits",
+    "Category-based controls",
+    "Real-time transaction monitoring",
+    "Retail network integration",
+    "Automated expense reporting",
+    "Admin dashboard",
+    "Multi-level approvals",
+    "Bulk card issuance",
+    "Employee benefit distribution"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#c62828",
+    "#0d1b2a"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "business",
+  "internationalUsable": false,
+  "bestFor": [
+    "Enterprise Expense Management",
+    "Retail Network",
+    "Employee Benefits"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.itzcash.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.itzcash.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "itzcash-corporate-prepaid-card"
+}

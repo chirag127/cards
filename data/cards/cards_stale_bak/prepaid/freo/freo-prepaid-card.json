@@ -1,0 +1,177 @@
+{
+  "id": "freo-prepaid-card",
+  "name": "Freo Prepaid Card",
+  "tagline": "Spend now, manage later with smart prepaid controls",
+  "description": "The Freo Prepaid Card is a Visa Classic prepaid card from the digital banking platform Freo. It offers intelligent spend analytics, budget tracking, instant freeze/unfreeze, and seamless UPI reloads. Built for young professionals who want a modern, app-first banking experience with full control over their prepaid spending.",
+  "bank": "Freo",
+  "bankCode": "freo",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "Full KYC verification required",
+      "Partnered with SBM Bank India"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Spend Analytics & Budget Tools",
+      "description": "AI-powered spend categorisation with budget alerts and monthly spending insights",
+      "valueStr": "Free analytics",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available on Freo app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Instant Card Controls",
+      "description": "Freeze, unfreeze, and manage your card instantly from the Freo app",
+      "valueStr": "Instant",
+      "valueNum": 0,
+      "frequencyStr": "On-demand",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "AI-powered spend analytics",
+    "Budget tracking and alerts",
+    "Instant freeze/unfreeze",
+    "UPI reloads",
+    "Contactless payments",
+    "EMV chip security",
+    "Real-time transaction notifications",
+    "Merchant-wise spend breakdown",
+    "Monthly spending reports"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#7b1fa2",
+    "#e1bee7"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Spend Analytics",
+    "Budget Management",
+    "Digital-First Banking"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.myfreo.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.myfreo.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "freo-prepaid-card"
+}

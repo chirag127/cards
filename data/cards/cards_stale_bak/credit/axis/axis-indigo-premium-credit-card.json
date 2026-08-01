@@ -1,0 +1,311 @@
+{
+  "id": "axis-indigo-premium-credit-card",
+  "name": "IndiGo Axis Bank Premium Credit Card",
+  "tagline": "7 BluChips per ₹100 on IndiGo flights",
+  "description": "The IndiGo Axis Bank Premium Credit Card is a co-branded travel card on the Visa Signature network, offering 7 BluChips per ₹100 spent on IndiGo bookings and accelerated rewards on other categories. With complimentary IndiGo 6E Prime membership, it's the go-to card for frequent IndiGo flyers.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "IndiGo Premium",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Indigo blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 40000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 500000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹40,000",
+      "Self-Employed: ITR > ₹5 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 2500000,
+    "airAccidentCover": 5000000,
+    "conditions": [
+      "Air accident cover: ₹50 Lakh",
+      "Travel insurance: ₹25 Lakh",
+      "Credit liability cover: ₹5 Lakh"
+    ],
+    "provider": "Axis Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "1 per quarter",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 1 visit per quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "7 BluChips on IndiGo",
+      "description": "Earn 7 BluChips per ₹100 on IndiGo flight bookings",
+      "valueStr": "7 BluChips/₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on IndiGo website/app bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "IndiGo 6E Prime Membership",
+      "description": "Complimentary IndiGo 6E Prime membership with preferred seats and meal benefits",
+      "valueStr": "6E Prime",
+      "valueNum": 1499,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 1499,
+      "conditions": [
+        "Auto-enrolled on card activation"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per year",
+      "valueStr": "4 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 10000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IndiGo BluChips",
+    "earnRate": "7 BluChips per ₹100 on IndiGo",
+    "pointsPer100": 7,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 3.5,
+    "pointsExpiry": "24 months from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "IndiGo",
+        "multiplier": 7,
+        "description": "7 BluChips per ₹100 on IndiGo"
+      }
+    ],
+    "redemptionOptions": [
+      "IndiGo flight bookings",
+      "Seat upgrades",
+      "IndiGo ancillary services"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "3.5% on IndiGo"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Complimentary IndiGo 6E Prime membership and 2,000 bonus BluChips",
+    "valueStr": "6E Prime + 2,000 BluChips",
+    "valueNum": 2499,
+    "conditions": [
+      "Activate card and make first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "IndiGo 6E Prime membership",
+    "Domestic lounge access",
+    "Accelerated BluChips on IndiGo"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a237e",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4100,
+    "tenYearNetValue": 41000,
+    "totalAnnualCharges": 5900,
+    "totalAnnualBenefits": 10000,
+    "roiPercent": 69
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "IndiGo Flights",
+    "Domestic Air Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860-419-5555",
+  "applyUrl": "https://www.axisbank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-indigo-premium-credit-card"
+}

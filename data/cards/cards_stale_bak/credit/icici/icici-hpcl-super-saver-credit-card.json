@@ -1,0 +1,318 @@
+{
+  "id": "icici-hpcl-super-saver-credit-card",
+  "name": "ICICI Bank HPCL Super Saver Credit Card",
+  "tagline": "Maximise savings on fuel, grocery, and utility spends with high cashback rates",
+  "description": "The ICICI Bank HPCL Super Saver Credit Card is a Visa Platinum card co-branded with HPCL, offering up to 4% cashback on HPCL fuel purchases, 5% cashback on utility and grocery spends, and 2 reward points per ₹100 on all other transactions. With a low annual fee of ₹500+GST, it is designed for budget-conscious consumers who regularly spend on fuel and everyday essentials.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "HPCL Super Saver",
+  "usage": "Domestic",
+  "bin": "4250",
+  "material": "Plastic",
+  "colorScheme": "HPCL orange and dark grey",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)",
+      "Suitable for regular fuel buyers at HPCL outlets"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": [
+      "HPCL"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "4% Cashback on HPCL Fuel",
+      "description": "Earn 4% cashback on fuel purchases at HPCL petrol pumps",
+      "valueStr": "4% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every HPCL fuel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid only at HPCL outlets",
+        "Cashback credited to card statement"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "5% Cashback on Utility & Grocery",
+      "description": "Earn 5% cashback on utility bill payments and grocery spends",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every utility/grocery transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Includes electricity, water, gas bills and grocery stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on Other Spends",
+      "description": "Earn 2 reward points per ₹100 on all other transactions",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, cash advances, EMI conversion"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "4% cashback HPCL fuel, 5% utility/grocery, 2 RP per ₹100 others",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "HPCL Fuel",
+        "multiplier": 4,
+        "description": "4% cashback at HPCL petrol pumps"
+      },
+      {
+        "category": "Utility & Grocery",
+        "multiplier": 5,
+        "description": "5% cashback on utility and grocery"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 2,
+        "description": "2 RP per ₹100 on all other transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers from ICICI Rewards Catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5% to 5%",
+    "conditions": [
+      "Excludes fuel surcharge, cash advances, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹50,000 in the preceding year",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee of ₹500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Co-branded with HPCL",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "High cashback on fuel, grocery, and utility"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#ff6600",
+    "#333333"
+  ],
+  "value": {
+    "highestValue": 12000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 5410,
+    "tenYearNetValue": 54100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "fuel",
+  "internationalUsable": false,
+  "bestFor": [
+    "Fuel",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "cashback",
+      "eligibility",
+      "fuelSurcharge"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/hpcl-super-saver-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/hpcl-super-saver-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-hpcl-super-saver-credit-card"
+}

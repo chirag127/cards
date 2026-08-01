@@ -1,0 +1,307 @@
+{
+  "id": "rbl-bajaj-finserv-credit-card",
+  "name": "RBL Bank Bajaj Finserv Credit Card",
+  "tagline": "Reward points on every spend with exclusive EMI benefits",
+  "description": "The RBL Bank Bajaj Finserv Credit Card offers 2 reward points per ₹100 on all spends with exclusive EMI conversion benefits at Bajaj Finserv partner stores. With zero-cost EMI options and preferential processing at Bajaj Finserv outlets, it's the ideal card for consumers who prefer easy installment payments on their purchases.",
+  "bank": "RBL Bank",
+  "bankCode": "rbl",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Bajaj Finserv",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white with Bajaj Finserv branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 250000,
+    "minCreditScore": 680,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.5 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "2 Reward Points per ₹100",
+      "description": "Earn 2 reward points per ₹100 on all retail spends",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "emi",
+      "title": "Exclusive EMI Benefits at Bajaj Finserv Partners",
+      "description": "Zero-cost EMI conversion at Bajaj Finserv partner stores with preferential processing",
+      "valueStr": "Zero-cost EMI",
+      "valueNum": 0,
+      "frequencyStr": "At Bajaj Finserv partners",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At Bajaj Finserv partner stores only",
+        "Subject to product eligibility"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "RBL Reward Points",
+    "earnRate": "2 reward points per ₹100",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "1,000 bonus reward points on first transaction within 30 days",
+    "valueStr": "1,000 Reward Points",
+    "valueNum": 250,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "2,000 bonus reward points on spending ₹1 Lakh annually",
+      "spendRequired": 100000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 Reward Points",
+      "rewardNum": 500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Zero-cost EMI at Bajaj Finserv partners",
+    "Preferential processing at Bajaj outlets",
+    "RBL mobile app and online banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#003b70",
+    "#5fa8d3"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2821,
+    "tenYearNetValue": 28210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 339
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 0
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "EMI",
+    "Rewards",
+    "Bajaj Finserv"
+  ],
+  "coBrandDetails": {
+    "partnerName": "Bajaj Finserv",
+    "partnerCategory": "NBFC",
+    "specialPerks": [
+      "Zero-cost EMI at Bajaj Finserv partner stores",
+      "Preferential processing at Bajaj outlets",
+      "Exclusive Bajaj Finserv offers and discounts"
+    ]
+  },
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.rblbank.com/credit-cards/bajaj-finserv-credit-card",
+      "https://www.paisabazaar.com/credit-card/rbl-bajaj-finserv-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "022 6232 7777",
+  "applyUrl": "https://www.rblbank.com/credit-cards/bajaj-finserv-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "rbl-bajaj-finserv-credit-card"
+}

@@ -1,0 +1,270 @@
+{
+  "id": "karnataka-visa-platinum-credit-card",
+  "name": "KBL Visa Platinum Credit Card",
+  "tagline": "Visa Platinum with reward points and low annual fee",
+  "description": "The KBL Visa Platinum Credit Card is a Visa Platinum card from Karnataka Bank offering 2 reward points per ₹100 spent. With a low annual fee and basic credit card features, it provides reliable value for everyday spenders seeking a solid credit card from a trusted regional bank.",
+  "bank": "Karnataka Bank",
+  "bankCode": "karnataka",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Visa Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Silver and blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Plus GST, waived on ₹1.5L annual spend"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 30000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "2 Reward Points per ₹100",
+      "description": "Earn 2 reward points on every ₹100 spent",
+      "valueStr": "2 RP/₹100",
+      "valueNum": 0.5,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excluded: fuel, rent, wallet loads"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "KBL Reward Points",
+    "earnRate": "2 RP per ₹100 on all spends",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "Valid for 2 years",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers via KBL Rewards Portal",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.50%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Annual fee waiver on spending ₹1.5 Lakh in a year",
+      "spendRequired": 150000,
+      "spendPeriod": "Annual",
+      "rewardStr": "Annual fee waiver",
+      "rewardNum": 590
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1.5 Lakh in a membership year",
+      "annualSpendRequired": 150000,
+      "waives": "Annual Fee"
+    }
+  ],
+  "features": [
+    "Visa Platinum privileges",
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#c0c0c0",
+    "#1565c0"
+  ],
+  "value": {
+    "highestValue": 4000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2410,
+    "tenYearNetValue": 24100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 508
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Rewards",
+    "Fuel Savings",
+    "Low Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.karnatakabank.com/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 425 1444",
+  "applyUrl": "https://www.karnatakabank.com/credit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "karnataka-visa-platinum-credit-card"
+}

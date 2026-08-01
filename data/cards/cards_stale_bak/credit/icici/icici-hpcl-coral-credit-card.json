@@ -1,0 +1,296 @@
+{
+  "id": "icici-hpcl-coral-credit-card",
+  "name": "ICICI Bank HPCL Coral Credit Card",
+  "tagline": "Earn reward points on every spend with exclusive HPCL fuel discounts",
+  "description": "The ICICI Bank HPCL Coral Credit Card is a Visa Classic co-branded fuel card offering 2 reward points per ₹100 on all transactions and a 2.5% discount on HPCL fuel purchases. With a very low annual fee of ₹199+GST, it provides excellent value for regular fuel buyers seeking an affordable credit card with basic rewards.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "HPCL Coral",
+  "usage": "Domestic",
+  "bin": "4180",
+  "material": "Plastic",
+  "colorScheme": "Coral orange and white with HPCL branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 200000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹2 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)",
+      "Designed for regular HPCL fuel buyers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 199,
+      "amountWithGst": 234.82,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 199,
+      "amountWithGst": 234.82,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": [
+      "HPCL"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 15000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "2.5% HPCL Fuel Discount",
+      "description": "Get a 2.5% discount on fuel purchases at HPCL petrol pumps",
+      "valueStr": "2.5% discount",
+      "valueNum": 0,
+      "frequencyStr": "Every HPCL fuel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid only at HPCL outlets",
+        "Discount applied at time of transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 2 reward points per ₹100 on all transactions",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances, EMI conversion"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "2 RP per ₹100 on all spends, 2.5% discount at HPCL",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "HPCL Fuel",
+        "multiplier": 2.5,
+        "description": "2.5% discount on HPCL fuel"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 2,
+        "description": "2 RP per ₹100 on all transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers from ICICI Rewards Catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5% to 2.5%",
+    "conditions": [
+      "Excludes cash advances, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹30,000 in the preceding year",
+      "annualSpendRequired": 30000,
+      "waives": "Annual fee of ₹199 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Co-branded with HPCL",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Affordable annual fee",
+    "HPCL fuel discount"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#ff7f50",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2765,
+    "tenYearNetValue": 27650,
+    "totalAnnualCharges": 235,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 1177
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "fuel",
+  "internationalUsable": false,
+  "bestFor": [
+    "Fuel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility",
+      "fuelSurcharge"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/hpcl-coral-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/hpcl-coral-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-hpcl-coral-credit-card"
+}

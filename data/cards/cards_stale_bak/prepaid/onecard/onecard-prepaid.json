@@ -1,0 +1,163 @@
+{
+  "id": "onecard-prepaid",
+  "name": "OneCard Metal Prepaid Card",
+  "tagline": "India's smartest metal prepaid card",
+  "description": "OneCard is a sleek metal prepaid card that offers 1% cashback on all transactions, instant notifications, and a premium app experience. Built for the digital-first generation, it combines the convenience of a prepaid card with the feel of a premium metal card.",
+  "bank": "OneCard",
+  "bankCode": "onecard",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Metal",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Matte black with silver accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "minAge": 18,
+    "maxAge": 65,
+    "notes": [
+      "Available for all Indian residents above 18 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Card Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Flat 1% Cashback",
+      "description": "1% cashback on all transactions, no category restrictions",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Credited as reward points"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Metal Card",
+      "description": "Premium metal card with sleek matte black finish",
+      "valueStr": "Premium feel",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Instant UPI-based top-up",
+    "Real-time spend notifications",
+    "Card controls via app",
+    "Virtual + physical card",
+    "Zero forex markup on select merchants",
+    "Spending insights & analytics"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#333333"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Digital Payments",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.getonecard.app"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://www.getonecard.app",
+  "lastUpdated": "2026-03-27",
+  "type": "prepaid",
+  "slug": "onecard-prepaid"
+}

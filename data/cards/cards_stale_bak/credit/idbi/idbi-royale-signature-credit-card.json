@@ -1,0 +1,448 @@
+{
+  "id": "idbi-royale-signature-credit-card",
+  "name": "IDBI Bank Royale Signature Credit Card",
+  "tagline": "Premium lifetime free signature card with lounge access",
+  "description": "The IDBI Bank Royale Signature Credit Card is a premium lifetime free Visa Signature credit card offering domestic lounge access, comprehensive air travel insurance, fuel surcharge waiver, and reward points on all spends. With no joining or annual fees, it delivers strong value for frequent travellers and everyday spenders alike.",
+  "bank": "IDBI Bank",
+  "bankCode": "idbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Visa Signature",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Royal purple and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No minimum income requirement",
+      "Age 21-65 years",
+      "Salaried or self-employed applicants eligible",
+      "Good credit score recommended for approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Lifetime Free from second year"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 300,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 300,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 2.5,
+    "annualInterestRate": 30
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "Hindustan Petroleum",
+      "Reliance Petroleum",
+      "Shell"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 16,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Airport Lounge Program"
+    ],
+    "conditions": [
+      "Complimentary domestic airport lounge access",
+      "Applicable at participating domestic airport lounges only",
+      "Lounge visits subject to availability"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Welcome Benefit - Delight Points",
+      "description": "Earn 750 Delight Points on first card usage within 30 days of card issuance, or 400 Delight Points if first usage is between 31-90 days of issuance.",
+      "valueStr": "750 DP (within 30 days) / 400 DP (31-90 days)",
+      "valueNum": 750,
+      "frequencyStr": "One-time on first usage",
+      "frequencyPerYear": 1,
+      "annualValue": 750,
+      "conditions": [
+        "750 DP credited if first transaction is within 30 days",
+        "400 DP credited if first transaction is between 31-90 days",
+        "No Delight Points if first usage is after 90 days"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 3 Delight Points for every Rs 100 spent on the card across all merchant categories.",
+      "valueStr": "3 DP per Rs 100",
+      "valueNum": 3,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Points credited on retail, online, and international spends",
+        "Fuel, wallet loads, and utility bill payments may be excluded"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between Rs 400 and Rs 5,000 at all fuel stations across India. Maximum waiver of Rs 500 per statement cycle.",
+      "valueStr": "1% waiver up to Rs 500/month",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Applicable on fuel transactions between Rs 400 and Rs 5,000",
+        "Maximum waiver of Rs 500 per statement cycle",
+        "Available at all fuel stations in India"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary access to domestic airport lounges across India through the Visa Airport Lounge Program.",
+      "valueStr": "4 visits per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 16,
+      "annualValue": 24000,
+      "conditions": [
+        "Visa Airport Lounge Program membership required",
+        "Subject to lounge availability",
+        "Applicable at participating domestic airport lounges only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Travel Accident Insurance",
+      "description": "Comprehensive air travel accident insurance cover of Rs 25 Lakh when flight tickets are booked using the IDBI Royale Signature Credit Card.",
+      "valueStr": "Rs 25 Lakh",
+      "valueNum": 2500000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 2500000,
+      "conditions": [
+        "Applicable when air tickets are booked using the card",
+        "Coverage valid for the primary cardholder only",
+        "Claims must be filed within 30 days of incident"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Interest-Free Credit Period",
+      "description": "Enjoy up to 48 days of interest-free credit period on all retail transactions.",
+      "valueStr": "Up to 48 days",
+      "valueNum": 48,
+      "frequencyStr": "Per billing cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on retail purchases only",
+        "Cash advances and balance transfers attract interest from day one"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Add-On Cards",
+      "description": "Get up to 2 complimentary add-on credit cards for eligible family members with shared credit limits.",
+      "valueStr": "2 add-on cards",
+      "valueNum": 2,
+      "frequencyStr": "Lifetime",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Maximum 2 add-on cards allowed",
+        "Family members above 18 years eligible",
+        "Add-on cards share primary card credit limit"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDBI Delight Points",
+    "earnRate": "3 DP per Rs 100 on all spends",
+    "pointsPer100": 3,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.75,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 3,
+        "description": "3 Delight Points per Rs 100 on all retail spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Air miles conversion",
+      "Product catalogue",
+      "Voucher redemption"
+    ],
+    "minRedemptionPoints": 500,
+    "redemptionRatios": [
+      {
+        "partnerTarget": "Statement Credit",
+        "pointsRequired": 500,
+        "valueReceived": 125,
+        "description": "500 DP = Rs 125 statement credit"
+      },
+      {
+        "partnerTarget": "Air Miles",
+        "pointsRequired": 1000,
+        "valueReceived": 300,
+        "description": "1000 DP = 300 air miles"
+      },
+      {
+        "partnerTarget": "Gift Vouchers",
+        "pointsRequired": 500,
+        "valueReceived": 125,
+        "description": "500 DP = Rs 125 gift voucher"
+      }
+    ],
+    "rewardRateStr": "0.75%",
+    "conditions": [
+      "Points credited within 30 days of transaction posting",
+      "Points expire 2 years from accrual date",
+      "Minimum 500 points required for redemption"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Earn 750 Delight Points on first card usage within 30 days of issuance, or 400 Delight Points if first usage is between 31-90 days.",
+    "valueStr": "750 Delight Points",
+    "valueNum": 750,
+    "conditions": [
+      "First usage within 30 days: 750 DP",
+      "First usage between 31-90 days: 400 DP",
+      "No welcome benefit if first usage is after 90 days"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Lifetime free card - no annual fee ever",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee (Lifetime Free)"
+    }
+  ],
+  "features": [
+    "Lifetime free credit card",
+    "Contactless payments enabled",
+    "EMV chip security",
+    "Up to 2 add-on cards for family members",
+    "EMI conversion facility",
+    "Domestic and international lounge access",
+    "Fuel surcharge waiver up to Rs 500/month",
+    "Air travel accident insurance of Rs 25 Lakh",
+    "Up to 48 days interest-free credit period",
+    "Reward points on all spends"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#4a148c",
+    "#ce93d8"
+  ],
+  "value": {
+    "highestValue": 24000,
+    "averageValue": 18000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 18000,
+    "tenYearNetValue": 180000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 18000,
+    "roiPercent": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent domestic travellers",
+    "Fuel spends",
+    "Everyday retail",
+    "Lifetime free seekers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits",
+      "fuelSurcharge",
+      "welcomeBonus",
+      "rewardProgram",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [
+      "creditCardDetails"
+    ],
+    "sourceUrls": [
+      "https://www.idbibank.in/credit-cards.aspx",
+      "https://www.wishfin.com/credit-card/idbi-bank/idbi-royale-signature-credit-card/",
+      "https://www.bankbazaar.com/credit-cards/idbi-bank-royale-signature-credit-card.html",
+      "https://www.paisabazaar.com/credit-cards/idbi-bank-royale-signature-credit-card/"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "reviews": [
+    {
+      "provider": "BankBazaar",
+      "overallRating": 4.2,
+      "maxRating": 5,
+      "categoryRatings": [
+        {
+          "category": "Rewards",
+          "rating": 4,
+          "maxRating": 5
+        },
+        {
+          "category": "Benefits",
+          "rating": 4.5,
+          "maxRating": 5
+        },
+        {
+          "category": "Value for Money",
+          "rating": 4.8,
+          "maxRating": 5
+        }
+      ],
+      "summary": "Excellent lifetime free card with strong lounge access and insurance benefits.",
+      "pros": [
+        "Lifetime free - no joining or annual fee",
+        "Comprehensive lounge access",
+        "Strong air travel insurance"
+      ],
+      "cons": [
+        "No international lounge access",
+        "Limited reward categories"
+      ],
+      "reviewUrl": "https://www.bankbazaar.com/credit-cards/idbi-bank-royale-signature-credit-card.html",
+      "lastUpdated": "2026-04-08"
+    }
+  ],
+  "customerCareNumber": "1800 425 7600 / 022-40426013",
+  "applyUrl": "https://www.idbibank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "idbi-royale-signature-credit-card"
+}

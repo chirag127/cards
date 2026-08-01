@@ -1,0 +1,343 @@
+{
+  "id": "axis-horizon-credit-card",
+  "name": "Axis Bank Horizon Credit Card",
+  "tagline": "Accelerated miles for the frequent flyer",
+  "description": "The Axis Horizon Credit Card is a Visa Signature tier card offering 5 EDGE miles per ₹100 on travel spends and 2 EDGE miles per ₹100 on all other transactions. With an annual fee of ₹3,000+GST, it is designed for frequent travellers looking to accumulate airline miles faster through everyday spending.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Horizon",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Deep blue and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹6 Lakh p.a.",
+      "Age 21–65 years",
+      "Ideal for frequent travellers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 400,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "travelInsuranceCover": 2500000,
+    "airAccidentCover": 25000000,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Air accident cover: ₹2.5 Crore",
+      "Travel insurance: ₹25 Lakh",
+      "Lost card liability: ₹5 Lakh",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 32,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": 4,
+      "frequency": "Per year",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 3500,
+      "guestAllowed": false,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass"
+    ],
+    "conditions": [
+      "8 domestic lounge visits per quarter",
+      "4 international lounge visits per year",
+      "Swipe card at participating lounges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "5 EDGE Miles per ₹100 on Travel",
+      "description": "Earn 5 EDGE miles per ₹100 on all travel spends including flights, hotels, and travel agencies",
+      "valueStr": "5 miles per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on travel category spends",
+        "Flights, hotels, travel agents"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2 EDGE Miles per ₹100 on Other Spends",
+      "description": "Earn 2 EDGE miles per ₹100 on all other retail transactions",
+      "valueStr": "2 miles per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to all non-travel spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic & International Lounge Access",
+      "description": "8 domestic lounge visits per quarter and 4 international lounge visits per year",
+      "valueStr": "32 domestic + 4 intl/year",
+      "valueNum": 2500,
+      "frequencyStr": "Per quarter/year",
+      "frequencyPerYear": 4,
+      "annualValue": 94000,
+      "conditions": [
+        "Domestic via Dreamfolks",
+        "International via Priority Pass"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Low Forex Markup",
+      "description": "Only 2% currency markup on international transactions",
+      "valueStr": "2%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 400,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 4800,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹400 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis EDGE Miles",
+    "earnRate": "2–5 EDGE miles per ₹100",
+    "pointsPer100": 2,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 5,
+        "description": "5 EDGE miles per ₹100"
+      },
+      {
+        "category": "All other spends",
+        "multiplier": 2,
+        "description": "2 EDGE miles per ₹100"
+      }
+    ],
+    "redemptionOptions": [
+      "Transfer to airline partners (Vistara, Singapore Airlines, etc.)",
+      "Flights & Hotels via Edge Rewards portal",
+      "Products & Gift Vouchers"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1% to 2.5%",
+    "conditions": [
+      "Excluded: fuel, EMI, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Visa Signature privileges",
+    "Air miles transfer to partners",
+    "Domestic & international lounge access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 250,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#0A2463",
+    "#3E92CC"
+  ],
+  "value": {
+    "highestValue": 98800,
+    "averageValue": 50000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 46460,
+    "tenYearNetValue": 464600,
+    "totalAnnualCharges": 3540,
+    "totalAnnualBenefits": 50000,
+    "roiPercent": 1312
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/horizon-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-bank-horizon-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/horizon-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-horizon-credit-card"
+}

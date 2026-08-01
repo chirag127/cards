@@ -1,0 +1,194 @@
+{
+  "id": "amazon-pay-gift-prepaid-card",
+  "name": "Amazon Pay Gift Card Prepaid",
+  "tagline": "India's most popular e-commerce gift card",
+  "description": "The Amazon Pay Gift Card Prepaid is a closed-loop prepaid instrument redeemable exclusively on Amazon.in. It can be added to your Amazon Pay balance and used for millions of products, Prime memberships, bill payments, and recharges. Available in denominations from Rs 25 to Rs 10,000, it is India's most trusted e-commerce gift card for personal gifting and corporate incentives.",
+  "bank": "Amazon Pay",
+  "bankCode": "amazonpay",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Gift Card",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Amazon orange and dark blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No KYC required for purchase",
+      "Amazon.in account needed for redemption",
+      "Available for all Indian residents"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Face value only"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Not applicable"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 10000,
+    "contactlessPerTxn": 0,
+    "contactlessDailyLimit": 0,
+    "upiDailyLimit": 0
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Amazon.in Redemption",
+      "description": "Redeem across millions of products on Amazon.in including electronics, fashion, books, groceries, and more",
+      "valueStr": "Full face value",
+      "valueNum": 0,
+      "frequencyStr": "Per redemption",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Amazon.in only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Prime Membership Eligible",
+      "description": "Use Amazon Pay Gift Card balance to purchase or renew Amazon Prime membership",
+      "valueStr": "Full value",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Amazon.in"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "Bill Payments & Recharges",
+      "description": "Pay electricity, gas, broadband bills and mobile recharges using Amazon Pay balance from gift cards",
+      "valueStr": "Full value",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Amazon Pay bill pay section"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Digital and physical card options",
+    "Flexible denominations (Rs 25 - Rs 10,000)",
+    "Instant digital delivery",
+    "No expiry for redeemed balance",
+    "Amazon Pay balance integration",
+    "Corporate gifting available",
+    "Customizable gift messages",
+    "Wide Amazon.in product range"
+  ],
+  "validity": "1 year from purchase",
+  "contactless": false,
+  "ncmc": false,
+  "gradientColors": [
+    "#ff9900",
+    "#232f3e"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "E-Commerce Gifting",
+    "Amazon Shopping",
+    "Corporate Incentives"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.amazon.in/gp/browse.html?node=8320682031"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.amazon.in/gp/browse.html?node=8320682031",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "amazon-pay-gift-prepaid-card"
+}

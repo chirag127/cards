@@ -1,0 +1,289 @@
+{
+  "id": "axis-shoppers-stop-credit-card",
+  "name": "Axis Bank Shoppers Stop Credit Card",
+  "tagline": "Earn First Citizen points on every Shoppers Stop purchase",
+  "description": "The Axis Shoppers Stop Credit Card is a Visa Gold tier co-branded shopping card offering 20 First Citizen points per ₹200 at Shoppers Stop and 2% value back on all other spends. With an annual fee of ₹500+GST, it is designed for loyal Shoppers Stop customers who want to maximise their reward points on fashion and lifestyle shopping.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Shoppers Stop",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 180000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹1.8 Lakh p.a.",
+      "Age 18–65 years",
+      "Ideal for Shoppers Stop loyalists"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Lost card liability: ₹1 Lakh",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "coBrandDetails": {
+    "partnerName": "Shoppers Stop",
+    "partnerCategory": "Retail / Fashion",
+    "specialPerks": [
+      "20 First Citizen points per ₹200 at Shoppers Stop",
+      "Additional member-only discounts during sale events"
+    ]
+  },
+  "shoppingBenefits": {
+    "available": true,
+    "partnerMerchants": [
+      "Shoppers Stop",
+      "HomeStop",
+      "Crossword"
+    ],
+    "offerDescription": "Earn 20 FC points per ₹200 at Shoppers Stop stores and website",
+    "discountPercent": 0
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "20 First Citizen Points per ₹200 at Shoppers Stop",
+      "description": "Earn 20 First Citizen reward points per ₹200 spent at Shoppers Stop stores and online",
+      "valueStr": "20 FC points/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at Shoppers Stop stores and website"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "2% Value Back on Other Spends",
+      "description": "Earn 2% value back on all other retail transactions",
+      "valueStr": "2% value back",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to all non-Shoppers Stop spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "First Citizen Points",
+    "earnRate": "20 FC points/₹200 at SS, 2% other",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "1 year from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Shoppers Stop",
+        "multiplier": 10,
+        "description": "20 FC points per ₹200"
+      }
+    ],
+    "redemptionOptions": [
+      "Redeem at Shoppers Stop stores",
+      "Products on Shoppers Stop website"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "0.5% to 2.5%",
+    "conditions": [
+      "FC points redeemable only at Shoppers Stop"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "First Citizen loyalty integration",
+    "Shoppers Stop member benefits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#1A1A1A",
+    "#C9A96E"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3410,
+    "tenYearNetValue": 34100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 578
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/shoppers-stop-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-bank-shoppers-stop-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/shoppers-stop-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-shoppers-stop-credit-card"
+}

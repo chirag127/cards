@@ -1,0 +1,353 @@
+{
+  "id": "icici-adani-one-signature-credit-card",
+  "name": "Adani One ICICI Bank Signature Credit Card",
+  "tagline": "Earn accelerated Adani reward points across the entire Adani ecosystem",
+  "description": "The Adani One ICICI Bank Signature Credit Card is a Mastercard Signature-tier co-branded card offering 7 Adani reward points per ₹100 on spends within the Adani ecosystem, including airports, Adani Electricity, Adani Gas, and Adani-managed facilities. It provides complimentary lounge access at Adani-operated airports, milestone bonuses, and exclusive Adani One app privileges for frequent travellers using Adani airports.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Adani One Signature",
+  "usage": "Domestic",
+  "bin": "5470",
+  "material": "Plastic",
+  "colorScheme": "Deep blue and gold with Adani One branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 60000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 1000000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹60,000",
+      "Self-Employed: ITR > ₹10 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)",
+      "Ideal for frequent users of Adani airports and services"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 300,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 600000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 5000000,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Personal accident insurance: ₹1 Crore",
+      "Travel insurance: ₹50 Lakh",
+      "Credit liability cover: ₹5 Lakh"
+    ],
+    "provider": "ICICI Lombard"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "Up to 8 per year",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks",
+      "Mastercard Airport Experiences"
+    ],
+    "conditions": [
+      "8 complimentary domestic lounge visits per year",
+      "Priority access at Adani-operated airport lounges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "7 Adani RP per ₹100 on Adani Ecosystem",
+      "description": "Earn 7 Adani reward points per ₹100 on spends within the Adani ecosystem",
+      "valueStr": "7 Adani RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every Adani ecosystem transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Includes Adani airports, Adani Electricity, Adani Gas, and other Adani services"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "Up to 8 per year",
+      "frequencyPerYear": 8,
+      "annualValue": 16000,
+      "conditions": [
+        "At participating airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Adani One App Privileges",
+      "description": "Exclusive offers and priority services on the Adani One app for airport bookings and services",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available via Adani One app",
+        "Priority check-in and services at Adani airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 300,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3600,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹300 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Adani Reward Points",
+    "earnRate": "7 Adani RP per ₹100 on Adani ecosystem, 1 RP per ₹100 on other spends",
+    "pointsPer100": 7,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1.75,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Adani Ecosystem",
+        "multiplier": 7,
+        "description": "7 Adani RP per ₹100 on Adani airports, electricity, gas, and services"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 1,
+        "description": "1 Adani RP per ₹100 on all other transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Adani One app services",
+      "Airport services and facilities",
+      "Adani ecosystem products and services",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 1.75%",
+    "conditions": [
+      "Valid on Adani ecosystem transactions only for accelerated rate"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "2,000 Adani reward points on card activation",
+    "valueStr": "2,000 Adani RP",
+    "valueNum": 500,
+    "conditions": [
+      "Credited on first transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "3,000 bonus Adani reward points on spending ₹3 Lakh annually",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "3,000 Adani RP",
+      "rewardNum": 750
+    },
+    {
+      "description": "Additional 5,000 bonus Adani reward points on spending ₹6 Lakh annually",
+      "spendRequired": 600000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 Adani RP",
+      "rewardNum": 1250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in the preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹5,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Co-branded with Adani One",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Priority services at Adani airports",
+    "Adani One app integration"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#003366",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 20000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 14100,
+    "tenYearNetValue": 141000,
+    "totalAnnualCharges": 5900,
+    "totalAnnualBenefits": 20000,
+    "roiPercent": 239
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "travel",
+  "internationalUsable": false,
+  "bestFor": [
+    "Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/adani-one-signature-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/adani-one-signature-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-adani-one-signature-credit-card"
+}

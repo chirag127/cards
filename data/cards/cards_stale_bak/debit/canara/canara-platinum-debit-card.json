@@ -1,0 +1,133 @@
+{
+  "id": "canara-platinum-debit-card",
+  "name": "Canara Platinum Debit Card",
+  "tagline": "Premium debit with higher limits",
+  "description": "The Canara Platinum Debit Card offers premium features with higher transaction limits. Designed for customers who need enhanced transaction capabilities.",
+  "bank": "Canara Bank",
+  "bankCode": "canara",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Platinum gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Canara Bank account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 150,
+      "amountWithGst": 177,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Higher transaction limits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#e5e4e2",
+    "#2c3e50"
+  ],
+  "value": {
+    "highestValue": 4500,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2410,
+    "tenYearNetValue": 24100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 408
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use",
+    "Higher Spending"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.canarabank.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 425 0018",
+  "applyUrl": "https://www.canarabank.in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "canara-platinum-debit-card"
+}

@@ -1,0 +1,294 @@
+{
+  "id": "stanchart-smart-credit-card",
+  "name": "Standard Chartered Smart Credit Card",
+  "tagline": "2% cashback on online, 1% offline — zero annual fee",
+  "description": "The Standard Chartered Smart Credit Card is a lifetime-free card offering 2% cashback on all online transactions and 1% on offline spends. Designed for the digital-savvy consumer, it provides hassle-free cashback without categories to track, making it ideal for everyday online shoppers.",
+  "bank": "Standard Chartered",
+  "bankCode": "stanchart",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Smart",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 200000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹2 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 20,
+    "miniStatementOtherBank": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 15000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "2% Cashback on Online Transactions",
+      "description": "Earn 2% cashback on all online transactions including e-commerce, bill payments, and app-based purchases",
+      "valueStr": "2% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every online transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "All online transactions via internet or mobile app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1% Cashback on Offline Transactions",
+      "description": "Earn 1% cashback on all offline POS transactions at retail stores",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every offline transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "All POS swipe transactions at retail stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Standard Chartered Cashback",
+    "earnRate": "2% online, 1% offline",
+    "pointsPer100": 0,
+    "pointValue": 0,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "Cashback credited to statement — no expiry",
+    "bonusCategories": [
+      {
+        "category": "Online",
+        "multiplier": 2,
+        "description": "2% cashback on all online transactions"
+      },
+      {
+        "category": "Offline",
+        "multiplier": 1,
+        "description": "1% cashback on all offline transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Automatic statement credit"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 2%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, balance transfers"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus — lifetime free card",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "No annual fee — lifetime free card",
+      "annualSpendRequired": 0,
+      "waives": "N/A — card is free"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Lifetime free — no annual fee",
+    "2% cashback on online transactions",
+    "SC mobile app and online banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#005eb8",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4000,
+    "tenYearNetValue": 40000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 9999
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Online Shopping",
+    "Cashback",
+    "No Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sc.com/in/credit-cards/smart/",
+      "https://www.paisabazaar.com/credit-card/standard-chartered-smart-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 345 5000",
+  "applyUrl": "https://www.sc.com/in/credit-cards/smart/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "stanchart-smart-credit-card"
+}

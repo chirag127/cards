@@ -1,0 +1,421 @@
+{
+  "id": "hsbc-premier-credit-card",
+  "name": "HSBC Premier Credit Card",
+  "tagline": "Premium rewards and unlimited global lounge access for Premier clients",
+  "description": "The HSBC Premier Credit Card is an exclusive card for HSBC Premier banking customers. It offers 3 reward points per ₹100 on all spends with 10X accelerated points on travel, unlimited international lounge access via Priority Pass, and no annual fee for Premier customers. A truly premium card for high-net-worth individuals.",
+  "bank": "HSBC India",
+  "bankCode": "hsbc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Premier",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Dark grey and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 200000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 2500000,
+    "minCreditScore": 750,
+    "existingAccountRequired": true,
+    "accountType": [
+      "HSBC Premier Savings Account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires active HSBC Premier banking relationship",
+      "Minimum Total Relationship Balance of ₹30 Lakh",
+      "Salaried: Gross Monthly Income > ₹2 Lakh",
+      "Self-Employed: ITR > ₹25 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free for Premier customers"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free for Premier customers"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 20,
+    "miniStatementOtherBank": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.15,
+    "annualInterestRate": 37.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 30000000,
+    "permanentDisabilityCover": 30000000,
+    "purchaseProtectionCover": 300000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 1500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 3000000,
+    "airAccidentCover": 30000000,
+    "baggageCover": 150000,
+    "conditions": [
+      "Air accident cover: ₹3 Crore",
+      "Travel insurance: ₹30 Lakh",
+      "Emergency overseas hospitalization cover included"
+    ],
+    "provider": "HSBC Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 27
+    },
+    "international": {
+      "count": -1,
+      "frequency": "Unlimited via Priority Pass",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 4000,
+      "guestAllowed": true,
+      "guestCharge": 27
+    },
+    "programs": [
+      "Priority Pass",
+      "Visa Lounge Access"
+    ],
+    "conditions": [
+      "Unlimited international lounge access via Priority Pass",
+      "Guest visits charged at $27 per visit",
+      "Domestic lounge access via Visa programme"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited International Lounge Access",
+      "description": "Unlimited complimentary international airport lounge access via Priority Pass",
+      "valueStr": "Unlimited visits",
+      "valueNum": 4000,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": -1,
+      "annualValue": 80000,
+      "conditions": [
+        "Priority Pass membership included",
+        "Guest access at $27 per visit"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "10X Reward Points on Travel",
+      "description": "Earn 10X reward points on travel spends including flights, hotels, and travel bookings",
+      "valueStr": "10X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every travel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Flights, hotels, car rentals, and travel agencies"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "3 RP per ₹100 on All Spends",
+      "description": "Earn 3 reward points per ₹100 spent on all retail purchases",
+      "valueStr": "3 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances, quasi-cash transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Low Forex Markup",
+      "description": "Only 2% currency markup on international transactions",
+      "valueStr": "2%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "Premier Concierge Services",
+      "description": "Dedicated 24/7 concierge services for Premier cardholders",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HSBC Reward Points",
+    "earnRate": "3 RP per ₹100 (10X on travel)",
+    "pointsPer100": 3,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.75,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 10,
+        "description": "10X reward points on all travel spends"
+      },
+      {
+        "category": "Others",
+        "multiplier": 3,
+        "description": "3 reward points per ₹100 on all other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights and hotels via HSBC rewards portal",
+      "Air miles transfer to airline partners",
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.75% to 7.5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, balance transfers"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 bonus reward points on card activation",
+    "valueStr": "10,000 Reward Points",
+    "valueNum": 2500,
+    "conditions": [
+      "Card activation and first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "15,000 bonus reward points on spending ₹8 Lakh annually",
+      "spendRequired": 800000,
+      "spendPeriod": "Annually",
+      "rewardStr": "15,000 Reward Points",
+      "rewardNum": 3750
+    },
+    {
+      "description": "Additional 10,000 bonus reward points on spending ₹12 Lakh annually",
+      "spendRequired": 1200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 2500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "No annual fee for HSBC Premier banking customers — no spend-based waiver needed",
+      "annualSpendRequired": 0,
+      "waives": "N/A — card is free for Premier customers"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Premier banking benefits",
+    "24/7 concierge service",
+    "Priority Pass membership",
+    "Exclusive travel and dining privileges"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#2f2f2f",
+    "#8c8c8c"
+  ],
+  "value": {
+    "highestValue": 120000,
+    "averageValue": 60000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 60000,
+    "tenYearNetValue": 600000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 60000,
+    "roiPercent": 9999
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "24/7 Dedicated Premier Line",
+    "services": [
+      "Travel planning and bookings",
+      "Restaurant reservations",
+      "Event tickets and VIP access",
+      "Gift sourcing and delivery",
+      "Emergency assistance worldwide"
+    ]
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Select luxury hotel programme access"
+    ],
+    "flightPrivileges": [
+      "Priority booking on select airlines",
+      "Complimentary upgrades where available"
+    ],
+    "otherPerks": [
+      "Priority Pass unlimited",
+      "Global emergency card replacement",
+      "Currency markup discount"
+    ]
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Premium"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hsbc.co.in/credit-cards/products/premier/",
+      "https://www.paisabazaar.com/credit-card/hsbc-premier-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 3456",
+  "applyUrl": "https://www.hsbc.co.in/credit-cards/products/premier/",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "hsbc-premier-credit-card"
+}

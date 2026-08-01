@@ -1,0 +1,194 @@
+{
+  "id": "zeta-corporate-prepaid-card",
+  "name": "Zeta Corporate Prepaid Card",
+  "tagline": "Corporate benefits with expense management and employee rewards",
+  "description": "The Zeta Corporate Prepaid Card is a Visa prepaid card offering comprehensive corporate benefits including expense management, employee rewards, and real-time spend analytics. Designed for modern workplaces, it provides administrators full control over employee spending while rewarding engaged users.",
+  "bank": "Zeta",
+  "bankCode": "zeta",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Corporate",
+  "variant": "Corporate",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "accountType": [
+      "Corporate account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to corporate clients only",
+      "Employer-sponsored program",
+      "Individual KYC required for each employee"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Per Card Fee",
+      "amount": 0,
+      "note": "Bundled in corporate plan"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Corporate Expense Management",
+      "description": "Full-featured expense management with category controls, budget allocation, and real-time monitoring",
+      "valueStr": "Comprehensive",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Zeta admin dashboard"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Employee Rewards",
+      "description": "Earn rewards on eligible spends redeemable for vouchers, experiences, and more",
+      "valueStr": "Rewards",
+      "valueNum": 1000,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 1000,
+      "conditions": [
+        "Subject to reward program terms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Real-Time Spend Analytics",
+      "description": "Dashboard with real-time analytics, category breakdowns, and trend analysis",
+      "valueStr": "Analytics",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Corporate expense management",
+    "Employee rewards program",
+    "Real-time spend analytics",
+    "Category-based budget controls",
+    "Instant card issuance",
+    "Virtual and physical cards",
+    "Admin dashboard",
+    "Automated reporting",
+    "Multi-level approvals",
+    "Integration with HR/payroll systems"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#6f2da8",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 9999
+  },
+  "category": "business",
+  "internationalUsable": false,
+  "bestFor": [
+    "Corporate Benefits",
+    "Employee Rewards",
+    "Expense Management"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.zeta.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.zeta.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "zeta-corporate-prepaid-card"
+}

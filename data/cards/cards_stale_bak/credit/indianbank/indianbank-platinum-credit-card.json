@@ -1,0 +1,284 @@
+{
+  "id": "indianbank-platinum-credit-card",
+  "name": "Indian Bank Platinum Credit Card",
+  "tagline": "Premium platinum card with reward points and high credit limits",
+  "description": "The Indian Bank Platinum Credit Card offers elevated credit limits,\nreward points on all spends, EMI conversion facility, and premium\nplatinum-tier benefits at a low annual fee of Rs 250 + GST.",
+  "bank": "Indian Bank",
+  "bankCode": "indianbank",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Platinum and navy",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 3 Lakh+",
+      "Self-Employed: ITR of Rs 3 Lakh+",
+      "Age 21-60 years",
+      "Minimum credit score of 650 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 250,
+      "amountWithGst": 295,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 250,
+      "amountWithGst": 295,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 1.99,
+    "annualInterestRate": 23.88
+  },
+  "fuelSurcharge": {
+    "available": false,
+    "waiverPercent": 0,
+    "minTransactionAmount": 0,
+    "maxTransactionAmount": 0,
+    "maxWaiverPerCycle": 0,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 30000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not available on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 1 reward point per Rs 200 spent on all transactions",
+      "valueStr": "1 RP per Rs 200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "emi",
+      "title": "EMI Conversion Facility",
+      "description": "Convert large purchases into easy monthly EMIs at competitive interest rates",
+      "valueStr": "EMI available",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Minimum transaction of Rs 2,500 required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on annual spend of Rs 1.5 Lakh",
+      "valueStr": "Fee waiver",
+      "valueNum": 250,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 250,
+      "conditions": [
+        "Annual spend of Rs 1.5 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Indian Bank Reward Points",
+    "earnRate": "1 RP per Rs 200 on all spends",
+    "pointsPer100": 0.5,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.1%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus available",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 1,000 bonus points on annual spend of Rs 2 Lakh",
+      "spendRequired": 200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 bonus points",
+      "rewardNum": 1000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 1.5 Lakh",
+      "annualSpendRequired": 150000,
+      "waives": "Annual fee of Rs 250 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "High credit limits",
+    "Reward points on all spends"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 45,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#546e7a",
+    "#1a237e"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": -45,
+    "tenYearNetValue": -450,
+    "totalAnnualCharges": 295,
+    "totalAnnualBenefits": 250,
+    "roiPercent": 85
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Everyday spends",
+    "High-value purchases",
+    "EMI convenience"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards"
+    ],
+    "sourceUrls": [
+      "https://www.indianbank.in/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 425 00000",
+  "applyUrl": "https://www.indianbank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "indianbank-platinum-credit-card"
+}

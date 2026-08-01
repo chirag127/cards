@@ -1,0 +1,405 @@
+{
+  "id": "uco-sbi-elite-credit-card",
+  "name": "UCO Bank SBI Card ELITE",
+  "tagline": "Ultra-premium card with global lounge access and comprehensive insurance",
+  "description": "The UCO Bank SBI Card ELITE is the top-tier offering in the UCO-SBI\npartnership, delivering up to 50,000 bonus reward points per year, domestic\nand international lounge access, comprehensive travel and air accident\ninsurance, and priority concierge services for high-net-worth individuals.",
+  "bank": "UCO Bank",
+  "bankCode": "uco",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "World",
+  "variant": "ELITE",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 12 Lakh+",
+      "Self-Employed: ITR of Rs 12 Lakh+",
+      "Age 21-60 years",
+      "Minimum credit score of 750 recommended",
+      "High income individuals preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 4999,
+      "amountWithGst": 5899,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 4999,
+      "amountWithGst": 5899,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 32,
+      "valuePerVisit": 1500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 16,
+      "valuePerVisit": 3000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass"
+    ],
+    "conditions": [
+      "Domestic and international lounge access for primary cardholder",
+      "Guest allowed at no additional charge",
+      "International lounge via Priority Pass"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 500 and Rs 5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Complimentary Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per quarter with guest access",
+      "valueStr": "8 per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 32,
+      "annualValue": 48000,
+      "conditions": [
+        "Primary cardholder + 1 guest"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Complimentary International Lounge Access",
+      "description": "4 complimentary international airport lounge visits per quarter via Priority Pass",
+      "valueStr": "4 per quarter",
+      "valueNum": 3000,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 16,
+      "annualValue": 48000,
+      "conditions": [
+        "Primary cardholder + 1 guest via Priority Pass"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Up to 50,000 Bonus Reward Points",
+      "description": "Earn up to 50,000 bonus reward points per year worth Rs 12,500. 10,000 bonus points on spending Rs 3 Lakh",
+      "valueStr": "Up to 50,000 RP",
+      "valueNum": 50000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 12500,
+      "conditions": [
+        "10,000 bonus points on annual spend of Rs 3 Lakh",
+        "Additional milestone bonuses available",
+        "Total value up to Rs 12,500 per year"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Comprehensive Travel Insurance",
+      "description": "Comprehensive travel insurance and air accident cover when tickets are booked using the card",
+      "valueStr": "Rs 1 Crore",
+      "valueNum": 10000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 10000000,
+      "conditions": [
+        "Valid when travel tickets booked using the card",
+        "Covers air accident, travel inconvenience, baggage loss"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on annual spend of Rs 8 Lakh",
+      "valueStr": "Fee waiver",
+      "valueNum": 4999,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 4999,
+      "conditions": [
+        "Annual spend of Rs 8 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "Priority Concierge Service",
+      "description": "24/7 dedicated concierge service for travel, dining, and lifestyle assistance",
+      "valueStr": "24/7 access",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "UCO SBI Elite Reward Points",
+    "earnRate": "5 RP per Rs 100 on travel and dining",
+    "pointsPer100": 5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 5,
+        "description": "5 RP per Rs 100"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 5,
+        "description": "5 RP per Rs 100"
+      },
+      {
+        "category": "International spends",
+        "multiplier": 4,
+        "description": "4 RP per Rs 100"
+      },
+      {
+        "category": "All other spends",
+        "multiplier": 1,
+        "description": "1 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Air miles",
+      "Gift vouchers",
+      "Premium products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1.25%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "5,000 bonus reward points on card activation",
+    "valueStr": "5,000 RP",
+    "valueNum": 5000,
+    "conditions": [
+      "Spend Rs 50,000 within 60 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 10,000 bonus points on annual spend of Rs 3 Lakh",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 bonus points",
+      "rewardNum": 10000
+    },
+    {
+      "description": "Earn 20,000 bonus points on annual spend of Rs 6 Lakh",
+      "spendRequired": 600000,
+      "spendPeriod": "Annually",
+      "rewardStr": "20,000 bonus points",
+      "rewardNum": 20000
+    },
+    {
+      "description": "Earn 20,000 bonus points on annual spend of Rs 10 Lakh",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "20,000 bonus points",
+      "rewardNum": 20000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 8 Lakh",
+      "annualSpendRequired": 800000,
+      "waives": "Annual fee of Rs 4,999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Domestic and international lounge access",
+    "Priority Pass membership",
+    "Comprehensive travel insurance",
+    "24/7 concierge service",
+    "Metal card",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d0d0d",
+    "#d4a017"
+  ],
+  "value": {
+    "highestValue": 150000,
+    "averageValue": 75000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 56601,
+    "tenYearNetValue": 566010,
+    "totalAnnualCharges": 5899,
+    "totalAnnualBenefits": 62500,
+    "roiPercent": 1059
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Lounge access",
+    "Insurance",
+    "High-value rewards"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess",
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.ucobank.com/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 274 0123",
+  "applyUrl": "https://www.ucobank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "uco-sbi-elite-credit-card"
+}

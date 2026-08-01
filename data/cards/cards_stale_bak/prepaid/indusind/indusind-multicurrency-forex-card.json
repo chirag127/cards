@@ -1,0 +1,200 @@
+{
+  "id": "indusind-multicurrency-forex-card",
+  "name": "IndusInd Multicurrency Forex Card",
+  "tagline": "Zero international markup on 14 currencies",
+  "description": "The IndusInd Multicurrency Forex Card is a Visa prepaid card that supports 14 currencies with zero international markup on loaded currencies. Enjoy 2 free ATM withdrawals per month abroad and seamless global spending for international travellers.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Multicurrency",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Valid passport and visa required",
+      "FEMA compliance documentation needed"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via net banking"
+    },
+    {
+      "label": "Additional ATM Withdrawal",
+      "amount": 150,
+      "note": "After 2 free withdrawals per month"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 2,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 2,
+    "otherBankCharge": 150,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 350000,
+    "posEcomPerDay": 1400000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 350000,
+    "internationalPosPerDay": 1400000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero International Markup",
+      "description": "No markup fee on transactions in loaded currencies at interbank exchange rates",
+      "valueStr": "0% markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Applicable only for loaded currencies"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "14 Currency Support",
+      "description": "Load and spend in 14 major currencies including USD, GBP, EUR, AED, SGD, AUD, CAD, JPY, and more",
+      "valueStr": "14 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "2 Free ATM Withdrawals per Month",
+      "description": "Enjoy 2 complimentary ATM withdrawals per calendar month at international ATMs",
+      "valueStr": "2 free/month",
+      "valueNum": 300,
+      "frequencyStr": "Per month",
+      "frequencyPerYear": 24,
+      "annualValue": 3600,
+      "conditions": [
+        "Beyond 2 withdrawals, Rs 150 per withdrawal"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Chip and PIN technology",
+    "Contactless payments",
+    "Zero markup on loaded currencies",
+    "2 free international ATM withdrawals per month",
+    "Reload via net banking or mobile app",
+    "Emergency card replacement",
+    "Real-time transaction alerts",
+    "Balance enquiry via app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#003366",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2500,
+    "tenYearNetValue": 25000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 9999
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Zero Markup",
+    "Free ATM Withdrawals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal/cards/forex-card.html"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800-200-4444",
+  "applyUrl": "https://www.indusind.com/in/en/personal/cards/forex-card.html",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "indusind-multicurrency-forex-card"
+}

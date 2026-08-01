@@ -1,0 +1,304 @@
+{
+  "id": "icici-parakram-credit-card",
+  "name": "ICICI Bank Parakram Credit Card",
+  "tagline": "A basic lifetime-free credit card with enhanced CSD and grocery rewards for defence personnel",
+  "description": "The ICICI Bank Parakram Credit Card is a Visa Gold lifetime-free card designed for defence personnel. It offers 5X reward points on CSD (Canteen Stores Department) and grocery spends, and 1 reward point per ₹100 on all other transactions. With zero annual fees and basic rewards, it is an accessible entry-level card for defence families building their credit history.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Parakram",
+  "usage": "Domestic",
+  "bin": "4290",
+  "material": "Plastic",
+  "colorScheme": "Army green and gold with Parakram emblem",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minSalary": 15000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 200000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Exclusively for defence personnel and their families",
+      "Salaried: Gross Monthly Income > ₹15,000",
+      "Age 21–60",
+      "Valid defence ID required during application"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Free (Lifetime)"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free (Lifetime)"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 100,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 15000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 15000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "5X Reward Points on CSD & Grocery",
+      "description": "Earn 5X reward points on CSD (Canteen Stores Department) and grocery spends",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every CSD/grocery transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at CSD canteens and grocery stores",
+        "5X multiplier on base earn rate"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other transactions",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, cash advances, EMI conversion"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 100,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1200,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹100 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "No Annual Fee",
+      "description": "Lifetime free card with no joining or annual fees for defence personnel",
+      "valueStr": "LTF",
+      "valueNum": 0,
+      "frequencyStr": "Lifetime",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "No minimum spend required to maintain free status"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "5X on CSD/grocery, 1 RP per ₹100 on others",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "CSD & Grocery",
+        "multiplier": 5,
+        "description": "5X reward points on CSD and grocery spends"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 1,
+        "description": "1 RP per ₹100 on all other transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers from ICICI Rewards Catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 1.25%",
+    "conditions": [
+      "Excludes fuel, cash advances, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Lifetime free (no annual fee)",
+    "Contactless payments",
+    "EMV chip security",
+    "Designed for defence personnel",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "5X rewards on CSD and grocery",
+    "CSD canteen benefits",
+    "Easy approval for defence families"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#4a5d23",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 3000,
+    "averageValue": 1500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1500,
+    "tenYearNetValue": 15000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1500,
+    "roiPercent": 100
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Rewards",
+    "Beginners"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/parakram-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/parakram-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-parakram-credit-card"
+}

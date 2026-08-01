@@ -1,0 +1,343 @@
+{
+  "id": "stanchart-rewards-credit-card",
+  "name": "Standard Chartered Rewards Credit Card",
+  "tagline": "5X rewards on shopping, 2X on dining",
+  "description": "The Standard Chartered Rewards Credit Card offers 5X reward points on shopping and 2X on dining spends, making it a great card for those who spend regularly on retail and restaurants. With a moderate annual fee and accelerated earn rates on popular categories, it delivers solid value for everyday spenders.",
+  "bank": "Standard Chartered",
+  "bankCode": "stanchart",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Rewards",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and silver gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 20,
+    "miniStatementOtherBank": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "5X Reward Points on Shopping",
+      "description": "Earn 5X reward points on all shopping spends at retail and online stores",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every shopping transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Retail and online shopping stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "2X Reward Points on Dining",
+      "description": "Earn 2X reward points on all dining transactions at restaurants and food delivery platforms",
+      "valueStr": "2X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Restaurants, cafes, and food delivery platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X Reward Points on Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail purchases",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Standard Chartered 360° Rewards",
+    "earnRate": "5X shopping, 2X dining, 1 RP per ₹100 other",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Shopping",
+        "multiplier": 5,
+        "description": "5X reward points on shopping"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 2,
+        "description": "2X reward points on dining"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1 reward point per ₹100 on other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 1.25%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "1,000 bonus reward points on first transaction within 30 days",
+    "valueStr": "1,000 Reward Points",
+    "valueNum": 250,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "2,000 bonus reward points on spending ₹1 Lakh annually",
+      "spendRequired": 100000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 Reward Points",
+      "rewardNum": 500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "5X rewards on shopping",
+    "2X rewards on dining",
+    "SC mobile app and online banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#6a1b9a",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 12000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4821,
+    "tenYearNetValue": 48210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 509
+  },
+  "diningBenefits": {
+    "available": true,
+    "discountDescription": "2X reward points on all dining transactions",
+    "discountPercent": 0,
+    "partnerRestaurants": [
+      "All restaurants accepting Visa"
+    ]
+  },
+  "shoppingBenefits": {
+    "available": true,
+    "partnerMerchants": [
+      "All retail and online stores"
+    ],
+    "offerDescription": "5X reward points on all shopping transactions"
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Shopping",
+    "Dining",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sc.com/in/credit-cards/rewards/",
+      "https://www.paisabazaar.com/credit-card/standard-chartered-rewards-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 345 5000",
+  "applyUrl": "https://www.sc.com/in/credit-cards/rewards/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "stanchart-rewards-credit-card"
+}

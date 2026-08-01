@@ -1,0 +1,286 @@
+{
+  "id": "dcb-rupay-gold-credit-card",
+  "name": "DCB Bank RuPay Gold Credit Card",
+  "tagline": "Lifetime free domestic card with UPI",
+  "description": "The DCB Bank RuPay Gold Credit Card is a lifetime-free domestic card with UPI support.",
+  "bank": "DCB Bank",
+  "bankCode": "dcb",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "RuPay Gold",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "minAnnualIncome": 150000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 1.5 Lakh+",
+      "Self-Employed: ITR of Rs 1.5 Lakh+",
+      "Age 18-60 years",
+      "Minimum credit score of 650 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 150,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 150,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 100,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 30000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 400 and Rs 4000",
+      "valueStr": "1% waiver",
+      "valueNum": 100,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1200,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 1 reward points per Rs 100 on all transactions",
+      "valueStr": "1 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Air accident insurance coverage when ticket is booked using the card",
+      "valueStr": "Rs 15 Lakh",
+      "valueNum": 1500000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 1500000,
+      "conditions": [
+        "Valid when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Lifetime Free Card",
+      "description": "No annual or joining fees for the lifetime of the card",
+      "valueStr": "LTF",
+      "valueNum": 0,
+      "frequencyStr": "Lifetime",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "DCB Reward Points",
+    "earnRate": "1 RP per Rs 100 on all spends",
+    "pointsPer100": 1,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.2,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 1,
+        "description": "1 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.2%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Domestic usage (UPI supported)",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 1,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#2e7d32",
+    "#81c784"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3000,
+    "tenYearNetValue": 30000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 100
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Everyday spends",
+    "Fuel"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.bank.in/credit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 120 8090",
+  "applyUrl": "https://www.dcbbank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "dcb-rupay-gold-credit-card"
+}

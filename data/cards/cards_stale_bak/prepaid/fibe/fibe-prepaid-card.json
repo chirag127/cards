@@ -1,0 +1,178 @@
+{
+  "id": "fibe-prepaid-card",
+  "name": "Fibe Prepaid Card",
+  "tagline": "Formerly EarlySalary — smart prepaid with instant credit",
+  "description": "The Fibe Prepaid Card is a Visa prepaid card from the digital lending platform formerly known as EarlySalary. It offers instant personal loans, salary advances, and prepaid spending all in one instrument. With quick disbursal, flexible repayment, and competitive interest rates, it serves young professionals needing flexible credit access.",
+  "bank": "Fibe",
+  "bankCode": "fibe",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Teal and orange",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minAge": 21,
+    "maxAge": 55,
+    "minAnnualIncome": 200000,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried professionals preferred",
+      "Minimum monthly income of Rs 17,000",
+      "PAN and bank statement required",
+      "Partnered with RBI-licensed NBFCs"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Salary Advance Access",
+      "description": "Access up to 50% of your next month's salary instantly on the prepaid card",
+      "valueStr": "Up to 50% salary",
+      "valueNum": 0,
+      "frequencyStr": "Per month",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to employment verification"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Instant Personal Loans",
+      "description": "Get personal loans up to Rs 5 Lakh disbursed directly to your prepaid card within minutes",
+      "valueStr": "Up to Rs 5 Lakh",
+      "valueNum": 500000,
+      "frequencyStr": "Per approval",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to credit assessment"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Salary advance feature",
+    "Instant personal loan disbursal",
+    "Flexible EMI repayment",
+    "Quick credit assessment",
+    "Real-time transaction alerts",
+    "Card freeze/unfreeze via app",
+    "Contactless payments",
+    "Minimal documentation"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#00897b",
+    "#ff6f00"
+  ],
+  "value": {
+    "highestValue": 500000,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Salary Advance",
+    "Instant Personal Loans",
+    "Young Professionals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.fibe.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.fibe.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "fibe-prepaid-card"
+}

@@ -1,0 +1,228 @@
+{
+  "id": "hdfc-times-points-debit-card",
+  "name": "HDFC Times Points Debit Card",
+  "tagline": "Earn Times Points on every swipe for movies, dining and more",
+  "description": "The HDFC Times Points Debit Card is a lifestyle-oriented debit card that rewards you with Times Points on every purchase. Redeem points for movie tickets, dining experiences, and lifestyle products. Ideal for urban professionals who love entertainment and dining out.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Times Points",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank account holders",
+      "Average monthly balance of ₹25,000 required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 500000,
+    "permanentDisabilityCover": 500000,
+    "lostCardLiability": 250000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Accidental death cover: ₹5 Lakh",
+      "Lost card liability: ₹2.5 Lakh within 24 hours"
+    ],
+    "provider": "HDFC Bank"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Times Points on All Spends",
+      "description": "Earn 2 Times Points per ₹200 spent on all retail purchases",
+      "valueStr": "2 TP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "entertainment",
+      "title": "Movie Ticket Discounts",
+      "description": "Up to 20% off on movie tickets via BookMyShow",
+      "valueStr": "20% off",
+      "valueNum": 0,
+      "frequencyStr": "Up to 4 times per month",
+      "frequencyPerYear": 48,
+      "annualValue": 2400,
+      "conditions": [
+        "Max discount ₹100 per transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Dining Privileges",
+      "description": "Up to 15% off at partner restaurants",
+      "valueStr": "15% off",
+      "valueNum": 0,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 0,
+      "annualValue": 3000,
+      "conditions": [
+        "At select partner restaurants"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Times Points",
+    "earnRate": "2 TP per ₹200",
+    "pointsPer100": 1,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 2,
+        "description": "4 TP per ₹200 at partner restaurants"
+      }
+    ],
+    "redemptionOptions": [
+      "Movie tickets",
+      "Dining",
+      "Products & Vouchers"
+    ],
+    "minRedemptionPoints": 200,
+    "rewardRateStr": "0.5% to 1%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Times Points rewards",
+    "Movie and dining discounts",
+    "Domestic usage"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a237e",
+    "#ffd700"
+  ],
+  "value": {
+    "highestValue": 5400,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2410,
+    "tenYearNetValue": 24100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 508
+  },
+  "category": "lifestyle",
+  "internationalUsable": false,
+  "bestFor": [
+    "Entertainment",
+    "Dining",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "hdfc-times-points-debit-card"
+}

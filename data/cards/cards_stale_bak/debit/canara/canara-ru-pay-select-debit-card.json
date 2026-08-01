@@ -1,0 +1,350 @@
+{
+  "id": "canara-ru-pay-select-debit-card",
+  "name": "Canara Bank RuPay Select Debit Card",
+  "tagline": "Premium RuPay Select with comprehensive lifestyle benefits",
+  "description": "The Canara Bank RuPay Select Debit Card is a premium debit card offering reward points, lounge access, OTT subscriptions, golf lessons, health check-ups, gym and spa access, cab coupons, 24x7 concierge, and extensive insurance coverage. Designed for Canara Bank customers seeking a comprehensive lifestyle card.",
+  "bank": "Canara Bank",
+  "bankCode": "canara",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Standard",
+  "usage": "International",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Orange-purple gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Canara Bank account holders",
+      "Reward points: 1 RP per ₹200 spent, 1 RP = ₹0.25"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free issuance"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access at participating lounges across India.",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter",
+        "Valid at participating domestic lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary international airport lounge access at participating lounges worldwide.",
+      "valueStr": "2 visits/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "2 visits per year",
+        "Valid at participating international lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "ott",
+      "title": "OTT Subscription",
+      "description": "Choose from Amazon Prime, Hotstar, or Sony Liv per year.",
+      "valueStr": "Per year",
+      "valueNum": 1499,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 1499,
+      "conditions": [
+        "Choose one: Amazon Prime, Hotstar, or Sony Liv",
+        "Valid for 12 months from activation"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Activate via Canara Bank rewards portal"
+    },
+    {
+      "category": "golf",
+      "title": "Golf Lessons/Rounds",
+      "description": "Complimentary golf lessons or rounds at select courses.",
+      "valueStr": "4 per year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 12000,
+      "conditions": [
+        "1 per quarter",
+        "Subject to availability at partner golf courses",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Contact Canara Bank concierge to book"
+    },
+    {
+      "category": "health",
+      "title": "Health Check-up",
+      "description": "Complimentary health check-up per quarter.",
+      "valueStr": "1 per quarter",
+      "valueNum": 1,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 per quarter",
+        "Valid at partner diagnostic centers",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Book via Canara Bank wellness portal"
+    },
+    {
+      "category": "health",
+      "title": "Gym Access",
+      "description": "Complimentary gym access per quarter.",
+      "valueStr": "1 per quarter",
+      "valueNum": 1,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 4,
+      "annualValue": 12000,
+      "conditions": [
+        "1 per quarter",
+        "Valid at partner fitness centers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via Canara Bank wellness portal"
+    },
+    {
+      "category": "health",
+      "title": "Spa/Salon Access",
+      "description": "Complimentary spa or salon visit per quarter.",
+      "valueStr": "1 per quarter",
+      "valueNum": 1,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 per quarter",
+        "Valid at partner spa/salon centers",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Book via Canara Bank wellness portal"
+    },
+    {
+      "category": "travel",
+      "title": "Cab Coupon",
+      "description": "Complimentary cab coupon per quarter.",
+      "valueStr": "₹100/quarter",
+      "valueNum": 100,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 4,
+      "annualValue": 400,
+      "conditions": [
+        "₹100 per quarter",
+        "Valid on partner cab platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Comprehensive Insurance Coverage",
+      "description": "Extensive insurance coverage for cardholders.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through Canara Bank insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Canara Star Points",
+    "earnRate": "1 RP per ₹200 spent",
+    "pointsPer100": 0.5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.125,
+    "pointsExpiry": "2 years",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Merchandise"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1 RP per ₹200, 1 RP = ₹0.25",
+    "conditions": [
+      "Points earned on PoS and e-commerce transactions"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Reward points: 1 RP per ₹200 spent",
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "International acceptance",
+    "Airport lounge access",
+    "OTT subscription",
+    "Golf privileges",
+    "Health check-ups",
+    "Gym and spa access",
+    "Cab coupons",
+    "24x7 concierge",
+    "Extensive insurance coverage"
+  ],
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Phone and email",
+    "services": [
+      "Travel booking assistance",
+      "Restaurant reservations",
+      "Event ticket booking",
+      "Lifestyle assistance"
+    ]
+  },
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#EA580C",
+    "#7C3AED"
+  ],
+  "value": {
+    "highestValue": 60899,
+    "averageValue": 50000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 59719,
+    "tenYearNetValue": 597190,
+    "totalAnnualCharges": 1180,
+    "totalAnnualBenefits": 60899,
+    "roiPercent": 5076
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Lifestyle",
+    "Travel",
+    "Rewards",
+    "Lounge Access",
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.canarabank.in"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 425 0018",
+  "applyUrl": "https://www.canarabank.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "canara-ru-pay-select-debit-card"
+}

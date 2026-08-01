@@ -1,0 +1,188 @@
+{
+  "id": "mobikwik-prepaid-card",
+  "name": "MobiKwik Prepaid Card",
+  "tagline": "Wallet top-up, bill payments, and recharges",
+  "description": "The MobiKwik Prepaid Card is a RuPay prepaid card integrated with the MobiKwik wallet ecosystem. Use it for wallet top-ups, utility bill payments, mobile recharges, and merchant payments with a seamless digital experience.",
+  "bank": "MobiKwik",
+  "bankCode": "mobikwik",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "MobiKwik Wallet"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to MobiKwik wallet users",
+      "Basic or full KYC required depending on limits",
+      "No minimum balance required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Cashback on Wallet Transactions",
+      "description": "Earn cashback on MobiKwik wallet transactions and recharges",
+      "valueStr": "Cashback",
+      "valueNum": 500,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 500,
+      "conditions": [
+        "Subject to ongoing promotions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "Bill Payments",
+      "description": "Pay electricity, gas, water, broadband, and other utility bills via MobiKwik",
+      "valueStr": "All utilities",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Mobile Recharges",
+      "description": "Instant mobile and DTH recharges for all major operators",
+      "valueStr": "Instant",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Wallet integration",
+    "Bill payments",
+    "Mobile and DTH recharges",
+    "Merchant payments",
+    "Contactless payments",
+    "Virtual and physical card",
+    "UPI enabled",
+    "Cashback rewards"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0066cc",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 500,
+    "averageValue": 300,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 300,
+    "tenYearNetValue": 3000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 300,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Digital Payments",
+    "Bill Payments",
+    "Recharges"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.mobikwik.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.mobikwik.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "mobikwik-prepaid-card"
+}

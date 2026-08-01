@@ -1,0 +1,254 @@
+{
+  "id": "hdfc-upi-rupay-credit-card",
+  "name": "HDFC Bank UPI RuPay Credit Card",
+  "tagline": "UPI-linked credit card with rewards on everyday spends",
+  "description": "The HDFC Bank UPI RuPay Credit Card is an affordable UPI-linked credit card offering 3% cashback on groceries and dining, 2% on utility payments, and 1% on all other spends. With a very low annual fee of just ₹99 + GST, it's the most economical way to earn rewards on UPI transactions.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "UPI RuPay",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and green gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 180000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹1.8 Lakh p.a.",
+      "Existing HDFC Bank account preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 99,
+      "amountWithGst": 117,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 99,
+      "amountWithGst": 117,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Groceries & Dining Cashback",
+      "description": "3% cashback on groceries and dining spends via UPI or card",
+      "valueStr": "3% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on groceries and dining MCCs"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "Utility Payments Cashback",
+      "description": "2% cashback on utility payments including electricity, water, gas, and mobile recharges",
+      "valueStr": "2% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on utility category transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "All Other Spends",
+      "description": "1% cashback on all other retail purchases via UPI or card",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC UPI RuPay Cashback",
+    "earnRate": "3% groceries/dining, 2% utility, 1% other",
+    "pointsPer100": 0,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Cashback credited as statement credit",
+    "bonusCategories": [
+      {
+        "category": "Groceries & Dining",
+        "multiplier": 3,
+        "description": "3% cashback on groceries and dining"
+      },
+      {
+        "category": "Utility",
+        "multiplier": 2,
+        "description": "2% cashback on utility payments"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit (automatic)"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 3%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "RuPay UPI linked credit card",
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Instant UPI credit activation",
+    "Lowest annual fee credit card"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 1,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1e40af",
+    "#22c55e"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2883,
+    "tenYearNetValue": 28830,
+    "totalAnnualCharges": 117,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 2464
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "UPI",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "cashback",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards/upi-rupay-credit-card",
+      "https://www.paisabazaar.com/credit-card/hdfc-upi-rupay-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/upi-rupay-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-upi-rupay-credit-card"
+}

@@ -1,0 +1,296 @@
+{
+  "id": "sbi-card-miles-prime",
+  "name": "SBI Card MILES PRIME",
+  "tagline": "Premium travel card with 4X travel credits and enhanced benefits",
+  "description": "The SBI Card MILES PRIME is a premium travel card offering 3,000 Travel Credits welcome benefit on spending ₹60,000 in first 60 days, 4 Travel Credits per ₹200 on travel, 2 Travel Credits per ₹200 on other spends, milestone of 10,000 bonus TC at ₹8L spend, additional lounge visits per ₹1L spend (capped at 12/year), and comprehensive travel insurance.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Prime",
+  "variant": "MILES PRIME",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "#1a2a5e and #3F6EBF gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Stable income required",
+      "Good credit history preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 8000000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 1000000,
+    "airAccidentCover": 20000000,
+    "baggageCover": 0,
+    "conditions": [
+      "Insurance applicable on card usage"
+    ],
+    "provider": "SBI Card"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 4 TC per ₹200 travel, 2 TC per ₹200 other on all spends",
+      "valueStr": "4 TC per ₹200 travel, 2 TC per ₹200 other",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic lounge access: 1 per ₹1L spend (max 12/year)",
+      "valueStr": "1 per ₹1L spend (max 12/year)",
+      "valueNum": 2000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 1,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400-₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400-₹5,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "loungeAccess": {
+    "domestic": {
+      "count": 1,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 1500
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 3000,
+      "guestAllowed": false,
+      "guestCharge": 3000
+    },
+    "programs": [
+      "Visa Luxury",
+      "RuPay Privilege"
+    ],
+    "conditions": [
+      "Valid on prior day transaction basis"
+    ]
+  },
+  "rewardProgram": {
+    "name": "SBI Card Rewards",
+    "earnRate": "4 TC per ₹200 travel, 2 TC per ₹200 other",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "4 TC per ₹200 travel, 2 TC per ₹200 other"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "3,000 Travel Credits",
+    "valueStr": "3,000 Travel Credits",
+    "valueNum": 1500,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus on reaching annual spend milestone",
+      "spendRequired": 299900,
+      "spendPeriod": "Annually",
+      "rewardStr": "Bonus Reward Points",
+      "rewardNum": 5998
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1,49,950 in preceding year",
+      "annualSpendRequired": 149950,
+      "waives": "Annual fee of ₹2999"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Tap and pay enabled",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a2a5e",
+    "#3F6EBF"
+  ],
+  "value": {
+    "highestValue": 59980,
+    "averageValue": 29990,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 26451,
+    "tenYearNetValue": 264510,
+    "totalAnnualCharges": 3539,
+    "totalAnnualBenefits": 23992,
+    "roiPercent": 578
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent Travel",
+    "Premium Travel",
+    "Higher TC Accrual",
+    "Milestone Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com"
+    ],
+    "lastVerified": "2026-04-09"
+  },
+  "customerCareNumber": "1800-180-2222",
+  "applyUrl": "https://www.sbicard.com",
+  "lastUpdated": "2026-04-09",
+  "type": "credit",
+  "slug": "sbi-card-miles-prime"
+}

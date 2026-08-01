@@ -1,0 +1,128 @@
+{
+  "id": "jkb-gold-debit-card-2",
+  "name": "Jammu & Kashmir Bank Gold Debit Card",
+  "tagline": "gold card from Jammu & Kashmir Bank",
+  "description": "A gold card from Jammu & Kashmir Bank.",
+  "bank": "Jammu & Kashmir Bank",
+  "bankCode": "jkb",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Gold",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "invitationOnly": false,
+    "notes": []
+  },
+  "charges": [
+    {
+      "label": "Annual Fee",
+      "amount": 250,
+      "amountWithGst": 295
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Rewards",
+      "description": "Earn points",
+      "valueStr": "1 RP/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every txn",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "None",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "ATM",
+    "POS",
+    "Online",
+    "Contactless"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#4F9EFF"
+  ],
+  "value": {
+    "highestValue": 1000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 295,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 169
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://www.jkb.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "jkb-gold-debit-card"
+}

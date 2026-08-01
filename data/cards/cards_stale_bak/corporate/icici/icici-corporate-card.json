@@ -1,0 +1,70 @@
+{
+  "id": "icici-corporate-card",
+  "slug": "icici-corporate-card",
+  "name": "ICICI Bank Corporate Card",
+  "tagline": "Centralised T&E spending for mid-sized companies with consolidated MIS.",
+  "description": "Sample seed data — replace with verified figures from icicibank.com. Corporate credit card issued against a corporate liability account, with per-employee sub-limits, GST-compliant invoices, and consolidated month-end MIS.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "visa",
+  "cardType": "corporate",
+  "tier": "premium",
+  "fees": {
+    "joining": 1000,
+    "annual": 1000,
+    "addOnCard": 0,
+    "forexMarkup": 3.5,
+    "apr": 36
+  },
+  "rewards": {
+    "pointsPerINR": 0.5,
+    "conversionRate": "1 point = ₹0.25",
+    "pointsExpiry": "3 years"
+  },
+  "lounge": {
+    "domesticVisitsPerQuarter": 2,
+    "internationalVisitsPerYear": 4,
+    "program": "priority-pass",
+    "guestAccess": false
+  },
+  "travel": {
+    "insurance": {
+      "amount": 5000000,
+      "coverage": "Air accident cover"
+    },
+    "purchaseProtection": true,
+    "fraudLiability": "Zero liability post-blocking"
+  },
+  "eligibility": {
+    "minAge": 21,
+    "maxAge": 65,
+    "employment": ["salaried", "business-owner"],
+    "notes": [
+      "Issued to employees of an enrolled corporate; corporate liability"
+    ]
+  },
+  "limits": {
+    "creditLimitMin": 50000,
+    "creditLimitMax": 2000000,
+    "cashWithdrawalPercent": 20
+  },
+  "perks": {
+    "conciergeService": true,
+    "golfPrivileges": false,
+    "diningOffers": ["Culinary Treats Programme — up to 25% off"]
+  },
+  "emi": {
+    "flexipay": true,
+    "interestRange": "11% - 16% p.a.",
+    "tenureRangeMonths": [3, 6, 9, 12, 18, 24]
+  },
+  "internationalUsable": true,
+  "contactless": true,
+  "applyUrl": "https://www.icicibank.com/business-banking/cards/corporate-cards",
+  "lastUpdated": "2026-06-22",
+  "dataQuality": {
+    "status": "unverified",
+    "sourceUrls": ["https://www.icicibank.com"],
+    "lastVerified": "2026-06-22"
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "id": "amex-smartearn-credit-card",
+  "name": "American Express SmartEarn Credit Card",
+  "tagline": "Maximise cashback on online shopping",
+  "description": "The American Express SmartEarn Credit Card is an entry-level card designed for online shoppers. It offers an exceptional 10X Membership Rewards points on Amazon and Flipkart, 5X on other online spends, and 1X on offline purchases. With a low annual fee of just ₹495, it's one of the most cost-effective cards for earning rewards on e-commerce spending.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "SmartEarn",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 450000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹4.5 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 495,
+      "amountWithGst": 495,
+      "note": "All inclusive"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 495,
+      "amountWithGst": 495,
+      "note": "All inclusive"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 3.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "10X MR on Amazon & Flipkart",
+      "description": "Earn 10X Membership Rewards points on every purchase made on Amazon and Flipkart",
+      "valueStr": "10X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on Amazon.in and Flipkart.com"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "5X MR on Other Online Spends",
+      "description": "Earn 5X Membership Rewards points on all other online purchases",
+      "valueStr": "5X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every online transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "All online merchants except Amazon and Flipkart"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X MR on Offline Spends",
+      "description": "Earn 1 MR point per ₹50 on all offline POS transactions",
+      "valueStr": "1X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every offline transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "American Express Membership Rewards",
+    "earnRate": "10X on Amazon/Flipkart, 5X on other online, 1X on offline",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "Points do not expire as long as card is active",
+    "bonusCategories": [
+      {
+        "category": "Amazon & Flipkart",
+        "multiplier": 10,
+        "description": "10X MR on Amazon and Flipkart"
+      },
+      {
+        "category": "Other Online",
+        "multiplier": 5,
+        "description": "5X MR on other online spends"
+      },
+      {
+        "category": "Offline",
+        "multiplier": 1,
+        "description": "1X MR on offline POS transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit (1 MR = ₹0.25)",
+      "Gift cards and vouchers",
+      "Catalogue redemption",
+      "Transfer to select airline partners"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "0.5% to 5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, insurance"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "500 bonus MR points on first spend within 60 days",
+    "valueStr": "500 MR Points",
+    "valueNum": 125,
+    "conditions": [
+      "First spend within 60 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "1,000 bonus MR points on spending ₹1 Lakh annually",
+      "spendRequired": 100000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 MR Points",
+      "rewardNum": 250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹40,000 in the preceding year",
+      "annualSpendRequired": 40000,
+      "waives": "Annual fee of ₹495"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "Amex Offers — exclusive merchant discounts",
+    "Mobile app for instant notifications"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 100,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1e90ff",
+    "#87ceeb"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4505,
+    "tenYearNetValue": 45050,
+    "totalAnnualCharges": 495,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 1010
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Online Shopping",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in/credit-cards/smartearn-credit-card/",
+      "https://www.paisabazaar.com/credit-card/american-express-smartearn-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1030",
+  "applyUrl": "https://www.americanexpress.com/in/credit-cards/smartearn-credit-card/",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "amex-smartearn-credit-card"
+}

@@ -1,0 +1,159 @@
+{
+  "id": "yes-apex-international-metal-debit-card",
+  "name": "YES Bank Apex International Metal Debit Card",
+  "tagline": "The apex of premium debit card experiences",
+  "description": "The YES Bank Apex International Metal Debit Card is the bank's most premium debit offering, crafted from premium metal with a striking design. Enjoy unlimited domestic airport lounge access, 12 international lounge visits per year, exclusive golf privileges, dedicated concierge service, comprehensive travel insurance, and premium lifestyle benefits. Designed for the most discerning customers who demand the finest banking experience.",
+  "bank": "YES Bank",
+  "bankCode": "yes",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Infinite",
+  "variant": "Apex International Metal",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Dark with red accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Apex Banking customers",
+      "Minimum AUM of ₹25 lakhs required",
+      "Subject to bank approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 7499,
+      "amountWithGst": 8849
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 1000000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on card issuance",
+    "valueStr": "10,000 Reward Points",
+    "valueNum": 10000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Valid for first-time Apex customers only"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹25 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "12 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance",
+    "Premium lifestyle"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#e94560"
+  ],
+  "value": {
+    "highestValue": 120000,
+    "averageValue": 85000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 76151,
+    "tenYearNetValue": 761510,
+    "totalAnnualCharges": 8849,
+    "totalAnnualBenefits": 85000,
+    "roiPercent": 961
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "International shopping",
+    "High-net-worth individuals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "network",
+      "tier"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.yesbank.in/personal-banking/cards/debit-cards/apex-international-metal-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 2500000,
+  "customerCareNumber": "1800 209 8888",
+  "applyUrl": "https://www.yesbank.in/personal-banking/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "yes-apex-international-metal-debit-card"
+}

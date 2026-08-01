@@ -1,0 +1,307 @@
+{
+  "id": "amex-membership-rewards-credit-card",
+  "name": "American Express Membership Rewards Credit Card",
+  "tagline": "Earn accelerated MR points on dining and shopping",
+  "description": "The American Express Membership Rewards Credit Card (MRCC) offers 2X Membership Rewards points on dining and shopping categories, making it an excellent mid-range card for everyday spenders. With a modest annual fee of ₹1,500+GST, cardholders enjoy the full suite of Amex Membership Rewards benefits including transfer to airline and hotel partners, making it a strong value proposition for points enthusiasts.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Membership Rewards",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Subject to credit assessment and internal policies"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1500,
+      "amountWithGst": 1770,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1500,
+      "amountWithGst": 1770,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1500,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 3.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "dining",
+      "title": "2X MR on Dining",
+      "description": "Earn 2X Membership Rewards points on all dining transactions at restaurants and cafes",
+      "valueStr": "2X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Restaurants, cafes, and food delivery platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "2X MR on Shopping",
+      "description": "Earn 2X Membership Rewards points on all shopping spends at retail and online stores",
+      "valueStr": "2X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every shopping transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Retail and online shopping stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X MR on Other Spends",
+      "description": "Earn 1 MR point per ₹40 spent on all other purchases",
+      "valueStr": "1X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "American Express Membership Rewards",
+    "earnRate": "1 MR per ₹40 (2X on dining & shopping)",
+    "pointsPer100": 2.5,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 1.25,
+    "pointsExpiry": "Points do not expire as long as card is active",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 2,
+        "description": "2X MR on dining spends"
+      },
+      {
+        "category": "Shopping",
+        "multiplier": 2,
+        "description": "2X MR on shopping spends"
+      },
+      {
+        "category": "Other",
+        "multiplier": 1,
+        "description": "1X MR on all other purchases"
+      }
+    ],
+    "redemptionOptions": [
+      "Transfer to airline partners (1 MR = up to 1 air mile)",
+      "Transfer to hotel partners",
+      "Statement credit (1 MR = ₹0.25)",
+      "Gift cards and merchandise",
+      "Travel bookings via Amex portal"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "1.25% to 2.5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, insurance premiums"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "4,000 bonus MR points on first spend within 90 days",
+    "valueStr": "4,000 MR Points",
+    "valueNum": 2000,
+    "conditions": [
+      "First spend within 90 days of card issuance",
+      "Minimum transaction of ₹1"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "5,000 bonus MR points on spending ₹1.5 Lakh annually",
+      "spendRequired": 150000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 MR Points",
+      "rewardNum": 2500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1.25 Lakh in the preceding year",
+      "annualSpendRequired": 125000,
+      "waives": "Annual fee of ₹1,500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "2X rewards on dining and shopping",
+    "Amex membership rewards transfer partners",
+    "Amex mobile app and online management"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#006847",
+    "#c8a951"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 6230,
+    "tenYearNetValue": 62300,
+    "totalAnnualCharges": 1770,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 452
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Dining",
+    "Shopping",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
+      "https://www.paisabazaar.com/credit-card/american-express-membership-rewards-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1030",
+  "applyUrl": "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "amex-membership-rewards-credit-card"
+}

@@ -1,0 +1,322 @@
+{
+  "id": "axis-samsung-signature-credit-card",
+  "name": "Samsung Axis Bank Signature Credit Card",
+  "tagline": "10X rewards on Samsung, Zomato, Myntra with ₹10K Samsung cashback",
+  "description": "The Samsung Axis Bank Signature Credit Card is a Visa Signature tier co-branded card offering 10 EDGE Reward points per ₹100 on Zomato, Myntra, and other partner merchants, 5 EDGE per ₹100 on all other spends, and up to ₹10,000 cashback on Samsung product purchases. With an annual fee of ₹500+GST, it is ideal for Samsung enthusiasts and lifestyle shoppers.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Samsung",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Silver and navy blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 680,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Age 18–65 years",
+      "Ideal for Samsung product buyers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 300000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Air accident cover: ₹50 Lakh",
+      "Purchase protection: ₹1 Lakh for 90 days",
+      "Lost card liability: ₹3 Lakh",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "coBrandDetails": {
+    "partnerName": "Samsung",
+    "partnerCategory": "Electronics / Technology",
+    "specialPerks": [
+      "Up to ₹10,000 cashback on Samsung products",
+      "10 EDGE points per ₹100 on Zomato, Myntra, and partners"
+    ]
+  },
+  "shoppingBenefits": {
+    "available": true,
+    "partnerMerchants": [
+      "Samsung",
+      "Zomato",
+      "Myntra",
+      "Nykaa",
+      "BookMyShow"
+    ],
+    "offerDescription": "10 EDGE points per ₹100 on partner merchants"
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "10 EDGE Points per ₹100 on Partners",
+      "description": "Earn 10 EDGE Reward points per ₹100 on Zomato, Myntra, and other partner merchants",
+      "valueStr": "10 EDGE per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Zomato, Myntra, Nykaa, BookMyShow, etc."
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "5 EDGE Points per ₹100 on Other Spends",
+      "description": "Earn 5 EDGE Reward points per ₹100 on all other retail transactions",
+      "valueStr": "5 EDGE per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to all non-partner spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "₹10,000 Samsung Cashback",
+      "description": "Get up to ₹10,000 cashback on Samsung product purchases as a welcome benefit",
+      "valueStr": "Up to ₹10,000",
+      "valueNum": 10000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 10000,
+      "conditions": [
+        "Valid on Samsung products only",
+        "Subject to minimum spend threshold"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Purchase Samsung products using the card to avail cashback"
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis EDGE Reward Points",
+    "earnRate": "5–10 EDGE per ₹100",
+    "pointsPer100": 5,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Zomato, Myntra, partners",
+        "multiplier": 2,
+        "description": "10 EDGE per ₹100"
+      },
+      {
+        "category": "All other spends",
+        "multiplier": 1,
+        "description": "5 EDGE per ₹100"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Gift Vouchers via Edge Rewards portal",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1% to 2%",
+    "conditions": [
+      "Excluded: fuel, EMI, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Up to ₹10,000 cashback on Samsung product purchases",
+    "valueStr": "Up to ₹10,000 Samsung cashback",
+    "valueNum": 10000,
+    "conditions": [
+      "Valid on Samsung products only",
+      "Subject to minimum spend threshold"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Visa Signature privileges",
+    "Samsung co-branded benefits",
+    "Partner merchant 10X rewards"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#1428A0",
+    "#C0C0C0"
+  ],
+  "value": {
+    "highestValue": 20000,
+    "averageValue": 12000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 11410,
+    "tenYearNetValue": 114100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 12000,
+    "roiPercent": 1934
+  },
+  "category": "co-branded",
+  "internationalUsable": true,
+  "bestFor": [
+    "Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/samsung-axis-bank-signature-credit-card",
+      "https://www.paisabazaar.com/credit-card/samsung-axis-bank-signature-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/samsung-axis-bank-signature-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-samsung-signature-credit-card"
+}

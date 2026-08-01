@@ -1,0 +1,133 @@
+{
+  "id": "hsbc-classic-debit-card",
+  "name": "HSBC Classic Debit Card",
+  "tagline": "Lifetime free classic debit card",
+  "description": "The HSBC Classic Debit Card is a lifetime free Visa debit card with zero annual charges. Ideal for basic banking needs with standard transaction limits and global acceptance.",
+  "bank": "HSBC",
+  "bankCode": "hsbc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Classic",
+  "variant": "Classic",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to all HSBC savings account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Lifetime free",
+    "Contactless payments",
+    "EMV chip security",
+    "Zero annual fee forever",
+    "Global HSBC network access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#db0011",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 999
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Zero Fee",
+    "Basic Banking"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hsbc.co.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 3456",
+  "applyUrl": "https://www.hsbc.co.in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "hsbc-classic-debit-card"
+}

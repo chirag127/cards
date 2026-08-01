@@ -1,0 +1,425 @@
+{
+  "id": "indusind-legend-credit-card",
+  "name": "IndusInd Legend Credit Card",
+  "tagline": "Travel and rewards with golf privileges and concierge",
+  "description": "The IndusInd Legend Credit Card is a premium Visa Signature card offering 4 reward points per ₹100 spent, 8X on travel, unlimited domestic lounge access, 6 international lounge visits per year, complimentary golf, and dedicated concierge services. Designed for affluent travellers and lifestyle enthusiasts.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Legend",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 150000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1800000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹1.5 Lakh",
+      "Self-Employed: ITR > ₹18 Lakh p.a.",
+      "Age 21–65 years",
+      "Good credit history required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "purchaseProtectionCover": 500000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 1000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 2000000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹1 Crore",
+      "Travel insurance: ₹20 Lakh",
+      "Purchase protection: ₹5 Lakh for 90 days",
+      "Lost card liability: ₹10 Lakh"
+    ],
+    "provider": "IndusInd Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 6,
+      "frequency": "6 per year",
+      "frequencyPerYear": 6,
+      "valuePerVisit": 3500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass"
+    ],
+    "conditions": [
+      "Domestic: Unlimited complimentary visits at partner lounges",
+      "International: 6 complimentary visits per year via Priority Pass"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits per year",
+      "valueStr": "Unlimited visits",
+      "valueNum": 2500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 25000,
+      "conditions": [
+        "At all Dreamfolks partner domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "6 complimentary international airport lounge visits via Priority Pass",
+      "valueStr": "6 visits/year",
+      "valueNum": 3500,
+      "frequencyStr": "6 per year",
+      "frequencyPerYear": 6,
+      "annualValue": 21000,
+      "conditions": [
+        "Priority Pass membership included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "8X Rewards on Travel",
+      "description": "Earn 8X reward points on all travel spends",
+      "valueStr": "8X RP on travel",
+      "valueNum": 0,
+      "frequencyStr": "Every travel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on flights, hotels, and travel bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Complimentary Golf Rounds",
+      "description": "Complimentary golf rounds at premium courses across India",
+      "valueStr": "Complimentary rounds",
+      "valueNum": 15000,
+      "frequencyStr": "Multiple per year",
+      "frequencyPerYear": 12,
+      "annualValue": 15000,
+      "conditions": [
+        "At select premium golf courses",
+        "Booking required in advance"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "24/7 Concierge Service",
+      "description": "Dedicated concierge for travel bookings, reservations, and lifestyle assistance",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "4 Reward Points per ₹100 spent on all retail purchases",
+      "valueStr": "4 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IndusInd Reward Points",
+    "earnRate": "4 RP per ₹100",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 8,
+        "description": "8X reward points on travel spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels via IndusInd Rewards",
+      "Products & Vouchers",
+      "Airline miles transfer",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1% to 8%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "10,000 bonus reward points on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 2500
+    },
+    {
+      "description": "Additional 10,000 bonus reward points on spending ₹10 Lakh annually",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 2500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in the preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹5,000 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Priority Pass membership",
+    "Complimentary golf access",
+    "24/7 concierge service"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d0d0d",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 65000,
+    "averageValue": 40000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 34100,
+    "tenYearNetValue": 341000,
+    "totalAnnualCharges": 5900,
+    "totalAnnualBenefits": 40000,
+    "roiPercent": 578
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 3000,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Golf"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal/cards/credit-card/legend-credit-card.html",
+      "https://www.paisabazaar.com/credit-card/indusind-legend-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Phone and email",
+    "services": [
+      "Travel bookings",
+      "Restaurant reservations",
+      "Event tickets",
+      "Gift sourcing"
+    ]
+  },
+  "golfPrivileges": {
+    "available": true,
+    "complimentaryRounds": 12,
+    "courses": [
+      "Delhi Golf Club",
+      "BPGC Mumbai",
+      "KGA Bangalore",
+      "Select courses nationwide"
+    ],
+    "conditions": [
+      "Advance booking required",
+      "Subject to availability"
+    ]
+  },
+  "customerCareNumber": "1860 267 7777",
+  "applyUrl": "https://www.indusind.com/in/en/personal/cards/credit-card/legend-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "indusind-legend-credit-card"
+}

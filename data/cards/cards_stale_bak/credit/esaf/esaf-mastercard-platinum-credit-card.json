@@ -1,0 +1,327 @@
+{
+  "id": "esaf-mastercard-platinum-credit-card",
+  "name": "ESAF Small Finance Bank Mastercard Platinum Credit Card",
+  "tagline": "Premium card with lounge access",
+  "description": "The ESAF SFB Mastercard Platinum Credit Card offers domestic lounge access and enhanced rewards.",
+  "bank": "ESAF Small Finance Bank",
+  "bankCode": "esaf",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Mastercard Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 3 Lakh+",
+      "Self-Employed: ITR of Rs 3 Lakh+",
+      "Age 18-60 years",
+      "Minimum credit score of 650 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 12,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic lounge access for primary cardholder"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 400 and Rs 5000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Complimentary Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per quarter",
+      "valueStr": "4 per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 24,
+      "annualValue": 144000,
+      "conditions": [
+        "Primary cardholder only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 3 reward points per Rs 100 on all transactions",
+      "valueStr": "3 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Air accident insurance coverage when ticket is booked using the card",
+      "valueStr": "Rs 50 Lakh",
+      "valueNum": 5000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 5000000,
+      "conditions": [
+        "Valid when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on spending Rs 1.5 Lakh annually",
+      "valueStr": "Fee waiver",
+      "valueNum": 1000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 1000,
+      "conditions": [
+        "Annual spend of Rs 1.5 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ESAF Reward Points",
+    "earnRate": "3 RP per Rs 100 on all spends",
+    "pointsPer100": 3,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.8,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 3,
+        "description": "3 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.8%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "1000 bonus reward points on card activation",
+    "valueStr": "1,000 RP",
+    "valueNum": 1000,
+    "conditions": [
+      "Spend within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 2000 bonus points on annual spend of Rs 2 Lakh",
+      "spendRequired": 200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2000 bonus points",
+      "rewardNum": 2000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 1.5 Lakh",
+      "annualSpendRequired": 150000,
+      "waives": "Annual fee of Rs 1,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Complimentary lounge access",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#0277bd",
+    "#4fc3f7"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 15000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 73820,
+    "tenYearNetValue": 738200,
+    "totalAnnualCharges": 1180,
+    "totalAnnualBenefits": 75000,
+    "roiPercent": 6356
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.bank.in/credit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 103 7799",
+  "applyUrl": "https://www.esafbank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "esaf-mastercard-platinum-credit-card"
+}

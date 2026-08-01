@@ -1,0 +1,203 @@
+{
+  "id": "open-business-prepaid-card",
+  "name": "Open Business Prepaid Card",
+  "tagline": "Smart business payments with automated expense tracking",
+  "description": "The Open Business Prepaid Card is a Visa prepaid card designed for small and medium businesses. It offers automated expense categorisation, team spending controls, real-time notifications, and seamless integration with accounting tools. Built for founders who need visibility and control over business spends without the complexity of corporate banking.",
+  "bank": "Open",
+  "bankCode": "open",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Business",
+  "variant": "Business Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Open Current Account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires Open Business Current Account",
+      "Business registration documents needed",
+      "Individual KYC for each cardholder"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via bank transfer"
+    },
+    {
+      "label": "Additional Card Fee",
+      "amount": 0,
+      "note": "Free up to 5 cards"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Automated Expense Categorisation",
+      "description": "Every transaction is automatically categorised for easy bookkeeping and GST filing",
+      "valueStr": "Automated",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Powered by Open app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Team Spending Controls",
+      "description": "Set individual limits, merchant category restrictions, and real-time monitoring for each team member's card",
+      "valueStr": "Customizable",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Open admin dashboard"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "GST-Reconciled Statements",
+      "description": "Monthly expense statements auto-reconciled with GST categories for simplified tax filing",
+      "valueStr": "Monthly",
+      "valueNum": 0,
+      "frequencyStr": "Monthly",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [
+        "Available on Open dashboard"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical cards",
+    "Automated expense categorisation",
+    "Team spending controls",
+    "Real-time transaction alerts",
+    "GST-reconciled statements",
+    "Accounting software integration",
+    "Merchant category restrictions",
+    "Card freeze/unfreeze via app",
+    "UPI-enabled reloads",
+    "Multi-user support up to 5 cards"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1565c0",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "business",
+  "internationalUsable": false,
+  "bestFor": [
+    "SMB Expense Management",
+    "Team Spending",
+    "GST Reconciliation"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.open.money"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.open.money",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "open-business-prepaid-card"
+}

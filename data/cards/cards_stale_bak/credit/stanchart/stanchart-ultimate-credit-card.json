@@ -1,0 +1,362 @@
+{
+  "id": "stanchart-ultimate-credit-card",
+  "name": "Standard Chartered Ultimate Credit Card",
+  "tagline": "Premium rewards with 5 RP per ₹100 and unlimited lounge access",
+  "description": "The Standard Chartered Ultimate Credit Card is a world-class premium card offering 5 reward points per ₹100 on all spends, unlimited airport lounge access, and a competitive 2% forex markup. With exclusive travel and lifestyle benefits, it's designed for high-spenders who demand premium rewards and global privileges.",
+  "bank": "Standard Chartered",
+  "bankCode": "stanchart",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "WorldElite",
+  "variant": "Ultimate",
+  "usage": "Global",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and gold metallic",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 75000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 900000,
+    "minCreditScore": 720,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹75,000",
+      "Self-Employed: ITR > ₹9 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 20,
+    "miniStatementOtherBank": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3,
+    "annualInterestRate": 36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "purchaseProtectionCover": 200000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 48,
+    "travelInsuranceCover": 1500000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 75000,
+    "conditions": [
+      "Air accident cover: ₹1 Crore",
+      "Travel insurance: ₹15 Lakh",
+      "Purchase protection: ₹2 Lakh for 90 days"
+    ],
+    "provider": "Standard Chartered"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": 4,
+      "frequency": "4 per year via Priority Pass",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 4000,
+      "guestAllowed": false,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Priority Pass",
+      "Visa Airport Companion",
+      "LoungeKey"
+    ],
+    "conditions": [
+      "Unlimited domestic lounge access",
+      "4 complimentary international lounge visits per year"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "5 Reward Points per ₹100",
+      "description": "Earn 5 reward points per ₹100 on all retail spends — one of the highest earn rates in the market",
+      "valueStr": "5 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances, quasi-cash, and insurance premiums"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge access at participating lounges across India",
+      "valueStr": "Unlimited visits",
+      "valueNum": 2500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": -1,
+      "annualValue": 50000,
+      "conditions": [
+        "At participating airport lounges in India"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Low Forex Markup at 2%",
+      "description": "Enjoy a competitive 2% foreign currency markup on international transactions",
+      "valueStr": "2% forex markup",
+      "valueNum": 0,
+      "frequencyStr": "Every international transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applied on all international transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Standard Chartered 360° Rewards",
+    "earnRate": "5 reward points per ₹100",
+    "pointsPer100": 5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Airline miles transfer",
+      "Hotel loyalty points transfer",
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1.25%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, insurance premiums"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 bonus reward points on spending ₹10,000 within 30 days of card issuance",
+    "valueStr": "10,000 Reward Points",
+    "valueNum": 2500,
+    "conditions": [
+      "Spend ₹10,000 within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "10,000 bonus reward points on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 2500
+    },
+    {
+      "description": "15,000 bonus reward points on spending ₹10 Lakh annually",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "15,000 Reward Points",
+      "rewardNum": 3750
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in the preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹5,000 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Unlimited domestic lounge access",
+    "Priority Pass membership",
+    "Low 2% forex markup",
+    "SC mobile app and online banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 60000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 29100,
+    "tenYearNetValue": 291000,
+    "totalAnnualCharges": 5900,
+    "totalAnnualBenefits": 35000,
+    "roiPercent": 593
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Partner hotel programs via SC Travel"
+    ],
+    "flightPrivileges": [
+      "Fare discounts on premium airlines"
+    ],
+    "otherPerks": [
+      "Priority Pass membership",
+      "Travel insurance coverage",
+      "Low forex markup"
+    ]
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 5000,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Rewards",
+    "Travel",
+    "Premium"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility",
+      "loungeAccess"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sc.com/in/credit-cards/ultimate/",
+      "https://www.paisabazaar.com/credit-card/standard-chartered-ultimate-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 345 5000",
+  "applyUrl": "https://www.sc.com/in/credit-cards/ultimate/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "stanchart-ultimate-credit-card"
+}

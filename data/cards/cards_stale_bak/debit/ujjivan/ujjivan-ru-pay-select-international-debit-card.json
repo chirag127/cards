@@ -1,0 +1,216 @@
+{
+  "id": "ujjivan-ru-pay-select-international-debit-card",
+  "name": "Ujjivan RuPay Select International Debit Card",
+  "tagline": "International RuPay Select with premium benefits",
+  "description": "The Ujjivan RuPay Select International Debit Card is a premium international debit card offering domestic and international lounge access, personal accident insurance, wellness benefits, and contactless payments. Designed for Ujjivan Small Finance Bank customers who travel and value lifestyle perks.",
+  "bank": "Ujjivan Small Finance Bank",
+  "bankCode": "ujjivan",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "International",
+  "usage": "International",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Purple-pink gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Ujjivan SFB account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free issuance"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access at participating lounges across India.",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter",
+        "Valid at participating domestic lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary international airport lounge access at participating lounges worldwide.",
+      "valueStr": "2 visits/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "2 visits per year",
+        "Valid at participating international lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accident Insurance",
+      "description": "Personal accident insurance cover for cardholders.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through Ujjivan insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "health",
+      "title": "Wellness Benefits",
+      "description": "Access to wellness programs and health benefits.",
+      "valueStr": "Access included",
+      "valueNum": 3000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid at partner wellness centers",
+        "Registration required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via Ujjivan wellness portal"
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "International acceptance",
+    "Airport lounge access",
+    "Personal accident insurance",
+    "Wellness benefits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#7C3AED",
+    "#EC4899"
+  ],
+  "value": {
+    "highestValue": 22000,
+    "averageValue": 16000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 21115,
+    "tenYearNetValue": 211150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 22000,
+    "roiPercent": 2383
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "International Use",
+    "Lounge Access",
+    "Wellness"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.ujjivansfb.in"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 209 5555",
+  "applyUrl": "https://www.ujjivansfb.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "ujjivan-ru-pay-select-international-debit-card"
+}

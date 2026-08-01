@@ -1,0 +1,197 @@
+{
+  "id": "tata-neu-pay-prepaid-card",
+  "name": "Tata Neu Pay Prepaid Card",
+  "tagline": "Tata ecosystem prepaid with NeuCoins rewards",
+  "description": "The Tata Neu Pay Prepaid Card is a RuPay Platinum prepaid card integrated with the Tata Neu super app ecosystem. It earns NeuCoins on every transaction across Tata brands including BigBasket, Croma, Tata Cliq, 1mg, Air India, and Taj. With zero annual charges and a unified rewards currency across the Tata universe, it is ideal for users who shop across Tata's diverse brand portfolio.",
+  "bank": "Tata Neu",
+  "bankCode": "tata Neu",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Pay Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Deep blue and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "Full KYC via Aadhaar/PAN",
+      "Requires Tata Neu app account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "NeuCoins Earning",
+      "description": "Earn 1 NeuCoin (1% value) on every transaction across Tata ecosystem brands",
+      "valueStr": "1 NeuCoin per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 1200,
+      "conditions": [
+        "Accrued as NeuCoins, redeemable across Tata brands"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Tata Brand Discounts",
+      "description": "Additional discounts on BigBasket, Croma, Tata Cliq, 1mg, Air India, and Taj bookings",
+      "valueStr": "Up to 10%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At participating Tata brands"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Unified Rewards Currency",
+      "description": "NeuCoins earned via the prepaid card are usable across all Tata Neu partner brands as a single loyalty currency",
+      "valueStr": "Cross-brand",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Tata Neu app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "200 NeuCoins on first transaction above Rs 500 on Tata Neu",
+    "valueStr": "200 NeuCoins",
+    "valueNum": 200,
+    "conditions": [
+      "First Tata Neu transaction above Rs 500"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Zero annual charges",
+    "NeuCoins rewards across Tata brands",
+    "Tata Neu super app integration",
+    "Instant UPI reloads",
+    "Wide RuPay acceptance",
+    "Contactless payments",
+    "Real-time transaction alerts",
+    "Unified Tata ecosystem loyalty"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d1b2a",
+    "#c9a227"
+  ],
+  "value": {
+    "highestValue": 1200,
+    "averageValue": 600,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 600,
+    "tenYearNetValue": 6000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 600,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Tata Ecosystem",
+    "NeuCoins Rewards",
+    "Multi-Brand Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.tataneu.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.tataneu.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "tata-neu-pay-prepaid-card"
+}

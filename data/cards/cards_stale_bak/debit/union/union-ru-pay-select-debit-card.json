@@ -1,0 +1,275 @@
+{
+  "id": "union-ru-pay-select-debit-card",
+  "name": "Union Bank of India RuPay Select Debit Card",
+  "tagline": "RuPay Select with comprehensive insurance and wellness",
+  "description": "The Union Bank of India RuPay Select Debit Card is a premium debit card offering reward points, lounge access, personal accidental death cover, air accident cover, NPCI personal accident & permanent disability cover, and gym/wellness center access. Designed for Union Bank customers seeking comprehensive insurance and wellness benefits.",
+  "bank": "Union Bank of India",
+  "bankCode": "union",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Standard",
+  "usage": "Domestic",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Teal-purple gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Union Bank account holders",
+      "Reward points earned per ₹100 spent"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free issuance"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 400,
+      "amountWithGst": 472,
+      "note": "Excluding taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access at participating lounges across India.",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter",
+        "Valid at participating domestic lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary international airport lounge access at participating lounges worldwide.",
+      "valueStr": "2 visits/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "2 visits per year",
+        "Valid at participating international lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accidental Death Cover",
+      "description": "Personal accidental death insurance cover for cardholders.",
+      "valueStr": "₹5 lakh",
+      "valueNum": 500000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through Union Bank insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Air accident insurance cover for cardholders traveling by air.",
+      "valueStr": "₹50 lakh",
+      "valueNum": 5000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid during air travel",
+        "Ticket must be purchased using the card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "NPCI Personal Accident & Permanent Disability Cover",
+      "description": "NPCI-provided personal accident and permanent disability insurance cover.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover provided by NPCI",
+        "Valid while using the card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "health",
+      "title": "Gym & Wellness Center Access",
+      "description": "Access to gym and wellness centers.",
+      "valueStr": "Access included",
+      "valueNum": 5000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Valid at partner fitness centers",
+        "Registration required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via Union Bank wellness portal"
+    }
+  ],
+  "rewardProgram": {
+    "name": "Union Reward Points",
+    "earnRate": "Reward points per ₹100 spent",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Merchandise"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "Points per ₹100 spent",
+    "conditions": [
+      "Points earned on PoS and e-commerce transactions"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Reward points per ₹100 spent",
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Airport lounge access",
+    "Personal accidental death cover",
+    "Air accident cover",
+    "NPCI personal accident & permanent disability cover",
+    "Gym and wellness center access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0D9488",
+    "#9333EA"
+  ],
+  "value": {
+    "highestValue": 32000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 31528,
+    "tenYearNetValue": 315280,
+    "totalAnnualCharges": 472,
+    "totalAnnualBenefits": 32000,
+    "roiPercent": 6678
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Insurance",
+    "Wellness",
+    "Lounge Access",
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.unionbankofindia.co.in"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 22 44 44",
+  "applyUrl": "https://www.unionbankofindia.co.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "union-ru-pay-select-debit-card"
+}

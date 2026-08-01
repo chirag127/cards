@@ -1,0 +1,374 @@
+{
+  "id": "amex-gold-credit-card",
+  "name": "American Express Gold Card",
+  "tagline": "Earn accelerated rewards on dining and travel",
+  "description": "The American Express Gold Card is a premium rewards card offering 4X Membership Rewards points on dining, 2X on travel, and 1X on all other spends. With 8 complimentary domestic airport lounge visits per year and exclusive dining privileges, it's ideal for foodies and frequent travellers seeking a rewarding card experience.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Gold",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Gold metallic finish",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 75000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹60,000",
+      "Self-Employed: ITR > ₹6 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 4500,
+      "amountWithGst": 5310,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 3.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 25000000,
+    "permanentDisabilityCover": 25000000,
+    "purchaseProtectionCover": 200000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 1000000,
+    "lostCardLiabilityWindow": 48,
+    "travelInsuranceCover": 2000000,
+    "airAccidentCover": 25000000,
+    "baggageCover": 100000,
+    "conditions": [
+      "Air accident cover: ₹2.5 Crore",
+      "Travel insurance: ₹20 Lakh",
+      "Purchase protection: ₹2 Lakh for 90 days"
+    ],
+    "provider": "American Express"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "8 per year",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Amex Lounge Collection"
+    ],
+    "conditions": [
+      "8 complimentary domestic lounge visits per year",
+      "Swipe card at participating lounges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "dining",
+      "title": "4X MR on Dining",
+      "description": "Earn 4X Membership Rewards points on all dining spends including restaurants, cafes, and food delivery",
+      "valueStr": "4X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable at all dining establishments and food delivery platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "2X MR on Travel",
+      "description": "Earn 2X Membership Rewards points on all travel spends including flights, hotels, and travel bookings",
+      "valueStr": "2X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every travel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Flights, hotels, and travel agency bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X MR on All Other Spends",
+      "description": "Earn 1 MR point per ₹50 on all other purchases",
+      "valueStr": "1X MR points",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "8 per year",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "Swipe card at participating airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "American Express Membership Rewards",
+    "earnRate": "4X on dining, 2X on travel, 1X on others",
+    "pointsPer100": 2,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Points do not expire as long as card is active",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 4,
+        "description": "4X MR on dining spends"
+      },
+      {
+        "category": "Travel",
+        "multiplier": 2,
+        "description": "2X MR on travel spends"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1X MR on all other purchases"
+      }
+    ],
+    "redemptionOptions": [
+      "Transfer to airline partners (1 MR = up to 1 air mile)",
+      "Transfer to hotel partners",
+      "Statement credit (1 MR = ₹0.25)",
+      "Gift cards and merchandise",
+      "Catalogue redemption"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "1% to 4%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "4,000 bonus MR points on first spend within 90 days",
+    "valueStr": "4,000 MR Points",
+    "valueNum": 2000,
+    "conditions": [
+      "First spend within 90 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "5,000 bonus MR points on spending ₹2 Lakh annually",
+      "spendRequired": 200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 MR Points",
+      "rewardNum": 2500
+    },
+    {
+      "description": "Additional 5,000 bonus MR points on spending ₹4 Lakh annually",
+      "spendRequired": 400000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5,000 MR Points",
+      "rewardNum": 2500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹3 Lakh in the preceding year",
+      "annualSpendRequired": 300000,
+      "waives": "Annual fee of ₹4,500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Amex Offers — exclusive merchant discounts",
+    "No pre-set spending limit"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#b8860b",
+    "#ffd700"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 30000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 24690,
+    "tenYearNetValue": 246900,
+    "totalAnnualCharges": 5310,
+    "totalAnnualBenefits": 30000,
+    "roiPercent": 565
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": true,
+  "bestFor": [
+    "Dining",
+    "Travel",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in/credit-cards/gold-card/",
+      "https://www.paisabazaar.com/credit-card/american-express-gold-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1030",
+  "applyUrl": "https://www.americanexpress.com/in/credit-cards/gold-card/",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "amex-gold-credit-card"
+}

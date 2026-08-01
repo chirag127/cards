@@ -1,0 +1,252 @@
+{
+  "id": "sbi-landmark-rewards-credit-card",
+  "name": "Landmark Rewards SBI Credit Card",
+  "tagline": "10 RP per ₹100 at Landmark stores — entry-level shopping card",
+  "description": "The Landmark Rewards SBI Credit Card is an entry-level co-branded card on the Visa Gold network, offering 10 reward points per ₹100 at Landmark stores (HomeCentre, Max, Lifestyle). With a low annual fee, it's a great starting point for Landmark shoppers.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "Landmark Rewards",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.4 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "10 RP per ₹100 at Landmark",
+      "description": "Earn 10 reward points per ₹100 spent at HomeCentre, Max, and Lifestyle stores",
+      "valueStr": "10 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at HomeCentre, Max, Lifestyle stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1 RP per ₹100 Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail transactions",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [
+        "Max ₹150 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Landmark Reward Points",
+    "earnRate": "10 RP per ₹100 Landmark, 1 RP per ₹100 other",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Landmark Stores",
+        "multiplier": 10,
+        "description": "10 RP per ₹100 at HomeCentre, Max, Lifestyle"
+      }
+    ],
+    "redemptionOptions": [
+      "Landmark store vouchers",
+      "Products & Vouchers"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 2.5%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Landmark store rewards",
+    "Low annual fee"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1565c0",
+    "#ffd600"
+  ],
+  "value": {
+    "highestValue": 4000,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1911,
+    "tenYearNetValue": 19110,
+    "totalAnnualCharges": 589,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 324
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Shopping",
+    "Landmark Stores",
+    "Entry Level"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800-180-1111",
+  "applyUrl": "https://www.sbicard.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-landmark-rewards-credit-card"
+}

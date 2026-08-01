@@ -2,11 +2,12 @@
 import '~/styles/global.css'
 import '~/styles/oriz-ui-overrides.css'
 import '@chirag127/astro-shell/tokens.css'
-import Header from '~/components/Header.astro'
-import AppSidebarContent from '~/components/AppSidebarContent.astro'
-import Sidebar from '@chirag127/astro-chrome/Sidebar.astro'
-import Footer from '@chirag127/astro-chrome/Footer.astro'
 import BottomBar from '@chirag127/astro-chrome/BottomBar.astro'
+import Footer from '@chirag127/astro-chrome/Footer.astro'
+import Sidebar from '@chirag127/astro-chrome/Sidebar.astro'
+import AppSidebarContent from '~/components/AppSidebarContent.astro'
+import CompareDrawer from '~/components/CompareDrawer.tsx'
+import Header from '~/components/Header.astro'
 import { bottomBarActions } from '~/data/bottombar-actions'
 import { SITE_CONFIG } from '~/lib/siteConfig'
 
@@ -88,6 +89,7 @@ const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN
         </div>
         <Footer />
         <BottomBar actions={bottomBarActions} />
+        <CompareDrawer client:load />
       </>
     )}
     <style>

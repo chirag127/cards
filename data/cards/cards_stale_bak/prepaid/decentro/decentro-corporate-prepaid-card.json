@@ -1,0 +1,200 @@
+{
+  "id": "decentro-corporate-prepaid-card",
+  "name": "Decentro Corporate Prepaid Card",
+  "tagline": "API-first corporate expense infrastructure",
+  "description": "The Decentro Corporate Prepaid Card is a Visa Business prepaid card built on Decentro's API-first banking infrastructure. It enables enterprises to programmatically issue cards, manage spending limits, track expenses in real-time, and integrate with internal financial systems via RESTful APIs. Designed for tech-forward companies that want complete programmatic control over corporate spending.",
+  "bank": "Decentro",
+  "bankCode": "decentro",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Business",
+  "variant": "Corporate API",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Dark blue and cyan",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Business Owner"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Decentro business account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Decentro API clients",
+      "Company registration required",
+      "Technical integration needed",
+      "Individual KYC per cardholder"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "API Usage Fee",
+      "amount": 0,
+      "note": "Per API call as per Decentro pricing"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 100000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "API-First Card Management",
+      "description": "Complete programmatic control over card issuance, limits, freezes, and monitoring via RESTful APIs",
+      "valueStr": "Full API access",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Decentro developer console"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Integrate via Decentro API documentation"
+    },
+    {
+      "category": "other",
+      "title": "Real-Time Transaction Webhooks",
+      "description": "Instant webhook notifications for every transaction enabling real-time expense monitoring and automated approvals",
+      "valueStr": "Real-time",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Configured via API"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Custom Integration",
+      "description": "Integrate with internal ERP, payroll, and accounting systems via Decentro's modular banking APIs",
+      "valueStr": "Custom",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Technical team required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical cards",
+    "API-first card management",
+    "Real-time transaction webhooks",
+    "Programmable spending limits",
+    "Custom integration capabilities",
+    "Automated expense tracking",
+    "Webhook-based alerts",
+    "ERP/payroll integration",
+    "Developer documentation",
+    "Sandbox testing environment"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d1b2a",
+    "#00bcd4"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "business",
+  "internationalUsable": false,
+  "bestFor": [
+    "API-First Banking",
+    "Tech-Forward Companies",
+    "Custom Integrations"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.decentro.tech"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.decentro.tech",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "decentro-corporate-prepaid-card"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sbi-platinum-debit",
+  "slug": "sbi-platinum-debit",
+  "name": "SBI Platinum International Debit Card",
+  "tagline": "Premium debit card with airport-lounge access and international usage.",
+  "description": "Sample seed data — replace with verified figures from sbi.co.in. Premium debit card linked to an SBI savings account, with domestic airport-lounge access (Visa Signature lounges) and international PoS usage.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "visa",
+  "cardType": "debit",
+  "tier": "platinum",
+  "fees": {
+    "joining": 300,
+    "annual": 300,
+    "addOnCard": 0,
+    "forexMarkup": 3.5
+  },
+  "rewards": {
+    "pointsPerINR": 0.02,
+    "pointsExpiry": "2 years"
+  },
+  "lounge": {
+    "domesticVisitsPerQuarter": 2,
+    "internationalVisitsPerYear": 0,
+    "program": "visa-airport-companion",
+    "guestAccess": false
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 70,
+    "employment": ["salaried", "self-employed", "business-owner"],
+    "notes": ["Requires active SBI savings account"]
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000
+  },
+  "internationalUsable": true,
+  "contactless": true,
+  "applyUrl": "https://sbi.co.in/web/personal-banking/cards/debit-cards/sbi-platinum-international-debit-card",
+  "lastUpdated": "2026-06-22",
+  "dataQuality": {
+    "status": "unverified",
+    "sourceUrls": ["https://sbi.co.in"],
+    "lastVerified": "2026-06-22"
+  }
+}

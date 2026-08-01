@@ -158,6 +158,10 @@ export interface CardRow {
    * persisted in the row so the filter rail can cheaply check. */
   hasLounge: boolean
   hasFuelWaiver: boolean
+  hasRewards: boolean
+  hasWelcomeBonus: boolean
+  hasInsurance: boolean
+  hasInternational: boolean
   /** A numeric BIN prefix to render in the embossed card thumbnail (first
    * 4 digits). When `bin` is empty in the source, derive from network. */
   binPrefix: string
@@ -203,6 +207,10 @@ function toRow(card: FullCard): CardRow {
     (card.loungeAccess?.domestic?.count ?? 0) !== 0 ||
     (card.loungeAccess?.international?.count ?? 0) !== 0
   const fuel = !!card.fuelSurcharge?.available
+  const hasRewards = rewardsRate > 0 || !!card.rewardProgram?.earnRate || !!card.rewardProgram?.rewardRateStr
+  const hasWelcomeBonus = !!card.welcomeBonus?.available || !!card.welcomeBonus?.description
+  const hasInsurance = !!card.insurance && Object.values(card.insurance).some((v) => typeof v === 'number' && v > 0)
+  const hasInternational = !!card.internationalUsable || card.usage === 'International'
   const network = String(card.network ?? 'Visa')
   const binPrefix =
     (card.bin ?? '').toString().slice(0, 4) || NETWORK_BIN_FALLBACK[network] || '0000'
@@ -230,6 +238,10 @@ function toRow(card: FullCard): CardRow {
     minAnnualIncome: card.eligibility?.minAnnualIncome ?? 0,
     hasLounge: lounge,
     hasFuelWaiver: fuel,
+    hasRewards,
+    hasWelcomeBonus,
+    hasInsurance,
+    hasInternational,
     binPrefix,
     stockGradient: stock,
   }
@@ -248,6 +260,45 @@ export function getCreditRows(): CardRow[] {
 export function getCardBySlug(slug: string, type: CardType = 'credit'): FullCard | undefined {
   return FULL_CARDS.find((c) => c.slug === slug && c.cardType === type)
 }
+
+export function getAllCards(): FullCard[] {
+  return FULL_CARDS
+}
+
+export function getCardById(id: string): FullCard | undefined {
+  return FULL_CARDS.find((c) => c.id === id)
+}
+
+export function getRowsByType(type: CardType): CardRow[] {
+  return ROWS.filter((r) => r.cardType === type)
+}
+
+/** Rows on a specific network (e.g. RuPay), sorted free-first then A→Z. */
+export function getRowsByNetwork(network: string): CardRow[] {
+  return ROWS.filter((r) => r.network === network)
+}
+
+/** Rows for one issuer (bankCode). */
+export function getRowsByBank(bankCode: string): CardRow[] {
+  return ROWS.filter((r) => r.bankCode === bankCode)
+}
+
+/** Similar cards: same type, prefer same network, exclude self. Max `n`. */
+export function getSimilarRows(card: FullCard, n = 6): CardRow[] {
+  const pool = ROWS.filter((r) => r.id !== card.id && r.cardType === card.cardType)
+  const net = String(card.network ?? '')
+  const sameNet = pool.filter((r) => r.network === net)
+  const rest = pool.filter((r) => r.network !== net)
+  return [...sameNet, ...rest].slice(0, n)
+}
+
+export const COUNT_BY_TYPE: Record<CardType, number> = {
+  credit: FULL_CARDS.filter((c) => c.cardType === 'credit').length,
+  debit: FULL_CARDS.filter((c) => c.cardType === 'debit').length,
+  prepaid: FULL_CARDS.filter((c) => c.cardType === 'prepaid').length,
+}
+
+export const RUPAY_COUNT = FULL_CARDS.filter((c) => String(c.network) === 'RuPay').length
 
 export function getCardByIssuerSlug(
   issuer: string,
@@ -272,6 +323,17 @@ export function listNetworks(): string[] {
   for (const c of FULL_CARDS) set.add(String(c.network ?? 'Visa'))
   return Array.from(set).sort()
 }
+
+export function listCardTypes(): Array<{ type: CardType; count: number }> {
+  const map = new Map<CardType, number>()
+  for (const c of FULL_CARDS) map.set(c.cardType, (map.get(c.cardType) ?? 0) + 1)
+  return (['credit', 'debit', 'prepaid'] as CardType[])
+    .filter((t) => map.has(t))
+    .map((t) => ({ type: t, count: map.get(t) ?? 0 }))
+}
+
+/** Highest annual fee across all rows — used to bound the fee range slider. */
+export const MAX_ANNUAL_FEE = ROWS.reduce((m, r) => Math.max(m, r.annualFee), 0)
 
 export const TOTAL_CARD_COUNT = FULL_CARDS.length
 export const CREDIT_COUNT = FULL_CARDS.filter((c) => c.cardType === 'credit').length

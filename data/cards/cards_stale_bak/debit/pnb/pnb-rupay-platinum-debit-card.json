@@ -1,0 +1,191 @@
+{
+  "id": "pnb-rupay-platinum-debit-card",
+  "name": "PNB RuPay Platinum Debit Card",
+  "tagline": "Domestic RuPay Platinum debit card with UPI integration",
+  "description": "The PNB RuPay Platinum Debit Card is built on India's indigenous RuPay payment network, offering domestic acceptance with UPI integration for seamless digital payments. It provides competitive ATM withdrawal limits, contactless payments, accidental insurance cover, and is ideal for customers who primarily transact within India.",
+  "bank": "Punjab National Bank",
+  "bankCode": "pnb",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "RuPay Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white RuPay gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to PNB savings and current account holders",
+      "Domestic usage only; not valid for international transactions"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 200,
+      "amountWithGst": 236,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "RuPay Reward Points",
+      "description": "Earn 1 Reward Point per ₹200 spent on POS and e-commerce",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 1500,
+      "conditions": [
+        "Valid on RuPay network transactions only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Insurance Cover",
+      "description": "₹2 Lakh accidental death insurance cover",
+      "valueStr": "₹2 Lakh",
+      "valueNum": 200000,
+      "frequencyStr": "Annual cover",
+      "frequencyPerYear": 1,
+      "annualValue": 200000,
+      "conditions": [
+        "Active on card usage"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "RuPay Reward Points",
+    "earnRate": "1 RP per ₹200",
+    "pointsPer100": 0.5,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.1%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "RuPay Platinum tier",
+    "UPI enabled",
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Accidental insurance cover",
+    "NCMC compatible"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "gradientColors": [
+    "#1e3a8a",
+    "#60a5fa"
+  ],
+  "value": {
+    "highestValue": 4000,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1764,
+    "tenYearNetValue": 17640,
+    "totalAnnualCharges": 236,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 1595
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Domestic Use",
+    "UPI Payments",
+    "Low Cost",
+    "NCMC"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.pnbindia.in/personal-banking/cards/debit-cards/rupay-platinum-debit-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 180 2222",
+  "applyUrl": "https://www.pnbindia.in/personal-banking/cards/debit-cards/rupay-platinum-debit-card",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "pnb-rupay-platinum-debit-card"
+}

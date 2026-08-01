@@ -1,0 +1,299 @@
+{
+  "id": "axis-ikea-family-credit-card",
+  "name": "IKEA Family Axis Bank Credit Card",
+  "tagline": "3X rewards at IKEA, 2X on dining, lifetime free",
+  "description": "The IKEA Family Axis Bank Credit Card is a Visa Classic tier lifetime-free co-branded card offering 3 EDGE Reward points per ₹100 at IKEA stores and online, and 2 EDGE per ₹100 on dining. With zero annual fee, it is the perfect card for IKEA enthusiasts and home furnishing shoppers who want to earn rewards on every purchase.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "IKEA Family",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and yellow",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 180000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹1.8 Lakh p.a.",
+      "Age 18–65 years",
+      "Lifetime free card with no annual fee",
+      "Ideal for IKEA shoppers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil (LTF)"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Lost card liability: ₹1 Lakh",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "coBrandDetails": {
+    "partnerName": "IKEA",
+    "partnerCategory": "Home Furnishing",
+    "specialPerks": [
+      "3 EDGE Reward points per ₹100 at IKEA stores and online",
+      "2 EDGE Reward points per ₹100 on dining",
+      "IKEA Family membership benefits"
+    ]
+  },
+  "shoppingBenefits": {
+    "available": true,
+    "partnerMerchants": [
+      "IKEA"
+    ],
+    "offerDescription": "3 EDGE points per ₹100 at IKEA stores and website"
+  },
+  "diningBenefits": {
+    "available": true,
+    "discountDescription": "2 EDGE Reward points per ₹100 on dining spends",
+    "discountPercent": 0,
+    "partnerRestaurants": []
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "3 EDGE Points per ₹100 at IKEA",
+      "description": "Earn 3 EDGE Reward points per ₹100 at IKEA stores and online",
+      "valueStr": "3 EDGE per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at IKEA stores and ikea.com/india"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "2 EDGE Points per ₹100 on Dining",
+      "description": "Earn 2 EDGE Reward points per ₹100 on all dining and restaurant spends",
+      "valueStr": "2 EDGE per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at restaurants and dining outlets"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis EDGE Reward Points",
+    "earnRate": "2–3 EDGE per ₹100",
+    "pointsPer100": 2,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.4,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "IKEA",
+        "multiplier": 1.5,
+        "description": "3 EDGE per ₹100"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 1,
+        "description": "2 EDGE per ₹100"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Gift Vouchers via Edge Rewards portal",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.4% to 0.6%",
+    "conditions": [
+      "Excluded: EMI, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Lifetime free (LTF)",
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "IKEA co-branded shopping rewards",
+    "Dining rewards",
+    "Zero annual fee"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#0051BA",
+    "#FFDA1A"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2500,
+    "tenYearNetValue": 25000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 0
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/ikea-family-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-bank-ikea-family-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/ikea-family-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-ikea-family-credit-card"
+}

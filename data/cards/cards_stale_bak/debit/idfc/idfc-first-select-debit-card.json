@@ -1,0 +1,216 @@
+{
+  "id": "idfc-first-select-debit-card",
+  "name": "IDFC FIRST Select Debit Card",
+  "tagline": "Visa Select card with premium lifestyle benefits",
+  "description": "The IDFC FIRST Select Debit Card is a Visa Select offering with airport lounge access, reward points, golf privileges, and international usage. Designed for mid-tier premium customers who want a balance of features and affordability with the trusted IDFC FIRST Bank service.",
+  "bank": "IDFC FIRST Bank",
+  "bankCode": "idfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Select",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Sky blue and indigo gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to IDFC FIRST Bank savings account holders",
+      "Minimum balance of ₹1 lakh recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 500000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "6 visits/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 6000,
+      "conditions": [
+        "Available at major domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge",
+      "description": "Complimentary international airport lounge visits",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "Available at select international airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at select courses",
+      "valueStr": "4 rounds/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to course availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn reward points on all spends",
+      "valueStr": "2 RP per ₹200",
+      "valueNum": 2,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3000,
+      "conditions": [
+        "1 RP = ₹0.30 value when redeemed"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹1 lakh average balance",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "6 domestic lounge/year",
+    "4 intl lounge/year",
+    "Golf privileges",
+    "Reward points",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0ea5e9",
+    "#6366f1"
+  ],
+  "value": {
+    "highestValue": 30000,
+    "averageValue": 20000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 24115,
+    "tenYearNetValue": 241150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 25000,
+    "roiPercent": 2825
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Rewards seekers",
+    "International shoppers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.idfcfirstbank.com/personal-banking/cards/debit-cards/select-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 100000,
+  "customerCareNumber": "1800 103 1111",
+  "applyUrl": "https://www.idfcfirstbank.com/personal-banking/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "idfc-first-select-debit-card"
+}

@@ -1,0 +1,317 @@
+{
+  "id": "stanchart-super-value-credit-card",
+  "name": "Standard Chartered Super Value Credit Card",
+  "tagline": "5% cashback on fuel and utility — zero annual fee",
+  "description": "The Standard Chartered Super Value Credit Card is a lifetime-free card offering 5% cashback on fuel and utility bill payments and 1% on all other spends. With no annual fee, it's one of the best value-for-money cards for everyday expenses, especially for those who spend regularly on fuel and utilities.",
+  "bank": "Standard Chartered",
+  "bankCode": "stanchart",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Super Value",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 250000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.5 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 20,
+    "miniStatementOtherBank": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "5% Cashback on Fuel",
+      "description": "Earn 5% cashback on all fuel transactions at any petrol pump across India",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every fuel transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At all petrol pumps in India",
+        "Max cashback of ₹200 per transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "5% Cashback on Utility Bills",
+      "description": "Earn 5% cashback on all utility bill payments including electricity, gas, water, and telecom",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every utility transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Electricity, gas, water, telecom, and broadband bills"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1% Cashback on All Other Spends",
+      "description": "Earn 1% cashback on all other retail transactions",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Standard Chartered Cashback",
+    "earnRate": "5% fuel/utility, 1% other",
+    "pointsPer100": 0,
+    "pointValue": 0,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Cashback credited to statement — no expiry",
+    "bonusCategories": [
+      {
+        "category": "Fuel",
+        "multiplier": 5,
+        "description": "5% cashback on fuel transactions"
+      },
+      {
+        "category": "Utility",
+        "multiplier": 5,
+        "description": "5% cashback on utility bill payments"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1% cashback on all other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Automatic statement credit"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, balance transfers, insurance premiums"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus — lifetime free card",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "No annual fee — lifetime free card",
+      "annualSpendRequired": 0,
+      "waives": "N/A — card is free"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Lifetime free — no annual fee",
+    "5% cashback on fuel and utility bills",
+    "SC mobile app and online banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#e86c00",
+    "#ffa726"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 6000,
+    "tenYearNetValue": 60000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 9999
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Fuel",
+    "Utility",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sc.com/in/credit-cards/super-value/",
+      "https://www.paisabazaar.com/credit-card/standard-chartered-super-value-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 345 5000",
+  "applyUrl": "https://www.sc.com/in/credit-cards/super-value/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "stanchart-super-value-credit-card"
+}

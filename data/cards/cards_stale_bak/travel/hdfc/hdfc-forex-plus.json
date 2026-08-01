@@ -1,0 +1,50 @@
+{
+  "id": "hdfc-forex-plus",
+  "slug": "hdfc-forex-plus",
+  "name": "HDFC Bank ForexPlus Card",
+  "tagline": "Multi-currency travel card. Lock the rate, swipe abroad.",
+  "description": "Sample seed data — replace with verified figures from hdfcbank.com. Multi-currency prepaid travel card supporting 20+ currencies with locked rates at load time. Lower forex markup than a credit card abroad.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "visa",
+  "cardType": "travel",
+  "tier": "mid",
+  "fees": {
+    "joining": 500,
+    "annual": 0,
+    "forexMarkup": 0,
+    "cashAdvance": "₹110 per international ATM withdrawal",
+    "overlimit": "n/a (prepaid)"
+  },
+  "rewards": {
+    "pointsPerINR": 0,
+    "welcomeBonus": "None"
+  },
+  "travel": {
+    "insurance": {
+      "amount": 0,
+      "coverage": "Optional add-on travel insurance via HDFC Ergo"
+    },
+    "purchaseProtection": false,
+    "fraudLiability": "Zero liability post-blocking"
+  },
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 70,
+    "employment": ["salaried", "self-employed", "student", "business-owner"],
+    "notes": ["KYC + valid passport + visa/travel proof required at load"]
+  },
+  "limits": {
+    "creditLimitMin": 0,
+    "creditLimitMax": 2500000
+  },
+  "internationalUsable": true,
+  "contactless": true,
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/forex-cards/forexplus-card",
+  "lastUpdated": "2026-06-22",
+  "dataQuality": {
+    "status": "unverified",
+    "sourceUrls": ["https://www.hdfcbank.com"],
+    "lastVerified": "2026-06-22"
+  }
+}

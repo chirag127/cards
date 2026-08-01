@@ -1,0 +1,221 @@
+{
+  "id": "hdfc-multicurrency-forex-card",
+  "name": "HDFC Multicurrency Platinum ForexPlus Chip Card",
+  "tagline": "22 currencies with Rs 25 Lakh travel insurance",
+  "description": "The HDFC Multicurrency Platinum ForexPlus Chip Card is a premium Mastercard prepaid forex card supporting 22 currencies. With an ATM withdrawal limit of USD 5,000 per day, comprehensive travel insurance up to Rs 25 Lakh, chip and PIN security, backup cards, temporary block features, and 24/7 support, it is the most feature-rich forex card for international travellers.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Mastercard",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Multicurrency ForexPlus",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and platinum",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Valid passport and visa required",
+      "FEMA compliance documentation needed"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 500,
+      "note": "Plus applicable taxes"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via net banking"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 200,
+      "note": "Plus taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 2000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 500000,
+    "internationalPosPerDay": 2000000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2500000,
+    "permanentDisabilityCover": 2500000,
+    "travelInsuranceCover": 2500000,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "baggageCover": 500000,
+    "airAccidentCover": 5000000,
+    "conditions": [
+      "Insurance valid when card is used for travel bookings",
+      "Coverage for 180 days per trip",
+      "Air accident cover when ticket purchased with card"
+    ],
+    "provider": "HDFC ERGO General Insurance"
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "22 Currency Support",
+      "description": "Load and spend in 22 currencies including USD, GBP, EUR, AED, SGD, AUD, CAD, JPY, THB, CHF, NZD, SAR, QAR, ZAR, BRL, PHP, CNY, HKD, IDR, INR, KRW, MYR",
+      "valueStr": "22 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Travel Insurance up to Rs 25 Lakh",
+      "description": "Comprehensive travel insurance covering medical emergencies, trip cancellations, baggage loss, and more",
+      "valueStr": "Rs 25 Lakh",
+      "valueNum": 2500000,
+      "frequencyStr": "Per trip",
+      "frequencyPerYear": 0,
+      "annualValue": 2500000,
+      "conditions": [
+        "Valid for 180 days per trip",
+        "Must use card for travel bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Call HDFC customer care to activate insurance before travel"
+    },
+    {
+      "category": "other",
+      "title": "Backup Card",
+      "description": "Free backup card provided for emergency use while travelling abroad",
+      "valueStr": "Free backup",
+      "valueNum": 500,
+      "frequencyStr": "One-time",
+      "frequencyPerYear": 1,
+      "annualValue": 500,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Chip and PIN technology",
+    "Contactless payments",
+    "22 currency support",
+    "USD 5,000 per day ATM withdrawal limit",
+    "Backup card for emergencies",
+    "Temporary block/unblock feature",
+    "24/7 customer support",
+    "Emergency card replacement",
+    "Real-time transaction alerts",
+    "PIN regeneration at ATMs"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#003366",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 2500000,
+    "averageValue": 3500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3000,
+    "tenYearNetValue": 30000,
+    "totalAnnualCharges": 500,
+    "totalAnnualBenefits": 3500,
+    "roiPercent": 600
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Premium Insurance",
+    "22 Currencies",
+    "Backup Card"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "insurance",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/forex-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800-266-4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/forex-card",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "hdfc-multicurrency-forex-card"
+}

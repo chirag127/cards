@@ -1,0 +1,327 @@
+{
+  "id": "dcb-mastercard-world-credit-card",
+  "name": "DCB Bank Mastercard World Credit Card",
+  "tagline": "Premium international card with travel benefits",
+  "description": "The DCB Bank Mastercard World Credit Card is the bank's premium offering with international lounge access, enhanced rewards, and comprehensive travel insurance.",
+  "bank": "DCB Bank",
+  "bankCode": "dcb",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "World",
+  "variant": "Mastercard World",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 6 Lakh+",
+      "Self-Employed: ITR of Rs 6 Lakh+",
+      "Age 21-60 years",
+      "Minimum credit score of 700 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 16,
+      "valuePerVisit": 3000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic lounge access for primary cardholder"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 400 and Rs 5000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Complimentary Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per quarter",
+      "valueStr": "8 per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 24,
+      "annualValue": 288000,
+      "conditions": [
+        "Primary cardholder only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 5 reward points per Rs 100 on all transactions",
+      "valueStr": "5 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Air accident insurance coverage when ticket is booked using the card",
+      "valueStr": "Rs 50 Lakh",
+      "valueNum": 5000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 5000000,
+      "conditions": [
+        "Valid when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on spending Rs 5 Lakh annually",
+      "valueStr": "Fee waiver",
+      "valueNum": 3000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "Annual spend of Rs 5 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "DCB Reward Points",
+    "earnRate": "5 RP per Rs 100 on all spends",
+    "pointsPer100": 5,
+    "pointValue": 0.3,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 5,
+        "description": "5 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1.5%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "3000 bonus reward points on card activation",
+    "valueStr": "3,000 RP",
+    "valueNum": 3000,
+    "conditions": [
+      "Spend within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 5000 bonus points on annual spend of Rs 5 Lakh",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "5000 bonus points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 5 Lakh",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of Rs 3,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Complimentary lounge access",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#212121",
+    "#ffd54f"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 15000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 287460,
+    "tenYearNetValue": 2874600,
+    "totalAnnualCharges": 3540,
+    "totalAnnualBenefits": 291000,
+    "roiPercent": 8220
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.bank.in/credit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 120 8090",
+  "applyUrl": "https://www.dcbbank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "dcb-mastercard-world-credit-card"
+}

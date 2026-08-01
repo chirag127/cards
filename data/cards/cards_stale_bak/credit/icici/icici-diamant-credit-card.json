@@ -1,0 +1,347 @@
+{
+  "id": "icici-diamant-credit-card",
+  "name": "ICICI Bank Diamant Credit Card",
+  "tagline": "Ultra-premium Mastercard with 6X international rewards",
+  "description": "The ICICI Diamant Credit Card is an ultra-premium Mastercard World Elite card offering 6 reward points per ₹100 on international spends and 3 RP per ₹100 on domestic spends. With comprehensive travel benefits, concierge services, and premium lifestyle privileges, it caters to the ultra-high-net-worth segment.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "WorldElite",
+  "variant": "Diamant",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and diamond silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 200000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 2400000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹2 Lakh",
+      "Self-Employed: ITR > ₹24 Lakh p.a.",
+      "Ultra-high net worth individuals"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 10000,
+      "amountWithGst": 11800,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 1000,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 20000000,
+    "permanentDisabilityCover": 20000000,
+    "lostCardLiability": 2000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 10000000,
+    "airAccidentCover": 20000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹2 Crore",
+      "Travel insurance: ₹1 Crore",
+      "Credit liability cover: ₹20 Lakh"
+    ],
+    "provider": "ICICI Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": 6,
+      "frequency": "Via Priority Pass",
+      "frequencyPerYear": 6,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass",
+      "Mastercard Airport Experiences"
+    ],
+    "conditions": [
+      "Domestic: 2 visits per quarter",
+      "International: Via Priority Pass"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "6X Reward Points on International",
+      "description": "Earn 6 reward points per ₹100 on international transactions",
+      "valueStr": "6 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "International transactions only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "3X Reward Points on Domestic",
+      "description": "Earn 3 reward points per ₹100 on domestic transactions",
+      "valueStr": "3 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Domestic transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Lounge Access",
+      "description": "8 domestic and 6 international lounge visits per year",
+      "valueStr": "14 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "Multiple per quarter",
+      "frequencyPerYear": 14,
+      "annualValue": 35000,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "24/7 Concierge Service",
+      "description": "Dedicated concierge for travel, dining, and lifestyle bookings",
+      "valueStr": "24/7",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 1000,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 12000,
+      "conditions": [
+        "Max ₹1,000 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "6 RP per ₹100 intl, 3 RP per ₹100 domestic",
+    "pointsPer100": 3,
+    "pointValue": 0.35,
+    "effectiveCashbackPercent": 1.05,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "International",
+        "multiplier": 6,
+        "description": "6 RP per ₹100"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1.05% to 2.1%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "10,000 bonus reward points on first transaction",
+    "valueStr": "10,000 RP",
+    "valueNum": 3500,
+    "conditions": [
+      "Complete first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "24/7 concierge services",
+    "Priority Pass lounge access",
+    "Mastercard World Elite benefits",
+    "Comprehensive insurance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d0d0d",
+    "#b0b0b0"
+  ],
+  "value": {
+    "highestValue": 60000,
+    "averageValue": 40000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 28200,
+    "tenYearNetValue": 282000,
+    "totalAnnualCharges": 11800,
+    "totalAnnualBenefits": 40000,
+    "roiPercent": 239
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Phone and app",
+    "services": [
+      "Travel booking",
+      "Dining reservations",
+      "Event tickets",
+      "Gift sourcing"
+    ]
+  },
+  "category": "co-branded",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Transactions",
+    "Luxury Travel",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/personal-banking/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800-1080",
+  "applyUrl": "https://www.icicibank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-diamant-credit-card"
+}

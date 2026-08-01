@@ -1,0 +1,135 @@
+{
+  "id": "kotak-silk-debit-card",
+  "name": "Kotak Silk Debit Card",
+  "tagline": "Elegant debit card designed for women",
+  "description": "The Kotak Silk Debit Card is an exclusive debit card designed for women with elegant styling and special benefits. Offers competitive transaction limits and women's-centric features.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Silk",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Pink and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Kotak Mahindra Bank account holders",
+      "Women-focused"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 100,
+      "amountWithGst": 118,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 250,
+      "amountWithGst": 295,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Women-focused design"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#e91e63",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 3000,
+    "averageValue": 1800,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1505,
+    "tenYearNetValue": 15050,
+    "totalAnnualCharges": 295,
+    "totalAnnualBenefits": 1800,
+    "roiPercent": 410
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use",
+    "Women-Focused"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.kotak.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 266 2666",
+  "applyUrl": "https://www.kotak.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "kotak-silk-debit-card"
+}

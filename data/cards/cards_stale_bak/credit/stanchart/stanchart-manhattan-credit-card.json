@@ -1,0 +1,305 @@
+{
+  "id": "stanchart-manhattan-credit-card",
+  "name": "Standard Chartered Manhattan Credit Card",
+  "tagline": "5% cashback on groceries — save on everyday essentials",
+  "description": "The Standard Chartered Manhattan Credit Card offers 5% cashback on all grocery spends, making it the perfect card for families and regular grocery shoppers. With a moderate annual fee, it delivers significant savings on daily essentials while offering 1% cashback on all other spends.",
+  "bank": "Standard Chartered",
+  "bankCode": "stanchart",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Manhattan",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 20,
+    "miniStatementOtherBank": 20
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "5% Cashback on Groceries",
+      "description": "Earn 5% cashback on all grocery spends at supermarkets, kirana stores, and online grocery platforms",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every grocery transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Supermarkets, kirana stores, and online grocery platforms",
+        "Max cashback of ₹250 per transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1% Cashback on All Other Spends",
+      "description": "Earn 1% cashback on all other retail transactions",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Standard Chartered Cashback",
+    "earnRate": "5% groceries, 1% other",
+    "pointsPer100": 0,
+    "pointValue": 0,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Cashback credited to statement — no expiry",
+    "bonusCategories": [
+      {
+        "category": "Groceries",
+        "multiplier": 5,
+        "description": "5% cashback on grocery spends"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1% cashback on all other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Automatic statement credit"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 5%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash, balance transfers"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "₹500 cashback on spending ₹5,000 within 30 days of card issuance",
+    "valueStr": "₹500 Cashback",
+    "valueNum": 500,
+    "conditions": [
+      "Spend ₹5,000 within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "₹1,000 cashback on spending ₹2 Lakh annually",
+      "spendRequired": 200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "₹1,000 Cashback",
+      "rewardNum": 1000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1 Lakh in the preceding year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of ₹999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "5% cashback on groceries",
+    "Ideal for families and household spends",
+    "SC mobile app and online banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#2e7d32",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 12000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4821,
+    "tenYearNetValue": 48210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 509
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Groceries",
+    "Families",
+    "Cashback"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sc.com/in/credit-cards/manhattan/",
+      "https://www.paisabazaar.com/credit-card/standard-chartered-manhattan-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 345 5000",
+  "applyUrl": "https://www.sc.com/in/credit-cards/manhattan/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "stanchart-manhattan-credit-card"
+}

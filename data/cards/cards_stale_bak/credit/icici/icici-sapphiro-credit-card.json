@@ -1,0 +1,415 @@
+{
+  "id": "icici-sapphiro-credit-card",
+  "name": "ICICI Bank Sapphiro Credit Card",
+  "tagline": "Premium travel rewards with golf privileges and global lounge access",
+  "description": "The ICICI Bank Sapphiro Credit Card is a premium World-tier card offering 4 reward points per ₹100 on domestic spends and 8 reward points per ₹100 on international spends. It provides 8 complimentary domestic and 2 international airport lounge visits per year, 2 complimentary golf rounds per quarter, milestone bonuses up to 4,000 reward points, and a low forex markup of 3.5%.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "World",
+  "variant": "Sapphiro",
+  "usage": "International",
+  "bin": "5400",
+  "material": "Hybrid",
+  "colorScheme": "Navy blue and silver with sapphire accent",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 75000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹75,000",
+      "Self-Employed: ITR > ₹12 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 3500,
+      "amountWithGst": 4130,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 3500,
+      "amountWithGst": 4130,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 300,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Personal accident insurance: ₹50 Lakh",
+      "Credit liability cover: ₹5 Lakh"
+    ],
+    "provider": "ICICI Lombard"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "Up to 8 per year",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 2,
+      "frequency": "2 per year",
+      "frequencyPerYear": 2,
+      "valuePerVisit": 3000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks",
+      "Mastercard Airport Experiences"
+    ],
+    "conditions": [
+      "Domestic: 8 complimentary visits per year at participating lounges",
+      "International: 2 complimentary visits per year via Mastercard"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "Up to 8 per year",
+      "frequencyPerYear": 8,
+      "annualValue": 16000,
+      "conditions": [
+        "At participating airport lounges via Dreamfolks"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "2 complimentary international airport lounge visits per year",
+      "valueStr": "2 visits/year",
+      "valueNum": 3000,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "Via Mastercard Airport Experiences"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Complimentary Golf Rounds",
+      "description": "2 complimentary golf rounds per quarter at select courses",
+      "valueStr": "2 rounds/quarter",
+      "valueNum": 5000,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 40000,
+      "conditions": [
+        "At select golf courses in India",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on Domestic Spends",
+      "description": "Earn 4 reward points per ₹100 on domestic transactions",
+      "valueStr": "4 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, cash advances, EMI"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on International Spends",
+      "description": "Earn 8 reward points per ₹100 on international transactions",
+      "valueStr": "8 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every international transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Doubled earn rate for international transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 300,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3600,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹300 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "4 RP per ₹100 domestic, 8 RP per ₹100 international",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "International",
+        "multiplier": 8,
+        "description": "8 RP per ₹100 on international spends"
+      },
+      {
+        "category": "Domestic",
+        "multiplier": 4,
+        "description": "4 RP per ₹100 on domestic spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers from ICICI Rewards Catalogue",
+      "Air miles conversion",
+      "Statement credit",
+      "Hotel and flight bookings"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1% to 2%",
+    "conditions": [
+      "Excludes fuel, cash advances, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "2,000 bonus reward points on spending ₹4 Lakh annually",
+      "spendRequired": 400000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 Reward Points",
+      "rewardNum": 500
+    },
+    {
+      "description": "Additional 2,000 bonus reward points on spending ₹8 Lakh annually",
+      "spendRequired": 800000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 Reward Points",
+      "rewardNum": 500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in the preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹3,500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance on Mastercard network",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "ICICI Culinary Treats dining offers",
+    "Concierge services",
+    "Movie ticket offers on BookMyShow",
+    "Golf privileges at select courses"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d1b2a",
+    "#4a90d9"
+  ],
+  "value": {
+    "highestValue": 60000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 30870,
+    "tenYearNetValue": 308700,
+    "totalAnnualCharges": 4130,
+    "totalAnnualBenefits": 35000,
+    "roiPercent": 747
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Dedicated phone line and email",
+    "services": [
+      "Travel bookings and itinerary planning",
+      "Restaurant reservations",
+      "Event ticket sourcing",
+      "Gift and flower delivery"
+    ]
+  },
+  "golfPrivileges": {
+    "available": true,
+    "complimentaryRounds": 8,
+    "courses": [
+      "Delhi Golf Club",
+      "KGA Bangalore",
+      "Willingdon Sports Club Mumbai",
+      "Tollygunge Club Kolkata"
+    ],
+    "conditions": [
+      "2 complimentary rounds per quarter",
+      "Advance booking required",
+      "Valid on weekdays only at select courses"
+    ]
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Golf"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "golf",
+      "milestoneBonuses"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/sapphiro-credit-card",
+      "https://www.paisabazaar.com/credit-card/icici-sapphiro-credit-card/"
+    ],
+    "lastVerified": "2026-03-28"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/sapphiro-credit-card",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "icici-sapphiro-credit-card"
+}

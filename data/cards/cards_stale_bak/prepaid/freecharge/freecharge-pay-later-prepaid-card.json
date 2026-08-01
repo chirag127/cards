@@ -1,0 +1,179 @@
+{
+  "id": "freecharge-pay-later-prepaid-card",
+  "name": "FreeCharge Pay Later Prepaid Card",
+  "tagline": "Buy-now-pay-later with prepaid flexibility",
+  "description": "The FreeCharge Pay Later Prepaid Card is a RuPay Classic prepaid card combining the convenience of buy-now-pay-later with a reloadable prepaid wallet. It offers cashback on bill payments, recharges, and merchant transactions with the option to convert spends into flexible EMIs. Designed for users seeking credit-like flexibility without a credit card.",
+  "bank": "FreeCharge",
+  "bankCode": "freecharge",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Pay Later Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "FreeCharge Pay Later approval required",
+      "Basic KYC via mobile number",
+      "Full KYC for higher limits"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 50000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "FreeCharge Cashback",
+      "description": "Earn flat cashback on bill payments, recharges, and DTH transactions",
+      "valueStr": "Up to 10%",
+      "valueNum": 0,
+      "frequencyStr": "Per eligible transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to ongoing promotional offers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Pay Later Credit Line",
+      "description": "Access a pre-approved credit line of up to Rs 30,000 with flexible 15-30 day repayment cycles",
+      "valueStr": "Up to Rs 30,000",
+      "valueNum": 30000,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to Pay Later approval"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Rs 75 cashback on first recharge above Rs 150",
+    "valueStr": "Rs 75",
+    "valueNum": 75,
+    "conditions": [
+      "First mobile recharge above Rs 150"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Zero annual charges",
+    "Pay Later credit line",
+    "Bill payment cashback",
+    "Instant UPI reloads",
+    "Recharge and DTH payments",
+    "Contactless payments",
+    "Real-time notifications"
+  ],
+  "validity": "3 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#e65100",
+    "#1565c0"
+  ],
+  "value": {
+    "highestValue": 75,
+    "averageValue": 300,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 300,
+    "tenYearNetValue": 3000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 300,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Bill Payments",
+    "Recharges",
+    "BNPL Flexibility"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.freecharge.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.freecharge.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "freecharge-pay-later-prepaid-card"
+}

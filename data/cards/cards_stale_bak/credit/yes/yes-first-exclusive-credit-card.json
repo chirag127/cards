@@ -1,0 +1,340 @@
+{
+  "id": "yes-first-exclusive-credit-card",
+  "name": "Yes First Exclusive Credit Card",
+  "tagline": "High rewards with milestone bonuses and domestic lounge access",
+  "description": "The Yes First Exclusive Credit Card is a premium Visa Signature card offering 6 reward points per ₹100 on all spends with attractive milestone bonuses. It provides 8 complimentary domestic airport lounge visits per year and a strong rewards program, making it ideal for frequent spenders looking for consistent value.",
+  "bank": "Yes Bank",
+  "bankCode": "yes",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "First Exclusive",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 100000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1200000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹1 Lakh",
+      "Self-Employed: ITR > ₹12 Lakh p.a.",
+      "Age 21–65 years",
+      "Good credit history required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2499,
+      "amountWithGst": 2949,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2499,
+      "amountWithGst": 2949,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 10000000,
+    "permanentDisabilityCover": 10000000,
+    "purchaseProtectionCover": 500000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 1000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 1500000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹1 Crore",
+      "Travel insurance: ₹15 Lakh",
+      "Purchase protection: ₹5 Lakh for 90 days",
+      "Lost card liability: ₹10 Lakh"
+    ],
+    "provider": "Yes Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 2 complimentary visits per quarter at partner lounges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "2 visits per quarter at domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "6 Reward Points per ₹100 spent on all retail purchases",
+      "valueStr": "6 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Milestone Bonus Rewards",
+      "description": "Earn bonus reward points on reaching annual spend milestones",
+      "valueStr": "Up to 30,000 bonus RP",
+      "valueNum": 7500,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 7500,
+      "conditions": [
+        "Subject to milestone achievement"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Yes Reward Points",
+    "earnRate": "6 RP per ₹100",
+    "pointsPer100": 6,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Flights & Hotels via Yes Rewards",
+      "Products & Vouchers",
+      "Airline miles transfer",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1.5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "10,000 bonus reward points on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 2500
+    },
+    {
+      "description": "Additional 20,000 bonus reward points on spending ₹10 Lakh annually",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "20,000 Reward Points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹3 Lakh in the preceding year",
+      "annualSpendRequired": 300000,
+      "waives": "Annual fee of ₹2,499 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Milestone bonus rewards",
+    "Dining privileges"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a237e",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 22051,
+    "tenYearNetValue": 220510,
+    "totalAnnualCharges": 2949,
+    "totalAnnualBenefits": 25000,
+    "roiPercent": 748
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 3000,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Rewards",
+    "Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.yesbank.in/personal-banking/cards/credit-cards/yes-first-exclusive-credit-card",
+      "https://www.paisabazaar.com/credit-card/yes-first-exclusive-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 103 1212",
+  "applyUrl": "https://www.yesbank.in/personal-banking/cards/credit-cards/yes-first-exclusive-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "yes-first-exclusive-credit-card"
+}

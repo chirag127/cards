@@ -1,0 +1,296 @@
+{
+  "id": "sbi-irctc-rupay-credit-card",
+  "name": "IRCTC SBI Card (RuPay)",
+  "tagline": "Lifetime free RuPay card for railway travelers with UPI support",
+  "description": "The IRCTC SBI Card (RuPay) offers up to 10% value back on AC train bookings via IRCTC app, 350 welcome reward points, 4 complimentary railway lounge accesses per year (1/quarter), 5% rewards on IRCTC Air flight bookings, 1% fuel surcharge waiver, and is UPI-enabled via RuPay network.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "Card (RuPay)",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "#3a4a2a and #7EAF5F gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Stable income required",
+      "Good credit history preferred"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 300,
+      "amountWithGst": 354,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "insurance": {
+    "accidentalDeathCover": 500000,
+    "permanentDisabilityCover": 400000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 250000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 1000000,
+    "baggageCover": 0,
+    "conditions": [
+      "Insurance applicable on card usage"
+    ],
+    "provider": "SBI Card"
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn 10% value back on IRCTC on all spends",
+      "valueStr": "10% value back on IRCTC",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary domestic lounge access: 4 railway lounges/year",
+      "valueStr": "4 railway lounges/year",
+      "valueNum": 1000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 1,
+      "annualValue": 4000,
+      "conditions": [
+        "Subject to availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400-₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400-₹5,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 1500
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 3000,
+      "guestAllowed": false,
+      "guestCharge": 3000
+    },
+    "programs": [
+      "Visa Luxury",
+      "RuPay Privilege"
+    ],
+    "conditions": [
+      "Valid on prior day transaction basis"
+    ]
+  },
+  "rewardProgram": {
+    "name": "SBI Card Rewards",
+    "earnRate": "10% value back on IRCTC",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "10% value back on IRCTC"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "350 welcome reward points",
+    "valueStr": "350 welcome reward points",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Bonus on reaching annual spend milestone",
+      "spendRequired": 30000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Bonus Reward Points",
+      "rewardNum": 600
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹15,000 in preceding year",
+      "annualSpendRequired": 15000,
+      "waives": "Annual fee of ₹300"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Tap and pay enabled",
+    "24/7 customer support"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#3a4a2a",
+    "#7EAF5F"
+  ],
+  "value": {
+    "highestValue": 6000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2646,
+    "tenYearNetValue": 26460,
+    "totalAnnualCharges": 354,
+    "totalAnnualBenefits": 900,
+    "roiPercent": 154
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "Budget Train Travel",
+    "UPI Users",
+    "RuPay Benefits",
+    "Railway Lounge"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com"
+    ],
+    "lastVerified": "2026-04-09"
+  },
+  "customerCareNumber": "1800-180-2222",
+  "applyUrl": "https://www.sbicard.com",
+  "lastUpdated": "2026-04-09",
+  "type": "credit",
+  "slug": "sbi-irctc-rupay-credit-card"
+}

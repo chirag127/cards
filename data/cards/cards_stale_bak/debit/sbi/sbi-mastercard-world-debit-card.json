@@ -1,0 +1,219 @@
+{
+  "id": "sbi-mastercard-world-debit-card",
+  "name": "SBI Mastercard World Debit Card",
+  "tagline": "Premium Mastercard World card with international benefits",
+  "description": "The SBI Mastercard World Debit Card is a premium international debit card offering worldwide airport lounge access, golf privileges, concierge service, and comprehensive travel insurance. Designed for frequent international travelers who demand premium banking experiences globally.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "Mastercard",
+  "cardType": "debit",
+  "tier": "World",
+  "variant": "World",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and gold gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to SBI savings account holders",
+      "Minimum balance of ₹1 lakh recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 50
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "6 visits/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 6000,
+      "conditions": [
+        "Available at major domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge",
+      "description": "Complimentary international airport lounge visits",
+      "valueStr": "6 visits/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 12000,
+      "conditions": [
+        "Available at select international airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at select courses",
+      "valueStr": "4 rounds/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to course availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true
+    },
+    {
+      "category": "concierge",
+      "title": "Concierge Service",
+      "description": "24/7 dedicated concierge assistance",
+      "valueStr": "Unlimited",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 5000,
+      "conditions": [
+        "Available via phone and email"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹1 lakh average balance",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "6 domestic lounge/year",
+    "6 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e3a5f",
+    "#d97706"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 30115,
+    "tenYearNetValue": 301150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 31000,
+    "roiPercent": 3503
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "International shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.onlinesbi.sbi/sbi/debit-card/mastercard-world-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 100000,
+  "customerCareNumber": "1800 11 2211",
+  "applyUrl": "https://www.onlinesbi.sbi/sbi/debit-card",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "sbi-mastercard-world-debit-card"
+}

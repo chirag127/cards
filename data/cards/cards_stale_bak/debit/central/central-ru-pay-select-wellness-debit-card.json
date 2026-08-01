@@ -1,0 +1,246 @@
+{
+  "id": "central-ru-pay-select-wellness-debit-card",
+  "name": "Central Bank of India RuPay Select Wellness Debit Card",
+  "tagline": "Wellness-focused RuPay Select with concierge",
+  "description": "The Central Bank of India RuPay Select Wellness Debit Card is a premium debit card offering airport lounge access, golf, gym, spa, health check-up offers, concierge services, and personal accident insurance. Designed for Central Bank of India customers who prioritize wellness and lifestyle benefits.",
+  "bank": "Central Bank of India",
+  "bankCode": "central",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Wellness",
+  "usage": "Domestic",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Indigo-amber gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Central Bank of India account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free issuance"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 950,
+      "amountWithGst": 1121,
+      "note": "Excluding taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Airport Lounge Access",
+      "description": "Complimentary airport lounge access at participating lounges.",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter",
+        "Valid at participating lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Offers",
+      "description": "Discounted golf lessons and rounds at select courses.",
+      "valueStr": "Discounted access",
+      "valueNum": 3000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "Subject to availability at partner golf courses",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Contact Central Bank concierge to book"
+    },
+    {
+      "category": "health",
+      "title": "Gym & Wellness Offers",
+      "description": "Discounted gym and wellness center access.",
+      "valueStr": "Discounted access",
+      "valueNum": 5000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Valid at partner fitness centers",
+        "Registration required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via Central Bank wellness portal"
+    },
+    {
+      "category": "health",
+      "title": "Spa & Health Check-up Offers",
+      "description": "Discounted spa and health check-up services.",
+      "valueStr": "Discounted access",
+      "valueNum": 3000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid at partner wellness centers",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Book via Central Bank wellness portal"
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accident Insurance",
+      "description": "Personal accident insurance cover for cardholders.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through Central Bank insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Airport lounge access",
+    "Golf, gym, spa, health check-up offers",
+    "Concierge services",
+    "Personal accident insurance"
+  ],
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Phone and email",
+    "services": [
+      "Travel booking assistance",
+      "Restaurant reservations",
+      "Event ticket booking",
+      "Lifestyle assistance"
+    ]
+  },
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#4338CA",
+    "#B45309"
+  ],
+  "value": {
+    "highestValue": 24000,
+    "averageValue": 18000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 22879,
+    "tenYearNetValue": 228790,
+    "totalAnnualCharges": 1121,
+    "totalAnnualBenefits": 24000,
+    "roiPercent": 2042
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Wellness",
+    "Lifestyle",
+    "Lounge Access",
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.centralbankofindia.co.in"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 22 1911",
+  "applyUrl": "https://www.centralbankofindia.co.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "central-ru-pay-select-wellness-debit-card"
+}

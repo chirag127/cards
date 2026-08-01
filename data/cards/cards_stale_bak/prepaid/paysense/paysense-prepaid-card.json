@@ -1,0 +1,179 @@
+{
+  "id": "paysense-prepaid-card",
+  "name": "PaySense Prepaid Card",
+  "tagline": "Personal credit line on a versatile prepaid card",
+  "description": "The PaySense Prepaid Card is a Visa Classic prepaid card offering access to a personal credit line for everyday spending and emergencies. With competitive interest rates, flexible EMI conversion, and seamless digital management, it provides a modern alternative to traditional credit cards for India's credit-seeking middle class.",
+  "bank": "PaySense",
+  "bankCode": "paysense",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and orange",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 22,
+    "maxAge": 55,
+    "minAnnualIncome": 240000,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Minimum monthly income of Rs 20,000",
+      "PAN and bank statement required",
+      "Credit check performed",
+      "Partnered with licensed NBFCs"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Personal Credit Line",
+      "description": "Access a pre-approved credit line of up to Rs 5 Lakh for everyday spending",
+      "valueStr": "Up to Rs 5 Lakh",
+      "valueNum": 500000,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to credit assessment"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "EMI Conversion",
+      "description": "Convert any spend above Rs 3,000 into flexible EMIs with competitive interest rates",
+      "valueStr": "Flexible EMIs",
+      "valueNum": 0,
+      "frequencyStr": "Per eligible transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Minimum Rs 3,000 transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Pre-approved credit line",
+    "Flexible EMI conversion",
+    "Competitive interest rates",
+    "Digital-first management",
+    "Real-time transaction alerts",
+    "Card freeze/unfreeze",
+    "Contactless payments",
+    "Quick disbursal"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1565c0",
+    "#ff6f00"
+  ],
+  "value": {
+    "highestValue": 500000,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Personal Credit Line",
+    "EMI Conversion",
+    "Everyday Credit"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.paysense.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.paysense.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "paysense-prepaid-card"
+}

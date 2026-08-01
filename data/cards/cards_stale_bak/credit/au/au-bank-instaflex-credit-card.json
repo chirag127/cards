@@ -1,0 +1,262 @@
+{
+  "id": "au-bank-instaflex-credit-card",
+  "name": "AU InstaFlex Credit Card",
+  "tagline": "Lifetime free RuPay Classic with EMI flexibility and reward points",
+  "description": "The AU InstaFlex Credit Card is a lifetime-free RuPay Classic card offering 1 reward point per ₹100 spent. With easy EMI conversion facility and no annual fees, it is ideal for first-time credit card users and those looking for a simple card with EMI flexibility on their purchases.",
+  "bank": "AU Small Finance Bank",
+  "bankCode": "au",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "InstaFlex",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 180000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹1.8 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime free"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 150000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": []
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "1 Reward Point per ₹100",
+      "description": "Earn 1 reward point on every ₹100 spent",
+      "valueStr": "1 RP/₹100",
+      "valueNum": 0.25,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excluded: fuel, rent, wallet loads"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "emi",
+      "title": "Easy EMI Conversion",
+      "description": "Convert purchases above ₹2,500 into easy EMIs",
+      "valueStr": "EMI from ₹2,500",
+      "valueNum": 0,
+      "frequencyStr": "Any transaction above ₹2,500",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Minimum transaction of ₹2,500",
+        "Tenure options: 3, 6, 9, 12 months"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Lifetime Free Card",
+      "description": "No joining fee, no annual fee — lifetime free",
+      "valueStr": "₹0 forever",
+      "valueNum": 0,
+      "frequencyStr": "Every year",
+      "frequencyPerYear": 1,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "AU Reward Points",
+    "earnRate": "1 RP per ₹100 on all spends",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "Valid for 2 years",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers via AU Rewards Portal",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "RuPay Classic privileges",
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Lifetime free — no joining or annual fee",
+    "Easy EMI on purchases above ₹2,500"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#4caf50",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1500,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 9999
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "First Credit Card",
+    "EMI Flexibility",
+    "No Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.aubank.in/credit-cards/instaflex-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1200 1500",
+  "applyUrl": "https://www.aubank.in/credit-cards/instaflex-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "au-bank-instaflex-credit-card"
+}

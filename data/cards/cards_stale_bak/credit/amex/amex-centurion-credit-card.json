@@ -1,0 +1,444 @@
+{
+  "id": "amex-centurion-credit-card",
+  "name": "American Express Centurion Card",
+  "tagline": "The ultimate invitation-only black card",
+  "description": "The American Express Centurion Card, also known as the Amex Black Card, is the most exclusive charge card in the world, available only by invitation. It offers unlimited global lounge access, a dedicated 24/7 personal concierge, complimentary elite status at the world's finest hotel chains, and bespoke luxury experiences. The Centurion Card is reserved for ultra-high-net-worth individuals who demand unparalleled service and access.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "credit",
+  "tier": "Premium",
+  "variant": "Centurion",
+  "usage": "Global",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Matte black titanium",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 500000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 10000000,
+    "minCreditScore": 800,
+    "existingAccountRequired": true,
+    "accountType": [
+      "American Express Card (existing)"
+    ],
+    "invitationOnly": true,
+    "notes": [
+      "Available by invitation only",
+      "Existing Amex Platinum cardholders with high spend history preferred",
+      "Annual spend of ₹30 Lakh+ on existing Amex cards typically required",
+      "Subject to internal assessment and approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 250000,
+      "amountWithGst": 295000,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 250000,
+      "amountWithGst": 295000,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 250000,
+      "amountWithGst": 295000,
+      "note": "Excluding GST per add-on"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 0,
+    "latePaymentFee": 2500,
+    "overLimitFee": 0,
+    "cashAdvanceFeePercent": 3.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3,
+    "annualInterestRate": 36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 5000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 100000
+  },
+  "insurance": {
+    "accidentalDeathCover": 100000000,
+    "permanentDisabilityCover": 100000000,
+    "purchaseProtectionCover": 1000000,
+    "purchaseProtectionDays": 120,
+    "lostCardLiability": 5000000,
+    "lostCardLiabilityWindow": 48,
+    "travelInsuranceCover": 10000000,
+    "airAccidentCover": 100000000,
+    "baggageCover": 500000,
+    "conditions": [
+      "Air accident cover: ₹10 Crore",
+      "Travel insurance: ₹1 Crore",
+      "Purchase protection: ₹10 Lakh for 120 days",
+      "Credit liability cover: ₹50 Lakh"
+    ],
+    "provider": "American Express"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": -1,
+      "frequency": "Unlimited via Priority Pass & Centurion Lounges",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 4000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Priority Pass",
+      "Centurion Lounge",
+      "Amex Lounge Collection",
+      "Plaza Premium",
+      "Lufthansa Lounge"
+    ],
+    "conditions": [
+      "Unlimited access for primary and add-on cardholders",
+      "Guest access included at no additional charge",
+      "Priority Pass Prestige membership included"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Lounge Access with Complimentary Guest",
+      "description": "Unlimited domestic and international airport lounge access including complimentary guest access",
+      "valueStr": "Unlimited visits + guest",
+      "valueNum": 4000,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": -1,
+      "annualValue": 200000,
+      "conditions": [
+        "Priority Pass Prestige membership included",
+        "Centurion Lounge access with guests"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "Dedicated Personal Concierge",
+      "description": "A dedicated personal concierge available 24/7 for all lifestyle, travel, and bespoke requests",
+      "valueStr": "Dedicated concierge",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Elite Hotel Status",
+      "description": "Complimentary top-tier elite status at Marriott Bonvoy, Hilton Honors, IHG Rewards, and Radisson Rewards",
+      "valueStr": "Top-tier status at 4 chains",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Marriott Bonvoy Platinum",
+        "Hilton Honors Diamond",
+        "IHG Rewards Diamond",
+        "Radisson Rewards Premium"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via Centurion concierge"
+    },
+    {
+      "category": "golf",
+      "title": "Unlimited Complimentary Golf",
+      "description": "Unlimited complimentary golf rounds at premium golf courses in India and abroad",
+      "valueStr": "Unlimited rounds",
+      "valueNum": 5000,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": -1,
+      "annualValue": 100000,
+      "conditions": [
+        "Select premium golf courses worldwide"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Complimentary First-Class Upgrades",
+      "description": "Complimentary upgrades at select airlines and hotel partners",
+      "valueStr": "As available",
+      "valueNum": 0,
+      "frequencyStr": "As available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to availability",
+        "Select airline and hotel partners"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "American Express Membership Rewards",
+    "earnRate": "1 MR per ₹40 (5X on Amex Travel)",
+    "pointsPer100": 2.5,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 1.25,
+    "pointsExpiry": "Points do not expire as long as card is active",
+    "bonusCategories": [
+      {
+        "category": "Amex Travel",
+        "multiplier": 5,
+        "description": "5X MR on Amex Travel bookings"
+      },
+      {
+        "category": "Other",
+        "multiplier": 1,
+        "description": "1X MR on all other purchases"
+      }
+    ],
+    "redemptionOptions": [
+      "Transfer to airline partners (1 MR = up to 1 air mile)",
+      "Transfer to hotel partners",
+      "Statement credit (1 MR = ₹0.25)",
+      "Bespoke experiences via concierge",
+      "Gift cards and merchandise"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "1.25% to 6.25%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "50,000 bonus MR points on invitation acceptance and first spend",
+    "valueStr": "50,000 MR Points",
+    "valueNum": 25000,
+    "conditions": [
+      "Available upon invitation acceptance",
+      "First spend within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "1,00,000 bonus MR points on spending ₹50 Lakh annually",
+      "spendRequired": 5000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,00,000 MR Points",
+      "rewardNum": 50000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "No fee waiver — this is an ultra-premium invitation-only card",
+      "annualSpendRequired": 0,
+      "waives": "N/A"
+    }
+  ],
+  "features": [
+    "No pre-set spending limit",
+    "Titanium metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "Dedicated personal concierge",
+    "Centurion Lounge access with guests",
+    "Complimentary hotel elite status",
+    "Complimentary golf privileges",
+    "Bespoke luxury experiences",
+    "Priority Pass Prestige membership"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 5,
+    "addOnCardFee": 295000
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#333333"
+  ],
+  "value": {
+    "highestValue": 500000,
+    "averageValue": 300000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 5000,
+    "tenYearNetValue": 50000,
+    "totalAnnualCharges": 295000,
+    "totalAnnualBenefits": 300000,
+    "roiPercent": 102
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Dedicated Personal Concierge — 24/7 Phone & App",
+    "services": [
+      "Travel planning and bespoke itineraries",
+      "Restaurant reservations and event access",
+      "Luxury gift sourcing and delivery",
+      "Personal shopping assistance",
+      "Emergency travel assistance",
+      "Exclusive event invitations"
+    ]
+  },
+  "golfPrivileges": {
+    "available": true,
+    "complimentaryRounds": -1,
+    "courses": [
+      "Premium golf courses across India and worldwide"
+    ],
+    "conditions": [
+      "Unlimited complimentary rounds",
+      "Subject to availability"
+    ]
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Marriott Bonvoy Platinum",
+      "Hilton Honors Diamond",
+      "IHG Rewards Diamond",
+      "Radisson Rewards Premium"
+    ],
+    "flightPrivileges": [
+      "Complimentary upgrades where available",
+      "Premium cabin fare discounts"
+    ],
+    "otherPerks": [
+      "Priority Pass Prestige",
+      "Global dining credit",
+      "Fine Hotels + Resorts program",
+      "Bespoke travel itineraries"
+    ]
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 10000,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 0.5
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Ultra Premium",
+    "Luxury",
+    "Travel",
+    "Concierge"
+  ],
+  "dataQuality": {
+    "status": "partial",
+    "verifiedFields": [
+      "charges",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "rewards",
+      "loungeAccess",
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in/credit-cards/centurion-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1030",
+  "applyUrl": "https://www.americanexpress.com/in/credit-cards/centurion-card/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "amex-centurion-credit-card"
+}

@@ -1,0 +1,302 @@
+{
+  "id": "bob-finbooster-credit-card",
+  "name": "Bank of Baroda FinBooster Credit Card",
+  "tagline": "5X rewards on online shopping — zero annual fee",
+  "description": "The BOB FinBooster Credit Card is a lifetime-free card offering 5X reward points on online shopping and 2X on all other spends. Designed for digital-first consumers who shop extensively online, it delivers one of the highest reward earn rates in the LTF category.",
+  "bank": "Bank of Baroda",
+  "bankCode": "bob",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Gold",
+  "variant": "FinBooster",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and black gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 200000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Min gross monthly income ₹15,000",
+      "Self-Employed: Min ITR ₹2 Lakh p.a.",
+      "Ideal for online shoppers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free — Lifetime Free Card"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "5X Reward Points on Online Shopping",
+      "description": "Earn 5X reward points on all online shopping transactions including e-commerce and app-based purchases",
+      "valueStr": "5X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every online transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "All online shopping transactions via e-commerce platforms and apps"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2X Reward Points on Other Spends",
+      "description": "Earn 2X reward points on all offline and other retail purchases",
+      "valueStr": "2X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "All offline POS and other retail transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "BOB Reward Points",
+    "earnRate": "5X online shopping, 2X other",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Online Shopping",
+        "multiplier": 5,
+        "description": "5X reward points on online shopping"
+      },
+      {
+        "category": "Others",
+        "multiplier": 2,
+        "description": "2X reward points on all other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & vouchers from rewards catalogue",
+      "Statement credit",
+      "Air miles"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 1.25%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "500 reward points on first transaction within 30 days",
+    "valueStr": "500 RP",
+    "valueNum": 125,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "1,000 bonus points on spending ₹50,000 annually",
+      "spendRequired": 50000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 Reward Points",
+      "rewardNum": 250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "No annual fee — lifetime free card",
+      "annualSpendRequired": 0,
+      "waives": "N/A — card is free"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Lifetime free — no annual fee",
+    "5X rewards on online shopping",
+    "Net banking & mobile app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 100,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#b71c1c",
+    "#212121"
+  ],
+  "value": {
+    "highestValue": 6000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3000,
+    "tenYearNetValue": 30000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 9999
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Online Shopping",
+    "Rewards",
+    "No Annual Fee"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bankofbaroda.in/personal-banking/cards/credit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 102 7788",
+  "applyUrl": "https://www.bankofbaroda.in/personal-banking/cards/credit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "bob-finbooster-credit-card"
+}

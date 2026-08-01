@@ -1,0 +1,222 @@
+{
+  "id": "hdfc-imperia-platinum-debit-card",
+  "name": "HDFC Imperia Platinum Debit Card",
+  "tagline": "Premium Platinum debit card for HDFC Imperia customers",
+  "description": "The HDFC Imperia Platinum Debit Card is a premium Visa Platinum offering for Imperia banking clients. Enjoy 6 domestic and 6 international airport lounge visits per year, exclusive golf privileges, dedicated concierge service, and comprehensive travel insurance. Designed for high-net-worth individuals who demand premium banking experiences.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Imperia Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and gold gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Imperia Banking customers",
+      "Minimum AUM of ₹25 lakhs required",
+      "Subject to bank approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1500,
+      "amountWithGst": 1770
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 150,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 300000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 500000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "6 complimentary domestic airport lounge visits per year",
+      "valueStr": "6 visits/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 6000,
+      "conditions": [
+        "Available at major domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge",
+      "description": "6 complimentary international airport lounge visits per year",
+      "valueStr": "6 visits/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 12000,
+      "conditions": [
+        "Available at select international airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at select courses",
+      "valueStr": "4 rounds/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "Subject to course availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true
+    },
+    {
+      "category": "concierge",
+      "title": "Concierge Service",
+      "description": "24/7 dedicated concierge assistance",
+      "valueStr": "Unlimited",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 5000,
+      "conditions": [
+        "Available via phone and email"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹25 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "6 domestic lounge/year",
+    "6 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e3a5f",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 29230,
+    "tenYearNetValue": 292300,
+    "totalAnnualCharges": 1770,
+    "totalAnnualBenefits": 31000,
+    "roiPercent": 1747
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "High-net-worth individuals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards/imperia-platinum-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 2500000,
+  "customerCareNumber": "1860 266 0333",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "hdfc-imperia-platinum-debit-card"
+}

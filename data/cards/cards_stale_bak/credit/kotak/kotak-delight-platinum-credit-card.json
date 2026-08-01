@@ -1,0 +1,329 @@
+{
+  "id": "kotak-delight-platinum-credit-card",
+  "name": "Kotak Delight Platinum Credit Card",
+  "tagline": "Affordable cashback on groceries and dining",
+  "description": "The Kotak Delight Platinum Credit Card is an affordable entry-level card offering 2% cashback on groceries and dining, and 1% on all other spends. With a nominal annual fee of ₹299, it is ideal for budget-conscious users seeking everyday savings on essential categories.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Delight Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and silver",
+  "virtualCardAvailable": false,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 30000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 360000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹30,000",
+      "Self-Employed: ITR > ₹3.6 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 299,
+      "amountWithGst": 299,
+      "note": "Inclusive of GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 299,
+      "amountWithGst": 299,
+      "note": "Inclusive of GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1000000,
+    "permanentDisabilityCover": 1000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Credit liability cover: ₹1 Lakh",
+      "Fraud protection on lost/stolen card"
+    ],
+    "provider": "Kotak Mahindra Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 2,
+      "frequency": "Per year",
+      "frequencyPerYear": 2,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 2 complimentary visits per year"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "2% Cashback on Groceries & Dining",
+      "description": "Earn 2% cashback on all grocery and dining transactions",
+      "valueStr": "2% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on grocery stores and restaurants"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1% Cashback on Other Spends",
+      "description": "Earn 1% cashback on all other retail transactions",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on all other retail spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "2 complimentary domestic airport lounge visits per year",
+      "valueStr": "2 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 2,
+      "annualValue": 4000,
+      "conditions": [
+        "2 visits per year at domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Kotak Cashback",
+    "earnRate": "2% on groceries & dining, 1% on others",
+    "pointsPer100": 0,
+    "pointValue": 0,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "N/A - Direct cashback",
+    "bonusCategories": [
+      {
+        "category": "Groceries",
+        "multiplier": 0,
+        "description": "2% direct cashback"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 0,
+        "description": "2% direct cashback"
+      }
+    ],
+    "redemptionOptions": [
+      "Direct cashback credited to card statement"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 2%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹50,000 in the preceding year",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee of ₹299"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "2% cashback on groceries & dining",
+    "1% cashback on all other spends"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1e3a5f",
+    "#a8c0d6"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4701,
+    "tenYearNetValue": 47010,
+    "totalAnnualCharges": 299,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 1572
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Cashback",
+    "Dining"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "loungeAccess",
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.kotak.com/en/personal-banking/cards/credit-cards/delight-platinum-credit-card.html"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 266 2666",
+  "applyUrl": "https://www.kotak.com/en/personal-banking/cards/credit-cards/delight-platinum-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "kotak-delight-platinum-credit-card"
+}

@@ -1,0 +1,240 @@
+{
+  "id": "thomas-cook-forex-prepaid-card",
+  "name": "Thomas Cook Multi-Currency Forex Prepaid Card",
+  "tagline": "Trusted travel forex with 9 currencies and competitive rates",
+  "description": "The Thomas Cook Multi-Currency Forex Prepaid Card is a Visa Platinum forex card supporting 9 major currencies. With competitive exchange rates, zero lost card liability, travel insurance coverage up to USD 50,000, and 24/7 global assistance, it is one of India's most trusted travel forex solutions. Backed by Thomas Cook's 180-year legacy in travel services.",
+  "bank": "Thomas Cook",
+  "bankCode": "thomascook",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Multi-Currency Forex",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Valid passport required",
+      "Travel visa or ticket recommended",
+      "FEMA compliance documentation needed",
+      "Available for Indian residents only"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 100,
+      "note": "Plus applicable taxes"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free online"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 100,
+      "note": "Plus taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 250000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 250000,
+    "internationalPosPerDay": 1000000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2000000,
+    "permanentDisabilityCover": 2000000,
+    "travelInsuranceCover": 3750000,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "baggageCover": 250000,
+    "airAccidentCover": 5000000,
+    "conditions": [
+      "Insurance valid when card is used for travel",
+      "Coverage for 180 days per trip",
+      "Lost card liability subject to prompt reporting"
+    ],
+    "provider": "Reliance General Insurance"
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "9 Currency Support",
+      "description": "Load and spend in USD, GBP, EUR, AED, SGD, AUD, CAD, THB, and SAR with competitive exchange rates",
+      "valueStr": "9 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Travel Insurance up to USD 50,000",
+      "description": "Comprehensive travel insurance covering medical emergencies, baggage loss, and trip disruptions",
+      "valueStr": "USD 50,000",
+      "valueNum": 3750000,
+      "frequencyStr": "Per trip",
+      "frequencyPerYear": 0,
+      "annualValue": 3750000,
+      "conditions": [
+        "Valid for 180 days per trip",
+        "Must use card for travel bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Activate via Thomas Cook portal before travel"
+    },
+    {
+      "category": "other",
+      "title": "Zero Lost Card Liability",
+      "description": "Zero liability on unauthorized transactions reported within 24 hours of card loss",
+      "valueStr": "Zero liability",
+      "valueNum": 0,
+      "frequencyStr": "Per incident",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Must report within 24 hours"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "24/7 Global Assistance",
+      "description": "Round-the-clock emergency support worldwide including card replacement and cash advances",
+      "valueStr": "24/7 global",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Thomas Cook helpline"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "9 currency support",
+    "Competitive exchange rates",
+    "Zero lost card liability",
+    "Travel insurance up to USD 50,000",
+    "24/7 global assistance",
+    "Emergency card replacement",
+    "Real-time balance tracking",
+    "Online and mobile management",
+    "Contactless payments",
+    "Chip and PIN security",
+    "Home delivery available"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d1b2a",
+    "#c9a227"
+  ],
+  "value": {
+    "highestValue": 3750000,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 100,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 1900
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Multi-Currency",
+    "Travel Insurance",
+    "Trusted Brand"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "insurance",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.thomascook.in/forex/travel-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800-266-2222",
+  "applyUrl": "https://www.thomascook.in/forex/travel-cards",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "thomas-cook-forex-prepaid-card"
+}

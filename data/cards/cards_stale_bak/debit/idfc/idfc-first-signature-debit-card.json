@@ -1,0 +1,184 @@
+{
+  "id": "idfc-first-signature-debit-card",
+  "name": "IDFC First Signature Debit Card",
+  "tagline": "Signature tier privileges and premium benefits",
+  "description": "The IDFC First Signature Debit Card offers Visa Signature tier benefits with higher spending limits, airport lounge access, and enhanced reward points on all transactions.",
+  "bank": "IDFC First Bank",
+  "bankCode": "idfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Signature",
+  "variant": "First Signature",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "mab": 50000,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires minimum average monthly balance of ₹50,000"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Enhanced Reward Points",
+      "description": "Earn 2 Reward Points per ₹200 spent",
+      "valueStr": "2 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "1 visit per quarter",
+      "valueNum": 2000,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 4,
+      "annualValue": 2000,
+      "conditions": [
+        "Valid at select domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDFC Reward Points",
+    "earnRate": "2 RP per ₹200",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Signature tier privileges",
+    "Airport lounge access",
+    "Higher transaction limits"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 6000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3410,
+    "tenYearNetValue": 34100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 578
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "High Spenders",
+    "Lounge Access"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.idfcfirstbank.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 10 888",
+  "applyUrl": "https://www.idfcfirstbank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "idfc-first-signature-debit-card"
+}

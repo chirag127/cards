@@ -1,0 +1,180 @@
+{
+  "id": "icici-coral-plus-debit-card",
+  "name": "ICICI Bank Coral+ Debit Card",
+  "tagline": "Enhanced Visa Gold card with lounge access",
+  "description": "The ICICI Bank Coral+ Debit Card is an upgraded Visa Gold card offering airport lounge access, reward points on spends, and international usage. A step up from the regular Coral card with additional benefits and higher limits. Perfect for customers who want premium features at a moderate price point.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Coral+",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and cyan gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to ICICI Bank savings account holders",
+      "Minimum balance of ₹50,000 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 15,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 4000,
+      "conditions": [
+        "Available at major domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points",
+      "description": "Earn reward points on all spends",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 1,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "1 RP = ₹0.25 value when redeemed"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1,00,000 per year",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Domestic lounge access",
+    "Reward points",
+    "International usage",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#f97316",
+    "#06b6d4"
+  ],
+  "value": {
+    "highestValue": 12000,
+    "averageValue": 6000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 5410,
+    "tenYearNetValue": 54100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 6000,
+    "roiPercent": 1017
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Domestic travel",
+    "Rewards seekers",
+    "International shoppers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.icicibank.com/personal-banking/cards/debit-cards/coral-plus-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 50000,
+  "customerCareNumber": "1860 120 7777",
+  "applyUrl": "https://www.icicibank.com/personal-banking/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "icici-coral-plus-debit-card"
+}

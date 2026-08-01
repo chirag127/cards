@@ -1,0 +1,331 @@
+{
+  "id": "rbl-popcorn-credit-card",
+  "name": "RBL Bank Popcorn Credit Card",
+  "tagline": "Movie buffs and entertainment lovers — this one's for you",
+  "description": "The RBL Bank Popcorn Credit Card is an entertainment-focused card offering 10% cashback on BookMyShow purchases and 2X reward points on dining spends. With an affordable annual fee of just ₹500+GST, it's the perfect companion for movie enthusiasts and entertainment seekers who want to save on tickets and dining out.",
+  "bank": "RBL Bank",
+  "bankCode": "rbl",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Popcorn",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and yellow",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Subject to credit assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 20000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not included",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not included with this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "movies",
+      "title": "10% Cashback on BookMyShow",
+      "description": "Earn 10% cashback on all BookMyShow movie ticket purchases",
+      "valueStr": "10% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every BookMyShow transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on BookMyShow movie tickets only",
+        "Cashback credited to statement"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "2X Reward Points on Dining",
+      "description": "Earn 2X reward points on all dining spends at restaurants and food delivery platforms",
+      "valueStr": "2X RP",
+      "valueNum": 0,
+      "frequencyStr": "Every dining transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Restaurants, cafes, and food delivery platforms"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X Reward Points on All Other Spends",
+      "description": "Earn 1 reward point per ₹100 on all other retail spends",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "RBL Reward Points",
+    "earnRate": "2X on dining, 1 RP per ₹100 on others",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 2,
+        "description": "2X reward points on dining spends"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1 reward point per ₹100 on other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Gift cards and vouchers",
+      "Merchandise from rewards catalogue",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 0.50% (plus BookMyShow cashback)",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "₹200 BookMyShow voucher on card activation",
+    "valueStr": "₹200 BookMyShow Voucher",
+    "valueNum": 200,
+    "conditions": [
+      "Card activation and first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "₹500 BookMyShow voucher on spending ₹1 Lakh annually",
+      "spendRequired": 100000,
+      "spendPeriod": "Annually",
+      "rewardStr": "₹500 BookMyShow Voucher",
+      "rewardNum": 500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹50,000 in the preceding year",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee of ₹500 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Exclusive BookMyShow offers",
+    "RBL mobile app for instant notifications"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#d32f2f",
+    "#ffc107"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3410,
+    "tenYearNetValue": 34100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 678
+  },
+  "movieEntertainment": {
+    "available": true,
+    "platforms": [
+      "BookMyShow"
+    ],
+    "offerDescription": "10% cashback on BookMyShow movie tickets",
+    "monthlyLimit": 0,
+    "annualCap": 2400
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "lifestyle",
+  "internationalUsable": false,
+  "bestFor": [
+    "Entertainment",
+    "Movies"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.rblbank.com/credit-cards/popcorn-credit-card",
+      "https://www.paisabazaar.com/credit-card/rbl-popcorn-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "022 6232 7777",
+  "applyUrl": "https://www.rblbank.com/credit-cards/popcorn-credit-card",
+  "lastUpdated": "2026-03-28",
+  "type": "credit",
+  "slug": "rbl-popcorn-credit-card"
+}

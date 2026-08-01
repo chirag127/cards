@@ -8,6 +8,7 @@
  * terminal does not have hamburger menus.
  */
 import Wordmark from '~/components/Wordmark.astro'
+import AuthButton from '~/components/AuthButton.tsx'
 ---
 
 <header class="header">
@@ -20,7 +21,7 @@ import Wordmark from '~/components/Wordmark.astro'
     <div class="header-controls">
       <kbd class="kbd mono" title="Filter rail focus is search on this site">⌘K</kbd>
       <span class="theme-hint mono" aria-hidden="true">◐</span>
-      <a href="/account/" class="sign-in">sign in</a>
+      <AuthButton client:load />
     </div>
   </div>
   <hr class="hairline" />
@@ -95,6 +96,42 @@ import Wordmark from '~/components/Wordmark.astro'
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     text-decoration-color: var(--accent);
+  }
+  :global(.auth-btn) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: 180px;
+    font-size: 12px;
+    text-transform: lowercase;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    border: 1px solid var(--rule);
+    padding: 0.3rem 0.6rem;
+    background: var(--paper);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  :global(.auth-btn:hover) {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  :global(.auth-btn:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  :global(.auth-dot) {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--ink-mute);
+    flex-shrink: 0;
+  }
+  :global(.auth-dot[data-on='true']) {
+    background: var(--accent);
+    box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent) 30%, transparent);
   }
   @media (min-width: 768px) {
     .header-nav {

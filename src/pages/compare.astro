@@ -1,0 +1,29 @@
+---
+import CompareTable from '~/components/CompareTable.tsx'
+/*
+ * /compare — side-by-side comparison of up to 3 cards. Static shell; the
+ * CompareTable island (client:load) reads `?ids=issuer:slug,...` from the URL
+ * and fetches /compare-data.json. noindex — the URL is a transient user
+ * selection, not canonical content.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="Compare cards · oriz · cards" description="Side-by-side comparison of Indian credit cards — fees, benefits, eligibility." noindex={true}>
+  <div class="spine cmp-page">
+    <header class="page-head">
+      <p class="eyebrow mono"><a href="/">cards</a> / compare</p>
+      <h1>compare</h1>
+      <p class="lede">Fees, benefits, and eligibility side by side. Pick cards from the ledger.</p>
+    </header>
+
+    <section class="cmp-body">
+      <CompareTable client:load />
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .cmp-page { padding-bottom: 4rem; }
+  .cmp-body { padding-top: 1.75rem; }
+</style>

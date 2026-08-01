@@ -1,0 +1,271 @@
+{
+  "id": "hdfc-easyshop-platinum-debit-card",
+  "name": "HDFC EasyShop Platinum Debit Card",
+  "tagline": "Premium debit card with rewards and lounge access",
+  "description": "The HDFC EasyShop Platinum Debit Card is a premium debit card offering reward points on POS purchases, complimentary domestic airport lounge access, and comprehensive insurance coverage. It provides 2 Reward Points per ₹200 spent on POS purchases along with ₹10 Lakh accidental death insurance cover.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "EasyShop Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and silver gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank savings and current account holders",
+      "Account with average monthly balance requirement"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 750,
+      "amountWithGst": 885,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1000000,
+    "permanentDisabilityCover": 1000000,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Accidental death cover: ₹10 Lakh",
+      "Permanent disability cover: ₹10 Lakh",
+      "Lost card liability: ₹5 Lakh within 24 hours of reporting"
+    ],
+    "provider": "HDFC Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "2 complimentary domestic lounge visits per quarter",
+      "Card must be used at least once in the preceding 3 months"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on POS Purchases",
+      "description": "Earn 2 Reward Points per ₹200 spent on POS purchases",
+      "valueStr": "2 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on POS transactions only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "2 visits per quarter",
+        "Card must be active"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Death Insurance",
+      "description": "₹10 Lakh accidental death insurance cover",
+      "valueStr": "₹10 Lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual cover",
+      "frequencyPerYear": 1,
+      "annualValue": 1000000,
+      "conditions": [
+        "Active on card usage"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC Reward Points",
+    "earnRate": "2 RP per ₹200 on POS",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback",
+      "Flights & Hotels via SmartBuy"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.25% to 0.50%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Complimentary airport lounge access",
+    "Accidental death insurance cover",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#2c2c2c",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 15000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 14115,
+    "tenYearNetValue": 141150,
+    "totalAnnualCharges": 885,
+    "totalAnnualBenefits": 25000,
+    "roiPercent": 2724
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Rewards",
+    "Lounge Access"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "limits",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards/easyshop-platinum-debit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards/easyshop-platinum-debit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "hdfc-easyshop-platinum-debit-card"
+}

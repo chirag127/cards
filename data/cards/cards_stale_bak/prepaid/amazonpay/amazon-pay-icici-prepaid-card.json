@@ -1,0 +1,172 @@
+{
+  "id": "amazon-pay-icici-prepaid-card",
+  "name": "Amazon Pay ICICI Prepaid Card",
+  "tagline": "Lifetime free RuPay prepaid card with Amazon cashback",
+  "description": "The Amazon Pay ICICI Prepaid Card is a lifetime free RuPay prepaid card offering cashback on Amazon purchases and partner merchants. Ideal for frequent Amazon shoppers, it integrates seamlessly with the Amazon Pay wallet for a frictionless checkout experience.",
+  "bank": "Amazon Pay",
+  "bankCode": "amazonpay",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "ICICI",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Dark blue and orange",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Full KYC verification required",
+      "Amazon account required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Lifetime Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Amazon Cashback",
+      "description": "Earn cashback on purchases made on Amazon.in and partner merchants",
+      "valueStr": "Cashback",
+      "valueNum": 1500,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 1500,
+      "conditions": [
+        "Cashback credited to Amazon Pay balance",
+        "Subject to ongoing promotions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Partner Merchant Offers",
+      "description": "Exclusive discounts and cashback offers at partner merchants",
+      "valueStr": "Varies",
+      "valueNum": 500,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 500,
+      "conditions": [
+        "At partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Lifetime free card",
+    "Contactless payments",
+    "EMV chip security",
+    "Amazon Pay wallet integration",
+    "Cashback on Amazon purchases",
+    "Partner merchant offers",
+    "Virtual and physical card",
+    "Real-time transaction alerts"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#232f3e",
+    "#ff9900"
+  ],
+  "value": {
+    "highestValue": 1500,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Amazon Shopping",
+    "Cashback",
+    "Lifetime Free"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.amazon.in/b?node=1234567"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.amazon.in/b?node=1234567",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "amazon-pay-icici-prepaid-card"
+}

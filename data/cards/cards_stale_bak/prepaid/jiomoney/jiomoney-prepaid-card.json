@@ -1,0 +1,179 @@
+{
+  "id": "jiomoney-prepaid-card",
+  "name": "JioMoney Prepaid Card",
+  "tagline": "Reliance ecosystem prepaid wallet card",
+  "description": "The JioMoney Prepaid Card is a RuPay Classic prepaid card integrated with the Reliance Jio digital ecosystem. It enables seamless payments across JioMart, JioMart Partner Shops, and Reliance Retail outlets. With zero annual charges, instant UPI reloads, and exclusive Reliance ecosystem discounts, it is ideal for users invested in the Reliance digital universe.",
+  "bank": "JioMoney",
+  "bankCode": "jiomoney",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid Wallet",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "KYC via Aadhaar or PAN",
+      "Requires JioMoney wallet account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Reliance Ecosystem Discounts",
+      "description": "Exclusive discounts on JioMart, Reliance Retail, Ajio, and Reliance Digital stores",
+      "valueStr": "Up to 10%",
+      "valueNum": 0,
+      "frequencyStr": "Per eligible purchase",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At Reliance ecosystem merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "JioMart Cashback",
+      "description": "Earn cashback on JioMart purchases when paying with JioMoney prepaid card",
+      "valueStr": "Up to 5%",
+      "valueNum": 0,
+      "frequencyStr": "Per JioMart transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to ongoing offers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Rs 100 cashback on first JioMart transaction above Rs 500",
+    "valueStr": "Rs 100",
+    "valueNum": 100,
+    "conditions": [
+      "First JioMart purchase above Rs 500"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Zero annual charges",
+    "Reliance ecosystem discounts",
+    "Instant UPI reloads",
+    "JioMart cashback",
+    "Wide RuPay acceptance",
+    "Contactless payments",
+    "Real-time balance tracking"
+  ],
+  "validity": "3 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d47a1",
+    "#00c853"
+  ],
+  "value": {
+    "highestValue": 100,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Reliance Ecosystem",
+    "JioMart Shopping",
+    "Zero Fees"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.jiomoney.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.jiomoney.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "jiomoney-prepaid-card"
+}

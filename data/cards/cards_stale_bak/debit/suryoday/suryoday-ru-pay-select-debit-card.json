@@ -1,0 +1,195 @@
+{
+  "id": "suryoday-ru-pay-select-debit-card",
+  "name": "Suryoday RuPay Select Debit Card",
+  "tagline": "RuPay Select with lounge access and insurance",
+  "description": "The Suryoday RuPay Select Debit Card is a premium debit card offering lounge access benefits, insurance coverage, and contactless payments. Designed for Suryoday Small Finance Bank customers seeking enhanced banking features and lifestyle perks.",
+  "bank": "Suryoday Small Finance Bank",
+  "bankCode": "suryoday",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Standard",
+  "usage": "Domestic",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Amber-emerald gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Suryoday SFB account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free issuance"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 600,
+      "amountWithGst": 708,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access at participating lounges across India.",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter",
+        "Valid at participating domestic lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary international airport lounge access at participating lounges worldwide.",
+      "valueStr": "2 visits/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "2 visits per year",
+        "Valid at participating international lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accident Insurance",
+      "description": "Personal accident insurance cover for cardholders.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through Suryoday insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Airport lounge access",
+    "Personal accident insurance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#F59E0B",
+    "#10B981"
+  ],
+  "value": {
+    "highestValue": 19000,
+    "averageValue": 14000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 18292,
+    "tenYearNetValue": 182920,
+    "totalAnnualCharges": 708,
+    "totalAnnualBenefits": 19000,
+    "roiPercent": 2581
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Lounge Access",
+    "Daily Use",
+    "Insurance"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.suryodaybank.com"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 123 7007",
+  "applyUrl": "https://www.suryodaybank.com",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "suryoday-ru-pay-select-debit-card"
+}

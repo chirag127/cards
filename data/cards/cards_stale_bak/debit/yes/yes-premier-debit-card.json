@@ -1,0 +1,324 @@
+{
+  "id": "yes-premier-debit-card",
+  "name": "Yes Bank Premier Debit Card",
+  "tagline": "Premium banking debit card for Yes Bank Premier customers",
+  "description": "The Yes Bank Premier Debit Card is a premium Visa Signature debit card designed for Yes Bank's Premier banking clients. It offers elevated transaction limits, priority banking services, complimentary airport lounge access, accelerated reward points, and exclusive lifestyle privileges including dining and entertainment benefits.",
+  "bank": "Yes Bank",
+  "bankCode": "yes",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Signature",
+  "variant": "Premier",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and platinum gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Yes Bank Premier customers",
+      "Minimum AUM of ₹10 lakhs required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1500,
+      "amountWithGst": 1770,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 10000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "HP"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 200000,
+    "internationalPosPerDay": 500000,
+    "upiDailyLimit": 500000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 12,
+      "frequency": "3 per quarter",
+      "frequencyPerYear": 12,
+      "valuePerVisit": 3000,
+      "guestAllowed": true,
+      "guestCharge": 1500
+    },
+    "international": {
+      "count": 6,
+      "frequency": "6 per year",
+      "frequencyPerYear": 6,
+      "valuePerVisit": 5000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Luxury Hotels",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "12 complimentary domestic lounge visits per year",
+      "6 complimentary international lounge visits per year",
+      "Guest allowed on domestic lounges at ₹1,500 per visit"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "12 complimentary domestic airport lounge visits per year",
+      "valueStr": "12 visits/year",
+      "valueNum": 3000,
+      "frequencyStr": "3 per quarter",
+      "frequencyPerYear": 12,
+      "annualValue": 36000,
+      "conditions": [
+        "Guest allowed at ₹1,500 per visit"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "6 complimentary international airport lounge visits per year",
+      "valueStr": "6 visits/year",
+      "valueNum": 5000,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 30000,
+      "conditions": [
+        "Active card usage required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Accelerated Reward Points",
+      "description": "Earn 3 Reward Points per ₹200 spent on all purchases",
+      "valueStr": "3 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 5000,
+      "conditions": [
+        "Valid on POS and e-commerce transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Death Cover",
+      "description": "₹25 Lakh accidental death insurance cover",
+      "valueStr": "₹25 Lakh",
+      "valueNum": 2500000,
+      "frequencyStr": "Annual cover",
+      "frequencyPerYear": 1,
+      "annualValue": 2500000,
+      "conditions": [
+        "Active on card usage"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Dining Privileges",
+      "description": "Exclusive discounts at premium restaurants across India",
+      "valueStr": "Up to 20% off",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 8000,
+      "conditions": [
+        "At partner restaurants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Yes Bank Reward Points",
+    "earnRate": "3 RP per ₹200",
+    "pointsPer100": 1.5,
+    "pointValue": 0.3,
+    "effectiveCashbackPercent": 0.45,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Travel",
+        "multiplier": 4,
+        "description": "4x reward points on travel bookings"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 3,
+        "description": "3x reward points on dining"
+      },
+      {
+        "category": "International Spends",
+        "multiplier": 2,
+        "description": "2x reward points on international transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback",
+      "Air Miles",
+      "Flights & Hotels"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.45% to 1.80%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "5,000 bonus reward points on card issuance",
+    "valueStr": "5,000 Reward Points",
+    "valueNum": 5000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Available to new Premier clients only"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Spend ₹2 Lakh in a quarter",
+      "spendRequired": 200000,
+      "spendPeriod": "Quarter",
+      "rewardStr": "5,000 Bonus Reward Points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹10 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Visa Signature tier",
+    "International acceptance",
+    "12 domestic lounge visits/year",
+    "6 intl lounge visits/year",
+    "₹25 Lakh accidental cover",
+    "Accelerated reward points",
+    "Dining privileges",
+    "Priority banking",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e3a5f",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 90000,
+    "averageValue": 55000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 53230,
+    "tenYearNetValue": 532300,
+    "totalAnnualCharges": 1770,
+    "totalAnnualBenefits": 90000,
+    "roiPercent": 4971
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Premier Banking Clients",
+    "Lounge Access",
+    "Accelerated Rewards",
+    "Dining Benefits"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.yesbank.in/personal-banking/cards/debit-cards/premier-debit-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "minimumAccountBalance": 1000000,
+  "customerCareNumber": "1800 1200",
+  "applyUrl": "https://www.yesbank.in/personal-banking/cards/debit-cards/premier-debit-card",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "yes-premier-debit-card"
+}

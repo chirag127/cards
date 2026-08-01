@@ -1,0 +1,333 @@
+{
+  "id": "icici-makemytrip-credit-card",
+  "name": "MakeMyTrip ICICI Bank Credit Card",
+  "tagline": "Earn myCash rewards on travel bookings with MakeMyTrip integration",
+  "description": "The MakeMyTrip ICICI Bank Credit Card is a Visa Platinum co-branded travel card offering 6 myCash per ₹200 on hotel bookings through MakeMyTrip, 3 myCash per ₹200 on flights, bus, and cab bookings, and 1 myCash per ₹200 on all other spends. With a low annual fee of ₹999+GST and seamless MakeMyTrip app integration, it is ideal for frequent travellers who book through MakeMyTrip.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "MakeMyTrip",
+  "usage": "Domestic",
+  "bin": "4280",
+  "material": "Plastic",
+  "colorScheme": "MakeMyTrip blue and white with red accent",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 400000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹4 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)",
+      "MakeMyTrip account required for best benefits"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1178.82,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 30000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "No complimentary lounge access on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "6 myCash per ₹200 on MakeMyTrip Hotels",
+      "description": "Earn 6 myCash per ₹200 on hotel bookings through MakeMyTrip",
+      "valueStr": "6 myCash/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every MakeMyTrip hotel booking",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Bookings must be made through MakeMyTrip app or website",
+        "1 myCash = ₹1"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "3 myCash per ₹200 on Flights, Bus & Cab",
+      "description": "Earn 3 myCash per ₹200 on flight, bus, and cab bookings through MakeMyTrip",
+      "valueStr": "3 myCash/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every MakeMyTrip flight/bus/cab booking",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Bookings must be made through MakeMyTrip app or website"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1 myCash per ₹200 on All Other Spends",
+      "description": "Earn 1 myCash per ₹200 on all other domestic and international transactions",
+      "valueStr": "1 myCash/₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, cash advances, EMI conversion"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "MakeMyTrip myCash",
+    "earnRate": "6 myCash/₹200 hotel, 3 myCash/₹200 flight/bus/cab, 1 myCash/₹200 others",
+    "pointsPer100": 3,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "myCash valid for 1 year from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "MakeMyTrip Hotels",
+        "multiplier": 6,
+        "description": "6 myCash per ₹200 on hotel bookings"
+      },
+      {
+        "category": "MakeMyTrip Flights/Bus/Cab",
+        "multiplier": 3,
+        "description": "3 myCash per ₹200 on flight, bus, and cab bookings"
+      },
+      {
+        "category": "All Other Spends",
+        "multiplier": 1,
+        "description": "1 myCash per ₹200 on all other transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Redeem on MakeMyTrip bookings",
+      "1 myCash = ₹1 on MakeMyTrip",
+      "Use for hotel, flight, bus, and cab bookings"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "0.5% to 3%",
+    "conditions": [
+      "myCash can only be redeemed on MakeMyTrip platform"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "₹500 MakeMyTrip hotel voucher on card activation",
+    "valueStr": "₹500 MMT Voucher",
+    "valueNum": 500,
+    "conditions": [
+      "Credited on first transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "₹1,000 MakeMyTrip voucher on spending ₹2 Lakh annually",
+      "spendRequired": 200000,
+      "spendPeriod": "Annually",
+      "rewardStr": "₹1,000 MMT Voucher",
+      "rewardNum": 1000
+    },
+    {
+      "description": "Additional ₹2,000 MakeMyTrip voucher on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "₹2,000 MMT Voucher",
+      "rewardNum": 2000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1.5 Lakh in the preceding year",
+      "annualSpendRequired": 150000,
+      "waives": "Annual fee of ₹999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Co-branded with MakeMyTrip",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "MakeMyTrip app integration",
+    "myCash rewards on travel bookings"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a73e8",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 6821,
+    "tenYearNetValue": 68210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 579
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "travel",
+  "internationalUsable": false,
+  "bestFor": [
+    "Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/makemytrip-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/makemytrip-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-makemytrip-credit-card"
+}

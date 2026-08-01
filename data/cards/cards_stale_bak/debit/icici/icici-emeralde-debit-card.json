@@ -1,0 +1,348 @@
+{
+  "id": "icici-emeralde-debit-card",
+  "name": "ICICI Bank Emeralde Debit Card",
+  "tagline": "Super-premium debit card with exclusive lifestyle privileges",
+  "description": "The ICICI Bank Emeralde Debit Card is the bank's most exclusive Visa World debit offering, designed for ultra-high-net-worth individuals. It provides unlimited domestic and international airport lounge access, dedicated concierge service, premium golf privileges, complimentary golf games, exclusive dining privileges, and comprehensive travel insurance coverage. With high daily transaction limits and worldwide acceptance, it caters to the most discerning banking clients.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "World",
+  "variant": "Emeralde",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Emerald green with gold accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Emeralde Banking",
+      "Current"
+    ],
+    "invitationOnly": true,
+    "notes": [
+      "Available to ICICI Bank Emeralde banking clients only",
+      "Minimum AUM of ₹1 crore required",
+      "By invitation from the bank"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 4999,
+      "amountWithGst": 5899,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 10000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "HP"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 100000,
+    "internationalAtmPerDay": 500000,
+    "internationalPosPerDay": 150000,
+    "upiDailyLimit": 1000000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 100,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 100,
+      "valuePerVisit": 3000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 24,
+      "frequency": "2 per month",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 5000,
+      "guestAllowed": true,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Luxury Hotels",
+      "Priority Pass",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Unlimited domestic lounge access",
+      "24 international lounge visits per year",
+      "Guest access permitted at no additional charge"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits",
+      "valueStr": "Unlimited",
+      "valueNum": 3000,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 100,
+      "annualValue": 300000,
+      "conditions": [
+        "Guest access allowed"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "24 complimentary international airport lounge visits per year",
+      "valueStr": "24 visits/year",
+      "valueNum": 5000,
+      "frequencyStr": "2 per month",
+      "frequencyPerYear": 24,
+      "annualValue": 120000,
+      "conditions": [
+        "Guest access allowed"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at premium courses across India",
+      "valueStr": "12 rounds/year",
+      "valueNum": 12,
+      "frequencyStr": "1 per month",
+      "frequencyPerYear": 12,
+      "annualValue": 36000,
+      "conditions": [
+        "Subject to course availability",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true
+    },
+    {
+      "category": "concierge",
+      "title": "Dedicated Concierge",
+      "description": "24/7 personal concierge assistance for travel and lifestyle",
+      "valueStr": "Unlimited",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 15000,
+      "conditions": [
+        "Available via phone, email, and app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Comprehensive Travel Insurance",
+      "description": "₹2 Crore air accident cover and travel insurance",
+      "valueStr": "₹2 Crore",
+      "valueNum": 20000000,
+      "frequencyStr": "Annual cover",
+      "frequencyPerYear": 1,
+      "annualValue": 20000000,
+      "conditions": [
+        "Cover active when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Dining Privileges",
+      "description": "Exclusive discounts and privileges at premium restaurants",
+      "valueStr": "Up to 25% off",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 10000,
+      "conditions": [
+        "At partner restaurants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Bank Reward Points",
+    "earnRate": "5 RP per ₹200",
+    "pointsPer100": 2.5,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 1.25,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 5,
+        "description": "5x reward points on dining transactions"
+      },
+      {
+        "category": "Travel",
+        "multiplier": 5,
+        "description": "5x reward points on travel bookings"
+      },
+      {
+        "category": "International Spends",
+        "multiplier": 3,
+        "description": "3x reward points on international transactions"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback",
+      "Air Miles",
+      "Hotel Bookings",
+      "Flights via Travel Portal"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1.25% to 2.50%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "25,000 bonus reward points on card issuance",
+    "valueStr": "25,000 Reward Points",
+    "valueNum": 25000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Available to new Emeralde banking clients only"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Spend ₹5 Lakh in a quarter",
+      "spendRequired": 500000,
+      "spendPeriod": "Quarter",
+      "rewardStr": "10,000 Bonus Reward Points",
+      "rewardNum": 10000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹1 crore AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "24 intl lounge visits/year",
+    "Golf privileges",
+    "Dedicated concierge",
+    "₹2 Crore travel insurance",
+    "Priority Pass membership",
+    "Dining privileges",
+    "High transaction limits",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#064e3b",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 500000,
+    "averageValue": 350000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 344101,
+    "tenYearNetValue": 3441010,
+    "totalAnnualCharges": 5899,
+    "totalAnnualBenefits": 500000,
+    "roiPercent": 8374
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Ultra-HNW individuals",
+    "Frequent international travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "Exclusive privileges"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "tier"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/personal-banking/cards/debit-cards/emeralde-debit-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "minimumAccountBalance": 10000000,
+  "customerCareNumber": "1860 120 7777",
+  "applyUrl": "https://www.icicibank.com/personal-banking/cards/debit-cards/emeralde-debit-card",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "icici-emeralde-debit-card"
+}

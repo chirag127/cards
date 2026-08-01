@@ -1,0 +1,354 @@
+{
+  "id": "kotak-white-credit-card",
+  "name": "Kotak White Credit Card",
+  "tagline": "Premium Visa World Elite with unlimited lounge and concierge",
+  "description": "The Kotak White Credit Card is a premium Visa World Elite card offering 5 reward points per ₹150 on all spends, unlimited domestic and international airport lounge access, complimentary concierge service, and exclusive lifestyle privileges for discerning cardholders.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "WorldElite",
+  "variant": "White",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "White and platinum",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 250000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 3000000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹2.5 Lakh",
+      "Self-Employed: ITR > ₹30 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 5000,
+      "amountWithGst": 5900,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 500000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 2500000,
+    "airAccidentCover": 5000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹50 Lakh",
+      "Travel insurance: ₹25 Lakh",
+      "Purchase protection: ₹5 Lakh for 90 days",
+      "Lost card liability: ₹5 Lakh"
+    ],
+    "provider": "Kotak Mahindra Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 2000,
+      "guestAllowed": true,
+      "guestCharge": 2000
+    },
+    "international": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Dreamfolks",
+      "Visa LoungeKey"
+    ],
+    "conditions": [
+      "Domestic: Unlimited complimentary visits at all partner lounges",
+      "International: Unlimited via Visa LoungeKey",
+      "Guest access available at applicable charges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits per year",
+      "valueStr": "Unlimited visits",
+      "valueNum": 2000,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 40000,
+      "conditions": [
+        "At all Dreamfolks partner domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited International Lounge Access",
+      "description": "Unlimited complimentary international airport lounge visits via Visa LoungeKey",
+      "valueStr": "Unlimited visits",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 50000,
+      "conditions": [
+        "Visa LoungeKey membership included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "5 Reward Points per ₹150 spent on all retail purchases",
+      "valueStr": "5 RP per ₹150",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "24/7 Premium Concierge",
+      "description": "Dedicated premium concierge for travel, dining, and lifestyle needs",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Kotak Reward Points",
+    "earnRate": "5 RP per ₹150",
+    "pointsPer100": 3.33,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.67,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Flights & Hotels via Kotak Rewards",
+      "Products & Vouchers",
+      "Cashback (1 RP = ₹0.20)"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "0.67%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in the preceding year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of ₹5,000 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Unlimited domestic lounge access",
+    "Unlimited international lounge access",
+    "24/7 premium concierge",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "creditLimitMin": 300000,
+    "creditLimitMax": 1500000,
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 4,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#ffffff",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 93000,
+    "averageValue": 60000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 54100,
+    "tenYearNetValue": 541000,
+    "totalAnnualCharges": 5900,
+    "totalAnnualBenefits": 60000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Premium",
+    "Travel",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "loungeAccess",
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.kotak.com/en/personal-banking/cards/credit-cards/white-credit-card.html"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Dedicated phone line and email",
+    "services": [
+      "Travel bookings",
+      "Restaurant reservations",
+      "Event tickets",
+      "Gift sourcing"
+    ]
+  },
+  "customerCareNumber": "1860 266 2666",
+  "applyUrl": "https://www.kotak.com/en/personal-banking/cards/credit-cards/white-credit-card.html",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "kotak-white-credit-card"
+}

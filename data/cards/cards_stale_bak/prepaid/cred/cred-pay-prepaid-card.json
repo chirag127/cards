@@ -1,0 +1,191 @@
+{
+  "id": "cred-pay-prepaid-card",
+  "name": "CRED Pay Prepaid Card",
+  "tagline": "Credit card bill payments with rewards and merchant offers",
+  "description": "The CRED Pay Prepaid Card is a RuPay prepaid card from the CRED ecosystem offering credit card bill payments, exclusive rewards, and premium merchant offers. Designed for creditworthy users, it integrates with the CRED platform for a premium digital payments experience.",
+  "bank": "CRED",
+  "bankCode": "cred",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Pay",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Black and gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "CRED account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to CRED platform members",
+      "Credit score 750+ preferred",
+      "Full KYC verification required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Rewards on Credit Card Bill Payments",
+      "description": "Earn CRED coins and cashback on credit card bill payments made through CRED Pay",
+      "valueStr": "CRED coins",
+      "valueNum": 1000,
+      "frequencyStr": "Per bill payment",
+      "frequencyPerYear": 0,
+      "annualValue": 1000,
+      "conditions": [
+        "Via CRED app only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Premium Merchant Offers",
+      "description": "Exclusive discounts and rewards at premium partner merchants",
+      "valueStr": "Varies",
+      "valueNum": 2000,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "At partner merchants only",
+        "Via CRED app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "CRED Coins",
+      "description": "Earn CRED coins redeemable for exclusive rewards, experiences, and products",
+      "valueStr": "CRED coins",
+      "valueNum": 500,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 500,
+      "conditions": [
+        "Via CRED app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Credit card bill payments",
+    "CRED coins rewards program",
+    "Premium merchant offers",
+    "Contactless payments",
+    "Virtual and physical card",
+    "CRED ecosystem integration",
+    "Real-time transaction alerts",
+    "Exclusive member-only deals"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a1a",
+    "#ffd700"
+  ],
+  "value": {
+    "highestValue": 2000,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Credit Card Bill Payments",
+    "Premium Rewards",
+    "Merchant Offers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://cred.club"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://cred.club",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "cred-pay-prepaid-card"
+}

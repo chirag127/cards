@@ -1,0 +1,131 @@
+{
+  "id": "cub-classic-debit-card",
+  "name": "City Union Bank Classic Debit Card",
+  "tagline": "A classic debit card from City Union Bank",
+  "description": "The City Union Bank Classic Debit Card offers rewards and convenience for daily transactions.",
+  "bank": "City Union Bank",
+  "bankCode": "cub",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Classic",
+  "variant": "Classic",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "invitationOnly": false,
+    "notes": [
+      "Available for all"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Annual Fee",
+      "amount": 150,
+      "amountWithGst": 177
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Reward Points",
+      "description": "Earn on all spends",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "None",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "ATM withdrawals",
+    "POS transactions",
+    "Online shopping",
+    "Contactless payments"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#4F9EFF"
+  ],
+  "value": {
+    "highestValue": 1000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 177,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 282
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://www.cub.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "cub-classic-debit-card"
+}

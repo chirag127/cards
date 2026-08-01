@@ -1,0 +1,248 @@
+{
+  "id": "bookmyforex-yes-forex-prepaid-card",
+  "name": "BookMyForex YES Bank Forex Card",
+  "tagline": "Best forex rates with 24-hour doorstep delivery",
+  "description": "The BookMyForex YES Bank Forex Card is a Visa Platinum multi-currency forex card offering India's most competitive exchange rates with 24-hour doorstep delivery. Powered by BookMyForex's rate comparison engine and issued by YES Bank, it supports 15+ currencies with zero markup fees, comprehensive travel insurance, and free ATM withdrawals at partner banks worldwide. Ideal for travelers who prioritize the best exchange rates and convenience.",
+  "bank": "YES Bank",
+  "bankCode": "yes",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "BookMyForex",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Valid passport required",
+      "Travel visa or ticket recommended",
+      "FEMA compliance documentation needed",
+      "Available for Indian residents only"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free with doorstep delivery"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free online"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 150,
+      "note": "Plus taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 2000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 500000,
+    "internationalPosPerDay": 2000000
+  },
+  "insurance": {
+    "accidentalDeathCover": 2500000,
+    "permanentDisabilityCover": 2500000,
+    "travelInsuranceCover": 3750000,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "baggageCover": 500000,
+    "airAccidentCover": 5000000,
+    "conditions": [
+      "Insurance valid when card is used for travel bookings",
+      "Coverage for 180 days per trip",
+      "Lost card liability subject to prompt reporting"
+    ],
+    "provider": "ICICI Lombard General Insurance"
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "15+ Currency Support",
+      "description": "Load and spend in USD, GBP, EUR, AED, SGD, AUD, CAD, THB, SAR, QAR, ZAR, CHF, JPY, HKD, and MYR with best-in-class exchange rates",
+      "valueStr": "15+ currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Best Exchange Rate Guarantee",
+      "description": "BookMyForex compares rates across multiple banks to ensure you get the most competitive forex rates in India",
+      "valueStr": "Best rate",
+      "valueNum": 0,
+      "frequencyStr": "Per load",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via BookMyForex platform"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "24-Hour Doorstep Delivery",
+      "description": "Get your forex card delivered to your doorstep within 24 hours in 200+ Indian cities",
+      "valueStr": "24-hour delivery",
+      "valueNum": 0,
+      "frequencyStr": "One-time",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "In 200+ cities"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Travel Insurance up to USD 50,000",
+      "description": "Comprehensive travel insurance covering medical emergencies, trip cancellations, baggage loss, and flight delays",
+      "valueStr": "USD 50,000",
+      "valueNum": 3750000,
+      "frequencyStr": "Per trip",
+      "frequencyPerYear": 0,
+      "annualValue": 3750000,
+      "conditions": [
+        "Valid for 180 days per trip",
+        "Must use card for travel bookings"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Activate via BookMyForex portal before travel"
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Free issuance and doorstep delivery on all orders",
+      "annualSpendRequired": 0,
+      "waives": "Issuance Fee"
+    }
+  ],
+  "features": [
+    "15+ currency support",
+    "Best exchange rate comparison",
+    "24-hour doorstep delivery",
+    "Zero ATM withdrawal fees at partner banks",
+    "Travel insurance up to USD 50,000",
+    "Chip and PIN security",
+    "Contactless payments",
+    "Emergency card replacement",
+    "Real-time balance tracking",
+    "Online and mobile management",
+    "200+ city delivery coverage"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#6a1b9a",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 3750000,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2500,
+    "tenYearNetValue": 25000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 9999
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "Best Forex Rates",
+    "24-Hour Delivery",
+    "15+ Currencies",
+    "Zero ATM Fees"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "insurance",
+      "limits",
+      "features",
+      "delivery"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bookmyforex.com/forex-cards",
+      "https://www.yesbank.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800-1200",
+  "applyUrl": "https://www.bookmyforex.com/forex-cards",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "bookmyforex-yes-forex-prepaid-card"
+}

@@ -1,0 +1,168 @@
+{
+  "id": "qwikcilver-gift-prepaid-card",
+  "name": "Qwikcilver Gift Prepaid Card",
+  "tagline": "Multi-brand gift cards redeemable at partner merchants",
+  "description": "The Qwikcilver Gift Prepaid Card is a RuPay prepaid gift card enabling users to purchase gift cards for multiple brands redeemable at partner merchants. Available in various denominations, it is ideal for gifting, employee rewards, and corporate incentives.",
+  "bank": "Qwikcilver",
+  "bankCode": "qwikcilver",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Gift",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Multicolor",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Basic KYC required for high-value cards",
+      "Denomination varies by card"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Varies by denomination"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Multi-Brand Redemption",
+      "description": "Redeemable at hundreds of partner merchant brands across India",
+      "valueStr": "100+ brands",
+      "valueNum": 0,
+      "frequencyStr": "Per redemption",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Flexible Denominations",
+      "description": "Available in various denominations from Rs 250 to Rs 50,000",
+      "valueStr": "Rs 250 - Rs 50,000",
+      "valueNum": 0,
+      "frequencyStr": "One-time",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Multi-brand gift card",
+    "Redeemable at partner merchants",
+    "Digital and physical card available",
+    "Flexible denominations",
+    "Contactless payments",
+    "Ideal for gifting and rewards",
+    "Easy online purchase"
+  ],
+  "validity": "1 year",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#ff6600",
+    "#ffcc00"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 1000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1000,
+    "tenYearNetValue": 10000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 1000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Gifting",
+    "Employee Rewards",
+    "Multi-Brand Redemption"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.qwikcilver.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.qwikcilver.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "qwikcilver-gift-prepaid-card"
+}

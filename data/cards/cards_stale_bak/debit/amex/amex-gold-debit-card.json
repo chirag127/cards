@@ -1,0 +1,166 @@
+{
+  "id": "amex-gold-debit-card",
+  "name": "American Express Gold Debit Card",
+  "tagline": "Amex Gold for everyday premium banking",
+  "description": "The American Express Gold Debit Card offers reward points on purchases, higher transaction limits, and access to exclusive Amex merchant offers. A mid-tier debit card on the Amex network.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "debit",
+  "tier": "Gold",
+  "variant": "Gold",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Gold",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "mab": 50000,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires minimum average monthly balance of ₹50,000"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 25,
+    "internationalWithdrawalFee": 150,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Amex Membership Rewards",
+      "description": "Earn 1 Membership Rewards point per ₹200 spent",
+      "valueStr": "1 MR per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Amex Membership Rewards",
+    "earnRate": "1 MR per ₹200",
+    "pointsPer100": 0.5,
+    "pointValue": 0.45,
+    "effectiveCashbackPercent": 0.225,
+    "pointsExpiry": "Never expire",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Travel"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.225%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Amex network exclusive benefits",
+    "Merchant offers"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#d4af37",
+    "#b8860b"
+  ],
+  "value": {
+    "highestValue": 4000,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1910,
+    "tenYearNetValue": 19100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 324
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Rewards",
+    "Merchant Offers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1222",
+  "applyUrl": "https://www.americanexpress.com/in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "amex-gold-debit-card"
+}

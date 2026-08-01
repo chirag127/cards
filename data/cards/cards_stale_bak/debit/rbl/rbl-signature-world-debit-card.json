@@ -1,0 +1,220 @@
+{
+  "id": "rbl-signature-world-debit-card",
+  "name": "RBL Signature World Debit Card",
+  "tagline": "Visa World card with premium lifestyle benefits",
+  "description": "The RBL Signature World Debit Card is a premium Visa World offering with worldwide airport lounge access, golf privileges, concierge service, and comprehensive travel insurance. Designed for affluent customers who demand premium banking experiences and global acceptance.",
+  "bank": "RBL Bank",
+  "bankCode": "rbl",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "World",
+  "variant": "Signature World",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy blue and red gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to RBL Bank savings account holders",
+      "Minimum AUM of ₹10 lakhs recommended",
+      "Subject to bank approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1000,
+      "amountWithGst": 1180
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 200000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 500000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "Unlimited domestic airport lounge access",
+      "valueStr": "Unlimited",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 12000,
+      "conditions": [
+        "Available at all domestic airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge",
+      "description": "Complimentary international airport lounge visits",
+      "valueStr": "6 visits/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 12000,
+      "conditions": [
+        "Available at select international airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at select courses",
+      "valueStr": "6 rounds/year",
+      "valueNum": 6,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 6,
+      "annualValue": 12000,
+      "conditions": [
+        "Subject to course availability"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true
+    },
+    {
+      "category": "concierge",
+      "title": "Concierge Service",
+      "description": "24/7 dedicated concierge assistance",
+      "valueStr": "Unlimited",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 5000,
+      "conditions": [
+        "Available via phone and email"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹10 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Unlimited domestic lounge",
+    "6 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "Contactless payments",
+    "UPI enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e3a5f",
+    "#dc2626"
+  ],
+  "value": {
+    "highestValue": 45000,
+    "averageValue": 32000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 40820,
+    "tenYearNetValue": 408200,
+    "totalAnnualCharges": 1180,
+    "totalAnnualBenefits": 41000,
+    "roiPercent": 3475
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "International shoppers"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.rblbank.com/personal-banking/cards/debit-cards/signature-world-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 1000000,
+  "customerCareNumber": "1800 209 8888",
+  "applyUrl": "https://www.rblbank.com/personal-banking/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "rbl-signature-world-debit-card"
+}

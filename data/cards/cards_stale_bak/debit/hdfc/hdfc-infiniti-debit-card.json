@@ -1,0 +1,159 @@
+{
+  "id": "hdfc-infiniti-debit-card",
+  "name": "HDFC Bank Infiniti Debit Card",
+  "tagline": "The pinnacle of HDFC Bank debit card privileges",
+  "description": "The HDFC Bank Infiniti Debit Card is the bank's most premium debit offering, crafted from metal with exclusive lifestyle benefits. Enjoy unlimited domestic airport lounge access, 12 international lounge visits per year, golf privileges, dedicated concierge service, and comprehensive travel insurance. Designed for high-net-worth individuals who demand the finest banking experience.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Infinite",
+  "variant": "Infiniti",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Dark navy with red accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank Imperia customers",
+      "Minimum AUM of ₹10 lakhs required",
+      "Subject to bank approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2500,
+      "amountWithGst": 2950
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 1000000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on card issuance",
+    "valueStr": "5,000 Reward Points",
+    "valueNum": 5000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Valid for first-time Infiniti customers only"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹10 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "12 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance",
+    "Zero forex markup on select transactions"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#e94560"
+  ],
+  "value": {
+    "highestValue": 85000,
+    "averageValue": 55000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 52050,
+    "tenYearNetValue": 520500,
+    "totalAnnualCharges": 2950,
+    "totalAnnualBenefits": 55000,
+    "roiPercent": 1864
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "High-net-worth individuals",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "International shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "network",
+      "tier"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards/infiniti-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 1000000,
+  "customerCareNumber": "1860 266 0333",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "hdfc-infiniti-debit-card"
+}

@@ -1,51 +1,36 @@
 ---
+import CardScreener from '~/components/CardScreener.tsx'
 import EmbossedThumb from '~/components/EmbossedThumb.astro'
 /*
- * Home — the ledger. Two-pane terminal-style layout: 320px sticky filter
+ * Home — the ledger. Bloomberg-terminal card screener: 320px sticky filter
  * rail on the left, scrollable card-row table on the right, compare drawer
- * pinned bottom-right.
+ * pinned bottom-right. All interaction (search, filters, sort, pagination,
+ * compare) lives in the CardScreener React island (client:load).
  *
- * NO marketing hero. NO card grid. NO star ratings. NO editor's-pick
- * rosettes. Every card is a row in a database, every fee is a number in
- * a column. The display contract — Geist Mono headings, Inter Tight body,
- * JetBrains Mono numerics with tabular-nums + slashed zero — is the
+ * NO marketing hero. NO card grid. NO star ratings. Every card is a row in a
+ * database, every fee is a number in a column. The display contract — Geist
+ * Mono headings, Inter Tight body, JetBrains Mono numerics — is the
  * Bloomberg-terminal metaphor made concrete.
  *
- * We render all 470 credit cards (the largest subset with meaningful fee
- * data); debit + prepaid land in /debit/ and /prepaid/ index pages later.
+ * We render all 750 cards (credit + debit + prepaid); the card-type filter
+ * defaults to all. Rows serialise inline as a compact CardRow[] so the island
+ * runs without a fetch.
  */
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import {
-  CREDIT_COUNT,
-  fmtApr,
-  getCreditRows,
-  inr,
+  getAllRows,
+  listCardTypes,
   listIssuers,
   listNetworks,
+  MAX_ANNUAL_FEE,
   TOTAL_CARD_COUNT,
 } from '~/lib/cards'
 import { SITE_CONFIG } from '~/lib/siteConfig'
 
-const rows = getCreditRows()
+const rows = getAllRows()
 const issuers = listIssuers()
 const networks = listNetworks()
-
-const FEE_BUCKETS: Array<{ label: string; max: number }> = [
-  { label: 'Free', max: 0 },
-  { label: '≤ ₹500', max: 500 },
-  { label: '≤ ₹2,500', max: 2500 },
-  { label: '≤ ₹10,000', max: 10000 },
-  { label: '> ₹10,000', max: Number.POSITIVE_INFINITY },
-]
-
-const INCOME_BUCKETS: Array<{ label: string; min: number; max: number }> = [
-  { label: 'Any income', min: 0, max: Number.POSITIVE_INFINITY },
-  { label: '≤ ₹3 L', min: 0, max: 300000 },
-  { label: '≤ ₹6 L', min: 0, max: 600000 },
-  { label: '≤ ₹12 L', min: 0, max: 1200000 },
-  { label: '≤ ₹25 L', min: 0, max: 2500000 },
-  { label: '≤ ₹50 L', min: 0, max: 5000000 },
-]
+const cardTypes = listCardTypes()
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -59,392 +44,28 @@ const jsonLd = {
 ---
 
 <BaseLayout jsonLd={jsonLd}>
-  <section class="ledger-shell" aria-label="Card screener">
-    <aside class="rail" aria-label="Filter rail">
-      <div class="rail-inner">
-        <div class="rail-summary">
-          <span class="rail-count mono" data-rail-count>{CREDIT_COUNT}</span>
-          <span class="rail-total mono">/ {TOTAL_CARD_COUNT} CARDS</span>
-        </div>
+  {/* Hidden thumb: pulls the shared .emboss-thumb-static global CSS into the
+      bundle so the island's React-rendered thumbnails are styled. */}
+  <div hidden aria-hidden="true">
+    <EmbossedThumb bankCode="visa" bankName="VISA" network="Visa" />
+  </div>
 
-        <div class="active-chips" data-active-chips></div>
-
-        <fieldset class="rail-section">
-          <legend class="rail-h mono">Income band</legend>
-          <select class="rail-select mono" data-filter="income">
-            {INCOME_BUCKETS.map((b) => (
-              <option value={b.max}>{b.label}</option>
-            ))}
-          </select>
-        </fieldset>
-
-        <fieldset class="rail-section">
-          <legend class="rail-h mono">Employment</legend>
-          <label class="rail-radio">
-            <input type="radio" name="employment" value="any" checked />
-            <span class="mono">Any</span>
-          </label>
-          <label class="rail-radio">
-            <input type="radio" name="employment" value="salaried" />
-            <span class="mono">Salaried</span>
-          </label>
-          <label class="rail-radio">
-            <input type="radio" name="employment" value="self" />
-            <span class="mono">Self-employed</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="rail-section">
-          <legend class="rail-h mono">Network</legend>
-          <div class="rail-checks">
-            {networks.map((n) => (
-              <label class="rail-check">
-                <input type="checkbox" data-network={n} />
-                <span class="mono">{n}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-
-        <fieldset class="rail-section">
-          <legend class="rail-h mono">Annual fee</legend>
-          <div class="rail-checks">
-            {FEE_BUCKETS.map((b) => (
-              <label class="rail-check">
-                <input type="checkbox" data-fee={b.max} />
-                <span class="mono">{b.label}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-
-        <fieldset class="rail-section">
-          <legend class="rail-h mono">Perks</legend>
-          <label class="rail-check">
-            <input type="checkbox" data-perk="lounge" />
-            <span class="mono">Lounge access</span>
-          </label>
-          <label class="rail-check">
-            <input type="checkbox" data-perk="fuel" />
-            <span class="mono">Fuel waiver</span>
-          </label>
-          <label class="rail-check">
-            <input type="checkbox" data-perk="ltf" />
-            <span class="mono">Lifetime free</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="rail-section rail-issuers">
-          <legend class="rail-h mono">Issuer</legend>
-          <div class="rail-issuers-scroll">
-            {issuers.map((i) => (
-              <label class="rail-check">
-                <input type="checkbox" data-issuer={i.code} />
-                <span class="mono issuer-name">{i.name}</span>
-                <span class="mono issuer-count">{i.count}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-
-        <button type="button" class="rail-reset mono" data-reset>
-          [ × CLEAR ALL ]
-        </button>
-      </div>
-    </aside>
-
-    <div class="ledger">
-      <div class="ledger-header" role="row">
-        <span class="col-thumb">CARD</span>
-        <span class="col-name">NAME ▾</span>
-        <span class="col-num">JOIN</span>
-        <span class="col-num">ANNUAL</span>
-        <span class="col-num">REWARDS</span>
-        <span class="col-num">APR p.a.</span>
-        <span class="col-cmp" aria-label="Compare">▢</span>
-      </div>
-      <div class="ledger-body" data-ledger>
-        {
-          rows.map((r) => (
-            <a
-              href={`/credit/${r.bankCode}/${r.slug}/`}
-              class="row"
-              data-row
-              data-row-issuer={r.bankCode}
-              data-row-network={r.network}
-              data-row-fee={r.annualFee}
-              data-row-income={r.minAnnualIncome}
-              data-row-lounge={String(r.hasLounge)}
-              data-row-fuel={String(r.hasFuelWaiver)}
-              data-row-ltf={String(r.isLtf)}
-              data-row-name={`${r.name} ${r.bank}`.toLowerCase()}
-              data-row-slug={r.slug}
-              data-row-bank={r.bank}
-            >
-              <span class="col-thumb">
-                <EmbossedThumb
-                  bankCode={r.bankCode}
-                  bankName={r.bank}
-                  network={r.network}
-                  binPrefix={r.binPrefix}
-                  stock={r.stockGradient}
-                />
-              </span>
-              <span class="col-name">
-                <span class="row-name">{r.name}</span>
-                <span class="row-bank mono">{r.bank} · {r.tier ?? 'card'}</span>
-              </span>
-              <span class="col-num num">{r.joiningFee === 0 ? <span class="ltf-tag">LTF</span> : `₹${inr(r.joiningFee)}`}</span>
-              <span class="col-num num">{r.annualFee === 0 ? <span class="ltf-tag">LTF</span> : `₹${inr(r.annualFee)}`}</span>
-              <span class="col-num num">{r.rewardsLabel}</span>
-              <span class={`col-num num ${r.apr >= 36 ? 'num-neg' : ''}`}>{fmtApr(r.apr)}</span>
-              <span class="col-cmp">
-                <input
-                  type="checkbox"
-                  class="cmp-check"
-                  data-compare={r.slug}
-                  data-compare-issuer={r.bankCode}
-                  data-compare-name={r.name}
-                  data-compare-bank={r.bank}
-                  data-compare-network={r.network}
-                  aria-label={`Add ${r.name} to compare`}
-                  onclick="event.stopPropagation()"
-                />
-              </span>
-            </a>
-          ))
-        }
-        <div class="ledger-empty mono" hidden data-empty>
-          0 cards match. <button type="button" class="rail-reset" data-reset>clear filters</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <aside class="cmp-drawer" data-drawer aria-label="Compare drawer">
-    <button type="button" class="cmp-toggle mono" data-drawer-toggle aria-expanded="false">
-      <span>COMPARE · <span data-cmp-count>0</span> / 4</span>
-      <span class="cmp-toggle-icon" aria-hidden="true">▴</span>
-    </button>
-    <div class="cmp-body" data-drawer-body hidden>
-      <p class="cmp-empty mono" data-cmp-empty>add up to 4 cards from the ledger</p>
-      <ul class="cmp-list" data-cmp-list></ul>
-      <button type="button" class="cmp-go mono" data-cmp-go disabled>[ COMPARE → ]</button>
-    </div>
-  </aside>
+  <CardScreener
+    client:load
+    rows={rows}
+    issuers={issuers}
+    networks={networks}
+    cardTypes={cardTypes}
+    maxFee={MAX_ANNUAL_FEE}
+    total={TOTAL_CARD_COUNT}
+  />
 </BaseLayout>
 
-<script is:inline>
-  // The ledger filter — pure DOM, no framework. Keeps initial JS budget at
-  // a few KB even with 470 rows. Every filter mutation re-applies a single
-  // pass over data-row-* attributes; on a modern device this is sub-frame.
-  ;(() => {
-    const ledger = document.querySelector('[data-ledger]');
-    if (!ledger) return;
-    const rows = Array.from(ledger.querySelectorAll('[data-row]'));
-    const empty = document.querySelector('[data-empty]');
-    const railCount = document.querySelector('[data-rail-count]');
-    const activeChipsEl = document.querySelector('[data-active-chips]');
-    const incomeSel = document.querySelector('[data-filter="income"]');
-    const networkChecks = Array.from(document.querySelectorAll('[data-network]'));
-    const feeChecks = Array.from(document.querySelectorAll('[data-fee]'));
-    const issuerChecks = Array.from(document.querySelectorAll('[data-issuer]'));
-    const perkChecks = Array.from(document.querySelectorAll('[data-perk]'));
-    const employmentRadios = Array.from(document.querySelectorAll('input[name="employment"]'));
-
-    const apply = () => {
-      const income = parseFloat(incomeSel?.value ?? 'Infinity');
-      const networks = networkChecks.filter((c) => c.checked).map((c) => c.dataset.network);
-      const fees = feeChecks.filter((c) => c.checked).map((c) => parseFloat(c.dataset.fee));
-      const issuers = issuerChecks.filter((c) => c.checked).map((c) => c.dataset.issuer);
-      const perks = perkChecks.filter((c) => c.checked).map((c) => c.dataset.perk);
-      let visible = 0;
-      const chips = [];
-      if (income !== Infinity) chips.push({ key: 'income', label: '≤ ₹' + (income / 100000) + 'L' });
-      networks.forEach((n) => chips.push({ key: 'net:' + n, label: n }));
-      issuers.forEach((i) => chips.push({ key: 'iss:' + i, label: i.toUpperCase() }));
-      perks.forEach((p) => chips.push({ key: 'perk:' + p, label: p.toUpperCase() }));
-      fees.forEach((f) => chips.push({ key: 'fee:' + f, label: f === 0 ? 'FREE' : '≤ ₹' + f }));
-
-      for (const row of rows) {
-        const rIncome = parseFloat(row.dataset.rowIncome ?? '0');
-        const rFee = parseFloat(row.dataset.rowFee ?? '0');
-        const rNetwork = row.dataset.rowNetwork ?? '';
-        const rIssuer = row.dataset.rowIssuer ?? '';
-        const rLounge = row.dataset.rowLounge === 'true';
-        const rFuel = row.dataset.rowFuel === 'true';
-        const rLtf = row.dataset.rowLtf === 'true';
-
-        let ok = true;
-        if (rIncome > income) ok = false;
-        if (ok && networks.length && !networks.includes(rNetwork)) ok = false;
-        if (ok && issuers.length && !issuers.includes(rIssuer)) ok = false;
-        if (ok && fees.length) {
-          const matchFee = fees.some((max) => {
-            if (max === 0) return rFee === 0;
-            if (max === Infinity) return rFee > 10000;
-            return rFee > 0 && rFee <= max;
-          });
-          if (!matchFee) ok = false;
-        }
-        if (ok && perks.includes('lounge') && !rLounge) ok = false;
-        if (ok && perks.includes('fuel') && !rFuel) ok = false;
-        if (ok && perks.includes('ltf') && !rLtf) ok = false;
-
-        row.style.display = ok ? '' : 'none';
-        if (ok) visible++;
-      }
-      if (railCount) railCount.textContent = visible.toLocaleString('en-IN');
-      if (empty) empty.hidden = visible !== 0;
-      if (activeChipsEl) {
-        activeChipsEl.innerHTML = '';
-        for (const c of chips) {
-          const b = document.createElement('button');
-          b.type = 'button';
-          b.className = 'active-chip mono';
-          b.dataset.chipKey = c.key;
-          b.textContent = '[ × ' + c.label + ' ]';
-          activeChipsEl.appendChild(b);
-        }
-      }
-    };
-
-    [incomeSel, ...networkChecks, ...feeChecks, ...issuerChecks, ...perkChecks, ...employmentRadios].forEach((el) => {
-      el?.addEventListener('change', apply);
-    });
-
-    document.querySelectorAll('[data-reset]').forEach((b) => {
-      b.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (incomeSel) incomeSel.value = String(Infinity);
-        [...networkChecks, ...feeChecks, ...issuerChecks, ...perkChecks].forEach((c) => { c.checked = false; });
-        const anyEmp = document.querySelector('input[name="employment"][value="any"]');
-        if (anyEmp) anyEmp.checked = true;
-        apply();
-      });
-    });
-
-    // Click an active-chip to remove the corresponding filter.
-    activeChipsEl?.addEventListener('click', (e) => {
-      const target = e.target;
-      if (!(target instanceof HTMLElement)) return;
-      const chip = target.closest('[data-chip-key]');
-      if (!chip) return;
-      const key = chip.dataset.chipKey ?? '';
-      if (key === 'income' && incomeSel) incomeSel.value = String(Infinity);
-      if (key.startsWith('net:')) {
-        const n = key.slice(4);
-        const c = networkChecks.find((c) => c.dataset.network === n);
-        if (c) c.checked = false;
-      }
-      if (key.startsWith('iss:')) {
-        const i = key.slice(4);
-        const c = issuerChecks.find((c) => c.dataset.issuer === i);
-        if (c) c.checked = false;
-      }
-      if (key.startsWith('fee:')) {
-        const f = key.slice(4);
-        const c = feeChecks.find((c) => c.dataset.fee === f);
-        if (c) c.checked = false;
-      }
-      if (key.startsWith('perk:')) {
-        const p = key.slice(5);
-        const c = perkChecks.find((c) => c.dataset.perk === p);
-        if (c) c.checked = false;
-      }
-      apply();
-    });
-
-    apply();
-  })();
-
-  // Compare drawer — collects up to 4 cards. Persists in sessionStorage.
-  ;(() => {
-    const KEY = 'oriz:cards:compare';
-    const drawer = document.querySelector('[data-drawer]');
-    const toggle = document.querySelector('[data-drawer-toggle]');
-    const body = document.querySelector('[data-drawer-body]');
-    const list = document.querySelector('[data-cmp-list]');
-    const emptyEl = document.querySelector('[data-cmp-empty]');
-    const countEl = document.querySelector('[data-cmp-count]');
-    const goBtn = document.querySelector('[data-cmp-go]');
-    if (!drawer || !toggle || !body || !list) return;
-
-    const read = () => {
-      try { return JSON.parse(sessionStorage.getItem(KEY) ?? '[]'); }
-      catch { return []; }
-    };
-    const write = (arr) => sessionStorage.setItem(KEY, JSON.stringify(arr));
-
-    const render = () => {
-      const arr = read();
-      if (countEl) countEl.textContent = String(arr.length);
-      if (emptyEl) emptyEl.hidden = arr.length > 0;
-      if (goBtn) goBtn.disabled = arr.length < 2;
-      list.innerHTML = '';
-      for (const c of arr) {
-        const li = document.createElement('li');
-        li.className = 'cmp-item';
-        li.innerHTML = '<span class="cmp-item-name mono">' + c.name + '</span>' +
-          '<span class="cmp-item-bank mono">' + c.bank + ' · ' + c.network + '</span>' +
-          '<button type="button" class="cmp-item-x" aria-label="Remove" data-rm="' + c.slug + '">×</button>';
-        list.appendChild(li);
-      }
-      // Sync checkboxes.
-      document.querySelectorAll('[data-compare]').forEach((cb) => {
-        cb.checked = arr.some((x) => x.slug === cb.dataset.compare);
-      });
-    };
-
-    toggle.addEventListener('click', () => {
-      const open = body.hidden;
-      body.hidden = !open;
-      toggle.setAttribute('aria-expanded', String(open));
-      drawer.classList.toggle('open', open);
-    });
-
-    document.addEventListener('change', (e) => {
-      const t = e.target;
-      if (!(t instanceof HTMLInputElement) || !t.dataset.compare) return;
-      let arr = read();
-      const slug = t.dataset.compare;
-      if (t.checked) {
-        if (arr.length >= 4) {
-          t.checked = false;
-          alert('Compare drawer is full (4 cards max).');
-          return;
-        }
-        arr.push({
-          slug,
-          issuer: t.dataset.compareIssuer,
-          name: t.dataset.compareName,
-          bank: t.dataset.compareBank,
-          network: t.dataset.compareNetwork,
-        });
-      } else {
-        arr = arr.filter((x) => x.slug !== slug);
-      }
-      write(arr);
-      render();
-    });
-
-    list.addEventListener('click', (e) => {
-      const t = e.target;
-      if (!(t instanceof HTMLElement) || !t.dataset.rm) return;
-      const arr = read().filter((x) => x.slug !== t.dataset.rm);
-      write(arr);
-      render();
-    });
-
-    render();
-  })();
-</script>
-
-<style>
+<style is:global>
   /* ── Layout shell ───────────────────────────────────────────────────── */
   .ledger-shell {
     display: grid;
-    grid-template-columns: var(--rail-width) minmax(0, 1fr);
+    grid-template-columns: var(--rail-width, 320px) minmax(0, 1fr);
     gap: 0;
     min-height: calc(100vh - 56px);
     border-top: 1px solid var(--rule);
@@ -488,24 +109,24 @@ const jsonLd = {
     letter-spacing: 0.16em;
     color: var(--ink-mute);
   }
-  .active-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.375rem;
-  }
-  .active-chip {
-    appearance: none;
-    background: var(--paper-raised);
+
+  /* ── Search ─────────────────────────────────────────────────────────── */
+  .rail-search-input {
+    width: 100%;
+    height: 34px;
+    padding-inline: 0.6rem;
+    background: var(--paper);
     border: 1px solid var(--rule);
-    color: var(--accent);
+    color: var(--ink);
     font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.04em;
-    padding: 0.25rem 0.5rem;
-    cursor: pointer;
+    font-size: 13px;
   }
-  .active-chip:hover {
+  .rail-search-input:focus {
+    outline: none;
     border-color: var(--accent);
+  }
+  .rail-search-input::placeholder {
+    color: var(--ink-mute);
   }
 
   .rail-section {
@@ -538,7 +159,11 @@ const jsonLd = {
     outline: none;
     border-color: var(--accent);
   }
-  .rail-radio,
+  .rail-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
   .rail-check {
     display: flex;
     align-items: center;
@@ -547,11 +172,16 @@ const jsonLd = {
     color: var(--ink);
     cursor: pointer;
   }
-  .rail-check input,
-  .rail-radio input {
+  .rail-check input {
     accent-color: var(--accent);
     width: 14px;
     height: 14px;
+    flex-shrink: 0;
+  }
+  .issuer-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .issuer-count {
     margin-left: auto;
@@ -569,6 +199,20 @@ const jsonLd = {
     border-bottom: 1px solid var(--rule);
     padding-block: 0.5rem;
   }
+
+  /* ── Fee range slider ───────────────────────────────────────────────── */
+  .rail-range {
+    width: 100%;
+    accent-color: var(--accent);
+  }
+  .rail-range-ends {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--ink-mute);
+    margin-top: 0.125rem;
+  }
+
   .rail-reset {
     margin-top: 0.5rem;
     padding: 0.5rem;
@@ -590,16 +234,47 @@ const jsonLd = {
     flex-direction: column;
     background: var(--paper);
   }
+  .ledger-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    padding-inline: 1rem;
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper-deep);
+    position: sticky;
+    top: 56px;
+    z-index: 11;
+  }
+  .sort-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .sort-select {
+    width: auto;
+    height: 28px;
+  }
+  .toolbar-count {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
   .ledger-header {
     display: grid;
-    grid-template-columns: 156px minmax(220px, 1fr) 92px 100px 116px 116px 36px;
+    grid-template-columns: 156px minmax(200px, 1fr) 132px 128px 100px 116px 36px;
     align-items: center;
     height: 40px;
     padding-inline: 1rem;
     border-bottom: 1px solid var(--rule);
     background: var(--paper-raised);
     position: sticky;
-    top: 56px;
+    top: 100px;
     z-index: 10;
     font-family: var(--font-mono);
     font-size: 11px;
@@ -616,22 +291,26 @@ const jsonLd = {
   }
   .row {
     display: grid;
-    grid-template-columns: 156px minmax(220px, 1fr) 92px 100px 116px 116px 36px;
-    align-items: center;
-    height: 96px;
-    padding-inline: 1rem;
+    grid-template-columns: 1fr 36px;
+    align-items: stretch;
     border-bottom: 1px solid var(--rule);
-    color: var(--ink);
-    text-decoration: none;
-    transition: background 80ms;
-  }
-  .row > * {
-    padding-inline: 0.5rem;
   }
   .row:hover {
     background: var(--paper-raised);
   }
-  .row:focus-visible {
+  .row-link {
+    display: grid;
+    grid-template-columns: 156px minmax(200px, 1fr) 132px 128px 100px 116px;
+    align-items: center;
+    height: 96px;
+    padding-left: 1rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .row-link > * {
+    padding-inline: 0.5rem;
+  }
+  .row-link:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: -2px;
   }
@@ -661,6 +340,65 @@ const jsonLd = {
     text-transform: uppercase;
     letter-spacing: 0.12em;
   }
+
+  /* ── Badges ─────────────────────────────────────────────────────────── */
+  .col-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--rule);
+    color: var(--ink-mute);
+    text-transform: uppercase;
+  }
+  .badge-net {
+    color: var(--ink);
+  }
+  .badge-credit {
+    border-color: color-mix(in oklab, var(--accent) 50%, var(--rule));
+    color: var(--accent);
+  }
+  .badge-debit {
+    border-color: color-mix(in oklab, var(--brass, #b8923a) 60%, var(--rule));
+    color: var(--brass, #b8923a);
+  }
+  .badge-prepaid {
+    border-color: color-mix(in oklab, var(--vermilion, #c2410c) 40%, var(--rule));
+    color: var(--vermilion, #c2410c);
+  }
+
+  /* ── Benefit icons + tooltips ───────────────────────────────────────── */
+  .col-perks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+  }
+  .perk-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    cursor: help;
+    line-height: 1;
+  }
+  .perk-icon:hover {
+    border-color: var(--accent);
+  }
+
   .col-num {
     text-align: right;
     font-family: var(--font-mono);
@@ -669,12 +407,12 @@ const jsonLd = {
     font-feature-settings: 'tnum' 1, 'zero' 1, 'calt' 0;
   }
   .num-neg {
-    color: var(--vermilion);
+    color: var(--vermilion, #c2410c);
   }
   .ltf-tag {
     display: inline-block;
     padding: 0.125rem 0.375rem;
-    background: linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 60%, var(--brass-deep) 100%);
+    background: linear-gradient(135deg, var(--brass-light, #ecd28a) 0%, var(--brass, #b8923a) 60%, var(--brass-deep, #8b6e2a) 100%);
     color: #1a1410;
     font-family: var(--font-mono);
     font-size: 10px;
@@ -683,12 +421,48 @@ const jsonLd = {
   }
   .col-cmp {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
   }
   .cmp-check {
     width: 18px;
     height: 18px;
     accent-color: var(--accent);
+  }
+
+  /* ── Pagination ─────────────────────────────────────────────────────── */
+  .pager {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-top: 1px solid var(--rule);
+    background: var(--paper-deep);
+  }
+  .pager-btn {
+    padding: 0.4rem 0.75rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+  }
+  .pager-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .pager-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  .pager-status {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--ink-mute);
+    text-align: center;
   }
 
   .ledger-empty {
@@ -720,14 +494,18 @@ const jsonLd = {
       position: static;
       max-height: none;
     }
-    .ledger-header,
-    .row {
-      grid-template-columns: 120px minmax(160px, 1fr) 80px 90px 36px;
+    .ledger-header {
+      grid-template-columns: 120px minmax(140px, 1fr) 96px 90px 36px;
     }
-    .ledger-header .col-num:nth-of-type(3),
-    .ledger-header .col-num:nth-of-type(4),
-    .row > .col-num:nth-of-type(3),
-    .row > .col-num:nth-of-type(4) {
+    .ledger-header .col-badges,
+    .ledger-header span:nth-child(6) {
+      display: none;
+    }
+    .row-link {
+      grid-template-columns: 120px minmax(140px, 1fr) 96px 90px;
+    }
+    .row-link .col-badges,
+    .row-link .col-num:last-child {
       display: none;
     }
   }
@@ -822,11 +600,14 @@ const jsonLd = {
     font-size: 14px;
   }
   .cmp-item-x:hover {
-    border-color: var(--vermilion);
-    color: var(--vermilion);
+    border-color: var(--vermilion, #c2410c);
+    color: var(--vermilion, #c2410c);
   }
   .cmp-go {
     appearance: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
     background: var(--paper);
     border: 1px solid var(--accent);
     color: var(--accent);
@@ -837,12 +618,13 @@ const jsonLd = {
     letter-spacing: 0.12em;
     cursor: pointer;
   }
-  .cmp-go:hover:not(:disabled) {
+  .cmp-go:hover:not(.cmp-go-disabled) {
     background: var(--accent);
-    color: var(--accent-fg);
+    color: var(--accent-fg, #fff);
   }
-  .cmp-go:disabled {
+  .cmp-go-disabled {
     opacity: 0.4;
+    pointer-events: none;
     cursor: not-allowed;
   }
   @media (max-width: 480px) {

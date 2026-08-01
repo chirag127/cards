@@ -14,6 +14,7 @@ interface ImportMetaEnv {
   readonly PUBLIC_ADSENSE_CLIENT?: string
   readonly PUBLIC_ADSENSE_SLOT_FOOTER?: string
   readonly PUBLIC_FUNDING_CHOICES_ID?: string
+  readonly PUBLIC_CLERK_PUBLISHABLE_KEY: string
 }
 
 interface ImportMeta {

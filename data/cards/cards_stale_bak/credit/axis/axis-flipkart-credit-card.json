@@ -1,0 +1,360 @@
+{
+  "id": "axis-flipkart-credit-card",
+  "name": "Axis Bank Flipkart Credit Card",
+  "tagline": "Unlimited cashback on Flipkart & Myntra with lounge access",
+  "description": "The Axis Flipkart Credit Card is a co-branded cashback card offering 5% unlimited cashback on Flipkart, 4% on Myntra, and 1.5% on all other spends. It includes 4 complimentary domestic lounge visits per year and comes with a low annual fee of ₹500 + GST, making it ideal for online shoppers.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Flipkart",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Yellow and navy blue",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.4 Lakh p.a.",
+      "Age 18–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "lostCardLiability": 50000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Lost card liability: ₹50,000",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "1 per quarter",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "4 complimentary domestic lounge visits per year (1 per quarter)",
+      "Swipe card at lounge terminal for access"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "5% Unlimited Cashback on Flipkart",
+      "description": "Earn 5% unlimited cashback on all purchases made on Flipkart",
+      "valueStr": "5% unlimited",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Flipkart app and website only",
+        "No upper limit on cashback"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "4% Cashback on Myntra",
+      "description": "Earn 4% cashback on all purchases made on Myntra",
+      "valueStr": "4% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Myntra app and website only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "1.5% Cashback on All Other Spends",
+      "description": "Earn 1.5% cashback on all other retail transactions",
+      "valueStr": "1.5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, EMI, wallet loads"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per year",
+      "valueStr": "4 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 10000,
+      "conditions": [
+        "1 visit per quarter",
+        "Swipe card at lounge terminal"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Flipkart ACE Cashback",
+    "earnRate": "1.5–5% cashback",
+    "pointsPer100": 1.5,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "Cashback credited directly to statement, no expiry",
+    "bonusCategories": [
+      {
+        "category": "Flipkart",
+        "multiplier": 5,
+        "description": "5% unlimited cashback"
+      },
+      {
+        "category": "Myntra",
+        "multiplier": 4,
+        "description": "4% cashback"
+      },
+      {
+        "category": "All other spends",
+        "multiplier": 1.5,
+        "description": "1.5% cashback"
+      }
+    ],
+    "redemptionOptions": [
+      "Auto-credited to credit card statement"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1.5% to 5%",
+    "conditions": [
+      "Excluded: fuel, EMI, wallet loads, insurance premiums"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Cashback auto-credited to statement",
+    "Flipkart & Myntra integration"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "coBrandDetails": {
+    "partnerName": "Flipkart",
+    "partnerCategory": "E-commerce",
+    "specialPerks": [
+      "5% unlimited cashback on Flipkart",
+      "4% cashback on Myntra",
+      "Exclusive Flipkart sale early access"
+    ]
+  },
+  "shoppingBenefits": {
+    "available": true,
+    "partnerMerchants": [
+      "Flipkart",
+      "Myntra"
+    ],
+    "offerDescription": "5% cashback on Flipkart, 4% on Myntra",
+    "discountPercent": 5
+  },
+  "gradientColors": [
+    "#232F3E",
+    "#FF9900"
+  ],
+  "value": {
+    "highestValue": 20000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 9410,
+    "tenYearNetValue": 94100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 10000,
+    "roiPercent": 1594
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": true,
+  "bestFor": [
+    "Cashback",
+    "Online Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/flipkart-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-bank-flipkart-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/flipkart-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-flipkart-credit-card"
+}

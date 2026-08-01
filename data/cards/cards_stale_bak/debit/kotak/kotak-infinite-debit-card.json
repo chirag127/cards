@@ -1,0 +1,158 @@
+{
+  "id": "kotak-infinite-debit-card",
+  "name": "Kotak Mahindra Bank Infinite Debit Card",
+  "tagline": "Infinite privileges for the modern banker",
+  "description": "The Kotak Mahindra Bank Infinite Debit Card is a premium metal debit card offering from Kotak, featuring unlimited domestic airport lounge access, 8 international lounge visits per year, exclusive golf privileges, dedicated concierge service, and comprehensive travel insurance. Designed for customers seeking a premium banking experience with Mastercard World Elite benefits.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Mastercard",
+  "cardType": "debit",
+  "tier": "WorldElite",
+  "variant": "Infinite",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Dark with purple accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Preferred Banking customers",
+      "Minimum AUM of ₹10 lakhs required",
+      "Subject to bank approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2000,
+      "amountWithGst": 2360
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 1000000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on card issuance",
+    "valueStr": "3,000 Reward Points",
+    "valueNum": 3000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Valid for first-time Infinite customers only"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹10 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "8 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#8b5cf6"
+  ],
+  "value": {
+    "highestValue": 70000,
+    "averageValue": 42000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 39640,
+    "tenYearNetValue": 396400,
+    "totalAnnualCharges": 2360,
+    "totalAnnualBenefits": 42000,
+    "roiPercent": 1780
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "International shopping",
+    "Business professionals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "network",
+      "tier"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.kotak.com/en/personal-banking/cards/debit-cards/infinite-debit-card.html"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 1000000,
+  "customerCareNumber": "1860 266 8686",
+  "applyUrl": "https://www.kotak.com/en/personal-banking/cards/debit-cards.html",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "kotak-infinite-debit-card"
+}

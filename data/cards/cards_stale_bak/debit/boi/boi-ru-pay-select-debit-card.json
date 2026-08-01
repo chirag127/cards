@@ -1,0 +1,300 @@
+{
+  "id": "boi-ru-pay-select-debit-card",
+  "name": "Bank of India RuPay Select Debit Card",
+  "tagline": "Premium RuPay Select with wellness and rewards",
+  "description": "The Bank of India RuPay Select Debit Card is a premium debit card offering Star Points on PoS and e-commerce spends, lounge access, spa sessions, gym membership, health check-ups, golf lessons, digital meditation/fitness sessions, and comprehensive personal accident insurance. Designed for BOI customers seeking a well-rounded lifestyle card.",
+  "bank": "Bank of India",
+  "bankCode": "boi",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Select",
+  "variant": "Standard",
+  "usage": "Domestic",
+  "bin": "607",
+  "material": "Plastic",
+  "colorScheme": "Red-blue gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to BOI account holders",
+      "Star Points earned on PoS and e-commerce spends"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Free issuance"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 800,
+      "amountWithGst": 944,
+      "note": "Excluding taxes"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary domestic airport lounge access at participating lounges across India.",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 8000,
+      "conditions": [
+        "1 visit per quarter",
+        "Valid at participating domestic lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary international airport lounge access at participating lounges worldwide.",
+      "valueStr": "2 visits/year",
+      "valueNum": 2,
+      "frequencyStr": "2 per year",
+      "frequencyPerYear": 2,
+      "annualValue": 6000,
+      "conditions": [
+        "2 visits per year",
+        "Valid at participating international lounges",
+        "Card must be presented for entry"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "health",
+      "title": "Spa Session",
+      "description": "Complimentary spa session with 40-50% off on additional sessions.",
+      "valueStr": "1 free + 40-50% off additional",
+      "valueNum": 1,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "1 complimentary session per year",
+        "40-50% discount on additional sessions",
+        "Valid at partner spa centers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Book via BOI wellness portal"
+    },
+    {
+      "category": "health",
+      "title": "Gym Membership",
+      "description": "1 month gym membership with 40-50% off on extension.",
+      "valueStr": "1 month + 40-50% off extension",
+      "valueNum": 1,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "1 month membership per year",
+        "40-50% discount on extension",
+        "Valid at partner fitness centers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via BOI wellness portal"
+    },
+    {
+      "category": "health",
+      "title": "Health Check-up",
+      "description": "Complimentary health check-up with discount on additional check-ups.",
+      "valueStr": "1/year + discount on additional",
+      "valueNum": 1,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 2000,
+      "conditions": [
+        "1 per year",
+        "Discount on additional check-ups",
+        "Valid at partner diagnostic centers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Book via BOI wellness portal"
+    },
+    {
+      "category": "golf",
+      "title": "Golf Lessons",
+      "description": "Free golf lesson with discount on additional lessons.",
+      "valueStr": "1 free + discount on additional",
+      "valueNum": 1,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 3000,
+      "conditions": [
+        "1 free lesson per year",
+        "Discount on additional lessons",
+        "Subject to availability at partner golf courses"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Book via BOI concierge"
+    },
+    {
+      "category": "health",
+      "title": "Digital Meditation & Fitness Sessions",
+      "description": "Access to digital meditation and fitness sessions.",
+      "valueStr": "Access included",
+      "valueNum": 2000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 2000,
+      "conditions": [
+        "Access via partner wellness app",
+        "Valid for card duration"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Register via BOI wellness portal"
+    },
+    {
+      "category": "insurance",
+      "title": "Personal Accident & Permanent Disability Insurance",
+      "description": "Comprehensive personal accident and permanent disability insurance cover.",
+      "valueStr": "₹10 lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 5000,
+      "conditions": [
+        "Cover valid while using the card",
+        "Claim process through BOI insurance partner"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Star Points on PoS and e-commerce spends",
+    "Contactless payments up to ₹5,000",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Airport lounge access",
+    "Spa, gym, health check-up benefits",
+    "Golf lessons",
+    "Digital meditation & fitness sessions",
+    "Personal accident & permanent disability insurance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#DC2626",
+    "#1E40AF"
+  ],
+  "value": {
+    "highestValue": 32000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 31056,
+    "tenYearNetValue": 310560,
+    "totalAnnualCharges": 944,
+    "totalAnnualBenefits": 32000,
+    "roiPercent": 3289
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Lifestyle",
+    "Wellness",
+    "Lounge Access",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "benefits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bankofindia.co.in"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "customerCareNumber": "1800 22 0010",
+  "applyUrl": "https://www.bankofindia.co.in",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "boi-ru-pay-select-debit-card"
+}

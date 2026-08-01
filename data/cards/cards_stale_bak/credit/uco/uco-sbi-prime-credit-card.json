@@ -1,0 +1,356 @@
+{
+  "id": "uco-sbi-prime-credit-card",
+  "name": "UCO Bank SBI Card PRIME",
+  "tagline": "Premium lifestyle card with milestone rewards and lounge access",
+  "description": "The UCO Bank SBI Card PRIME, in partnership with SBI Card, offers\nenhanced milestone rewards including gift vouchers from Yatra.com and\nPantaloons, domestic lounge access, and accelerated rewards for a premium\nlifestyle experience.",
+  "bank": "UCO Bank",
+  "bankCode": "uco",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "PRIME",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Charcoal and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 6 Lakh+",
+      "Self-Employed: ITR of Rs 6 Lakh+",
+      "Age 21-60 years",
+      "Minimum credit score of 700 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 30000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 6,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic lounge access for primary cardholder only",
+      "Powered by Dreamfolks"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions between Rs 500 and Rs 5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Complimentary Domestic Lounge Access",
+      "description": "6 complimentary domestic airport lounge visits per quarter",
+      "valueStr": "6 per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 24,
+      "annualValue": 36000,
+      "conditions": [
+        "Primary cardholder only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Milestone Rewards - Gift Vouchers",
+      "description": "Earn Pizza Hut and Yatra.com/Pantaloons gift vouchers worth up to Rs 11,000 annually on milestone spends",
+      "valueStr": "Up to Rs 11,000",
+      "valueNum": 11000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 11000,
+      "conditions": [
+        "Vouchers issued on achieving spending milestones",
+        "Includes Pizza Hut, Yatra.com, Pantaloons vouchers"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Accelerated Reward Points",
+      "description": "Earn 4 reward points per Rs 100 on dining and online spends",
+      "valueStr": "4 RP per Rs 100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on annual spend of Rs 5 Lakh",
+      "valueStr": "Fee waiver",
+      "valueNum": 2999,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 2999,
+      "conditions": [
+        "Annual spend of Rs 5 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "UCO SBI Reward Points",
+    "earnRate": "4 RP per Rs 100 on dining and online spends",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 4,
+        "description": "4 RP per Rs 100"
+      },
+      {
+        "category": "Online",
+        "multiplier": 4,
+        "description": "4 RP per Rs 100"
+      },
+      {
+        "category": "All other spends",
+        "multiplier": 1,
+        "description": "1 RP per Rs 100"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Air miles",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1.0%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "1,500 bonus reward points on card activation",
+    "valueStr": "1,500 RP",
+    "valueNum": 1500,
+    "conditions": [
+      "Spend Rs 20,000 within 60 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Rs 2,000 Pizza Hut gift voucher on annual spend of Rs 3 Lakh",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Rs 2,000 Pizza Hut voucher",
+      "rewardNum": 2000
+    },
+    {
+      "description": "Rs 5,000 Yatra.com gift voucher on annual spend of Rs 5 Lakh",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Rs 5,000 Yatra.com voucher",
+      "rewardNum": 5000
+    },
+    {
+      "description": "Rs 4,000 Pantaloons gift voucher on annual spend of Rs 4 Lakh",
+      "spendRequired": 400000,
+      "spendPeriod": "Annually",
+      "rewardStr": "Rs 4,000 Pantaloons voucher",
+      "rewardNum": 4000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 5 Lakh",
+      "annualSpendRequired": 500000,
+      "waives": "Annual fee of Rs 2,999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Complimentary domestic lounge access",
+    "Milestone gift vouchers",
+    "Fuel surcharge waiver"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#37474f",
+    "#b0bec5"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 14461,
+    "tenYearNetValue": 144610,
+    "totalAnnualCharges": 3539,
+    "totalAnnualBenefits": 18000,
+    "roiPercent": 508
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Shopping",
+    "Lifestyle"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.ucobank.com/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 274 0123",
+  "applyUrl": "https://www.ucobank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "uco-sbi-prime-credit-card"
+}

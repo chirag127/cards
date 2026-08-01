@@ -1,0 +1,135 @@
+{
+  "id": "yes-rupay-debit-card",
+  "name": "Yes Bank RuPay Debit Card",
+  "tagline": "Zero-fee domestic debit card",
+  "description": "The Yes Bank RuPay Debit Card is a zero-fee debit card on the RuPay network. Ideal for domestic transactions including UPI-linked payments, with no annual charges.",
+  "bank": "Yes Bank",
+  "bankCode": "yes",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Classic",
+  "variant": "RuPay Classic",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Salary"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Yes Bank account holders"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 25,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Zero annual fee",
+    "Contactless payments",
+    "EMV chip security",
+    "UPI compatible",
+    "Domestic acceptance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#ff6600",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 999
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Zero Fee",
+    "UPI Payments"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.yesbank.in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1200",
+  "applyUrl": "https://www.yesbank.in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "yes-rupay-debit-card"
+}

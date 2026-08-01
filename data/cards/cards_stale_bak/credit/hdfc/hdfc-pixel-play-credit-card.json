@@ -1,0 +1,279 @@
+{
+  "id": "hdfc-pixel-play-credit-card",
+  "name": "HDFC Bank Pixel Play Credit Card",
+  "tagline": "Lifetime free card with 5% cashback on your chosen categories",
+  "description": "The HDFC Pixel Play Credit Card is a lifetime free (LTF) credit card offering 5% cashback on two user-chosen spending categories, 5% via SmartBuy, 3% on Amazon, Flipkart, and PayZapp, and 1% on all other spends. With zero annual fee, it provides maximum flexibility for customising cashback rewards.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Pixel Play",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and pink gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 25000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹25,000",
+      "Self-Employed: ITR > ₹3 Lakh p.a.",
+      "Available via HDFC PayZapp / Pixel app"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Lifetime Free"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "limits": {
+    "atmPerDay": 30000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Chosen Category Cashback",
+      "description": "5% cashback on 2 user-selected spending categories (e.g., dining, groceries, travel, shopping)",
+      "valueStr": "5% on 2 categories",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Choose 2 categories from available options",
+        "Categories can be changed quarterly"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true
+    },
+    {
+      "category": "cashback",
+      "title": "SmartBuy Cashback",
+      "description": "5% cashback on purchases made via HDFC SmartBuy portal",
+      "valueStr": "5% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on HDFC SmartBuy portal only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "E-commerce & PayZapp Cashback",
+      "description": "3% cashback on Amazon, Flipkart, and PayZapp transactions",
+      "valueStr": "3% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Amazon, Flipkart, and PayZapp"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "All Other Spends",
+      "description": "1% cashback on all other retail purchases",
+      "valueStr": "1% cashback",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC Pixel Play Cashback",
+    "earnRate": "5% chosen categories, 5% SmartBuy, 3% Amazon/Flipkart/PayZapp, 1% other",
+    "pointsPer100": 0,
+    "pointValue": 1,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Cashback credited as statement credit",
+    "bonusCategories": [
+      {
+        "category": "Chosen Categories",
+        "multiplier": 5,
+        "description": "5% on 2 user-selected categories"
+      },
+      {
+        "category": "SmartBuy",
+        "multiplier": 5,
+        "description": "5% via SmartBuy portal"
+      },
+      {
+        "category": "Amazon/Flipkart/PayZapp",
+        "multiplier": 3,
+        "description": "3% on Amazon, Flipkart, PayZapp"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit (automatic)"
+    ],
+    "minRedemptionPoints": 0,
+    "rewardRateStr": "1% to 5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus — card is lifetime free",
+    "valueStr": "Nil (LTF)",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Lifetime free — zero annual fee",
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Customisable cashback categories",
+    "HDFC Pixel app integration",
+    "SmartBuy portal access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#7c3aed",
+    "#ec4899"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8000,
+    "tenYearNetValue": 80000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": null
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Cashback",
+    "Online Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "cashback",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "chosenCategories"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card",
+      "https://www.paisabazaar.com/credit-card/hdfc-pixel-play-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-pixel-play-credit-card"
+}

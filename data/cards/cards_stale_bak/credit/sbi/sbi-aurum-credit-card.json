@@ -1,0 +1,391 @@
+{
+  "id": "sbi-aurum-credit-card",
+  "name": "SBI AURUM Credit Card",
+  "tagline": "Super-premium lifestyle card with 4 RP per ₹100 and unlimited lounge access",
+  "description": "The SBI AURUM is a super-premium credit card offering 4 reward points per ₹100 across all spends, unlimited domestic and international airport lounge access, dedicated concierge services, golf privileges, and comprehensive insurance coverage. Designed for high-net-worth individuals who demand the finest in lifestyle and travel benefits.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Premium",
+  "variant": "AURUM",
+  "usage": "International",
+  "bin": "5433",
+  "material": "Metal",
+  "colorScheme": "Black with rose gold accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 150000,
+    "minAge": 25,
+    "maxAge": 65,
+    "minAnnualIncome": 1800000,
+    "minCreditScore": 780,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹1,50,000",
+      "Self-Employed: Minimum ITR of ₹18 Lakh p.a.",
+      "Age 25–65 years",
+      "Excellent credit history required",
+      "Subject to internal assessment"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 9999,
+      "amountWithGst": 11799,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 9999,
+      "amountWithGst": 11799,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.25,
+    "annualInterestRate": 39
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 100000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 200000,
+    "purchaseProtectionDays": 180,
+    "lostCardLiability": 2000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 10000000,
+    "airAccidentCover": 10000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹1 Crore",
+      "Travel insurance: ₹1 Crore",
+      "Purchase protection: ₹2 Lakh for 180 days",
+      "Lost card liability: ₹20 Lakh",
+      "Baggage delay/loss: ₹50,000"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": -1,
+      "frequency": "Unlimited via Priority Pass",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 3500
+    },
+    "programs": [
+      "Priority Pass",
+      "Dreamfolks",
+      "Mastercard Lounge"
+    ],
+    "conditions": [
+      "Domestic: Unlimited complimentary visits",
+      "International: Unlimited via Priority Pass",
+      "Guest access available at nominal charge"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "4 Reward Points per ₹100 on All Spends",
+      "description": "Earn 4 reward points per ₹100 across all categories without restrictions",
+      "valueStr": "4 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "No category exclusions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits",
+      "valueStr": "Unlimited visits",
+      "valueNum": 2500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 50,
+      "annualValue": 125000,
+      "conditions": [
+        "Unlimited access at domestic airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited International Lounge Access",
+      "description": "Unlimited complimentary international airport lounge visits via Priority Pass",
+      "valueStr": "Unlimited visits",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited via Priority Pass",
+      "frequencyPerYear": 30,
+      "annualValue": 105000,
+      "conditions": [
+        "Unlimited access via Priority Pass membership"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Dedicated Concierge Services",
+      "description": "24/7 dedicated concierge for travel bookings, restaurant reservations, and event tickets",
+      "valueStr": "24/7 concierge",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available via phone and email"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at premium golf courses across India",
+      "valueStr": "Up to 12 rounds/year",
+      "valueNum": 5000,
+      "frequencyStr": "Monthly",
+      "frequencyPerYear": 12,
+      "annualValue": 60000,
+      "conditions": [
+        "Select premium golf courses",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Reward Points",
+    "earnRate": "4 RP per ₹100 on all spends",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers (1 RP = ₹0.25)",
+      "Flights & Hotels (1 RP = ₹0.25)",
+      "Cashback (1 RP = ₹0.25)",
+      "Statement Credit",
+      "Charity"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1% flat",
+    "conditions": [
+      "Excluded: rent, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome gift worth ₹9,999 including luxury brand vouchers and travel credits",
+    "valueStr": "₹9,999 welcome gift",
+    "valueNum": 9999,
+    "conditions": [
+      "Available on payment of joining fee",
+      "Choice of luxury brand vouchers"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "25,000 bonus reward points on spending ₹10 Lakh annually",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "25,000 Reward Points",
+      "rewardNum": 6250
+    },
+    {
+      "description": "Additional 25,000 bonus reward points on spending ₹20 Lakh annually",
+      "spendRequired": 2000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "25,000 Reward Points",
+      "rewardNum": 6250
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹15 Lakh in the preceding year",
+      "annualSpendRequired": 1500000,
+      "waives": "Annual fee of ₹9,999 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Unlimited lounge access",
+    "Dedicated concierge",
+    "Golf privileges",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Exclusive dining and lifestyle offers"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d0d0d",
+    "#b76e79"
+  ],
+  "value": {
+    "highestValue": 300000,
+    "averageValue": 200000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 188201,
+    "tenYearNetValue": 1882010,
+    "totalAnnualCharges": 11799,
+    "totalAnnualBenefits": 200000,
+    "roiPercent": 1596
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24,
+      36
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 0.5
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Luxury",
+    "Lifestyle"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/premium/sbi-card-aurum.page"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/premium/sbi-card-aurum.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-aurum-credit-card"
+}

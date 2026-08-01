@@ -1,0 +1,187 @@
+{
+  "id": "axis-easyshop-platinum-debit-card",
+  "name": "Axis Bank EasyShop Platinum Debit Card",
+  "tagline": "No annual fee Platinum debit card with everyday benefits",
+  "description": "The Axis Bank EasyShop Platinum Debit Card is a no-annual-fee Visa Platinum debit card offering competitive transaction limits, reward points on purchases, and essential banking features. Ideal for customers who want a premium-tier card without the annual charge, it provides reliable domestic and international acceptance with contactless payment support.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "EasyShop Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Silver and blue gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Axis Bank savings and current account holders",
+      "No annual fee charged"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Reward Points on Purchases",
+      "description": "Earn 1 Reward Point per ₹200 spent on all purchases",
+      "valueStr": "1 RP per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "Valid on POS and e-commerce transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Lost Card Liability",
+      "description": "Protection against unauthorized transactions after reporting loss",
+      "valueStr": "₹5 Lakh",
+      "valueNum": 500000,
+      "frequencyStr": "Per incident",
+      "frequencyPerYear": 1,
+      "annualValue": 500000,
+      "conditions": [
+        "Report loss within 24 hours"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis Bank Edge Reward Points",
+    "earnRate": "1 RP per ₹200",
+    "pointsPer100": 0.5,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.125,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Cashback"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.125%"
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Zero annual fee",
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Reward points on spends",
+    "Lost card liability protection"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#c0c0c0",
+    "#1e3a8a"
+  ],
+  "value": {
+    "highestValue": 5000,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2500,
+    "tenYearNetValue": 25000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 999
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Daily Use",
+    "Zero Fee",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/retail/cards/debit-card/easyshop-platinum-debit-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/retail/cards/debit-card/easyshop-platinum-debit-card",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "axis-easyshop-platinum-debit-card"
+}

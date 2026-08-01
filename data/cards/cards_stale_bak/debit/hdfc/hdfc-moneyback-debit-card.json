@@ -1,0 +1,164 @@
+{
+  "id": "hdfc-moneyback-debit-card",
+  "name": "HDFC MoneyBack Debit Card",
+  "tagline": "Cashback-focused debit card for everyday spending",
+  "description": "The HDFC MoneyBack Debit Card is designed for customers who want cashback on their daily transactions. Earn cashback on online and offline spends, with 2 free ATM withdrawals per month at other banks. Ideal for budget-conscious users who want to maximize returns on regular spending.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Classic",
+  "variant": "MoneyBack",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and green gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to HDFC Bank savings account holders",
+      "No minimum balance requirement for basic variant"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 300,
+      "amountWithGst": 354
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 2,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 15,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 20000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Cashback on Spends",
+      "description": "Earn 1% cashback on all online and offline spends",
+      "valueStr": "1% cashback",
+      "valueNum": 1,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 2000,
+      "conditions": [
+        "Maximum cashback of ₹500 per month",
+        "Excludes fuel, wallet loads, and rent payments"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹50,000 per year",
+      "annualSpendRequired": 50000,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Cashback on spends",
+    "2 free ATM withdrawals/month at other banks",
+    "Contactless payments",
+    "UPI enabled",
+    "Domestic usage"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "gradientColors": [
+    "#2563eb",
+    "#10b981"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 4000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3646,
+    "tenYearNetValue": 36460,
+    "totalAnnualCharges": 354,
+    "totalAnnualBenefits": 4000,
+    "roiPercent": 1130
+  },
+  "category": "cashback",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use",
+    "Cashback seekers",
+    "Budget-conscious users"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/debit-cards/moneyback-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 10000,
+  "customerCareNumber": "1860 266 0333",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/debit-cards",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "hdfc-moneyback-debit-card"
+}

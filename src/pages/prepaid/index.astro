@@ -1,0 +1,64 @@
+---
+/*
+ * Prepaid-cards category listing — static ledger.
+ */
+import CardLedgerList from '~/components/CardLedgerList.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { COUNT_BY_TYPE, getRowsByType, inr } from '~/lib/cards'
+import { SITE_CONFIG } from '~/lib/siteConfig'
+
+const rows = getRowsByType('prepaid')
+const ltf = rows.filter((r) => r.annualFee === 0).length
+const title = 'Prepaid & forex cards in India — load, reload & fees · oriz · cards'
+const description = `All ${COUNT_BY_TYPE.prepaid} prepaid, gift and forex cards issued in India — issuance, reload and validity terms on one screen.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Prepaid cards',
+  url: `${SITE_CONFIG.origin}/prepaid/`,
+  description,
+  isPartOf: { '@type': 'WebSite', name: 'oriz · cards', url: SITE_CONFIG.origin },
+}
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <section class="cat spine">
+    <p class="cat-eyebrow mono"><a href="/">cards</a> / prepaid</p>
+    <h1 class="cat-h1">Prepaid & forex cards</h1>
+    <p class="cat-tag">{description}</p>
+    <dl class="cat-stats">
+      <div><dt class="mono">TOTAL</dt><dd class="num">{inr(COUNT_BY_TYPE.prepaid, { keepZero: true })}</dd></div>
+      <div><dt class="mono">LIFETIME FREE</dt><dd class="num">{inr(ltf, { keepZero: true })}</dd></div>
+    </dl>
+    <nav class="cat-nav mono">
+      <a href="/credit/">credit</a>
+      <a href="/debit/">debit</a>
+      <a href="/prepaid/" aria-current="page">prepaid</a>
+      <a href="/rupay/">rupay</a>
+    </nav>
+  </section>
+  <section class="cat-list spine">
+    <CardLedgerList rows={rows} />
+  </section>
+</BaseLayout>
+
+<style>
+  .cat { padding-block: 2rem 1.5rem; border-bottom: 1px solid var(--rule); }
+  .cat-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-mute); margin: 0 0 1rem; }
+  .cat-eyebrow a { color: var(--ink-mute); }
+  .cat-eyebrow a:hover { color: var(--accent); }
+  .cat-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.75rem, 3.4vw, 2.5rem); margin: 0; color: var(--ink); }
+  .cat-tag { margin: 0.5rem 0 1.25rem; color: var(--ink-mute); font-size: 0.9375rem; line-height: 1.55; max-width: 64ch; }
+  .cat-stats { display: flex; gap: 0; margin: 0 0 1.25rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.75rem 0; }
+  .cat-stats > div { padding-inline: 1rem; border-right: 1px solid var(--rule); }
+  .cat-stats > div:first-child { padding-left: 0; }
+  .cat-stats > div:last-child { border-right: 0; }
+  .cat-stats dt { font-size: 10px; letter-spacing: 0.14em; color: var(--ink-mute); text-transform: uppercase; margin: 0 0 0.25rem; }
+  .cat-stats dd { margin: 0; font-family: var(--font-mono); font-size: 20px; font-weight: 500; color: var(--ink); }
+  .cat-nav { display: flex; gap: 1.25rem; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .cat-nav a { color: var(--ink-mute); text-decoration: none; padding-bottom: 2px; }
+  .cat-nav a:hover { color: var(--accent); }
+  .cat-nav a[aria-current='page'] { color: var(--accent); border-bottom: 2px solid var(--accent); }
+  .cat-list { padding-block: 1.5rem 4rem; }
+</style>

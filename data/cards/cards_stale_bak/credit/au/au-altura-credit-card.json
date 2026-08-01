@@ -1,0 +1,316 @@
+{
+  "id": "au-altura-credit-card",
+  "name": "AU Altura Credit Card",
+  "tagline": "Premium Visa Signature with 4X rewards and 8 lounge visits",
+  "description": "The AU Altura Credit Card is a premium Visa Signature card offering 4 reward points per ₹100 spent. With 8 complimentary domestic lounge visits per year, comprehensive insurance, and a host of lifestyle benefits, it provides excellent value for frequent travelers and professionals.",
+  "bank": "AU Small Finance Bank",
+  "bankCode": "au",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Altura",
+  "usage": "International",
+  "bin": "",
+  "material": "Hybrid",
+  "colorScheme": "Dark blue and silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 75000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 900000,
+    "minCreditScore": 730,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹75,000",
+      "Self-Employed: ITR > ₹9 Lakh p.a.",
+      "Age 21–65 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Plus GST, waived on ₹5L annual spend"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.25,
+    "annualInterestRate": 39
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 750000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 100000,
+    "purchaseProtectionDays": 60,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 2000000,
+    "airAccidentCover": 5000000,
+    "baggageCover": 50000,
+    "conditions": [
+      "Air accident cover: ₹50 Lakh",
+      "Travel insurance: ₹20 Lakh",
+      "Lost card liability: ₹5 Lakh"
+    ],
+    "provider": "AU Small Finance Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "8 complimentary domestic lounge visits per year (2 per quarter)"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 16000,
+      "conditions": [
+        "2 visits per quarter at domestic lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "4 Reward Points per ₹100",
+      "description": "Earn 4 reward points on every ₹100 spent",
+      "valueStr": "4 RP/₹100",
+      "valueNum": 1,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excluded: fuel, rent, wallet loads"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "AU Reward Points",
+    "earnRate": "4 RP per ₹100 on all spends",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "Valid for 3 years",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers via AU Rewards Portal",
+      "Flights & Hotels",
+      "Cashback (1 RP = ₹0.25)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1.00%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on first transaction",
+    "valueStr": "3,000 RP",
+    "valueNum": 750,
+    "conditions": [
+      "Activate card and make first transaction within 30 days"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Annual fee waiver on spending ₹5 Lakh in a year",
+      "spendRequired": 500000,
+      "spendPeriod": "Annual",
+      "rewardStr": "Annual fee waiver",
+      "rewardNum": 3539
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹5 Lakh in a membership year",
+      "annualSpendRequired": 500000,
+      "waives": "Annual Fee"
+    }
+  ],
+  "features": [
+    "Visa Signature privileges",
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Insurance coverage"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#0d47a1",
+    "#c0c0c0"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 35000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 31461,
+    "tenYearNetValue": 314610,
+    "totalAnnualCharges": 3539,
+    "totalAnnualBenefits": 35000,
+    "roiPercent": 990
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.3,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Lounge Access"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess"
+    ],
+    "unverifiedFields": [
+      "insurance"
+    ],
+    "sourceUrls": [
+      "https://www.aubank.in/credit-cards/altura-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1200 1500",
+  "applyUrl": "https://www.aubank.in/credit-cards/altura-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "au-altura-credit-card"
+}

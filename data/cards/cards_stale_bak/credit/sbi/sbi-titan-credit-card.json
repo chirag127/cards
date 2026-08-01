@@ -1,0 +1,338 @@
+{
+  "id": "sbi-titan-credit-card",
+  "name": "Titan SBI Credit Card",
+  "tagline": "Earn 7.5% rewards on Titan brands with 6 RP per ₹100 on all spends",
+  "description": "The Titan SBI Credit Card is a co-branded lifestyle card offering 6 reward points per ₹100 on all spends with an enhanced 7.5% reward rate on Titan brand purchases including Tanishq, Titan, Fastrack, Mia, and CaratLane. Designed for jewelry and lifestyle enthusiasts who prefer the Titan ecosystem.",
+  "bank": "SBI Card",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Titan",
+  "usage": "Domestic",
+  "bin": "4595",
+  "material": "Plastic",
+  "colorScheme": "Rose gold and white with Titan branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 40000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 480000,
+    "minCreditScore": 730,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹40,000",
+      "Self-Employed: Minimum ITR of ₹4.8 Lakh p.a.",
+      "Age 21–60 years"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2999,
+      "amountWithGst": 3539,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 400000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1000000,
+    "permanentDisabilityCover": 1000000,
+    "purchaseProtectionCover": 50000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Air accident cover: ₹10 Lakh",
+      "Purchase protection: ₹50,000 for 90 days",
+      "Lost card liability: ₹5 Lakh"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 4,
+      "frequency": "1 per quarter",
+      "frequencyPerYear": 4,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "N/A",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 1 complimentary visit per quarter"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "6 Reward Points per ₹100 on All Spends",
+      "description": "Earn 6 reward points per ₹100 across all categories",
+      "valueStr": "6 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "7.5% Rewards on Titan Brands",
+      "description": "Earn enhanced 7.5% rewards on Tanishq, Titan, Fastrack, Mia, and CaratLane",
+      "valueStr": "7.5% rewards",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at Tanishq, Titan, Fastrack, Mia, CaratLane stores and online"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "4 complimentary domestic airport lounge visits per year (1 per quarter)",
+      "valueStr": "4 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "1 per quarter",
+      "frequencyPerYear": 4,
+      "annualValue": 10000,
+      "conditions": [
+        "1 complimentary visit per quarter at domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Reward Points",
+    "earnRate": "6 RP per ₹100 (7.5% on Titan brands)",
+    "pointsPer100": 6,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Titan Brands",
+        "multiplier": 1.25,
+        "description": "7.5% rewards on Tanishq, Titan, Fastrack, Mia, CaratLane"
+      }
+    ],
+    "redemptionOptions": [
+      "Titan brand vouchers",
+      "Products & Vouchers (1 RP = ₹0.25)",
+      "Cashback (1 RP = ₹0.20)",
+      "Statement Credit"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1.5% to 7.5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Titan brand voucher worth ₹2,999 on payment of joining fee",
+    "valueStr": "₹2,999 Titan voucher",
+    "valueNum": 2999,
+    "conditions": [
+      "Available on payment of joining fee",
+      "Valid at Titan brand stores"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "3,000 bonus reward points on spending ₹3 Lakh annually",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "3,000 Reward Points",
+      "rewardNum": 750
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹4 Lakh in the preceding year",
+      "annualSpendRequired": 400000,
+      "waives": "Annual fee of ₹2,999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Titan brand rewards",
+    "Domestic lounge access"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#c9a84c",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 18000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 14461,
+    "tenYearNetValue": 144610,
+    "totalAnnualCharges": 3539,
+    "totalAnnualBenefits": 18000,
+    "roiPercent": 409
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Jewelry",
+    "Titan",
+    "Tanishq",
+    "Shopping"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/shopping/titan-sbi-credit-card.page"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/shopping/titan-sbi-credit-card.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-titan-credit-card"
+}

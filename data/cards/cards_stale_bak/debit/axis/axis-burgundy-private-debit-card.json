@@ -1,0 +1,159 @@
+{
+  "id": "axis-burgundy-private-debit-card",
+  "name": "Axis Bank Burgundy Private Debit Card",
+  "tagline": "Exclusive privileges for Axis Bank's most discerning clients",
+  "description": "The Axis Bank Burgundy Private Debit Card is the flagship debit offering for the bank's elite private banking clientele. Crafted from premium metal, it unlocks unlimited domestic airport lounge access, 12 international lounge visits annually, exclusive golf privileges, spa access, complimentary health checkups, and a dedicated concierge. Designed for those who expect nothing but the best.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "WorldElite",
+  "variant": "Burgundy Private",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Deep burgundy with silver accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": true,
+    "notes": [
+      "Available to Burgundy Private customers only",
+      "Minimum AUM of ₹30 lakhs required",
+      "By invitation from the bank"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2500,
+      "amountWithGst": 2950
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 1000000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on card issuance",
+    "valueStr": "10,000 Reward Points",
+    "valueNum": 10000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Available only to new Burgundy Private clients"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹30 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "12 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance",
+    "Priority banking"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0f0c29",
+    "#302b63"
+  ],
+  "value": {
+    "highestValue": 95000,
+    "averageValue": 65000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 62050,
+    "tenYearNetValue": 620500,
+    "totalAnnualCharges": 2950,
+    "totalAnnualBenefits": 65000,
+    "roiPercent": 2203
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Private banking clients",
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "Health-conscious individuals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "network",
+      "tier"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.axisbank.com/retail/cards/debit-card/burgundy-private-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 3000000,
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/retail/cards/debit-card",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "axis-burgundy-private-debit-card"
+}

@@ -1,0 +1,277 @@
+{
+  "id": "amex-payback-credit-card",
+  "name": "American Express PAYBACK Credit Card",
+  "tagline": "Earn extra PAYBACK points on partner brands",
+  "description": "The American Express PAYBACK Credit Card is an entry-level card that earns 3X PAYBACK points at partner brands and 1X on all other spends. With a low annual fee of just ₹495, it's an affordable way to enter the American Express ecosystem while earning rewards through the extensive PAYBACK partner network.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "credit",
+  "tier": "Classic",
+  "variant": "PAYBACK",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white with PAYBACK branding",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 20000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 250000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹20,000",
+      "Self-Employed: ITR > ₹2.5 Lakh p.a.",
+      "Subject to credit assessment and internal policies"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 495,
+      "amountWithGst": 584.1,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 495,
+      "amountWithGst": 584.1,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 3.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 200,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 20000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "3X PAYBACK Points at Partner Brands",
+      "description": "Earn 3X PAYBACK points when shopping at PAYBACK partner brands including Big Bazaar, HP, ICICI, and more",
+      "valueStr": "3X PAYBACK points",
+      "valueNum": 0,
+      "frequencyStr": "Every partner brand transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At listed PAYBACK partner brands only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1X PAYBACK Points on Other Spends",
+      "description": "Earn 1 PAYBACK point per ₹100 on all other retail purchases",
+      "valueStr": "1 PAYBACK pt per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes cash advances and quasi-cash"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on fuel transactions",
+      "valueStr": "1% waiver",
+      "valueNum": 200,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 2400,
+      "conditions": [
+        "Valid on transactions ₹500–₹5,000",
+        "Max ₹200 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "PAYBACK Rewards",
+    "earnRate": "3X at partner brands, 1 PAYBACK pt per ₹100 other",
+    "pointsPer100": 1,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.25,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "PAYBACK Partners",
+        "multiplier": 3,
+        "description": "3X PAYBACK points at partner brands"
+      },
+      {
+        "category": "Others",
+        "multiplier": 1,
+        "description": "1 PAYBACK point per ₹100 on other spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Redeem for products from PAYBACK catalogue",
+      "Gift cards and vouchers",
+      "Mobile recharge and bill payments",
+      "Transfer to airline partners"
+    ],
+    "minRedemptionPoints": 200,
+    "rewardRateStr": "0.25% to 0.75%",
+    "conditions": [
+      "Excluded: cash advances, quasi-cash"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "1,000 PAYBACK points on first transaction within 30 days",
+    "valueStr": "1,000 PAYBACK Points",
+    "valueNum": 250,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹30,000 in the preceding year",
+      "annualSpendRequired": 30000,
+      "waives": "Annual fee of ₹495"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic usage",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "PAYBACK partner network integration",
+    "Low annual fee",
+    "Amex mobile app and online management"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": false,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#003b70",
+    "#5fa8d3"
+  ],
+  "value": {
+    "highestValue": 6000,
+    "averageValue": 3000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2416,
+    "tenYearNetValue": 24160,
+    "totalAnnualCharges": 584,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 514
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": false,
+  "bestFor": [
+    "Rewards",
+    "Partner Brands",
+    "Entry Level"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in/credit-cards/payback-credit-card/",
+      "https://www.paisabazaar.com/credit-card/american-express-payback-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1030",
+  "applyUrl": "https://www.americanexpress.com/in/credit-cards/payback-credit-card/",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "amex-payback-credit-card"
+}

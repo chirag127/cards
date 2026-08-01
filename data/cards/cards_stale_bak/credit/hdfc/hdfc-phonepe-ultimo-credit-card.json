@@ -1,0 +1,290 @@
+{
+  "id": "hdfc-phonepe-ultimo-credit-card",
+  "name": "PhonePe HDFC Ultimo Credit Card",
+  "tagline": "Premium UPI credit card with up to 10X rewards on PhonePe",
+  "description": "The PhonePe HDFC Ultimo Credit Card is a premium RuPay credit card designed for UPI-linked payments. It offers 10 Reward Points per ₹100 on PhonePe transactions, 5 RP per ₹100 on Amazon, Flipkart, and Myntra, and 1 RP per ₹100 on UPI transactions. Ideal for users who prefer UPI-based credit card payments.",
+  "bank": "HDFC Bank",
+  "bankCode": "hdfc",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "PhonePe Ultimo",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Purple and yellow gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 35000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 420000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹35,000",
+      "Self-Employed: ITR > ₹4.2 Lakh p.a."
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.75,
+    "annualInterestRate": 45
+  },
+  "limits": {
+    "atmPerDay": 30000,
+    "posEcomPerDay": 250000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "utility",
+      "title": "PhonePe Reward Points",
+      "description": "10 Reward Points per ₹100 on PhonePe transactions including bill payments, recharges, and merchant payments",
+      "valueStr": "10 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on PhonePe app transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "E-commerce Rewards",
+      "description": "5 Reward Points per ₹100 on Amazon, Flipkart, and Myntra",
+      "valueStr": "5 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Amazon, Flipkart, and Myntra"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "UPI Rewards",
+      "description": "1 Reward Point per ₹100 on all UPI transactions",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "RuPay UPI linked transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "Bill Payment Benefits",
+      "description": "Exclusive cashback offers on utility bill payments via PhonePe",
+      "valueStr": "Exclusive offers",
+      "valueNum": 0,
+      "frequencyStr": "Periodic",
+      "frequencyPerYear": 12,
+      "annualValue": 1200,
+      "conditions": [
+        "PhonePe bill payments only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "HDFC Reward Points",
+    "earnRate": "10 RP/₹100 PhonePe, 5 RP/₹100 e-commerce, 1 RP/₹100 UPI",
+    "pointsPer100": 10,
+    "pointValue": 0.35,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "PhonePe",
+        "multiplier": 10,
+        "description": "10 RP per ₹100 on PhonePe"
+      },
+      {
+        "category": "E-commerce",
+        "multiplier": 5,
+        "description": "5 RP per ₹100 on Amazon/Flipkart/Myntra"
+      }
+    ],
+    "redemptionOptions": [
+      "Flights & Hotels via SmartBuy (1 RP = ₹0.50)",
+      "Products & Vouchers (1 RP = up to ₹0.35)",
+      "Cashback (1 RP = ₹0.20)"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.35% to 3.5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "500 Reward Points on first PhonePe transaction within 30 days",
+    "valueStr": "500 Reward Points",
+    "valueNum": 175,
+    "conditions": [
+      "Complete first PhonePe transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "1,000 bonus reward points on spending ₹1.5 Lakh annually",
+      "spendRequired": 150000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 Reward Points",
+      "rewardNum": 350
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹1.5 Lakh in the preceding year",
+      "annualSpendRequired": 150000,
+      "waives": "Annual fee of ₹999 + GST"
+    }
+  ],
+  "features": [
+    "RuPay UPI linked credit card",
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "PhonePe app integration",
+    "Instant UPI credit activation"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#7c3aed",
+    "#facc15"
+  ],
+  "value": {
+    "highestValue": 18000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8821,
+    "tenYearNetValue": 88210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 10000,
+    "roiPercent": 748
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "co-branded",
+  "internationalUsable": false,
+  "bestFor": [
+    "Utility Payments",
+    "UPI"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.hdfcbank.com/personal/pay/cards/credit-cards/phonepe-ultimo-credit-card",
+      "https://www.paisabazaar.com/credit-card/phonepe-ultimo-hdfc-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 266 4332",
+  "applyUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/phonepe-ultimo-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "hdfc-phonepe-ultimo-credit-card"
+}

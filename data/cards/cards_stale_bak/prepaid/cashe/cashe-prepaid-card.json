@@ -1,0 +1,177 @@
+{
+  "id": "cashe-prepaid-card",
+  "name": "CASHe Prepaid Card",
+  "tagline": "Salary-linked prepaid card with instant credit access",
+  "description": "The CASHe Prepaid Card is a Visa Classic prepaid card designed for salaried professionals. It leverages your salary account and social underwriting to offer instant personal loans as prepaid credit. With flexible EMI options and competitive rates, it bridges the gap between traditional credit and modern digital lending.",
+  "bank": "CASHe",
+  "bankCode": "cashe",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Teal and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minAge": 23,
+    "maxAge": 55,
+    "minAnnualIncome": 250000,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried professionals only",
+      "Minimum annual income of Rs 2.5 Lakh",
+      "Social underwriting score considered",
+      "Partnered with IndusInd Bank"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Social Underwriting Score",
+      "description": "CASHe's proprietary SLS score evaluates digital behavior for faster loan approval without traditional credit history",
+      "valueStr": "SLS-based",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Based on digital footprint and KYC"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Timely Repayment Rewards",
+      "description": "Improve your SLS score and access higher loan limits with on-time repayments",
+      "valueStr": "Score-based",
+      "valueNum": 0,
+      "frequencyStr": "Per repayment",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Linked to repayment behavior"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Social underwriting (SLS score)",
+    "Salary-linked credit",
+    "Flexible EMI options",
+    "Instant loan disbursal",
+    "Real-time transaction alerts",
+    "Card freeze/unfreeze",
+    "Contactless payments"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#00796b",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Salaried Professionals",
+    "Social Underwriting",
+    "Quick Personal Loans"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.cashe.co.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.cashe.co.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "cashe-prepaid-card"
+}

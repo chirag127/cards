@@ -1,0 +1,313 @@
+{
+  "id": "axis-indianoil-rupay-credit-card",
+  "name": "IndianOil Axis Bank RuPay Credit Card",
+  "tagline": "Maximise fuel savings with 20 reward points per ₹100 at IndianOil",
+  "description": "The IndianOil Axis Bank RuPay Credit Card is a co-branded fuel credit card offering 20 EDGE Reward points per ₹100 spent at IndianOil outlets, 5 RP per ₹100 on online spends, and 1 RP per ₹100 on all other transactions. With a low annual fee of ₹500+GST and RuPay UPI compatibility, it is the ideal card for fuel-focused savings.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "IndianOil RuPay",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue, orange, and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 15000,
+    "minAge": 18,
+    "maxAge": 65,
+    "minAnnualIncome": 180000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹15,000",
+      "Self-Employed: ITR > ₹1.8 Lakh p.a.",
+      "Age 18–65 years",
+      "RuPay card supports UPI payments"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 750,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 200,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": [
+      "IndianOil"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 100000
+  },
+  "insurance": {
+    "accidentalDeathCover": 0,
+    "permanentDisabilityCover": 0,
+    "lostCardLiability": 100000,
+    "lostCardLiabilityWindow": 24,
+    "conditions": [
+      "Lost card liability: ₹1 Lakh",
+      "Report loss within 24 hours for coverage"
+    ],
+    "provider": "Axis Bank"
+  },
+  "coBrandDetails": {
+    "partnerName": "IndianOil",
+    "partnerCategory": "Fuel",
+    "specialPerks": [
+      "20 RP per ₹100 at IndianOil outlets",
+      "Fuel surcharge waiver at IndianOil pumps"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "20 RP per ₹100 at IndianOil",
+      "description": "Earn 20 EDGE Reward points per ₹100 spent at IndianOil fuel stations",
+      "valueStr": "20 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at IndianOil outlets only",
+        "Maximum ₹5,000 per transaction"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "5 RP per ₹100 on Online Spends",
+      "description": "Earn 5 EDGE Reward points per ₹100 on all online transactions",
+      "valueStr": "5 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on online transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "1 RP per ₹100 on Other Spends",
+      "description": "Earn 1 EDGE Reward point per ₹100 on all other retail transactions",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to all non-fuel, non-online spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver at IndianOil pumps",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid at IndianOil pumps",
+        "Transactions ₹200–₹5,000",
+        "Max ₹250 per cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis EDGE Reward Points",
+    "earnRate": "1–20 RP per ₹100",
+    "pointsPer100": 1,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.2,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "IndianOil",
+        "multiplier": 20,
+        "description": "20 RP per ₹100"
+      },
+      {
+        "category": "Online",
+        "multiplier": 5,
+        "description": "5 RP per ₹100"
+      },
+      {
+        "category": "Other",
+        "multiplier": 1,
+        "description": "1 RP per ₹100"
+      }
+    ],
+    "redemptionOptions": [
+      "Fuel at IndianOil outlets",
+      "Products & Gift Vouchers via Edge Rewards portal",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 100,
+    "rewardRateStr": "0.2% to 4%",
+    "conditions": [
+      "Excluded: fuel (base rate), EMI, wallet loads"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "RuPay UPI compatible",
+    "Contactless payments",
+    "EMV chip security",
+    "Domestic acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "IndianOil co-branded fuel rewards",
+    "Low annual fee"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "gradientColors": [
+    "#0056A2",
+    "#FF6B00"
+  ],
+  "value": {
+    "highestValue": 10000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 4410,
+    "tenYearNetValue": 44100,
+    "totalAnnualCharges": 590,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 747
+  },
+  "category": "fuel",
+  "internationalUsable": false,
+  "bestFor": [
+    "Fuel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "eligibility"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/indianoil-axis-bank-rupay-credit-card",
+      "https://www.paisabazaar.com/credit-card/indianoil-axis-bank-rupay-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/indianoil-axis-bank-rupay-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-indianoil-rupay-credit-card"
+}

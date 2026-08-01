@@ -1,0 +1,330 @@
+{
+  "id": "idbi-visa-signature-credit-card",
+  "name": "IDBI Bank Visa Signature Credit Card",
+  "tagline": "A premium credit card with enhanced rewards and lifestyle benefits",
+  "description": "The IDBI Bank Visa Signature Credit Card is a premium-tier card designed for discerning customers who value enhanced rewards, travel benefits, and lifestyle perks. It offers accelerated reward points on dining, travel, and entertainment, along with complimentary airport lounge access and comprehensive insurance coverage.",
+  "bank": "IDBI Bank",
+  "bankCode": "idbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Signature",
+  "variant": "Visa Signature",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Royal blue with silver accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 600000,
+    "minCreditScore": 700,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of ₹6 Lakh+",
+      "Self-Employed: ITR of ₹6 Lakh+",
+      "Age 21–60 years",
+      "Minimum credit score of 700 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 2000,
+      "amountWithGst": 2360,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2000,
+      "amountWithGst": 2360,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1000,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 150,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 6,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic lounge access only for primary cardholder"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Complimentary Domestic Lounge Access",
+      "description": "6 complimentary domestic airport lounge visits per quarter",
+      "valueStr": "6 per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 24,
+      "annualValue": 36000,
+      "conditions": [
+        "Primary cardholder only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Accelerated Reward Points",
+      "description": "Earn 4 reward points per ₹100 on dining, travel, and entertainment",
+      "valueStr": "4 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "2 RP per ₹100 on all other spends"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Air Accident Cover",
+      "description": "Comprehensive air accident insurance coverage",
+      "valueStr": "₹50 Lakh",
+      "valueNum": 5000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 5000000,
+      "conditions": [
+        "Valid when ticket booked using card"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 150,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1800,
+      "conditions": [
+        "Max ₹150 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDBI Reward Points",
+    "earnRate": "4 RP per ₹100 on dining, travel, entertainment",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 1,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 4,
+        "description": "4 RP per ₹100 on dining"
+      },
+      {
+        "category": "Travel",
+        "multiplier": 4,
+        "description": "4 RP per ₹100 on travel"
+      },
+      {
+        "category": "Entertainment",
+        "multiplier": 4,
+        "description": "4 RP per ₹100 on entertainment"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue",
+      "Air miles conversion"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "1%–4%",
+    "conditions": [
+      "Points expire after 2 years"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "2,000 bonus reward points on card activation within 30 days",
+    "valueStr": "2,000 RP",
+    "valueNum": 2000,
+    "conditions": [
+      "Spend ₹10,000 within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 3,000 bonus points on annual spend of ₹3 Lakh",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "3,000 bonus points",
+      "rewardNum": 3000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of ₹4 Lakh",
+      "annualSpendRequired": 400000,
+      "waives": "Annual fee of ₹2,000 + GST"
+    }
+  ],
+  "features": [
+    "Visa Signature benefits",
+    "Contactless payments",
+    "International acceptance",
+    "Accelerated rewards on lifestyle spends",
+    "Complimentary lounge access",
+    "Add-on cards available",
+    "EMI conversion facility"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#1a237e",
+    "#64b5f6"
+  ],
+  "value": {
+    "highestValue": 50000,
+    "averageValue": 20000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 17640,
+    "tenYearNetValue": 176400,
+    "totalAnnualCharges": 2360,
+    "totalAnnualBenefits": 20000,
+    "roiPercent": 746
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Dining",
+    "Rewards",
+    "Lifestyle"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.idbibank.in/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 22 2269",
+  "applyUrl": "https://www.idbibank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "idbi-visa-signature-credit-card"
+}

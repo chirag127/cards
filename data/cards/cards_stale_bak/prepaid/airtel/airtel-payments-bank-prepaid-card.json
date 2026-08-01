@@ -1,0 +1,191 @@
+{
+  "id": "airtel-payments-bank-prepaid-card",
+  "name": "Airtel Payments Bank Prepaid Card",
+  "tagline": "RBI-licensed semi-closed wallet with RuPay payments",
+  "description": "The Airtel Payments Bank Prepaid Card is a RuPay prepaid card offering seamless digital payments, bill payments, and money transfer services. Backed by an RBI license for semi-closed wallet operations since 2010, it integrates with the Airtel ecosystem for mobile recharges, utility bill payments, and peer-to-peer transfers.",
+  "bank": "Airtel Payments Bank",
+  "bankCode": "airtel",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Payments Bank",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Airtel Payments Bank"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Airtel Payments Bank account holders",
+      "Aadhaar-based eKYC required",
+      "No minimum balance required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Mobile Wallet Integration",
+      "description": "Integrated with Airtel Thanks app for mobile recharges, DTH, and bill payments",
+      "valueStr": "Integrated",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Airtel Thanks app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "Bill Payments",
+      "description": "Pay electricity, gas, water, broadband, and other utility bills directly from the card",
+      "valueStr": "All utilities",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Money Transfer",
+      "description": "Transfer money to other bank accounts via IMPS or NEFT",
+      "valueStr": "Instant",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to RBI transaction limits"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "RBI-licensed semi-closed wallet since 2010",
+    "UPI enabled",
+    "Contactless payments",
+    "Mobile recharge and DTH payments",
+    "Bill payment integration",
+    "Money transfer to bank accounts",
+    "Airtel Thanks app integration",
+    "Virtual and physical card"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#ed1c24",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 1000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Digital Payments",
+    "Bill Payments",
+    "Airtel Ecosystem"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.airtel.in/bank/payments-bank"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "400",
+  "applyUrl": "https://www.airtel.in/bank/payments-bank",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "airtel-payments-bank-prepaid-card"
+}

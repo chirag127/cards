@@ -1,0 +1,152 @@
+{
+  "id": "sbi-classic-debit-card",
+  "name": "SBI Classic Debit Card",
+  "tagline": "Simple and reliable debit card for everyday banking",
+  "description": "The SBI Classic Debit Card is a basic debit card designed for everyday transactions. It offers cashback on utility payments and is widely accepted across India for ATM withdrawals and POS transactions. Ideal for customers looking for a straightforward debit card without high fees.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Classic",
+  "variant": "Classic",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and white",
+  "virtualCardAvailable": false,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to all SBI savings and current account holders",
+      "No minimum balance requirement for Basic Savings Account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 125,
+      "amountWithGst": 147.5,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 10,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 150,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 75000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Cashback on Utility Payments",
+      "description": "Earn cashback on utility bill payments made using the card",
+      "valueStr": "Cashback",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on utility bill payments only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "EMV chip security",
+    "Wide domestic acceptance",
+    "Online shopping enabled",
+    "Utility bill payments",
+    "SBI YONO app integration"
+  ],
+  "validity": "5 years",
+  "contactless": false,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a4b8c",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 2000,
+    "averageValue": 1500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1352.5,
+    "tenYearNetValue": 13525,
+    "totalAnnualCharges": 147.5,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 1256
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "Daily Use"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://sbi.co.in/web/personal-banking/cards/debit-cards"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 11 2211",
+  "applyUrl": "https://sbi.co.in/web/personal-banking/cards/debit-cards",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "sbi-classic-debit-card"
+}

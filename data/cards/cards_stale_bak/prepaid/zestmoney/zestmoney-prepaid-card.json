@@ -1,0 +1,182 @@
+{
+  "id": "zestmoney-prepaid-card",
+  "name": "ZestMoney Prepaid Card",
+  "tagline": "Flexible credit line as a prepaid spending tool",
+  "description": "The ZestMoney Prepaid Card is a Visa Classic prepaid card that converts your approved credit line into a reloadable prepaid instrument. It enables EMI-based purchases across online and offline merchants with flexible repayment tenures. Designed for users who want buy-now flexibility with prepaid discipline.",
+  "bank": "ZestMoney",
+  "bankCode": "zestmoney",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 55,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Credit line approval required",
+      "PAN and basic KYC mandatory",
+      "Income verification may be required",
+      "Partnered with SBM Bank India"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via bank transfer"
+    },
+    {
+      "label": "Late Payment Fee",
+      "amount": 500,
+      "note": "If EMI not paid on time"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 150000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "EMI Cashback",
+      "description": "Earn cashback on select EMI purchases through ZestMoney partner merchants",
+      "valueStr": "Up to 2%",
+      "valueNum": 0,
+      "frequencyStr": "Per eligible transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on select partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Flexible EMI Tenures",
+      "description": "Convert spends into 3, 6, 9, or 12-month EMI plans with competitive interest rates",
+      "valueStr": "3-12 months",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to credit line approval"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Credit line to prepaid conversion",
+    "EMI-based purchases",
+    "Flexible repayment tenures (3-12 months)",
+    "Partner merchant network",
+    "Real-time transaction alerts",
+    "Card lock/unlock via app",
+    "Contactless payments"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#e65100",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "EMI Purchases",
+    "Flexible Credit",
+    "BNPL Integration"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.zestmoney.co.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.zestmoney.co.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "zestmoney-prepaid-card"
+}

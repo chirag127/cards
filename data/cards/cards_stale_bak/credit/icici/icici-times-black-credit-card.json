@@ -1,0 +1,505 @@
+{
+  "id": "icici-times-black-credit-card",
+  "name": "Times Black ICICI Bank Credit Card",
+  "tagline": "Premium lifestyle card with best-in-class international reward rates",
+  "description": "The Times Black ICICI Bank Credit Card is a Mastercard World Elite super-premium card offering 2.5% reward rate on international spends and 2% on domestic transactions. It provides unlimited domestic and international lounge access via Priority Pass, complimentary golf privileges, 24/7 global concierge services, comprehensive insurance coverage, and exclusive Times Black lifestyle privileges. Designed for affluent individuals with a global lifestyle.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "WorldElite",
+  "variant": "Times Black",
+  "usage": "Global",
+  "bin": "5475",
+  "material": "Metal",
+  "colorScheme": "Matte black with gold accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 200000,
+    "minAge": 25,
+    "maxAge": 60,
+    "minAnnualIncome": 3000000,
+    "minCreditScore": 775,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹2 Lakh",
+      "Self-Employed: ITR > ₹30 Lakh p.a.",
+      "Age 25–60 (salaried), 25–65 (self-employed)",
+      "Ideal for high-income global travellers"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 20000,
+      "amountWithGst": 23600,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 20000,
+      "amountWithGst": 23600,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Priority Pass Membership",
+      "amount": 0,
+      "note": "Complimentary"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.25,
+    "annualInterestRate": 39
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 500,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 75000,
+    "posEcomPerDay": 1500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 150000
+  },
+  "insurance": {
+    "accidentalDeathCover": 50000000,
+    "permanentDisabilityCover": 50000000,
+    "purchaseProtectionCover": 500000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 1000000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 10000000,
+    "airAccidentCover": 50000000,
+    "baggageCover": 200000,
+    "conditions": [
+      "Air accident cover: ₹5 Crore",
+      "Emergency overseas hospitalization: ₹1 Crore",
+      "Credit liability cover: ₹10 Lakh",
+      "Purchase protection: ₹5 Lakh (90 days from purchase)",
+      "Baggage delay/loss: ₹2 Lakh"
+    ],
+    "claimProcess": [
+      "Report loss/damage within 24 hours",
+      "Call Times Black concierge",
+      "Submit required documents within 30 days"
+    ],
+    "provider": "ICICI Lombard"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 999,
+      "frequency": "Unlimited",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": 999,
+      "frequency": "Unlimited via Priority Pass",
+      "frequencyPerYear": 999,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 27
+    },
+    "programs": [
+      "Dreamfolks",
+      "Priority Pass",
+      "Mastercard Airport Experiences"
+    ],
+    "conditions": [
+      "Unlimited domestic lounge visits at participating lounges",
+      "Unlimited international visits via complimentary Priority Pass",
+      "Guest access available at prevailing charges"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits",
+      "valueStr": "Unlimited",
+      "valueNum": 2500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 999,
+      "annualValue": 80000,
+      "conditions": [
+        "At participating lounges via Dreamfolks"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited International Lounge Access",
+      "description": "Unlimited complimentary international airport lounge visits via Priority Pass",
+      "valueStr": "Unlimited",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited via Priority Pass",
+      "frequencyPerYear": 999,
+      "annualValue": 70000,
+      "conditions": [
+        "Priority Pass membership included",
+        "Guest access at $27 per visit"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2.5% Reward Rate on International Spends",
+      "description": "Earn accelerated reward points worth 2.5% on all international transactions",
+      "valueStr": "2.5% rate",
+      "valueNum": 0,
+      "frequencyStr": "Every international transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Industry-leading international reward rate"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "2% Reward Rate on Domestic Spends",
+      "description": "Earn reward points worth 2% on all domestic transactions",
+      "valueStr": "2% rate",
+      "valueNum": 0,
+      "frequencyStr": "Every domestic transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Flat earn rate across all domestic categories"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Complimentary Golf Privileges",
+      "description": "4 complimentary golf rounds per quarter at premium courses",
+      "valueStr": "4 rounds/quarter",
+      "valueNum": 5000,
+      "frequencyStr": "4 per quarter",
+      "frequencyPerYear": 16,
+      "annualValue": 80000,
+      "conditions": [
+        "At select premium golf courses",
+        "Advance booking required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "24/7 Global Concierge Services",
+      "description": "Dedicated global concierge for travel, dining, entertainment, and lifestyle needs",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Available 24/7 via phone, email, and app"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 500,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 6000,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹500 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Comprehensive Insurance Coverage",
+      "description": "Up to ₹5 Crore air accident cover, ₹1 Crore overseas hospitalization",
+      "valueStr": "Up to ₹5 Crore",
+      "valueNum": 50000000,
+      "frequencyStr": "Active while card is valid",
+      "frequencyPerYear": 1,
+      "annualValue": 50000,
+      "conditions": [
+        "Covered via ICICI Lombard",
+        "Claims to be filed within 24 hours of incident"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "2.5% on international, 2% on domestic spends",
+    "pointsPer100": 2,
+    "pointValue": 0.5,
+    "effectiveCashbackPercent": 2,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "International",
+        "multiplier": 2.5,
+        "description": "2.5% reward rate on international spends"
+      },
+      {
+        "category": "Domestic",
+        "multiplier": 2,
+        "description": "2% reward rate on domestic spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Premium products & vouchers from ICICI Rewards Catalogue",
+      "Air miles conversion (domestic & international airlines)",
+      "Statement credit",
+      "Hotel and flight bookings",
+      "Luxury experiences and events"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "2% to 2.5%",
+    "conditions": [
+      "Excludes cash advances"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "5,000 bonus reward points on card activation",
+    "valueStr": "5,000 Reward Points",
+    "valueNum": 2500,
+    "conditions": [
+      "Credited on payment of joining fee"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "10,000 bonus reward points on spending ₹10 Lakh annually",
+      "spendRequired": 1000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 5000
+    },
+    {
+      "description": "Additional 10,000 bonus reward points on spending ₹20 Lakh annually",
+      "spendRequired": 2000000,
+      "spendPeriod": "Annually",
+      "rewardStr": "10,000 Reward Points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹15 Lakh in the preceding year",
+      "annualSpendRequired": 1500000,
+      "waives": "Annual fee of ₹20,000 + GST"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance on Mastercard World Elite network",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Priority Pass membership",
+    "Complimentary golf at premium courses",
+    "24/7 global concierge",
+    "Times Black lifestyle privileges",
+    "Personal accident insurance up to ₹5 Crore"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "creditLimitMin": 500000,
+    "creditLimitMax": 15000000,
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 5,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#000000",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 250000,
+    "averageValue": 150000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 126400,
+    "tenYearNetValue": 1264000,
+    "totalAnnualCharges": 23600,
+    "totalAnnualBenefits": 150000,
+    "roiPercent": 536
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Dedicated phone line, email, and mobile app",
+    "services": [
+      "Travel planning and bookings",
+      "Restaurant reservations worldwide",
+      "Event ticket sourcing",
+      "Gift and flower delivery",
+      "Personal shopping assistance",
+      "Emergency roadside assistance",
+      "Medical referrals abroad"
+    ]
+  },
+  "golfPrivileges": {
+    "available": true,
+    "complimentaryRounds": 16,
+    "courses": [
+      "Delhi Golf Club",
+      "KGA Bangalore",
+      "Willingdon Sports Club Mumbai",
+      "Royal Calcutta Golf Club",
+      "Chandigarh Golf Club",
+      "Hyderabad Golf Association"
+    ],
+    "conditions": [
+      "4 complimentary rounds per quarter",
+      "Advance booking required",
+      "Valid at select premium courses"
+    ]
+  },
+  "diningBenefits": {
+    "available": true,
+    "discountDescription": "Up to 15% off at partner restaurants via ICICI Culinary Treats",
+    "discountPercent": 15,
+    "partnerRestaurants": [
+      "Taj Hotels restaurants",
+      "ITC Hotels restaurants",
+      "Oberoi Hotels restaurants",
+      "Select standalone fine dining"
+    ],
+    "annualCap": 0
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Luxury hotel collection privileges"
+    ],
+    "flightPrivileges": [
+      "Priority check-in at select airlines"
+    ],
+    "otherPerks": [
+      "Airport meet & greet",
+      "Priority Pass unlimited access",
+      "Travel insurance up to ₹1 Crore"
+    ]
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24,
+      36
+    ],
+    "interestRatePerMonth": 1.25,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Premium",
+    "Travel"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance",
+      "golf",
+      "concierge"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/times-black-credit-card"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/times-black-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-times-black-credit-card"
+}

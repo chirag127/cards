@@ -1,0 +1,449 @@
+{
+  "id": "axis-magnus-credit-card",
+  "name": "Axis Bank Magnus Credit Card",
+  "tagline": "Ultra-premium rewards & unlimited lounge access for the elite",
+  "description": "The Axis Magnus Credit Card is a super-premium credit card offering 12 Edge Reward points per ₹200 on all spends, unlimited domestic and international lounge access via Priority Pass, milestone bonuses up to 25,000 points on ₹15 Lakh annual spend, along with concierge services, golf privileges, and dining benefits.",
+  "bank": "Axis Bank",
+  "bankCode": "axis",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "WorldElite",
+  "variant": "Magnus",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Black and gunmetal finish",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 150000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 1800000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Net Monthly Income > ₹1.5 Lakh",
+      "Self-Employed: ITR > ₹18 Lakh p.a.",
+      "Age 21–65 years",
+      "Excellent credit history required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 12500,
+      "amountWithGst": 14750,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 12500,
+      "amountWithGst": 14750,
+      "note": "Excluding GST at 18%"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.6,
+    "annualInterestRate": 43.2
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 400,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 50000000,
+    "permanentDisabilityCover": 50000000,
+    "purchaseProtectionCover": 250000,
+    "purchaseProtectionDays": 90,
+    "lostCardLiability": 2500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 5000000,
+    "airAccidentCover": 50000000,
+    "baggageCover": 100000,
+    "conditions": [
+      "Air accident cover: ₹5 Crore",
+      "Purchase protection: ₹2.5 Lakh for 90 days",
+      "Credit liability cover: ₹25 Lakh",
+      "Travel insurance: ₹50 Lakh"
+    ],
+    "provider": "Axis Bank"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": -1,
+      "frequency": "Unlimited",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 2500,
+      "guestAllowed": true,
+      "guestCharge": 2500
+    },
+    "international": {
+      "count": -1,
+      "frequency": "Unlimited via Priority Pass",
+      "frequencyPerYear": -1,
+      "valuePerVisit": 3500,
+      "guestAllowed": true,
+      "guestCharge": 27
+    },
+    "programs": [
+      "Priority Pass",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Unlimited domestic lounge access for primary cardholder",
+      "Unlimited international lounge access via Priority Pass",
+      "Guest visits charged separately"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Unlimited Domestic Lounge Access",
+      "description": "Unlimited complimentary domestic airport lounge visits",
+      "valueStr": "Unlimited",
+      "valueNum": 2500,
+      "frequencyStr": "Unlimited",
+      "frequencyPerYear": 52,
+      "annualValue": 130000,
+      "conditions": [
+        "Primary cardholder only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Unlimited International Lounge Access",
+      "description": "Unlimited international airport lounge visits via Priority Pass",
+      "valueStr": "Unlimited",
+      "valueNum": 3500,
+      "frequencyStr": "Unlimited via Priority Pass",
+      "frequencyPerYear": 52,
+      "annualValue": 182000,
+      "conditions": [
+        "Priority Pass membership included"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Activate Priority Pass membership via Axis Bank app or customer care"
+    },
+    {
+      "category": "rewards",
+      "title": "Edge Reward Points on All Spends",
+      "description": "12 Edge Reward points per ₹200 spent on all transactions",
+      "valueStr": "12 ER per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "concierge",
+      "title": "24/7 Concierge Services",
+      "description": "Dedicated personal concierge for travel, dining, and lifestyle assistance",
+      "valueStr": "Included",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "golf",
+      "title": "Golf Privileges",
+      "description": "Complimentary golf rounds at premium courses across India",
+      "valueStr": "Up to 12 rounds/year",
+      "valueNum": 5000,
+      "frequencyStr": "Up to 12 rounds per year",
+      "frequencyPerYear": 12,
+      "annualValue": 60000,
+      "conditions": [
+        "Booking required in advance",
+        "Select golf courses only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Dining Privileges",
+      "description": "Up to 20% off at premium partner restaurants",
+      "valueStr": "Up to 20% off",
+      "valueNum": 0,
+      "frequencyStr": "Per dine-in visit",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Select partner restaurants",
+        "Prior reservation recommended"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Low Forex Markup",
+      "description": "Only 2% currency markup on international transactions",
+      "valueStr": "2%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 400,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 4800,
+      "conditions": [
+        "Valid on transactions ₹400–₹4,000",
+        "Max ₹400 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Axis Edge Reward Points",
+    "earnRate": "12 ER per ₹200",
+    "pointsPer100": 6,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 1.2,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Flights & Hotels via Edge Rewards portal",
+      "Air Miles transfer (Vistara, Singapore Airlines, etc.)",
+      "Products & Gift Vouchers",
+      "Statement credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1.2% to 6%",
+    "conditions": [
+      "Excluded: fuel, EMI, wallet loads, insurance premiums"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "25,000 bonus Edge Reward points on spending ₹15 Lakh annually",
+      "spendRequired": 1500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "25,000 Edge Reward Points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [],
+  "features": [
+    "Metal card",
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "24/7 concierge",
+    "Golf privileges",
+    "Dining privileges",
+    "Priority Pass membership"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 250,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "conciergeService": {
+    "available": true,
+    "accessMethod": "Phone and App",
+    "services": [
+      "Travel booking",
+      "Restaurant reservations",
+      "Event tickets",
+      "Gift sourcing",
+      "Emergency assistance"
+    ]
+  },
+  "golfPrivileges": {
+    "available": true,
+    "complimentaryRounds": 12,
+    "courses": [
+      "Delhi Golf Club",
+      "Bombay Presidency Golf Club",
+      "Karnataka Golf Association"
+    ],
+    "conditions": [
+      "Advance booking required",
+      "Subject to availability"
+    ]
+  },
+  "diningBenefits": {
+    "available": true,
+    "discountDescription": "Up to 20% off at partner restaurants",
+    "discountPercent": 20,
+    "partnerRestaurants": [
+      "Taj Hotels",
+      "ITC Hotels",
+      "Oberoi Hotels",
+      "Marriott"
+    ],
+    "annualCap": 0
+  },
+  "travelBenefits": {
+    "available": true,
+    "hotelPrograms": [
+      "Luxury hotel collection access"
+    ],
+    "flightPrivileges": [
+      "Priority check-in at select airports"
+    ],
+    "otherPerks": [
+      "Airport meet and greet",
+      "Limo service discounts"
+    ]
+  },
+  "gradientColors": [
+    "#1a1a1a",
+    "#4a4a4a"
+  ],
+  "value": {
+    "highestValue": 250000,
+    "averageValue": 150000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 135250,
+    "tenYearNetValue": 1352500,
+    "totalAnnualCharges": 14750,
+    "totalAnnualBenefits": 150000,
+    "roiPercent": 917
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Premium"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.axisbank.com/personal/cards/credit-cards/magnus-credit-card",
+      "https://www.paisabazaar.com/credit-card/axis-magnus-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1860 419 5555",
+  "applyUrl": "https://www.axisbank.com/personal/cards/credit-cards/magnus-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "axis-magnus-credit-card"
+}

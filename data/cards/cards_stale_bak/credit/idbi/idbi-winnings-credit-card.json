@@ -1,0 +1,491 @@
+{
+  "id": "idbi-winnings-credit-card",
+  "name": "IDBI Bank Winnings Credit Card",
+  "tagline": "Premium card with domestic & international lounge access and flat cashback",
+  "description": "The IDBI Bank Winnings Credit Card is a premium credit card offering a unique flat 10% cashback on all transactions of Rs 500 or more, plus free domestic AND international airport lounge access, accidental death insurance, and reward points on all spends. Ideal for users who value comprehensive lounge access and strong cashback on everyday transactions.",
+  "bank": "IDBI Bank",
+  "bankCode": "idbi",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "Visa Platinum",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Vibrant orange and deep charcoal",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 300000,
+    "minCreditScore": 675,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Recommended annual income of Rs 3 Lakh+",
+      "Age 21-65 years",
+      "Salaried or self-employed applicants eligible",
+      "Minimum credit score of 675 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 899,
+      "amountWithGst": 1061,
+      "note": "Plus applicable GST from second year"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 300,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 300,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 800,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 300,
+    "interestRatePerMonth": 3.4,
+    "annualInterestRate": 40.8
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 4000,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": [
+      "Indian Oil",
+      "Bharat Petroleum",
+      "Hindustan Petroleum",
+      "Reliance Petroleum",
+      "Shell"
+    ]
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 6,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 24,
+      "valuePerVisit": 1500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 4,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 16,
+      "valuePerVisit": 3000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Visa Airport Lounge Program",
+      "LoungeKey"
+    ],
+    "conditions": [
+      "Complimentary domestic AND international airport lounge access",
+      "Visa network lounge program membership required",
+      "Lounge visits subject to availability",
+      "Guest access available at additional charge"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Flat 10% Cashback Welcome Benefit",
+      "description": "Get flat 10% cashback on all transactions of Rs 500 or more, up to a maximum of Rs 500, within 90 days of card issuance.",
+      "valueStr": "10% cashback up to Rs 500",
+      "valueNum": 500,
+      "frequencyStr": "Within 90 days of issuance",
+      "frequencyPerYear": 1,
+      "annualValue": 500,
+      "conditions": [
+        "Applicable on transactions of Rs 500 or more",
+        "Maximum cashback of Rs 500 within 90 days",
+        "Cashback credited within 30 days of qualifying period"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Spends",
+      "description": "Earn 2 Delight Points for every Rs 100 spent across all merchant categories in India and abroad.",
+      "valueStr": "2 DP per Rs 100",
+      "valueNum": 2,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Points credited on retail, online, and international spends",
+        "Fuel, wallet loads, and utility bills may be excluded"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge Access",
+      "description": "Complimentary access to domestic airport lounges across India through the Visa Airport Lounge Program.",
+      "valueStr": "6 visits per quarter",
+      "valueNum": 1500,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 24,
+      "annualValue": 36000,
+      "conditions": [
+        "Visa Airport Lounge Program membership required",
+        "Subject to lounge availability",
+        "Applicable at participating domestic airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Airport Lounge Access",
+      "description": "Complimentary access to international airport lounges worldwide through the Visa and LoungeKey programs.",
+      "valueStr": "4 visits per quarter",
+      "valueNum": 3000,
+      "frequencyStr": "Quarterly",
+      "frequencyPerYear": 16,
+      "annualValue": 48000,
+      "conditions": [
+        "Visa and LoungeKey program membership required",
+        "Subject to lounge availability",
+        "Applicable at participating international airport lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between Rs 4,000 and Rs 5,000 at all fuel stations across India.",
+      "valueStr": "1% waiver on Rs 4,000-Rs 5,000",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Applicable on fuel transactions between Rs 4,000 and Rs 5,000",
+        "Narrower range than typical fuel cards",
+        "Available at all fuel stations in India"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Death Cover",
+      "description": "Accidental death insurance cover of Rs 10 Lakh for cardholders aged 18-70 who have used the card for at least one transaction in the last 90 days.",
+      "valueStr": "Rs 10 Lakh",
+      "valueNum": 1000000,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 1000000,
+      "conditions": [
+        "Applicable for cardholders aged 18-70",
+        "At least one transaction required in last 90 days",
+        "Coverage valid for the primary cardholder only",
+        "Claims must be filed within 30 days of incident"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "Interest-Free Credit Period",
+      "description": "Enjoy up to 48 days of interest-free credit period on all retail transactions.",
+      "valueStr": "Up to 48 days",
+      "valueNum": 48,
+      "frequencyStr": "Per billing cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on retail purchases only",
+        "Cash advances attract interest from day one"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Global ATM Access",
+      "description": "Access cash from 1.88 million ATMs globally through the Visa network, both in India and abroad.",
+      "valueStr": "1.88 million ATMs globally",
+      "valueNum": 0,
+      "frequencyStr": "Always",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Visa network acceptance worldwide",
+        "ATM charges as per applicable schedule",
+        "International withdrawal fees may apply"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "IDBI Delight Points",
+    "earnRate": "2 DP per Rs 100 on all spends",
+    "pointsPer100": 2,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.4,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "All Spends",
+        "multiplier": 2,
+        "description": "2 Delight Points per Rs 100 on all spends"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Air miles conversion",
+      "Product catalogue",
+      "Voucher redemption"
+    ],
+    "minRedemptionPoints": 500,
+    "redemptionRatios": [
+      {
+        "partnerTarget": "Statement Credit",
+        "pointsRequired": 500,
+        "valueReceived": 100,
+        "description": "500 DP = Rs 100 statement credit"
+      },
+      {
+        "partnerTarget": "Air Miles",
+        "pointsRequired": 1000,
+        "valueReceived": 250,
+        "description": "1000 DP = 250 air miles"
+      },
+      {
+        "partnerTarget": "Gift Vouchers",
+        "pointsRequired": 500,
+        "valueReceived": 100,
+        "description": "500 DP = Rs 100 gift voucher"
+      }
+    ],
+    "rewardRateStr": "0.4%",
+    "conditions": [
+      "Points credited within 30 days of transaction posting",
+      "Points expire 2 years from accrual date",
+      "Minimum 500 points required for redemption"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Get flat 10% cashback on all transactions of Rs 500 or more, up to a maximum of Rs 500, within 90 days of card issuance.",
+    "valueStr": "10% cashback up to Rs 500",
+    "valueNum": 500,
+    "conditions": [
+      "Applicable on transactions of Rs 500 or more",
+      "Maximum cashback of Rs 500 within 90 days",
+      "Cashback credited within 30 days of qualifying period"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 1,500 bonus Delight Points on annual spend of Rs 2 Lakh",
+      "spendRequired": 200000,
+      "spendPeriod": "Annual",
+      "rewardStr": "1,500 Delight Points",
+      "rewardNum": 1500
+    },
+    {
+      "description": "Earn 3,000 bonus Delight Points on annual spend of Rs 4 Lakh",
+      "spendRequired": 400000,
+      "spendPeriod": "Annual",
+      "rewardStr": "3,000 Delight Points",
+      "rewardNum": 3000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 2 Lakh",
+      "annualSpendRequired": 200000,
+      "waives": "Annual fee of Rs 899 + GST"
+    }
+  ],
+  "features": [
+    "Flat 10% cashback up to Rs 500 on transactions Rs 500+",
+    "Contactless payments enabled",
+    "EMV chip security",
+    "Free domestic AND international airport lounge access",
+    "Accidental death insurance of Rs 10 Lakh",
+    "Fuel surcharge waiver",
+    "Up to 48 days interest-free credit period",
+    "Access to 1.88 million ATMs globally",
+    "Reward points on all spends",
+    "Milestone bonus rewards",
+    "Annual fee waiver on Rs 2 Lakh spend"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 48,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#e65100",
+    "#424242"
+  ],
+  "value": {
+    "highestValue": 84000,
+    "averageValue": 60000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 58939,
+    "tenYearNetValue": 589390,
+    "totalAnnualCharges": 1061,
+    "totalAnnualBenefits": 60000,
+    "roiPercent": 5657
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.4,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent domestic and international travellers",
+    "Cashback seekers",
+    "Lounge access enthusiasts",
+    "Everyday spends above Rs 500"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits",
+      "fuelSurcharge",
+      "welcomeBonus",
+      "rewardProgram",
+      "loungeAccess",
+      "insurance"
+    ],
+    "unverifiedFields": [
+      "creditCardDetails"
+    ],
+    "sourceUrls": [
+      "https://www.idbibank.in/credit-cards.aspx",
+      "https://www.wishfin.com/credit-card/idbi-bank/idbi-winnings-credit-card/",
+      "https://www.bankbazaar.com/credit-cards/idbi-bank-winnings-credit-card.html",
+      "https://www.paisabazaar.com/credit-cards/idbi-bank-winnings-credit-card/"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "reviews": [
+    {
+      "provider": "Paisabazaar",
+      "overallRating": 4.4,
+      "maxRating": 5,
+      "categoryRatings": [
+        {
+          "category": "Rewards",
+          "rating": 4,
+          "maxRating": 5
+        },
+        {
+          "category": "Benefits",
+          "rating": 4.8,
+          "maxRating": 5
+        },
+        {
+          "category": "Value for Money",
+          "rating": 4.5,
+          "maxRating": 5
+        }
+      ],
+      "summary": "Outstanding value card with both domestic and international lounge access, strong cashback welcome benefit, and insurance.",
+      "pros": [
+        "Free domestic AND international lounge access",
+        "Flat 10% cashback up to Rs 500 on Rs 500+ transactions",
+        "Accidental death insurance cover",
+        "Strong milestone bonus rewards"
+      ],
+      "cons": [
+        "Annual fee from second year",
+        "Fuel surcharge waiver has narrow range",
+        "Higher interest rate of 3.4% per month"
+      ],
+      "reviewUrl": "https://www.paisabazaar.com/credit-cards/idbi-bank-winnings-credit-card/",
+      "lastUpdated": "2026-04-08"
+    }
+  ],
+  "customerCareNumber": "1800 425 7600 / 022-40426013",
+  "applyUrl": "https://www.idbibank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "idbi-winnings-credit-card"
+}

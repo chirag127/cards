@@ -1,0 +1,196 @@
+{
+  "id": "mobikwik-zip-prepaid-card",
+  "name": "MobiKwik Zip Prepaid Card",
+  "tagline": "Buy-now-pay-later meets prepaid wallet",
+  "description": "The MobiKwik Zip Prepaid Card is a RuPay prepaid card integrating the MobiKwik Zip BNPL feature with a reloadable prepaid wallet. It offers cashback at partner merchants, zero-cost EMI options, and seamless payments across the MobiKwik ecosystem. Designed for users who want the flexibility of credit with the discipline of prepaid spending.",
+  "bank": "MobiKwik",
+  "bankCode": "mobikwik",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Zip Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "MobiKwik Zip approval required for credit features",
+      "Full KYC for wallet limit upgrade"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "MobiKwik SuperCash",
+      "description": "Earn SuperCash on every transaction redeemable across 100+ bill payment and recharge categories",
+      "valueStr": "Up to 6%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to cashback caps per user"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Zip BNPL Integration",
+      "description": "Access MobiKwik Zip buy-now-pay-later credit line directly through the prepaid card",
+      "valueStr": "Up to Rs 60,000",
+      "valueNum": 60000,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to Zip credit approval"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Partner Merchant Discounts",
+      "description": "Exclusive discounts on MakeMyTrip, Cleartrip, IRCTC, and other MobiKwik partner merchants",
+      "valueStr": "Up to 15%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At partner merchants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Rs 100 SuperCash on first transaction above Rs 300",
+    "valueStr": "Rs 100",
+    "valueNum": 100,
+    "conditions": [
+      "First card transaction above Rs 300"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Zero annual charges",
+    "SuperCash rewards",
+    "Zip BNPL integration",
+    "Partner merchant discounts",
+    "Instant UPI reloads",
+    "Bill payments and recharges",
+    "Contactless payments",
+    "Real-time notifications"
+  ],
+  "validity": "3 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1565c0",
+    "#00c853"
+  ],
+  "value": {
+    "highestValue": 60000,
+    "averageValue": 500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 500,
+    "tenYearNetValue": 5000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 500,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "BNPL Integration",
+    "SuperCash Rewards",
+    "Bill Payments"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.mobikwik.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.mobikwik.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "mobikwik-zip-prepaid-card"
+}

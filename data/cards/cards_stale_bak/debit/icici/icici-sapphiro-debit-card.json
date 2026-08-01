@@ -1,0 +1,200 @@
+{
+  "id": "icici-sapphiro-debit-card",
+  "name": "ICICI Sapphiro Debit Card",
+  "tagline": "Premium debit with lounge & global access",
+  "description": "The ICICI Sapphiro Debit Card offers premium benefits including international usage, lounge access, and higher transaction limits. Ideal for frequent travelers and premium customers.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Mastercard",
+  "cardType": "debit",
+  "tier": "World",
+  "variant": "Sapphiro",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue sapphire gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to ICICI Bank account holders",
+      "International usage enabled"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 300,
+      "amountWithGst": 354,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 999,
+      "amountWithGst": 1179,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 150000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 100000,
+    "internationalPosPerDay": 300000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 2,
+      "frequency": "Per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 1,
+      "frequency": "Per year",
+      "frequencyPerYear": 1,
+      "valuePerVisit": 1000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Mastercard Lounge"
+    ],
+    "conditions": [
+      "2 domestic lounge per quarter",
+      "1 international lounge per year"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Lounge Access",
+      "description": "2 domestic lounge visits per quarter and 1 international visit per year",
+      "valueStr": "2 domestic/quarter + 1 intl/year",
+      "valueNum": 500,
+      "frequencyStr": "Per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 4000,
+      "conditions": [
+        "Valid at Mastercard lounges"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "travel",
+      "title": "International Usage",
+      "description": "Global acceptance at millions of merchants",
+      "valueStr": "Global acceptance",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "International transactions enabled"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "International acceptance",
+    "Lounge access",
+    "Higher transaction limits",
+    "Global usage enabled"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0f4c75",
+    "#3282b8"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 6821,
+    "tenYearNetValue": 68210,
+    "totalAnnualCharges": 1179,
+    "totalAnnualBenefits": 8000,
+    "roiPercent": 579
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "International Spending",
+    "Lounge Access"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 2100",
+  "applyUrl": "https://www.icicibank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "icici-sapphiro-debit-card"
+}

@@ -1,0 +1,374 @@
+{
+  "id": "icici-rubyx-credit-card",
+  "name": "ICICI Bank Rubyx Credit Card",
+  "tagline": "Earn accelerated reward points on international spends with premium travel benefits",
+  "description": "The ICICI Bank Rubyx Credit Card is a World-tier card on the Mastercard network offering 4 reward points per ₹100 on international transactions and 2 reward points per ₹100 on domestic spends. It features complimentary domestic airport lounge access, 1% fuel surcharge waiver, milestone bonuses, and comprehensive travel insurance. Ideal for frequent international travellers seeking rewards and premium privileges.",
+  "bank": "ICICI Bank",
+  "bankCode": "icici",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "World",
+  "variant": "Rubyx",
+  "usage": "International",
+  "bin": "5455",
+  "material": "Plastic",
+  "colorScheme": "Ruby red and black with metallic accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 50000,
+    "minAge": 21,
+    "maxAge": 60,
+    "minAnnualIncome": 750000,
+    "minCreditScore": 725,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Gross Monthly Income > ₹50,000",
+      "Self-Employed: ITR > ₹7.5 Lakh p.a.",
+      "Age 21–60 (salaried), 21–65 (self-employed)"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 3000,
+      "amountWithGst": 3540,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2000,
+      "amountWithGst": 2360,
+      "note": "Plus GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1200,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.53,
+    "annualInterestRate": 42.36
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 400,
+    "maxTransactionAmount": 5000,
+    "maxWaiverPerCycle": 300,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 5000000,
+    "permanentDisabilityCover": 5000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Personal accident insurance: ₹50 Lakh",
+      "Credit liability cover: ₹5 Lakh"
+    ],
+    "provider": "ICICI Lombard"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "Up to 8 per year",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2000,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Dreamfolks",
+      "Mastercard Airport Experiences"
+    ],
+    "conditions": [
+      "8 complimentary domestic lounge visits per year at participating lounges",
+      "Swipe Rubyx card at airport lounges for access"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year",
+      "valueStr": "8 visits/year",
+      "valueNum": 2000,
+      "frequencyStr": "Up to 8 per year",
+      "frequencyPerYear": 8,
+      "annualValue": 16000,
+      "conditions": [
+        "At participating airport lounges via Dreamfolks"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on International Spends",
+      "description": "Earn 4 reward points per ₹100 on international transactions",
+      "valueStr": "4 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every international transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Accelerated earn rate for international transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on Domestic Spends",
+      "description": "Earn 2 reward points per ₹100 on domestic transactions",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every domestic transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Excludes fuel, cash advances, EMI conversion"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reduced Earn Rate on Utility & Insurance",
+      "description": "Earn 1 reward point per ₹100 on utility and insurance payments",
+      "valueStr": "1 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every utility/insurance transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applies to utility bill payments and insurance premiums"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹400–₹5,000",
+      "valueStr": "1% waiver",
+      "valueNum": 300,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3600,
+      "conditions": [
+        "Valid on transactions ₹400–₹5,000",
+        "Max ₹300 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "ICICI Reward Points",
+    "earnRate": "4 RP per ₹100 international, 2 RP per ₹100 domestic, 1 RP per ₹100 utility/insurance",
+    "pointsPer100": 4,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "3 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "International",
+        "multiplier": 4,
+        "description": "4 RP per ₹100 on international spends"
+      },
+      {
+        "category": "Domestic",
+        "multiplier": 2,
+        "description": "2 RP per ₹100 on domestic spends"
+      },
+      {
+        "category": "Utility & Insurance",
+        "multiplier": 1,
+        "description": "1 RP per ₹100 on utility and insurance"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers from ICICI Rewards Catalogue",
+      "Air miles conversion",
+      "Statement credit",
+      "Hotel and flight bookings"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.5% to 1%",
+    "conditions": [
+      "Excludes fuel, cash advances, EMI conversion"
+    ]
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [
+    {
+      "description": "2,000 bonus reward points on spending ₹3 Lakh annually",
+      "spendRequired": 300000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 Reward Points",
+      "rewardNum": 500
+    },
+    {
+      "description": "Additional 2,000 bonus reward points on spending ₹6 Lakh annually",
+      "spendRequired": 600000,
+      "spendPeriod": "Annually",
+      "rewardStr": "2,000 Reward Points",
+      "rewardNum": 500
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹3 Lakh in the preceding year",
+      "annualSpendRequired": 300000,
+      "waives": "Annual fee of ₹2,000 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance on Mastercard World network",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "ICICI Culinary Treats dining offers",
+    "Movie ticket offers on BookMyShow",
+    "International transaction capability"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 3,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#8b0000",
+    "#dc143c"
+  ],
+  "value": {
+    "highestValue": 40000,
+    "averageValue": 25000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 22640,
+    "tenYearNetValue": 226400,
+    "totalAnnualCharges": 2360,
+    "totalAnnualBenefits": 25000,
+    "roiPercent": 959
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.icicibank.com/card/credit-cards/rubyx-credit-card",
+      "https://www.paisabazaar.com/credit-card/icici-rubyx-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 1080",
+  "applyUrl": "https://www.icicibank.com/card/credit-cards/rubyx-credit-card",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "icici-rubyx-credit-card"
+}

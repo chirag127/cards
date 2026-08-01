@@ -1,0 +1,179 @@
+{
+  "id": "olamoney-prepaid-card",
+  "name": "Ola Money Prepaid Card",
+  "tagline": "Mobility and lifestyle prepaid for the Ola ecosystem",
+  "description": "The Ola Money Prepaid Card is a RuPay Classic prepaid card designed for users of the Ola mobility and lifestyle ecosystem. It offers seamless payments for Ola rides, Ola Electric, and partner merchants with cashback rewards and zero annual charges. Built for India's mobile-first commuters who want integrated transport and lifestyle payments.",
+  "bank": "Ola Money",
+  "bankCode": "olamoney",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid Wallet",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and yellow",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18",
+      "Basic KYC required for full wallet limit",
+      "Requires Ola Money account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 50000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 100000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Ola Ride Discounts",
+      "description": "Get exclusive discounts on Ola cab and auto rides when paying with Ola Money prepaid card",
+      "valueStr": "Up to 15%",
+      "valueNum": 0,
+      "frequencyStr": "Per ride",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to ongoing offers and caps"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Ola Electric Cashback",
+      "description": "Earn cashback on Ola Electric vehicle bookings and accessory purchases",
+      "valueStr": "Up to 2%",
+      "valueNum": 0,
+      "frequencyStr": "Per transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "At Ola Electric stores only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Rs 50 cashback on first Ola ride above Rs 200",
+    "valueStr": "Rs 50",
+    "valueNum": 50,
+    "conditions": [
+      "First Ola ride booking above Rs 200"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Zero annual charges",
+    "Ola ride discounts",
+    "Ola Electric integration",
+    "Instant UPI reloads",
+    "Partner merchant payments",
+    "Contactless payments",
+    "Real-time transaction alerts"
+  ],
+  "validity": "3 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#2e7d32",
+    "#fdd835"
+  ],
+  "value": {
+    "highestValue": 50,
+    "averageValue": 300,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 300,
+    "tenYearNetValue": 3000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 300,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Ola Ecosystem",
+    "Mobility Payments",
+    "Commute Savings"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.olamoney.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.olamoney.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "olamoney-prepaid-card"
+}

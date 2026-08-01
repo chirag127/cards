@@ -1,0 +1,280 @@
+{
+  "id": "indianbank-rupay-select-credit-card",
+  "name": "Indian Bank RuPay Select Credit Card",
+  "tagline": "Lifetime free RuPay card with UPI support and lowest interest rate",
+  "description": "The Indian Bank RuPay Select Credit Card is a lifetime free domestic\ncredit card powered by the RuPay network. It supports UPI payments, offers\nthe lowest interest rate of 1.79% per month, and is accessible to users\nwith monthly income as low as Rs 5,000.",
+  "bank": "Indian Bank",
+  "bankCode": "indianbank",
+  "network": "RuPay",
+  "cardType": "credit",
+  "tier": "Select",
+  "variant": "RuPay Select",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "minAnnualIncome": 60000,
+    "minCreditScore": 600,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Monthly income of Rs 5,000+",
+      "Self-Employed: Annual income of Rs 60,000+",
+      "Age 18-60 years",
+      "Minimum credit score of 600 recommended",
+      "Lowest income requirement among credit cards"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "amountWithGst": 0,
+      "note": "Nil"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 3,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 50,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 600,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 1.79,
+    "annualInterestRate": 21.48
+  },
+  "fuelSurcharge": {
+    "available": false,
+    "waiverPercent": 0,
+    "minTransactionAmount": 0,
+    "maxTransactionAmount": 0,
+    "maxWaiverPerCycle": 0,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 20000,
+    "upiDailyLimit": 50000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not available on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Lifetime Free Card",
+      "description": "No joining fee and no annual fee for the lifetime of the card",
+      "valueStr": "Lifetime free",
+      "valueNum": 0,
+      "frequencyStr": "Forever",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "utility",
+      "title": "UPI Enabled",
+      "description": "Link your RuPay credit card with UPI apps like GPay, PhonePe, Paytm for seamless digital payments",
+      "valueStr": "UPI enabled",
+      "valueNum": 0,
+      "frequencyStr": "Always available",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Link via supported UPI apps",
+        "Daily UPI limit of Rs 50,000"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": true,
+      "activationInstructions": "Link card in your UPI app using card details and MPIN"
+    },
+    {
+      "category": "cashback",
+      "title": "Lowest Interest Rate",
+      "description": "Enjoy the lowest revolving interest rate of 1.79% per month (21.48% p.a.) among credit cards",
+      "valueStr": "1.79% per month",
+      "valueNum": 0,
+      "frequencyStr": "On outstanding balance",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "RuPay Reward Points",
+    "earnRate": "1 RP per Rs 100 on all spends",
+    "pointsPer100": 1,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 0.2,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.2%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus available",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Lifetime free card - no annual fee to waive",
+      "annualSpendRequired": 0,
+      "waives": "N/A - Card is lifetime free"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "UPI enabled",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Domestic acceptance only",
+    "Lifetime free - no annual fee",
+    "Lowest interest rate at 1.79% per month",
+    "Low income eligibility of Rs 5,000/month"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 45,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#2e7d32",
+    "#e8f5e9"
+  ],
+  "value": {
+    "highestValue": 3000,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 240,
+    "tenYearNetValue": 2400,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 240,
+    "roiPercent": 0
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.3,
+    "processingFeePercent": 1
+  },
+  "category": "standard",
+  "internationalUsable": false,
+  "bestFor": [
+    "UPI payments",
+    "Budget-conscious",
+    "Domestic spends",
+    "Low income"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards"
+    ],
+    "sourceUrls": [
+      "https://www.indianbank.in/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 425 00000",
+  "applyUrl": "https://www.indianbank.in/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "indianbank-rupay-select-credit-card"
+}

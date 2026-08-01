@@ -1,0 +1,181 @@
+{
+  "id": "kreditbee-prepaid-card",
+  "name": "KreditBee Prepaid Card",
+  "tagline": "Instant personal loan as a prepaid spending card",
+  "description": "The KreditBee Prepaid Card is a Visa prepaid card that allows users to access their approved personal loan amount as a reloadable prepaid instrument. It enables instant spending with flexible EMI repayment options and competitive interest rates. Built for users who need quick credit access with prepaid spending control.",
+  "bank": "KreditBee",
+  "bankCode": "kreditbee",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and navy",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried"
+    ],
+    "minAge": 21,
+    "maxAge": 55,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Personal loan approval required",
+      "PAN and Aadhaar mandatory",
+      "Salary account preferred",
+      "Partnered with RBI-licensed NBFC"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Processing Fee",
+      "amount": 0,
+      "note": "Varies by loan amount"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 100000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "cashback",
+      "title": "Repayment Cashback",
+      "description": "Earn cashback rewards on timely EMI repayments through the KreditBee app",
+      "valueStr": "Up to 1%",
+      "valueNum": 0,
+      "frequencyStr": "Per repayment",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to repayment track record"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Instant Loan Disbursal",
+      "description": "Approved loan amount credited instantly to the prepaid card for immediate spending",
+      "valueStr": "Instant",
+      "valueNum": 0,
+      "frequencyStr": "Per approval",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Subject to credit assessment"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical card",
+    "Instant loan disbursal to card",
+    "Flexible EMI repayment",
+    "Competitive interest rates",
+    "Real-time transaction alerts",
+    "Card lock/unlock via app",
+    "Contactless payments",
+    "Minimal documentation"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1b5e20",
+    "#0d47a1"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Personal Loan Access",
+    "Quick Credit",
+    "EMI Management"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.kreditbee.in"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.kreditbee.in",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "kreditbee-prepaid-card"
+}

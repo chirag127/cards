@@ -1,0 +1,324 @@
+{
+  "id": "uco-sbi-simplysave-credit-card",
+  "name": "UCO Bank SBI SimplySAVE Credit Card",
+  "tagline": "Everyday savings card for groceries, dining, and movies",
+  "description": "The UCO Bank SBI SimplySAVE Credit Card, in partnership with SBI Card,\nis designed for everyday shoppers who want accelerated rewards on grocery,\ndining, movies, and departmental store spends.",
+  "bank": "UCO Bank",
+  "bankCode": "uco",
+  "network": "Visa",
+  "cardType": "credit",
+  "tier": "Platinum",
+  "variant": "SimplySAVE",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 60,
+    "minAnnualIncome": 240000,
+    "minCreditScore": 650,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Annual income of Rs 2.4 Lakh+",
+      "Self-Employed: ITR of Rs 2.4 Lakh+",
+      "Age 18-60 years",
+      "Minimum credit score of 650 recommended"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 499,
+      "amountWithGst": 589,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 200,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 200,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 600,
+    "overLimitFee": 500,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 3000,
+    "maxWaiverPerCycle": 100,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 0,
+      "frequency": "Not available",
+      "frequencyPerYear": 0,
+      "valuePerVisit": 0,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [],
+    "conditions": [
+      "Lounge access not available on this card"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between Rs 500 and Rs 3,000",
+      "valueStr": "1% waiver",
+      "valueNum": 100,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 1200,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Accelerated Rewards on Select Categories",
+      "description": "10 reward points per Rs 150 spent on movies, dining, grocery, and departmental stores",
+      "valueStr": "10 RP per Rs 150",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on movies, dining, grocery, departmental stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Other Spends",
+      "description": "1 reward point per Rs 150 on all other transactions",
+      "valueStr": "1 RP per Rs 150",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "cashback",
+      "title": "Annual Fee Waiver",
+      "description": "Annual fee waived on annual spend of Rs 1 Lakh",
+      "valueStr": "Fee waiver",
+      "valueNum": 499,
+      "frequencyStr": "Annually",
+      "frequencyPerYear": 1,
+      "annualValue": 499,
+      "conditions": [
+        "Annual spend of Rs 1 Lakh required"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "UCO SBI Reward Points",
+    "earnRate": "10 RP per Rs 150 on movies, dining, grocery, departmental stores",
+    "pointsPer100": 6.67,
+    "pointValue": 0.2,
+    "effectiveCashbackPercent": 1.3,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Movies",
+        "multiplier": 10,
+        "description": "10 RP per Rs 150"
+      },
+      {
+        "category": "Dining",
+        "multiplier": 10,
+        "description": "10 RP per Rs 150"
+      },
+      {
+        "category": "Grocery",
+        "multiplier": 10,
+        "description": "10 RP per Rs 150"
+      },
+      {
+        "category": "Departmental Stores",
+        "multiplier": 10,
+        "description": "10 RP per Rs 150"
+      }
+    ],
+    "redemptionOptions": [
+      "Statement credit",
+      "Gift vouchers",
+      "Products from rewards catalogue"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "1.3%",
+    "conditions": []
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "500 bonus reward points on first transaction",
+    "valueStr": "500 RP",
+    "valueNum": 500,
+    "conditions": [
+      "Complete first transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "Earn 1,000 bonus points on annual spend of Rs 1.5 Lakh",
+      "spendRequired": 150000,
+      "spendPeriod": "Annually",
+      "rewardStr": "1,000 bonus points",
+      "rewardNum": 1000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on annual spend of Rs 1 Lakh",
+      "annualSpendRequired": 100000,
+      "waives": "Annual fee of Rs 499 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "International acceptance",
+    "Fuel surcharge waiver",
+    "Accelerated rewards on select categories"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 500
+  },
+  "gradientColors": [
+    "#1565c0",
+    "#4caf50"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 10000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 600,
+    "tenYearNetValue": 6000,
+    "totalAnnualCharges": 589,
+    "totalAnnualBenefits": 1188,
+    "roiPercent": 202
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "rewards",
+  "internationalUsable": true,
+  "bestFor": [
+    "Grocery",
+    "Dining",
+    "Movies",
+    "Everyday spends"
+  ],
+  "dataQuality": {
+    "status": "unverified",
+    "verifiedFields": [
+      "charges",
+      "eligibility",
+      "limits"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "rewards",
+      "loungeAccess"
+    ],
+    "sourceUrls": [
+      "https://www.ucobank.com/credit-cards.aspx"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 274 0123",
+  "applyUrl": "https://www.ucobank.com/credit-cards.aspx",
+  "lastUpdated": "2026-04-08",
+  "type": "credit",
+  "slug": "uco-sbi-simplysave-credit-card"
+}

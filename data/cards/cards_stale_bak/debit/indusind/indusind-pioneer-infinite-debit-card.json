@@ -1,0 +1,158 @@
+{
+  "id": "indusind-pioneer-infinite-debit-card",
+  "name": "IndusInd Bank Pioneer Infinite Debit Card",
+  "tagline": "Infinite possibilities with IndusInd's premium debit card",
+  "description": "The IndusInd Bank Pioneer Infinite Debit Card is the bank's flagship debit offering, crafted from premium metal with a striking gold-accented design. Enjoy unlimited domestic airport lounge access, 12 international lounge visits per year, exclusive golf privileges, dedicated concierge service, and comprehensive travel insurance. Designed for discerning customers who value premium banking experiences.",
+  "bank": "IndusInd Bank",
+  "bankCode": "indusind",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Infinite",
+  "variant": "Pioneer Infinite",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Dark with gold accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Pioneer Banking customers",
+      "Minimum AUM of ₹10 lakhs required",
+      "Subject to bank approval"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 2500,
+      "amountWithGst": 2950
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 1000000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on card issuance",
+    "valueStr": "5,000 Reward Points",
+    "valueNum": 5000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Valid for first-time Pioneer Infinite customers only"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹10 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "12 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "High insurance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1a1a2e",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 80000,
+    "averageValue": 50000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 47050,
+    "tenYearNetValue": 470500,
+    "totalAnnualCharges": 2950,
+    "totalAnnualBenefits": 50000,
+    "roiPercent": 1695
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "International shopping",
+    "Business professionals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "network",
+      "tier"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.indusind.com/in/en/personal/cards/debit-cards/pioneer-infinite.html"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 1000000,
+  "customerCareNumber": "1860 266 9999",
+  "applyUrl": "https://www.indusind.com/in/en/personal/cards/debit-cards.html",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "indusind-pioneer-infinite-debit-card"
+}

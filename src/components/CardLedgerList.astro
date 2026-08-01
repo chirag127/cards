@@ -1,0 +1,116 @@
+---
+/*
+ * CardLedgerList — shared ledger table for category / network / bank pages.
+ * Same terminal aesthetic as the home ledger, but static (no filter rail),
+ * rows link to the canonical /cards/{id}/ detail page. Sorted free-first.
+ */
+import EmbossedThumb from '~/components/EmbossedThumb.astro'
+import { type CardRow, fmtApr, inr } from '~/lib/cards'
+
+interface Props {
+  rows: CardRow[]
+}
+const { rows } = Astro.props as Props
+const sorted = [...rows].sort(
+  (a, b) => a.annualFee - b.annualFee || a.name.localeCompare(b.name),
+)
+---
+
+<div class="ledger">
+  <div class="ledger-header" role="row">
+    <span class="col-thumb">CARD</span>
+    <span class="col-name">NAME</span>
+    <span class="col-num">JOIN</span>
+    <span class="col-num">ANNUAL</span>
+    <span class="col-num">REWARDS</span>
+    <span class="col-num">APR p.a.</span>
+  </div>
+  <div class="ledger-body">
+    {
+      sorted.map((r) => (
+        <a href={`/cards/${r.id}/`} class="row">
+          <span class="col-thumb">
+            <EmbossedThumb
+              bankCode={r.bankCode}
+              bankName={r.bank}
+              network={r.network}
+              binPrefix={r.binPrefix}
+              stock={r.stockGradient}
+            />
+          </span>
+          <span class="col-name">
+            <span class="row-name">{r.name}</span>
+            <span class="row-bank mono">{r.bank} · {r.tier ?? r.network}</span>
+          </span>
+          <span class="col-num num">{r.joiningFee === 0 ? <span class="ltf-tag">LTF</span> : `₹${inr(r.joiningFee)}`}</span>
+          <span class="col-num num">{r.annualFee === 0 ? <span class="ltf-tag">LTF</span> : `₹${inr(r.annualFee)}`}</span>
+          <span class="col-num num">{r.rewardsLabel}</span>
+          <span class={`col-num num ${r.apr >= 36 ? 'num-neg' : ''}`}>{fmtApr(r.apr)}</span>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .ledger { border: 1px solid var(--rule); }
+  .ledger-header,
+  .row {
+    display: grid;
+    grid-template-columns: 156px minmax(0, 1fr) 90px 90px 130px 110px;
+    align-items: center;
+    column-gap: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+  .ledger-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+  }
+  .ledger-header .col-num,
+  .row .col-num { text-align: right; }
+  .row {
+    border-bottom: 1px dotted var(--rule);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.08s;
+  }
+  .row:hover { background: var(--paper-raised); }
+  .row:last-child { border-bottom: 0; }
+  .col-name { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+  .row-name { font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.25; }
+  .row-bank {
+    font-size: 10px; letter-spacing: 0.06em; color: var(--ink-mute); text-transform: uppercase;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .col-num {
+    font-family: var(--font-mono); font-size: 13px; color: var(--ink);
+    font-feature-settings: 'tnum' 1, 'zero' 1, 'calt' 0;
+  }
+  .num-neg { color: var(--vermilion); }
+  .ltf-tag {
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    background: linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 60%, var(--brass-deep) 100%);
+    color: #1a1410;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  @media (max-width: 767px) {
+    .ledger-header { display: none; }
+    .row { grid-template-columns: 96px minmax(0, 1fr) auto; grid-auto-rows: min-content; }
+    .row .col-num:nth-of-type(1) { display: none; }
+    .row .col-num { text-align: left; font-size: 11px; }
+    .row .col-num:nth-of-type(3),
+    .row .col-num:nth-of-type(4) { display: none; }
+  }
+</style>

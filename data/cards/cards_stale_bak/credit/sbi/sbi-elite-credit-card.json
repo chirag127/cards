@@ -1,0 +1,387 @@
+{
+  "id": "sbi-elite-credit-card",
+  "name": "SBI Elite Credit Card",
+  "tagline": "Premium rewards on dining, groceries, and everyday luxury",
+  "description": "The SBI Elite Credit Card is a premium lifestyle card offering 5X reward points on dining, groceries, and departmental stores, 2 reward points per ₹100 on all other spends, complimentary domestic and international airport lounge access, and milestone bonuses up to 20,000 bonus points annually on ₹5 Lakh spend.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "Mastercard",
+  "cardType": "credit",
+  "tier": "Premium",
+  "variant": "Elite",
+  "usage": "International",
+  "bin": "5432",
+  "material": "Metal",
+  "colorScheme": "Black with gold accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minSalary": 60000,
+    "minAge": 21,
+    "maxAge": 65,
+    "minAnnualIncome": 720000,
+    "minCreditScore": 750,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Salaried: Minimum monthly income ₹60,000",
+      "Self-Employed: Minimum ITR of ₹7.2 Lakh p.a.",
+      "Age 21–65 years",
+      "Good credit history required"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Joining Fee",
+      "amount": 4999,
+      "amountWithGst": 5899,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 4999,
+      "amountWithGst": 5899,
+      "note": "Excluding 18% GST"
+    },
+    {
+      "label": "Add-on Card Fee",
+      "amount": 0,
+      "note": "Free"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 250,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 250,
+    "internationalWithdrawalFee": 250,
+    "internationalWithdrawalPercent": 2.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 25,
+    "miniStatementOtherBank": 25
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 100,
+    "chequeBounceCharge": 500,
+    "latePaymentFee": 1300,
+    "overLimitFee": 600,
+    "cashAdvanceFeePercent": 2.5,
+    "cashAdvanceFlatFee": 500,
+    "interestRatePerMonth": 3.5,
+    "annualInterestRate": 42
+  },
+  "fuelSurcharge": {
+    "available": true,
+    "waiverPercent": 1,
+    "minTransactionAmount": 500,
+    "maxTransactionAmount": 4000,
+    "maxWaiverPerCycle": 250,
+    "fuelNetworks": []
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "insurance": {
+    "accidentalDeathCover": 1000000,
+    "permanentDisabilityCover": 1000000,
+    "purchaseProtectionCover": 0,
+    "purchaseProtectionDays": 0,
+    "lostCardLiability": 500000,
+    "lostCardLiabilityWindow": 24,
+    "travelInsuranceCover": 0,
+    "airAccidentCover": 0,
+    "baggageCover": 0,
+    "conditions": [
+      "Air accident cover: ₹10 Lakh accidental death cover",
+      "Credit liability cover up to ₹5 Lakh"
+    ],
+    "provider": "SBI Card"
+  },
+  "loungeAccess": {
+    "domestic": {
+      "count": 8,
+      "frequency": "2 per quarter",
+      "frequencyPerYear": 8,
+      "valuePerVisit": 2500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "international": {
+      "count": 2,
+      "frequency": "Via Priority Pass",
+      "frequencyPerYear": 2,
+      "valuePerVisit": 3500,
+      "guestAllowed": false,
+      "guestCharge": 0
+    },
+    "programs": [
+      "Priority Pass",
+      "Dreamfolks"
+    ],
+    "conditions": [
+      "Domestic: 2 complimentary visits per quarter",
+      "International: 2 complimentary visits per year via Priority Pass"
+    ]
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Lounge Access",
+      "description": "8 complimentary domestic airport lounge visits per year (2 per quarter)",
+      "valueStr": "8 visits/year",
+      "valueNum": 2500,
+      "frequencyStr": "2 per quarter",
+      "frequencyPerYear": 8,
+      "annualValue": 20000,
+      "conditions": [
+        "2 complimentary visits per quarter at domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "lounge",
+      "title": "International Lounge Access",
+      "description": "2 complimentary international airport lounge visits per year via Priority Pass",
+      "valueStr": "2 visits/year",
+      "valueNum": 3500,
+      "frequencyStr": "Via Priority Pass",
+      "frequencyPerYear": 2,
+      "annualValue": 7000,
+      "conditions": [
+        "Access via Priority Pass membership"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "5X Reward Points on Dining, Groceries & Departmental Stores",
+      "description": "Earn 10 reward points per ₹100 on dining, groceries, and departmental store spends",
+      "valueStr": "10 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Applicable on dining, grocery, and departmental store transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "rewards",
+      "title": "Reward Points on All Other Spends",
+      "description": "2 reward points per ₹100 on all other retail spends",
+      "valueStr": "2 RP per ₹100",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "fuel",
+      "title": "Fuel Surcharge Waiver",
+      "description": "1% fuel surcharge waiver on transactions between ₹500–₹4,000",
+      "valueStr": "1% waiver",
+      "valueNum": 250,
+      "frequencyStr": "Per statement cycle",
+      "frequencyPerYear": 12,
+      "annualValue": 3000,
+      "conditions": [
+        "Valid on transactions ₹500–₹4,000",
+        "Max ₹250 per statement cycle"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Dining Privileges",
+      "description": "Exclusive dining offers and discounts at premium restaurants across India",
+      "valueStr": "Up to 20% off",
+      "valueNum": 0,
+      "frequencyStr": "Ongoing",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Select partner restaurants only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "SBI Reward Points",
+    "earnRate": "2 RP per ₹100 (5X on select categories)",
+    "pointsPer100": 2,
+    "pointValue": 0.25,
+    "effectiveCashbackPercent": 0.5,
+    "pointsExpiry": "2 years from date of accrual",
+    "bonusCategories": [
+      {
+        "category": "Dining",
+        "multiplier": 5,
+        "description": "10 RP per ₹100 on dining spends"
+      },
+      {
+        "category": "Groceries",
+        "multiplier": 5,
+        "description": "10 RP per ₹100 on grocery spends"
+      },
+      {
+        "category": "Departmental Stores",
+        "multiplier": 5,
+        "description": "10 RP per ₹100 at departmental stores"
+      }
+    ],
+    "redemptionOptions": [
+      "Products & Vouchers (1 RP = ₹0.25)",
+      "Flights & Hotels",
+      "Cashback (1 RP = ₹0.20)",
+      "Statement Credit"
+    ],
+    "minRedemptionPoints": 1000,
+    "rewardRateStr": "0.5% to 2.5%",
+    "conditions": [
+      "Excluded: fuel, rent, wallet loads, EMI conversion, insurance"
+    ]
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome e-voucher worth ₹4,999 on payment of joining fee",
+    "valueStr": "₹4,999 e-voucher",
+    "valueNum": 4999,
+    "conditions": [
+      "Available on payment of joining fee",
+      "Choice of partner brands"
+    ]
+  },
+  "milestoneBonuses": [
+    {
+      "description": "20,000 bonus reward points on spending ₹5 Lakh annually",
+      "spendRequired": 500000,
+      "spendPeriod": "Annually",
+      "rewardStr": "20,000 Reward Points",
+      "rewardNum": 5000
+    }
+  ],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on spending ₹10 Lakh in the preceding year",
+      "annualSpendRequired": 1000000,
+      "waives": "Annual fee of ₹4,999 + GST"
+    }
+  ],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Global acceptance",
+    "Add-on cards available",
+    "EMI conversion facility",
+    "Concierge services",
+    "Golf privileges at select courses",
+    "Exclusive dining offers"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "creditCardDetails": {
+    "billingCycleDays": 30,
+    "gracePeriodDays": 50,
+    "minimumDuePercent": 5,
+    "minimumDueFlat": 200,
+    "balanceTransfer": true,
+    "emiConversion": true,
+    "addOnCardAvailable": true,
+    "maxAddOnCards": 2,
+    "addOnCardFee": 0
+  },
+  "gradientColors": [
+    "#1a1a2e",
+    "#c9a84c"
+  ],
+  "value": {
+    "highestValue": 35000,
+    "averageValue": 20000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 14101,
+    "tenYearNetValue": 141010,
+    "totalAnnualCharges": 5899,
+    "totalAnnualBenefits": 20000,
+    "roiPercent": 239
+  },
+  "emiOptions": {
+    "available": true,
+    "minTransactionAmount": 2500,
+    "tenureOptions": [
+      3,
+      6,
+      9,
+      12,
+      18,
+      24
+    ],
+    "interestRatePerMonth": 1.5,
+    "processingFeePercent": 1
+  },
+  "category": "premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Travel",
+    "Rewards",
+    "Dining"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "loungeAccess",
+      "eligibility",
+      "insurance"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.sbicard.com/en/personal/credit-cards/rewards/sbi-card-elite.page",
+      "https://www.paisabazaar.com/credit-card/sbi-elite-credit-card/"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 180 1111",
+  "applyUrl": "https://www.sbicard.com/en/personal/credit-cards/rewards/sbi-card-elite.page",
+  "lastUpdated": "2026-03-27",
+  "type": "credit",
+  "slug": "sbi-elite-credit-card"
+}

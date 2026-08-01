@@ -1,0 +1,130 @@
+{
+  "id": "canara-prepaid-card",
+  "name": "Canara Bank Prepaid Card",
+  "tagline": "Government bank prepaid for secure spending",
+  "description": "The Canara Bank Prepaid Card is a secure prepaid card for domestic transactions, online shopping, and ATM withdrawals. Suitable for controlled spending.",
+  "bank": "Canara Bank",
+  "bankCode": "canara",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Canara Prepaid",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Orange and blue",
+  "virtualCardAvailable": false,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to anyone with valid KYC documents"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 100,
+      "amountWithGst": 118,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free reloads"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8,
+    "miniStatementOtherBank": 8
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 10000,
+    "posEcomPerDay": 50000,
+    "contactlessPerTxn": 2000,
+    "contactlessDailyLimit": 10000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "EMV chip security",
+    "Domestic acceptance",
+    "Reloadable",
+    "RuPay network"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#ff6600",
+    "#003087"
+  ],
+  "value": {
+    "highestValue": 800,
+    "averageValue": 400,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 282,
+    "tenYearNetValue": 2820,
+    "totalAnnualCharges": 118,
+    "totalAnnualBenefits": 400,
+    "roiPercent": 239
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Gifting",
+    "Controlled Spending"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.canarabank.com"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 425 0018",
+  "applyUrl": "https://www.canarabank.com",
+  "lastUpdated": "2026-03-27",
+  "type": "prepaid",
+  "slug": "canara-prepaid-card"
+}

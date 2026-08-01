@@ -1,0 +1,177 @@
+{
+  "id": "bigbasket-gift-prepaid-card",
+  "name": "BigBasket Gift Card Prepaid",
+  "tagline": "Grocery gifting for modern Indian households",
+  "description": "The BigBasket Gift Card Prepaid is a closed-loop prepaid instrument for India's largest online grocery platform. Redeemable across fresh produce, staples, snacks, beverages, personal care, and household essentials, it is a practical gift for families. Available in denominations from Rs 250 to Rs 25,000 with same-day delivery in select cities.",
+  "bank": "BigBasket",
+  "bankCode": "bigbasket",
+  "network": "RuPay",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "Gift Card",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Green and orange",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "No KYC required for purchase",
+      "BigBasket account needed for redemption",
+      "Available in all BigBasket serviceable cities"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Face value only"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Not applicable"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 0,
+    "posEcomPerDay": 25000,
+    "contactlessPerTxn": 0,
+    "contactlessDailyLimit": 0,
+    "upiDailyLimit": 0
+  },
+  "benefits": [
+    {
+      "category": "shopping",
+      "title": "Grocery & Essentials Redemption",
+      "description": "Redeem across 40,000+ products including fresh fruits, vegetables, staples, snacks, and household items",
+      "valueStr": "Full face value",
+      "valueNum": 0,
+      "frequencyStr": "Per order",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "BigBasket.in and app only"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "BB Everyday Subscription Discount",
+      "description": "Use gift card balance to pay for BB Everyday membership and get additional delivery savings",
+      "valueStr": "Full value",
+      "valueNum": 0,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via BB Everyday program"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Digital and physical card options",
+    "Flexible denominations (Rs 250 - Rs 25,000)",
+    "Instant digital delivery",
+    "1-year validity",
+    "40,000+ grocery products",
+    "Corporate gifting available",
+    "Same-day delivery in select cities",
+    "Fresh produce and household essentials"
+  ],
+  "validity": "1 year from purchase",
+  "contactless": false,
+  "ncmc": false,
+  "gradientColors": [
+    "#2e7d32",
+    "#ff6f00"
+  ],
+  "value": {
+    "highestValue": 25000,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": false,
+  "bestFor": [
+    "Grocery Gifting",
+    "Household Essentials",
+    "Corporate Gifting"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.bigbasket.com/gift-card"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.bigbasket.com/gift-card",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "bigbasket-gift-prepaid-card"
+}

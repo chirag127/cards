@@ -1,0 +1,196 @@
+{
+  "id": "vayana-corporate-prepaid-card",
+  "name": "Vayana Corporate Prepaid Card",
+  "tagline": "Supply chain finance meets corporate expense management",
+  "description": "The Vayana Corporate Prepaid Card is a Visa Business prepaid card from Vayana Network, a supply chain finance platform. It integrates corporate expense management with vendor payment workflows, enabling businesses to manage employee spends, vendor payouts, and supply chain financing on a unified prepaid instrument. Designed for enterprises with complex vendor and employee payment ecosystems.",
+  "bank": "Vayana Network",
+  "bankCode": "vayana",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Business",
+  "variant": "Corporate",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Navy and teal",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Business Owner"
+    ],
+    "minAge": 21,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Vayana corporate account"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to Vayana Network corporate clients",
+      "Supply chain finance relationship preferred",
+      "Individual KYC for each cardholder"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Per Card Fee",
+      "amount": 0,
+      "note": "Bundled in corporate plan"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 3,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 50000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "other",
+      "title": "Supply Chain Integration",
+      "description": "Unified platform for employee expenses and vendor payments linked to supply chain financing",
+      "valueStr": "Integrated",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Vayana platform"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Vendor Payout Management",
+      "description": "Streamline vendor payouts with preset limits, approval workflows, and automated reconciliation",
+      "valueStr": "Automated",
+      "valueNum": 0,
+      "frequencyStr": "Per payout",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Via Vayana admin console"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Real-Time Reconciliation",
+      "description": "Automated expense categorization, vendor invoice matching, and real-time financial reconciliation",
+      "valueStr": "Real-time",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Virtual and physical cards",
+    "Supply chain finance integration",
+    "Vendor payout management",
+    "Employee expense controls",
+    "Automated reconciliation",
+    "Approval workflows",
+    "Real-time financial reporting",
+    "Admin dashboard",
+    "Bulk card issuance",
+    "Integration with ERP systems"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d1b2a",
+    "#00897b"
+  ],
+  "value": {
+    "highestValue": 0,
+    "averageValue": 0,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 0,
+    "tenYearNetValue": 0,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 0,
+    "roiPercent": 0
+  },
+  "category": "business",
+  "internationalUsable": false,
+  "bestFor": [
+    "Supply Chain Finance",
+    "Vendor Payments",
+    "Corporate Expenses"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.vayana.com"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "applyUrl": "https://www.vayana.com",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "vayana-corporate-prepaid-card"
+}

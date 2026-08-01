@@ -1,0 +1,159 @@
+{
+  "id": "stanchart-private-infinite-debit-card",
+  "name": "Standard Chartered Private Infinite Debit Card",
+  "tagline": "Exclusive infinite privileges for private banking clients",
+  "description": "The Standard Chartered Private Infinite Debit Card is the bank's most premium debit offering, reserved for private banking clients. Crafted from premium metal with a distinctive blue and gold design, it delivers unlimited domestic airport lounge access, 12 international lounge visits per year, exclusive golf privileges, dedicated concierge service, and comprehensive travel insurance. A card that embodies exclusivity.",
+  "bank": "Standard Chartered Bank",
+  "bankCode": "stanchart",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Infinite",
+  "variant": "Private Infinite",
+  "usage": "International",
+  "bin": "",
+  "material": "Metal",
+  "colorScheme": "Blue with gold accents",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Business"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": true,
+    "notes": [
+      "Available to Private Banking customers only",
+      "Minimum AUM of ₹50 lakhs required",
+      "By invitation from the bank"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 3000,
+      "amountWithGst": 3540
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 100,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 100,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 2,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 500000,
+    "posEcomPerDay": 1000000,
+    "contactlessPerTxn": 10000,
+    "contactlessDailyLimit": 50000,
+    "upiDailyLimit": 1000000
+  },
+  "benefits": [],
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus reward points on card issuance",
+    "valueStr": "10,000 Reward Points",
+    "valueNum": 10000,
+    "conditions": [
+      "Credited within 60 days of card issuance",
+      "Available only to new Private Banking clients"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived on maintaining ₹50 lakhs AUM",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Metal card",
+    "Unlimited domestic lounge",
+    "12 intl lounge/year",
+    "Golf privileges",
+    "Concierge",
+    "Private banking",
+    "High insurance"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#003876",
+    "#d4af37"
+  ],
+  "value": {
+    "highestValue": 100000,
+    "averageValue": 70000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 66460,
+    "tenYearNetValue": 664600,
+    "totalAnnualCharges": 3540,
+    "totalAnnualBenefits": 70000,
+    "roiPercent": 1977
+  },
+  "category": "super-premium",
+  "internationalUsable": true,
+  "bestFor": [
+    "Private banking clients",
+    "Frequent travelers",
+    "Golf enthusiasts",
+    "Premium lifestyle",
+    "High-net-worth individuals"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility",
+      "network",
+      "tier"
+    ],
+    "unverifiedFields": [
+      "benefits",
+      "welcomeBonus"
+    ],
+    "sourceUrls": [
+      "https://www.sc.com/in/wealth-solutions/cards/debit-cards/private-infinite-debit-card/"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 5000000,
+  "customerCareNumber": "1800 266 0011",
+  "applyUrl": "https://www.sc.com/in/wealth-solutions/cards/debit-cards/",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "stanchart-private-infinite-debit-card"
+}

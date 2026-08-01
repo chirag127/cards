@@ -1,0 +1,117 @@
+---
+/*
+ * RuPay focus page — India's domestic network. Explains the RuPay Select
+ * tier at the top, then lists every RuPay card in the catalog.
+ */
+import CardLedgerList from '~/components/CardLedgerList.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import { RUPAY_COUNT, getRowsByNetwork, inr } from '~/lib/cards'
+import { SITE_CONFIG } from '~/lib/siteConfig'
+
+const rows = getRowsByNetwork('RuPay')
+const selectRows = rows.filter((r) => /select/i.test(r.tier ?? ''))
+const lounge = rows.filter((r) => r.hasLounge).length
+const title = 'RuPay cards in India — Select tier, UPI & lounge access · oriz · cards'
+const description = `All ${RUPAY_COUNT} RuPay cards — NPCI's domestic network. RuPay Select perks, UPI-on-credit, and complimentary lounge access explained.`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'RuPay cards',
+  url: `${SITE_CONFIG.origin}/rupay/`,
+  description,
+  isPartOf: { '@type': 'WebSite', name: 'oriz · cards', url: SITE_CONFIG.origin },
+}
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <section class="cat spine">
+    <p class="cat-eyebrow mono"><a href="/">cards</a> / rupay</p>
+    <h1 class="cat-h1">RuPay</h1>
+    <p class="cat-tag">{description}</p>
+    <dl class="cat-stats">
+      <div><dt class="mono">RUPAY CARDS</dt><dd class="num">{inr(RUPAY_COUNT, { keepZero: true })}</dd></div>
+      <div><dt class="mono">SELECT TIER</dt><dd class="num">{inr(selectRows.length, { keepZero: true })}</dd></div>
+      <div><dt class="mono">WITH LOUNGE</dt><dd class="num">{inr(lounge, { keepZero: true })}</dd></div>
+    </dl>
+    <nav class="cat-nav mono">
+      <a href="/credit/">credit</a>
+      <a href="/debit/">debit</a>
+      <a href="/prepaid/">prepaid</a>
+      <a href="/rupay/" aria-current="page">rupay</a>
+    </nav>
+  </section>
+
+  <section class="explain spine">
+    <h2 class="section-h mono">§ WHAT IS RUPAY SELECT?</h2>
+    <div class="explain-grid">
+      <p class="explain-lede">
+        <strong>RuPay</strong> is NPCI's home-grown card network — the domestic
+        rival to Visa and Mastercard, and the only network that links a credit
+        card to <strong>UPI</strong>. <strong>RuPay Select</strong> is its
+        premium tier, positioned against Visa Signature and Mastercard World.
+        It bundles complimentary airport-lounge visits, a concierge line,
+        golf access, and higher purchase-protection cover — issued across
+        {inr(selectRows.length, { keepZero: true })} cards in this catalog.
+      </p>
+      <ul class="explain-list mono">
+        <li><span class="k">UPI on credit</span><span class="v">scan-and-pay from your RuPay credit line</span></li>
+        <li><span class="k">Lounge access</span><span class="v">complimentary domestic visits on Select</span></li>
+        <li><span class="k">Concierge</span><span class="v">24×7 assistance, golf & dining programmes</span></li>
+        <li><span class="k">Domestic-first</span><span class="v">lower interchange, wide UPI-QR acceptance</span></li>
+        <li><span class="k">Insurance</span><span class="v">purchase protection + personal-accident cover</span></li>
+      </ul>
+    </div>
+  </section>
+
+  {selectRows.length > 0 && (
+    <section class="cat-list spine">
+      <h2 class="section-h mono">§ RUPAY SELECT CARDS</h2>
+      <CardLedgerList rows={selectRows} />
+    </section>
+  )}
+
+  <section class="cat-list spine">
+    <h2 class="section-h mono">§ ALL RUPAY CARDS</h2>
+    <CardLedgerList rows={rows} />
+  </section>
+</BaseLayout>
+
+<style>
+  .cat { padding-block: 2rem 1.5rem; border-bottom: 1px solid var(--rule); }
+  .cat-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-mute); margin: 0 0 1rem; }
+  .cat-eyebrow a { color: var(--ink-mute); }
+  .cat-eyebrow a:hover { color: var(--accent); }
+  .cat-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.75rem, 3.4vw, 2.5rem); margin: 0; color: var(--ink); }
+  .cat-tag { margin: 0.5rem 0 1.25rem; color: var(--ink-mute); font-size: 0.9375rem; line-height: 1.55; max-width: 64ch; }
+  .cat-stats { display: flex; gap: 0; margin: 0 0 1.25rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.75rem 0; }
+  .cat-stats > div { padding-inline: 1rem; border-right: 1px solid var(--rule); }
+  .cat-stats > div:first-child { padding-left: 0; }
+  .cat-stats > div:last-child { border-right: 0; }
+  .cat-stats dt { font-size: 10px; letter-spacing: 0.14em; color: var(--ink-mute); text-transform: uppercase; margin: 0 0 0.25rem; }
+  .cat-stats dd { margin: 0; font-family: var(--font-mono); font-size: 20px; font-weight: 500; color: var(--ink); }
+  .cat-nav { display: flex; gap: 1.25rem; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .cat-nav a { color: var(--ink-mute); text-decoration: none; padding-bottom: 2px; }
+  .cat-nav a:hover { color: var(--accent); }
+  .cat-nav a[aria-current='page'] { color: var(--accent); border-bottom: 2px solid var(--accent); }
+
+  .section-h {
+    font-size: 11px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase;
+    margin: 0 0 1.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule);
+  }
+  .explain { padding-block: 2.5rem 0.5rem; }
+  .explain-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; }
+  @media (max-width: 767px) { .explain-grid { grid-template-columns: 1fr; gap: 1.25rem; } }
+  .explain-lede { margin: 0; font-size: 0.9375rem; line-height: 1.65; color: var(--ink); }
+  .explain-lede strong { color: var(--accent); }
+  .explain-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .explain-list li {
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 1rem; align-items: baseline;
+    padding: 0.5rem 0; border-bottom: 1px dotted var(--rule);
+  }
+  .explain-list .k { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
+  .explain-list .v { font-size: 12px; color: var(--ink-mute); }
+
+  .cat-list { padding-block: 1.5rem 2.5rem; }
+  .cat-list:last-of-type { padding-bottom: 4rem; }
+</style>

@@ -1,0 +1,188 @@
+{
+  "id": "amex-platinum-debit-card",
+  "name": "American Express Platinum Debit Card",
+  "tagline": "Premium Amex debit for distinguished customers",
+  "description": "The American Express Platinum Debit Card is a premium debit card on the American Express network offering higher spending limits, reward points on purchases, and access to exclusive Amex merchant offers and events.",
+  "bank": "American Express",
+  "bankCode": "amex",
+  "network": "Amex",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Platinum",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Platinum silver",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "mab": 100000,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Requires minimum average monthly balance of ₹1,00,000"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 1000,
+      "amountWithGst": 1180,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 10,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 25,
+    "internationalWithdrawalFee": 150,
+    "internationalWithdrawalPercent": 3.5,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 10,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3.5,
+    "crossBorderFee": 100,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 150000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "rewards",
+      "title": "Amex Membership Rewards",
+      "description": "Earn 2 Membership Rewards points per ₹200 spent",
+      "valueStr": "2 MR per ₹200",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "dining",
+      "title": "Amex Dining Privileges",
+      "description": "Exclusive dining offers at partner restaurants",
+      "valueStr": "Up to 15% off",
+      "valueNum": 0,
+      "frequencyStr": "Per dine",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid at select partner restaurants"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "rewardProgram": {
+    "name": "Amex Membership Rewards",
+    "earnRate": "2 MR per ₹200",
+    "pointsPer100": 1,
+    "pointValue": 0.45,
+    "effectiveCashbackPercent": 0.45,
+    "pointsExpiry": "Never expire",
+    "bonusCategories": [],
+    "redemptionOptions": [
+      "Products & Vouchers",
+      "Travel",
+      "Statement Credit"
+    ],
+    "minRedemptionPoints": 500,
+    "rewardRateStr": "0.45%"
+  },
+  "welcomeBonus": {
+    "available": true,
+    "description": "Welcome bonus MR points on first transaction",
+    "valueStr": "500 bonus MR",
+    "valueNum": 225,
+    "conditions": [
+      "First transaction within 30 days of card issuance"
+    ]
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Contactless payments",
+    "EMV chip security",
+    "Amex network exclusive benefits",
+    "Dining privileges",
+    "Merchant offers and events"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#c0c0c0",
+    "#6a6a6a"
+  ],
+  "value": {
+    "highestValue": 8000,
+    "averageValue": 5000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 3820,
+    "tenYearNetValue": 38200,
+    "totalAnnualCharges": 1180,
+    "totalAnnualBenefits": 5000,
+    "roiPercent": 324
+  },
+  "category": "super-premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Premium Benefits",
+    "Dining",
+    "Rewards"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "rewards",
+      "limits"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.americanexpress.com/in"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "customerCareNumber": "1800 419 1222",
+  "applyUrl": "https://www.americanexpress.com/in",
+  "lastUpdated": "2026-03-27",
+  "type": "debit",
+  "slug": "amex-platinum-debit-card"
+}

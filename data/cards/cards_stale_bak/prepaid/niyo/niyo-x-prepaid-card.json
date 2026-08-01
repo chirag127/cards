@@ -1,0 +1,175 @@
+{
+  "id": "niyo-x-prepaid-card",
+  "name": "NiyoX Prepaid Card",
+  "tagline": "Savings account linked prepaid with zero forex",
+  "description": "The NiyoX Prepaid Card is a Visa Classic prepaid card linked to a savings account with competitive interest rates. It offers zero forex markup, making it ideal for international spending while earning interest on idle funds.",
+  "bank": "Niyo",
+  "bankCode": "niyo",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Classic",
+  "variant": "NiyoX",
+  "usage": "Global",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Dark blue and green",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available for all Indian residents above 18 years",
+      "Full KYC verification required",
+      "Linked to Equitas Small Finance Bank savings account"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via UPI"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 20,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 25000,
+    "posEcomPerDay": 200000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero Forex Markup",
+      "description": "No forex markup on international transactions",
+      "valueStr": "0% forex markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Valid on all international transactions"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Interest on Savings",
+      "description": "Earn competitive interest on the linked savings account balance",
+      "valueStr": "Up to 7% p.a.",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Interest credited quarterly"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Zero forex markup",
+    "Contactless payments",
+    "EMV chip security",
+    "Linked savings account with interest",
+    "Virtual and physical card",
+    "Real-time exchange rates",
+    "Card lock/unlock via app"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#0d1b2a",
+    "#00c853"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2000,
+    "tenYearNetValue": 20000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2000,
+    "roiPercent": 9999
+  },
+  "category": "prepaid",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Zero Forex",
+    "Savings"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "forex markup",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.goniyo.com/cards/niyox"
+    ],
+    "lastVerified": "2026-03-27"
+  },
+  "applyUrl": "https://www.goniyo.com",
+  "lastUpdated": "2026-03-27",
+  "type": "prepaid",
+  "slug": "niyo-x-prepaid-card"
+}

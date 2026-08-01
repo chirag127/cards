@@ -1,0 +1,200 @@
+{
+  "id": "kotak-forex-card",
+  "name": "Kotak Forex Card",
+  "tagline": "15 currencies with easy reload and free replacement",
+  "description": "The Kotak Forex Card is a Visa prepaid travel card supporting 15 currencies for hassle-free international spending. With zero issuance fee, easy reload options, and free replacement cards, it is a cost-effective choice for frequent travellers.",
+  "bank": "Kotak Mahindra Bank",
+  "bankCode": "kotak",
+  "network": "Visa",
+  "cardType": "prepaid",
+  "tier": "Platinum",
+  "variant": "Forex",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Red and white",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Student"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": false,
+    "invitationOnly": false,
+    "notes": [
+      "Available to all Indian residents above 18 years",
+      "Valid passport and visa required",
+      "FEMA compliance documentation needed"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 0,
+      "note": "Nil"
+    },
+    {
+      "label": "Reload Fee",
+      "amount": 0,
+      "note": "Free via net banking"
+    },
+    {
+      "label": "Card Replacement",
+      "amount": 0,
+      "note": "Free replacement"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 0,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 0,
+    "otherBankCharge": 0,
+    "internationalWithdrawalFee": 100,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 0
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 100,
+    "physicalStatementCharge": 0
+  },
+  "limits": {
+    "atmPerDay": 375000,
+    "posEcomPerDay": 1500000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 50000,
+    "internationalAtmPerDay": 375000,
+    "internationalPosPerDay": 1500000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "Zero Forex Markup",
+      "description": "No markup fee on transactions in loaded currencies at interbank exchange rates",
+      "valueStr": "0% markup",
+      "valueNum": 3500,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3500,
+      "conditions": [
+        "Applicable only for loaded currencies"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "15 Currency Support",
+      "description": "Load and spend in 15 currencies including USD, GBP, EUR, AED, SGD, AUD, CAD, JPY, and more",
+      "valueStr": "15 currencies",
+      "valueNum": 0,
+      "frequencyStr": "Continuous",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "other",
+      "title": "Free Card Replacement",
+      "description": "Free replacement card in case of loss or damage while travelling abroad",
+      "valueStr": "Free",
+      "valueNum": 500,
+      "frequencyStr": "As needed",
+      "frequencyPerYear": 0,
+      "annualValue": 500,
+      "conditions": [
+        "Subject to availability in the country of travel"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "Chip and PIN technology",
+    "Contactless payments",
+    "Zero issuance fee",
+    "Easy reload via net banking or mobile app",
+    "Free replacement cards",
+    "Real-time transaction alerts",
+    "Emergency assistance while abroad",
+    "PIN regeneration at ATMs"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#ed1c24",
+    "#ffffff"
+  ],
+  "value": {
+    "highestValue": 3500,
+    "averageValue": 2500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 2500,
+    "tenYearNetValue": 25000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 2500,
+    "roiPercent": 9999
+  },
+  "category": "travel",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Zero Issuance Fee",
+    "Free Replacement"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "currencies",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.kotak.com/en/personal-banking/cards/forex-card.html"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1860-266-2660",
+  "applyUrl": "https://www.kotak.com/en/personal-banking/cards/forex-card.html",
+  "lastUpdated": "2026-04-08",
+  "type": "prepaid",
+  "slug": "kotak-forex-card"
+}

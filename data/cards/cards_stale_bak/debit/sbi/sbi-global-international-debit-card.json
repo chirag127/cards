@@ -1,0 +1,175 @@
+{
+  "id": "sbi-global-international-debit-card",
+  "name": "SBI Global International Debit Card",
+  "tagline": "International debit card for global transactions",
+  "description": "The SBI Global International Debit Card is a Visa/Mastercard enabled debit card designed for customers who frequently transact internationally. With competitive ATM and POS limits, worldwide acceptance, and robust security features, it is ideal for travelers, online shoppers, and NRIs who need reliable cross-border payment capabilities.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "Visa",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Global International",
+  "usage": "International",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Blue and silver gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed"
+    ],
+    "minAge": 18,
+    "maxAge": 70,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings",
+      "Current"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Available to SBI savings and current account holders",
+      "International usage enabled by default"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "note": "Free"
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 200,
+      "amountWithGst": 236,
+      "note": "Excluding GST"
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 125,
+    "internationalWithdrawalPercent": 3,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 8.5,
+    "miniStatementOtherBank": 8.5
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 3,
+    "crossBorderFee": 0,
+    "dccFeePercent": 1,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 50,
+    "physicalStatementCharge": 100
+  },
+  "limits": {
+    "atmPerDay": 40000,
+    "posEcomPerDay": 75000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "internationalAtmPerDay": 40000,
+    "internationalPosPerDay": 75000
+  },
+  "benefits": [
+    {
+      "category": "travel",
+      "title": "International Acceptance",
+      "description": "Use at millions of ATMs and POS terminals worldwide",
+      "valueStr": "Global acceptance",
+      "valueNum": 0,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 0,
+      "conditions": [
+        "Valid on Visa/Mastercard network"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Lost Card Liability",
+      "description": "Protection against unauthorized transactions after reporting loss",
+      "valueStr": "₹3 Lakh",
+      "valueNum": 300000,
+      "frequencyStr": "Per incident",
+      "frequencyPerYear": 1,
+      "annualValue": 300000,
+      "conditions": [
+        "Report loss within 24 hours"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus currently offered",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [],
+  "features": [
+    "International usage enabled",
+    "Contactless payments",
+    "EMV chip security",
+    "Online shopping enabled",
+    "3D Secure authentication",
+    "SMS alerts for transactions"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": false,
+  "gradientColors": [
+    "#1e3a5f",
+    "#60a5fa"
+  ],
+  "value": {
+    "highestValue": 3000,
+    "averageValue": 1500,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 1264,
+    "tenYearNetValue": 12640,
+    "totalAnnualCharges": 236,
+    "totalAnnualBenefits": 3000,
+    "roiPercent": 1171
+  },
+  "category": "standard",
+  "internationalUsable": true,
+  "bestFor": [
+    "International Travel",
+    "Online Shopping",
+    "Cross-border Payments"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features"
+    ],
+    "unverifiedFields": [],
+    "sourceUrls": [
+      "https://www.onlinesbi.sbi/sbi/personal-banking/cards/debit-cards"
+    ],
+    "lastVerified": "2026-04-08"
+  },
+  "customerCareNumber": "1800 11 2211",
+  "applyUrl": "https://www.onlinesbi.sbi/sbi/personal-banking/cards/debit-cards",
+  "lastUpdated": "2026-04-08",
+  "type": "debit",
+  "slug": "sbi-global-international-debit-card"
+}

@@ -1,0 +1,203 @@
+{
+  "id": "sbi-nari-shakti-platinum-debit-card",
+  "name": "SBI Nari Shakti Platinum Debit Card",
+  "tagline": "Women-exclusive RuPay Platinum debit card with premium benefits",
+  "description": "The SBI Nari Shakti Platinum Debit Card is a RuPay Platinum card exclusively designed for women account holders. Enjoy domestic airport lounge access, comprehensive insurance cover, shopping discounts at partner stores, and special women-centric benefits. Empowering women with premium banking features and financial independence.",
+  "bank": "State Bank of India",
+  "bankCode": "sbi",
+  "network": "RuPay",
+  "cardType": "debit",
+  "tier": "Platinum",
+  "variant": "Nari Shakti",
+  "usage": "Domestic",
+  "bin": "",
+  "material": "Plastic",
+  "colorScheme": "Pink and purple gradient",
+  "virtualCardAvailable": true,
+  "eligibility": {
+    "employmentType": [
+      "Salaried",
+      "Self-Employed",
+      "Homemaker"
+    ],
+    "minAge": 18,
+    "maxAge": 65,
+    "existingAccountRequired": true,
+    "accountType": [
+      "Savings"
+    ],
+    "invitationOnly": false,
+    "notes": [
+      "Exclusively for women account holders",
+      "Available at all SBI branches"
+    ]
+  },
+  "charges": [
+    {
+      "label": "Issuance Fee",
+      "amount": 0,
+      "amountWithGst": 0
+    },
+    {
+      "label": "Annual Fee",
+      "amount": 500,
+      "amountWithGst": 590
+    }
+  ],
+  "atmCharges": {
+    "ownBankFreePerMonth": 5,
+    "ownBankCharge": 0,
+    "otherBankFreePerMonth": 5,
+    "otherBankCharge": 20,
+    "internationalWithdrawalFee": 0,
+    "internationalWithdrawalPercent": 0,
+    "balanceEnquiryOwnBank": 0,
+    "balanceEnquiryOtherBank": 0,
+    "miniStatementOtherBank": 10
+  },
+  "transactionCharges": {
+    "currencyMarkupPercent": 0,
+    "crossBorderFee": 0,
+    "dccFeePercent": 0,
+    "smsAlertPerMonth": 0,
+    "pinRegenerationCharge": 0,
+    "physicalStatementCharge": 50
+  },
+  "limits": {
+    "atmPerDay": 100000,
+    "posEcomPerDay": 300000,
+    "contactlessPerTxn": 5000,
+    "contactlessDailyLimit": 25000,
+    "upiDailyLimit": 200000
+  },
+  "benefits": [
+    {
+      "category": "lounge",
+      "title": "Domestic Airport Lounge",
+      "description": "Complimentary domestic airport lounge access",
+      "valueStr": "4 visits/year",
+      "valueNum": 4,
+      "frequencyStr": "Per year",
+      "frequencyPerYear": 4,
+      "annualValue": 4000,
+      "conditions": [
+        "Available at major domestic airports"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "insurance",
+      "title": "Accidental Insurance",
+      "description": "Comprehensive accidental death and disability cover",
+      "valueStr": "₹3,00,000",
+      "valueNum": 300000,
+      "frequencyStr": "Annual",
+      "frequencyPerYear": 1,
+      "annualValue": 1500,
+      "conditions": [
+        "Cover active when card is used at least once per quarter"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    },
+    {
+      "category": "shopping",
+      "title": "Shopping Discounts",
+      "description": "Special discounts at partner women's stores",
+      "valueStr": "Up to 20% off",
+      "valueNum": 20,
+      "frequencyStr": "Every transaction",
+      "frequencyPerYear": 0,
+      "annualValue": 3000,
+      "conditions": [
+        "Available at select partner stores"
+      ],
+      "isSellable": false,
+      "sellValue": 0,
+      "isActive": true,
+      "activationRequired": false
+    }
+  ],
+  "welcomeBonus": {
+    "available": false,
+    "description": "No welcome bonus",
+    "valueStr": "Nil",
+    "valueNum": 0,
+    "conditions": []
+  },
+  "milestoneBonuses": [],
+  "feeWaivers": [
+    {
+      "description": "Annual fee waived for women account holders",
+      "annualSpendRequired": 0,
+      "waives": "Annual fee"
+    }
+  ],
+  "features": [
+    "Women exclusive",
+    "Domestic lounge access",
+    "Accidental insurance",
+    "Shopping discounts",
+    "NCMC enabled",
+    "Contactless payments",
+    "UPI enabled",
+    "Zero SMS charges"
+  ],
+  "validity": "5 years",
+  "contactless": true,
+  "ncmc": true,
+  "gradientColors": [
+    "#ec4899",
+    "#8b5cf6"
+  ],
+  "value": {
+    "highestValue": 15000,
+    "averageValue": 8000,
+    "isSellable": false,
+    "marketPrice": {
+      "minSellPrice": 0,
+      "maxSellPrice": 0,
+      "averageMarketValue": 0
+    },
+    "annualNetValue": 8000,
+    "tenYearNetValue": 80000,
+    "totalAnnualCharges": 0,
+    "totalAnnualBenefits": 8500,
+    "roiPercent": 0
+  },
+  "category": "premium",
+  "internationalUsable": false,
+  "bestFor": [
+    "Women account holders",
+    "Domestic travel",
+    "Shopping enthusiasts",
+    "Insurance coverage"
+  ],
+  "dataQuality": {
+    "status": "verified",
+    "verifiedFields": [
+      "charges",
+      "limits",
+      "features",
+      "eligibility"
+    ],
+    "unverifiedFields": [
+      "benefits"
+    ],
+    "sourceUrls": [
+      "https://www.onlinesbi.sbi/sbi/debit-card/nari-shakti-platinum-debit-card"
+    ],
+    "lastVerified": "2026-04-01"
+  },
+  "minimumAccountBalance": 3000,
+  "customerCareNumber": "1800 11 2211",
+  "applyUrl": "https://www.onlinesbi.sbi/sbi/debit-card",
+  "lastUpdated": "2026-04-01",
+  "type": "debit",
+  "slug": "sbi-nari-shakti-platinum-debit-card"
+}
