@@ -1,0 +1,711 @@
+---
+import EmbossedCard from '~/components/EmbossedCard.tsx'
+/*
+ * Card detail page — the prospectus. Static SSG path:
+ *   /credit/{issuer}/{slug}/
+ *
+ * Layout:
+ *   [hero band: 480px embossed card on the left, 4-stat strip + apply CTA on the right]
+ *   [§ ELIGIBILITY    — two-column rows]
+ *   [§ FEES           — two-column rows, late fee + over-limit in vermilion]
+ *   [§ ATM            — two-column rows]
+ *   [§ TRANSACTIONS   — two-column rows]
+ *   [§ FUEL           — two-column rows]
+ *   [§ LIMITS         — two-column rows]
+ *   [§ INSURANCE      — two-column rows]
+ *   [§ REWARDS        — two-column rows]
+ *   [§ LOUNGE         — two-column rows]
+ *   [APPLY → vermilion 44px CTA — the ONLY vermilion CTA on the site]
+ *
+ * Every value is a JetBrains Mono number with tabular-nums + slashed zero.
+ * Every footnote disclosure is muted prose prefixed `† `.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import {
+  type FullCard,
+  fmtApr,
+  fmtPct,
+  getCardByIssuerSlug,
+  getRowsByType,
+  inr,
+  listIssuers,
+} from '~/lib/cards'
+
+export function getStaticPaths() {
+  const rows = getRowsByType('debit')
+  return rows.map((r) => ({
+    params: { issuer: r.bankCode, slug: r.slug },
+  }))
+}
+
+const { issuer, slug } = Astro.params as { issuer: string; slug: string }
+const card = getCardByIssuerSlug(issuer, slug, 'debit') as FullCard | undefined
+
+if (!card) {
+  return Astro.redirect('/')
+}
+
+const charges = card.charges ?? []
+const find = (label: string) =>
+  charges.find((c) => c.label?.toLowerCase().includes(label.toLowerCase()))
+const joining = find('Joining')
+const annual = find('Annual')
+const aprMonthly = card.transactionCharges?.interestRatePerMonth
+const aprAnnual = card.transactionCharges?.annualInterestRate ?? (aprMonthly ?? 0) * 12
+const rwLabel = card.rewardProgram?.rewardRateStr ?? card.rewardProgram?.earnRate ?? '—'
+const rwRatePct = card.rewardProgram?.effectiveCashbackPercent ?? null
+
+const ATM = card.atmCharges ?? {}
+const TX = card.transactionCharges ?? {}
+const FUEL = card.fuelSurcharge
+const LIMITS = card.limits ?? {}
+const INS = card.insurance
+const RW = card.rewardProgram
+const LOUNGE = card.loungeAccess
+
+const stockA = card.gradientColors?.[0] ?? '#2B3A55'
+const stockB = card.gradientColors?.[1] ?? '#1A2438'
+const binPrefix =
+  (card.bin ?? '').toString().slice(0, 4) ||
+  ({ Visa: '4242', Mastercard: '5333', RuPay: '6076', Amex: '3742', DinersClub: '3600' }[
+    String(card.network ?? 'Visa')
+  ] ??
+    '4242')
+
+interface Row {
+  label: string
+  value: string
+  note?: string
+  isNeg?: boolean
+}
+
+const eligibilityRows: Row[] = [
+  {
+    label: 'Employment',
+    value: card.eligibility?.employmentType?.join(' / ') ?? '—',
+  },
+  {
+    label: 'Min annual income',
+    value: card.eligibility?.minAnnualIncome ? `₹${inr(card.eligibility.minAnnualIncome)}` : '—',
+  },
+  {
+    label: 'Min monthly salary',
+    value: card.eligibility?.minSalary ? `₹${inr(card.eligibility.minSalary)}` : '—',
+  },
+  {
+    label: 'Age',
+    value: `${card.eligibility?.minAge ?? '—'} – ${card.eligibility?.maxAge ?? '—'}`,
+  },
+  {
+    label: 'Min credit score',
+    value: card.eligibility?.minCreditScore ? String(card.eligibility.minCreditScore) : '—',
+  },
+  {
+    label: 'Existing account?',
+    value: card.eligibility?.existingAccountRequired ? 'Required' : 'Not required',
+  },
+  {
+    label: 'Invitation only?',
+    value: card.eligibility?.invitationOnly ? 'Yes' : 'No',
+  },
+]
+
+const feeRows: Row[] = [
+  {
+    label: 'Joining fee',
+    value: joining?.amount === 0 ? 'Lifetime free' : `₹${inr(joining?.amount)}`,
+    note:
+      joining?.note ??
+      (joining?.amountWithGst ? `+ GST → ₹${inr(joining.amountWithGst)}` : undefined),
+  },
+  {
+    label: 'Annual fee',
+    value: annual?.amount === 0 ? 'Lifetime free' : `₹${inr(annual?.amount)}`,
+    note:
+      annual?.note ?? (annual?.amountWithGst ? `+ GST → ₹${inr(annual.amountWithGst)}` : undefined),
+  },
+  {
+    label: 'APR (monthly)',
+    value: aprMonthly ? `${fmtPct(aprMonthly, '%')} p.m.` : '—',
+  },
+  {
+    label: 'APR (annual)',
+    value: fmtApr(aprAnnual),
+  },
+  {
+    label: 'Late payment fee',
+    value: TX.latePaymentFee ? `₹${inr(TX.latePaymentFee)}` : '—',
+    note: 'per cycle, charged to statement',
+    isNeg: !!TX.latePaymentFee,
+  },
+  {
+    label: 'Over-limit fee',
+    value: TX.overLimitFee ? `₹${inr(TX.overLimitFee)}` : '—',
+    isNeg: !!TX.overLimitFee,
+  },
+  {
+    label: 'Cheque bounce',
+    value: TX.chequeBounceCharge ? `₹${inr(TX.chequeBounceCharge)}` : '—',
+    isNeg: !!TX.chequeBounceCharge,
+  },
+  {
+    label: 'Grace period',
+    value: card.creditCardDetails?.gracePeriodDays
+      ? `${card.creditCardDetails.gracePeriodDays} days`
+      : '—',
+  },
+  {
+    label: 'Min due',
+    value: card.creditCardDetails?.minimumDuePercent
+      ? `${card.creditCardDetails.minimumDuePercent}%`
+      : '—',
+    note: card.creditCardDetails?.minimumDueFlat
+      ? `or ₹${inr(card.creditCardDetails.minimumDueFlat)}, whichever higher`
+      : undefined,
+  },
+]
+
+const atmRows: Row[] = [
+  {
+    label: 'Own bank free / month',
+    value: ATM.ownBankFreePerMonth !== undefined ? String(ATM.ownBankFreePerMonth) : '—',
+  },
+  {
+    label: 'Own bank charge',
+    value: ATM.ownBankCharge ? `₹${inr(ATM.ownBankCharge)}` : '—',
+  },
+  {
+    label: 'Other bank free / month',
+    value: ATM.otherBankFreePerMonth !== undefined ? String(ATM.otherBankFreePerMonth) : '—',
+  },
+  {
+    label: 'Other bank charge',
+    value: ATM.otherBankCharge ? `₹${inr(ATM.otherBankCharge)}` : '—',
+  },
+  {
+    label: 'International withdrawal',
+    value: ATM.internationalWithdrawalFee ? `₹${inr(ATM.internationalWithdrawalFee)}` : '—',
+    note: ATM.internationalWithdrawalPercent
+      ? `+ ${ATM.internationalWithdrawalPercent}% of txn`
+      : undefined,
+  },
+  {
+    label: 'Cash advance fee',
+    value: TX.cashAdvanceFeePercent ? `${TX.cashAdvanceFeePercent}%` : '—',
+    note: TX.cashAdvanceFlatFee ? `min ₹${inr(TX.cashAdvanceFlatFee)}` : undefined,
+  },
+]
+
+const txRows: Row[] = [
+  {
+    label: 'Currency markup',
+    value: TX.currencyMarkupPercent ? `${TX.currencyMarkupPercent}%` : '—',
+  },
+  {
+    label: 'DCC fee',
+    value: TX.dccFeePercent ? `${TX.dccFeePercent}%` : '—',
+  },
+  {
+    label: 'Cross-border fee',
+    value: TX.crossBorderFee ? `₹${inr(TX.crossBorderFee)}` : '—',
+  },
+  {
+    label: 'SMS alert / month',
+    value: TX.smsAlertPerMonth ? `₹${inr(TX.smsAlertPerMonth)}` : '—',
+  },
+  {
+    label: 'PIN regen',
+    value: TX.pinRegenerationCharge ? `₹${inr(TX.pinRegenerationCharge)}` : '—',
+  },
+  {
+    label: 'Physical statement',
+    value: TX.physicalStatementCharge ? `₹${inr(TX.physicalStatementCharge)}` : '—',
+  },
+]
+
+const fuelRows: Row[] = FUEL?.available
+  ? [
+      {
+        label: 'Surcharge waiver',
+        value: FUEL.waiverPercent ? `${FUEL.waiverPercent}%` : '—',
+      },
+      {
+        label: 'Min txn',
+        value: FUEL.minTransactionAmount ? `₹${inr(FUEL.minTransactionAmount)}` : '—',
+      },
+      {
+        label: 'Max txn',
+        value: FUEL.maxTransactionAmount ? `₹${inr(FUEL.maxTransactionAmount)}` : '—',
+      },
+      {
+        label: 'Max waiver / cycle',
+        value: FUEL.maxWaiverPerCycle ? `₹${inr(FUEL.maxWaiverPerCycle)}` : '—',
+      },
+      {
+        label: 'Networks',
+        value: FUEL.fuelNetworks?.length ? FUEL.fuelNetworks.join(', ') : 'All',
+      },
+    ]
+  : [{ label: 'Fuel waiver', value: 'Not available' }]
+
+const limitRows: Row[] = [
+  { label: 'ATM / day', value: LIMITS.atmPerDay ? `₹${inr(LIMITS.atmPerDay)}` : '—' },
+  {
+    label: 'POS + e-com / day',
+    value: LIMITS.posEcomPerDay ? `₹${inr(LIMITS.posEcomPerDay)}` : '—',
+  },
+  {
+    label: 'Contactless / txn',
+    value: LIMITS.contactlessPerTxn ? `₹${inr(LIMITS.contactlessPerTxn)}` : '—',
+  },
+  {
+    label: 'Contactless / day',
+    value: LIMITS.contactlessDailyLimit ? `₹${inr(LIMITS.contactlessDailyLimit)}` : '—',
+  },
+]
+
+const insRows: Row[] = INS
+  ? [
+      {
+        label: 'Accidental death cover',
+        value: INS.accidentalDeathCover ? `₹${inr(INS.accidentalDeathCover)}` : '—',
+      },
+      {
+        label: 'Permanent disability',
+        value: INS.permanentDisabilityCover ? `₹${inr(INS.permanentDisabilityCover)}` : '—',
+      },
+      {
+        label: 'Air accident',
+        value: INS.airAccidentCover ? `₹${inr(INS.airAccidentCover)}` : '—',
+      },
+      {
+        label: 'Travel insurance',
+        value: INS.travelInsuranceCover ? `₹${inr(INS.travelInsuranceCover)}` : '—',
+      },
+      { label: 'Baggage', value: INS.baggageCover ? `₹${inr(INS.baggageCover)}` : '—' },
+      {
+        label: 'Lost-card liability',
+        value: INS.lostCardLiability ? `₹${inr(INS.lostCardLiability)}` : '—',
+        note: INS.lostCardLiabilityWindow
+          ? `within ${INS.lostCardLiabilityWindow} h of loss`
+          : undefined,
+      },
+      {
+        label: 'Purchase protection',
+        value: INS.purchaseProtectionCover ? `₹${inr(INS.purchaseProtectionCover)}` : '—',
+        note: INS.purchaseProtectionDays ? `${INS.purchaseProtectionDays} days` : undefined,
+      },
+    ]
+  : [{ label: 'Insurance', value: 'Not provided' }]
+
+const rwRows: Row[] = RW
+  ? [
+      { label: 'Programme', value: RW.name ?? '—' },
+      { label: 'Earn rate', value: RW.earnRate ?? '—' },
+      { label: 'Point value', value: RW.pointValue ? `₹${RW.pointValue}` : '—' },
+      {
+        label: 'Effective cashback',
+        value: rwRatePct !== null ? fmtPct(rwRatePct, '%') : '—',
+      },
+      {
+        label: 'Min redemption',
+        value: RW.minRedemptionPoints ? `${inr(RW.minRedemptionPoints)} pts` : '—',
+      },
+      { label: 'Expiry', value: RW.pointsExpiry ?? '—' },
+    ]
+  : [{ label: 'Rewards programme', value: 'Not available' }]
+
+const loungeRows: Row[] = LOUNGE
+  ? [
+      {
+        label: 'Domestic',
+        value: LOUNGE.domestic
+          ? (LOUNGE.domestic.frequency ?? `${LOUNGE.domestic.count ?? 0} visits / yr`)
+          : '—',
+        note: LOUNGE.domestic?.valuePerVisit
+          ? `value ₹${inr(LOUNGE.domestic.valuePerVisit)} per visit`
+          : undefined,
+      },
+      {
+        label: 'International',
+        value: LOUNGE.international
+          ? (LOUNGE.international.frequency ?? `${LOUNGE.international.count ?? 0} visits / yr`)
+          : '—',
+        note: LOUNGE.international?.valuePerVisit
+          ? `value ₹${inr(LOUNGE.international.valuePerVisit)} per visit`
+          : undefined,
+      },
+      {
+        label: 'Domestic guests allowed?',
+        value: LOUNGE.domestic?.guestAllowed ? 'Yes' : 'No',
+      },
+      {
+        label: 'International guests allowed?',
+        value: LOUNGE.international?.guestAllowed ? 'Yes' : 'No',
+      },
+    ]
+  : [{ label: 'Lounge access', value: 'Not available' }]
+
+const sections: Array<{ key: string; title: string; rows: Row[] }> = [
+  { key: 'eligibility', title: 'ELIGIBILITY', rows: eligibilityRows },
+  { key: 'fees', title: 'FEES', rows: feeRows },
+  { key: 'atm', title: 'ATM & CASH', rows: atmRows },
+  { key: 'tx', title: 'TRANSACTIONS', rows: txRows },
+  { key: 'fuel', title: 'FUEL', rows: fuelRows },
+  { key: 'limits', title: 'LIMITS', rows: limitRows },
+  { key: 'insurance', title: 'INSURANCE', rows: insRows },
+  { key: 'rewards', title: 'REWARDS', rows: rwRows },
+  { key: 'lounge', title: 'LOUNGE', rows: loungeRows },
+]
+
+const issuerName = listIssuers().find((i) => i.code === issuer)?.name ?? card.bank
+---
+
+<BaseLayout
+  title={`${card.name} — fees, rewards, eligibility · oriz · cards`}
+  description={card.tagline ?? card.description}
+>
+  <article class="detail">
+    <header class="detail-head spine">
+      <p class="detail-eyebrow mono">
+        <a href="/">cards</a> / <a href={`/?issuer=${issuer}`}>{issuerName.toLowerCase()}</a> / {card.slug}
+      </p>
+      <div class="detail-hero">
+        <div class="detail-hero-card">
+          <EmbossedCard
+            client:load
+            size="hero"
+            cardName={card.name}
+            bankCode={card.bankCode}
+            bankName={card.bank}
+            network={String(card.network ?? 'Visa')}
+            stock={[stockA, stockB]}
+            binPrefix={binPrefix}
+            redactName={false}
+          />
+          <p class="detail-hero-emboss-note mono">
+            ↑ Your name appears embossed when you <a href="/account/">sign in</a>.
+          </p>
+        </div>
+        <div class="detail-hero-meta">
+          <h1 class="detail-h1">{card.name}</h1>
+          <p class="detail-tag">{card.tagline ?? card.description}</p>
+          <dl class="stat-strip">
+            <div class="stat">
+              <dt class="stat-l mono">JOIN</dt>
+              <dd class="stat-v num">
+                {joining?.amount === 0 ? <span class="ltf-tag">LTF</span> : `₹${inr(joining?.amount)}`}
+              </dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-l mono">ANNUAL</dt>
+              <dd class="stat-v num">
+                {annual?.amount === 0 ? <span class="ltf-tag">LTF</span> : `₹${inr(annual?.amount)}`}
+              </dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-l mono">REWARDS</dt>
+              <dd class="stat-v num">{rwLabel}</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-l mono">APR</dt>
+              <dd class={`stat-v num ${aprAnnual >= 36 ? 'num-neg' : ''}`}>{fmtApr(aprAnnual)}</dd>
+            </div>
+          </dl>
+          <div class="detail-meta mono">
+            <span>{String(card.network).toUpperCase()}</span>
+            <span aria-hidden="true">·</span>
+            <span>{card.tier ?? card.cardType}</span>
+            <span aria-hidden="true">·</span>
+            <span>{card.material ?? 'Plastic'}</span>
+            {card.virtualCardAvailable && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span>VIRTUAL OK</span>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="spec-table spine">
+      {
+        sections.map((s) => (
+          <div class="spec-section" id={s.key}>
+            <h2 class="spec-h mono">§ {s.title}</h2>
+            <dl class="spec-rows">
+              {s.rows.map((r) => (
+                <div class="spec-row">
+                  <dt class="spec-l">{r.label}</dt>
+                  <dd class={`spec-v num ${r.isNeg ? 'num-neg' : ''}`}>{r.value}</dd>
+                  {r.note && <p class="spec-note">† {r.note}</p>}
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="apply-band spine">
+      <p class="apply-disc">
+        Information here is for reference. Always verify on the issuing bank's site before applying.
+        oriz · cards is not affiliated with {card.bank} and earns no commission on applications.
+      </p>
+      {card.applyUrl ? (
+        <a
+          href={card.applyUrl}
+          rel="noopener noreferrer"
+          target="_blank"
+          class="apply-cta"
+        >
+          [ APPLY ON {card.bank.toUpperCase()} → ]
+        </a>
+      ) : (
+        <p class="apply-cta apply-cta-disabled mono">[ APPLY URL NOT PUBLISHED ]</p>
+      )}
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-head {
+    padding-block: 2rem 1.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .detail-eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    margin: 0 0 1.5rem;
+  }
+  .detail-eyebrow a {
+    color: var(--ink-mute);
+  }
+  .detail-eyebrow a:hover {
+    color: var(--accent);
+  }
+
+  .detail-hero {
+    display: grid;
+    grid-template-columns: 480px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (max-width: 1023px) {
+    .detail-hero {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .detail-hero-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  .detail-hero-emboss-note {
+    margin: 0;
+    color: var(--ink-mute);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+  .detail-hero-emboss-note a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .detail-hero-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .detail-h1 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.75rem, 3.4vw, 2.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--ink);
+  }
+  .detail-tag {
+    margin: 0;
+    color: var(--ink-mute);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    max-width: 56ch;
+  }
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    padding: 0.875rem 0;
+    margin: 0.75rem 0 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-inline: 0.75rem;
+    border-right: 1px solid var(--rule);
+  }
+  .stat:first-child {
+    padding-left: 0;
+  }
+  .stat:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
+  .stat-l {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+  }
+  .stat-v {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .num-neg {
+    color: var(--vermilion);
+  }
+  .ltf-tag {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    background: linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 60%, var(--brass-deep) 100%);
+    color: #1a1410;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .detail-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: var(--ink-mute);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  /* ── Spec table ─────────────────────────────────────────────────── */
+  .spec-table {
+    padding-block: 2.5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 3rem;
+  }
+  @media (max-width: 768px) {
+    .spec-table {
+      grid-template-columns: 1fr;
+    }
+  }
+  .spec-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .spec-h {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .spec-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 0;
+  }
+  .spec-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1.5rem;
+    align-items: baseline;
+    padding-block: 0.4rem;
+    border-bottom: 1px dotted var(--rule);
+  }
+  .spec-l {
+    font-size: 13px;
+    color: var(--ink);
+    margin: 0;
+  }
+  .spec-v {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    text-align: right;
+    color: var(--ink);
+    margin: 0;
+    font-feature-settings: 'tnum' 1, 'zero' 1, 'calt' 0;
+  }
+  .spec-note {
+    grid-column: 1 / -1;
+    margin: 0.25rem 0 0;
+    color: var(--ink-mute);
+    font-size: 11px;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  /* ── Apply band ─────────────────────────────────────────────────── */
+  .apply-band {
+    padding-block: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--rule);
+    margin-top: 2rem;
+  }
+  .apply-disc {
+    margin: 0;
+    color: var(--ink-mute);
+    font-size: 13px;
+    line-height: 1.55;
+    max-width: 56ch;
+  }
+  .apply-cta {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding-inline: 1.25rem;
+    background: var(--vermilion);
+    color: #fff;
+    border: 0;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .apply-cta:hover {
+    background: color-mix(in oklab, var(--vermilion) 80%, black);
+  }
+  .apply-cta-disabled {
+    background: var(--paper-raised);
+    color: var(--ink-mute);
+    border: 1px dashed var(--rule);
+    cursor: not-allowed;
+  }
+</style>
