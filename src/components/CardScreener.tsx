@@ -192,6 +192,40 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
 
   return (
     <>
+      <header className="vf-hero" aria-label="Every card in India, in one ledger">
+        <div className="vf-hero-copy">
+          <p className="vf-hero-eyebrow mono">The card ledger · India</p>
+          <h1 className="vf-hero-title">
+            Every card in India, <span className="vf-hero-foil">in one ledger.</span>
+          </h1>
+          <p className="vf-hero-lede">
+            Credit, debit and prepaid — fees, rewards and benefits, side by side. Search, filter and
+            compare across every issuer.
+          </p>
+          <p className="vf-hero-count mono">
+            <span className="vf-hero-count-num">{total.toLocaleString('en-IN')}</span> cards indexed
+          </p>
+        </div>
+        <div className="vf-hero-art" aria-hidden="true">
+          <div className="vf-hero-card emboss-tilt">
+            <div className="emboss-static emboss-thumb-static vf-hero-thumb" style={{ ['--card-stock-a' as string]: '#1F2A44', ['--card-stock-b' as string]: '#0E1524' }}>
+              <span className="emboss-issuer">ORIZ</span>
+              <span className="emboss-chip">
+                <span className="emboss-chip-line" />
+                <span className="emboss-chip-line" />
+                <span className="emboss-chip-line" />
+                <span className="emboss-chip-line" />
+                <span className="emboss-chip-line" />
+              </span>
+              <span className="emboss-bin">4242 •••• •••• ••••</span>
+              <span className="emboss-name">•••• •••• ••••</span>
+              <span className="emboss-network">RuPay</span>
+            </div>
+            <span className="vf-shimmer" aria-hidden="true" />
+          </div>
+        </div>
+      </header>
+
       <section className="ledger-shell" aria-label="Card screener">
         <aside className="rail" aria-label="Filter rail">
           <div className="rail-inner">
@@ -348,7 +382,10 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
               <div className="row" key={r.slug + r.bankCode}>
                 <a className="row-link" href={`/${r.cardType}/${r.bankCode}/${r.slug}/`} aria-label={r.name}>
                   <span className="col-thumb">
-                    <EmbossThumb row={r} />
+                    <span className="emboss-tilt">
+                      <EmbossThumb row={r} />
+                      <span className="vf-shimmer" aria-hidden="true" />
+                    </span>
                   </span>
                   <span className="col-name">
                     <span className="row-name">{r.name}</span>

@@ -62,11 +62,188 @@ const jsonLd = {
 </BaseLayout>
 
 <style is:global>
+  /* ══════════════════════════════════════════════════════════════════════
+     Vault & Foil — warm statement paper, magstripe ink, brass foil signature.
+     The ONE bold thing: embossed card catches foil light on hover (3D tilt +
+     shimmer sweep). Everything else stays quiet. Data flow unchanged; this is
+     the visual layer only.
+     ══════════════════════════════════════════════════════════════════════ */
+
+  /* ── Hero ───────────────────────────────────────────────────────────── */
+  .vf-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: clamp(1.5rem, 5vw, 4rem);
+    max-width: var(--container-spine, 1280px);
+    margin-inline: auto;
+    padding: clamp(2rem, 6vw, 4.5rem) clamp(1rem, 3vw, 1.75rem) clamp(1.75rem, 4vw, 3rem);
+  }
+  .vf-hero-eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--foil-deep);
+  }
+  .vf-hero-title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5.5vw, 3.9rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 18ch;
+  }
+  .vf-hero-foil {
+    background: linear-gradient(
+      100deg,
+      var(--foil-deep) 0%,
+      var(--foil) 30%,
+      var(--foil-light) 50%,
+      var(--foil) 70%,
+      var(--foil-deep) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--foil-deep);
+  }
+  .vf-hero-lede {
+    margin: 1.125rem 0 0;
+    max-width: 46ch;
+    font-family: var(--font-body, var(--font-sans));
+    font-size: clamp(1rem, 1.4vw, 1.125rem);
+    line-height: 1.6;
+    color: var(--ink-mute);
+  }
+  .vf-hero-count {
+    margin: 1.5rem 0 0;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  .vf-hero-count-num {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: var(--ink);
+  }
+  .vf-hero-art {
+    perspective: 900px;
+  }
+  .vf-hero-card {
+    position: relative;
+    display: inline-block;
+  }
+  .vf-hero-thumb {
+    width: clamp(220px, 30vw, 320px);
+    height: auto;
+    aspect-ratio: 86 / 54;
+    border-radius: 14px;
+  }
+  .vf-hero-thumb .emboss-issuer {
+    font-size: 13px;
+    top: 16px;
+    left: 18px;
+  }
+  .vf-hero-thumb .emboss-chip {
+    top: 30%;
+    left: 20px;
+    width: 34px;
+    height: 26px;
+  }
+  .vf-hero-thumb .emboss-bin {
+    left: 20px;
+    top: calc(30% + 34px);
+    font-size: 15px;
+    letter-spacing: 0.14em;
+  }
+  .vf-hero-thumb .emboss-name {
+    left: 20px;
+    bottom: 18px;
+    font-size: 12px;
+  }
+  .vf-hero-thumb .emboss-network {
+    right: 18px;
+    bottom: 16px;
+    font-size: 14px;
+  }
+  @media (max-width: 720px) {
+    .vf-hero {
+      grid-template-columns: 1fr;
+    }
+    .vf-hero-art {
+      order: -1;
+    }
+  }
+
+  /* ── Signature: foil tilt + shimmer on the embossed card ────────────── */
+  .emboss-tilt {
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition:
+      transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1),
+      box-shadow 260ms ease;
+    will-change: transform;
+  }
+  .vf-shimmer {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 30%,
+      color-mix(in oklab, var(--foil-light) 85%, white) 46%,
+      rgba(255, 255, 255, 0.55) 50%,
+      color-mix(in oklab, var(--foil-light) 85%, white) 54%,
+      transparent 70%
+    );
+    background-size: 250% 100%;
+    background-position: 120% 0;
+    mix-blend-mode: screen;
+    transition: opacity 200ms ease;
+  }
+  .vf-hero-card:hover .emboss-thumb-static,
+  .vf-hero-card:hover.emboss-tilt {
+    transform: rotateY(-6deg) rotateX(3deg);
+  }
+  .vf-hero-card:hover .vf-shimmer {
+    opacity: 1;
+    animation: vf-foil-sweep 900ms ease forwards;
+  }
+  @keyframes vf-foil-sweep {
+    0% {
+      background-position: 120% 0;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      background-position: -60% 0;
+      opacity: 0;
+    }
+  }
+
   /* ── Layout shell ───────────────────────────────────────────────────── */
   .ledger-shell {
     display: grid;
     grid-template-columns: var(--rail-width, 320px) minmax(0, 1fr);
     gap: 0;
+    max-width: var(--container-spine, 1280px);
+    margin-inline: auto;
     min-height: calc(100vh - 56px);
     border-top: 1px solid var(--rule);
   }
@@ -79,14 +256,19 @@ const jsonLd = {
   /* ── Filter rail ────────────────────────────────────────────────────── */
   .rail {
     border-right: 1px solid var(--rule);
-    background: var(--paper-deep);
+    background: var(--paper);
   }
   .rail-inner {
     position: sticky;
     top: 56px;
     max-height: calc(100vh - 56px);
     overflow-y: auto;
-    padding: 1.25rem 1rem;
+    margin: 1.25rem 1rem;
+    padding: 1.25rem 1.125rem;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(18, 19, 26, 0.04);
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -99,7 +281,7 @@ const jsonLd = {
     border-bottom: 1px solid var(--rule);
   }
   .rail-count {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--ink);
     font-feature-settings: 'tnum' 1, 'zero' 1, 'calt' 0;
@@ -113,17 +295,19 @@ const jsonLd = {
   /* ── Search ─────────────────────────────────────────────────────────── */
   .rail-search-input {
     width: 100%;
-    height: 34px;
-    padding-inline: 0.6rem;
+    height: 38px;
+    padding-inline: 0.7rem;
     background: var(--paper);
     border: 1px solid var(--rule);
+    border-radius: 8px;
     color: var(--ink);
     font-family: var(--font-mono);
     font-size: 13px;
   }
-  .rail-search-input:focus {
-    outline: none;
-    border-color: var(--accent);
+  .rail-search-input:focus-visible {
+    outline: 2px solid var(--rupay);
+    outline-offset: 1px;
+    border-color: var(--rupay);
   }
   .rail-search-input::placeholder {
     color: var(--ink-mute);
@@ -140,42 +324,49 @@ const jsonLd = {
   .rail-h {
     font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: var(--ink-mute);
+    letter-spacing: 0.18em;
+    color: var(--foil-deep);
+    font-weight: 700;
     margin: 0 0 0.4rem;
     padding: 0;
   }
+  .rail-h .mono {
+    color: var(--ink);
+    font-weight: 700;
+  }
   .rail-select {
     width: 100%;
-    height: 32px;
-    padding-inline: 0.5rem;
+    height: 34px;
+    padding-inline: 0.55rem;
     background: var(--paper);
     border: 1px solid var(--rule);
+    border-radius: 8px;
     color: var(--ink);
     font-family: var(--font-mono);
     font-size: 12px;
   }
-  .rail-select:focus {
-    outline: none;
-    border-color: var(--accent);
+  .rail-select:focus-visible {
+    outline: 2px solid var(--rupay);
+    outline-offset: 1px;
+    border-color: var(--rupay);
   }
   .rail-checks {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.35rem;
   }
   .rail-check {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.55rem;
     font-size: 13px;
     color: var(--ink);
     cursor: pointer;
   }
   .rail-check input {
-    accent-color: var(--accent);
-    width: 14px;
-    height: 14px;
+    accent-color: var(--rupay);
+    width: 15px;
+    height: 15px;
     flex-shrink: 0;
   }
   .issuer-name {
@@ -191,7 +382,7 @@ const jsonLd = {
   .rail-issuers-scroll {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.35rem;
     max-height: 220px;
     overflow-y: auto;
     padding-right: 0.25rem;
@@ -203,29 +394,75 @@ const jsonLd = {
   /* ── Fee range slider ───────────────────────────────────────────────── */
   .rail-range {
     width: 100%;
-    accent-color: var(--accent);
+    height: 22px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .rail-range::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--foil) 0%, var(--foil-light) 100%);
+  }
+  .rail-range::-moz-range-track {
+    height: 4px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--foil) 0%, var(--foil-light) 100%);
+  }
+  .rail-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--paper-raised);
+    border: 2px solid var(--foil-deep);
+    box-shadow: 0 1px 3px rgba(18, 19, 26, 0.25);
+  }
+  .rail-range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--paper-raised);
+    border: 2px solid var(--foil-deep);
+    box-shadow: 0 1px 3px rgba(18, 19, 26, 0.25);
+  }
+  .rail-range:focus-visible {
+    outline: none;
+  }
+  .rail-range:focus-visible::-webkit-slider-thumb {
+    outline: 2px solid var(--rupay);
+    outline-offset: 2px;
+  }
+  .rail-range:focus-visible::-moz-range-thumb {
+    outline: 2px solid var(--rupay);
+    outline-offset: 2px;
   }
   .rail-range-ends {
     display: flex;
     justify-content: space-between;
     font-size: 10px;
     color: var(--ink-mute);
-    margin-top: 0.125rem;
+    margin-top: 0.25rem;
   }
 
   .rail-reset {
     margin-top: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.6rem;
     background: transparent;
-    border: 1px dashed var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
     color: var(--ink-mute);
     font-size: 11px;
     letter-spacing: 0.08em;
     cursor: pointer;
+    transition: color 120ms, border-color 120ms;
   }
   .rail-reset:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    border-color: var(--rupay);
+    color: var(--rupay);
   }
 
   /* ── Ledger ─────────────────────────────────────────────────────────── */
@@ -233,18 +470,16 @@ const jsonLd = {
     display: flex;
     flex-direction: column;
     background: var(--paper);
+    padding: 1.25rem 1rem;
   }
   .ledger-toolbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 44px;
-    padding-inline: 1rem;
+    padding-inline: 0.5rem;
+    margin-bottom: 0.75rem;
     border-bottom: 1px solid var(--rule);
-    background: var(--paper-deep);
-    position: sticky;
-    top: 56px;
-    z-index: 11;
   }
   .sort-wrap {
     display: inline-flex;
@@ -253,11 +488,12 @@ const jsonLd = {
     font-size: 10px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--ink-mute);
+    color: var(--foil-deep);
+    font-weight: 700;
   }
   .sort-select {
     width: auto;
-    height: 28px;
+    height: 30px;
   }
   .toolbar-count {
     font-size: 11px;
@@ -267,17 +503,12 @@ const jsonLd = {
   }
   .ledger-header {
     display: grid;
-    grid-template-columns: 156px minmax(200px, 1fr) 132px 128px 100px 116px 36px;
+    grid-template-columns: 176px minmax(200px, 1fr) 132px 128px 100px 116px 36px;
     align-items: center;
-    height: 40px;
+    height: 38px;
     padding-inline: 1rem;
-    border-bottom: 1px solid var(--rule);
-    background: var(--paper-raised);
-    position: sticky;
-    top: 100px;
-    z-index: 10;
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--ink-mute);
@@ -288,47 +519,75 @@ const jsonLd = {
   .ledger-body {
     display: flex;
     flex-direction: column;
+    gap: 0.625rem;
   }
+
+  /* ── Card rows as raised panels ─────────────────────────────────────── */
   .row {
     display: grid;
-    grid-template-columns: 1fr 36px;
+    grid-template-columns: 1fr 40px;
     align-items: stretch;
-    border-bottom: 1px solid var(--rule);
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    transition: box-shadow 200ms ease, border-color 200ms ease, transform 200ms ease;
   }
   .row:hover {
-    background: var(--paper-raised);
+    border-color: color-mix(in oklab, var(--foil) 45%, var(--rule));
+    box-shadow: 0 6px 20px rgba(18, 19, 26, 0.09), 0 1px 2px rgba(18, 19, 26, 0.04);
   }
   .row-link {
     display: grid;
-    grid-template-columns: 156px minmax(200px, 1fr) 132px 128px 100px 116px;
+    grid-template-columns: 176px minmax(200px, 1fr) 132px 128px 100px 116px;
     align-items: center;
-    height: 96px;
+    min-height: 104px;
     padding-left: 1rem;
     color: var(--ink);
     text-decoration: none;
+    border-radius: 12px 0 0 12px;
   }
   .row-link > * {
     padding-inline: 0.5rem;
   }
   .row-link:focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--rupay);
     outline-offset: -2px;
+    border-radius: 12px 0 0 12px;
   }
+
+  /* Signature hover: the embossed card tilts + catches foil light. */
   .col-thumb {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    perspective: 700px;
   }
+  .col-thumb .emboss-tilt {
+    border-radius: 6px;
+  }
+  .col-thumb .vf-shimmer {
+    border-radius: 6px;
+  }
+  .row:hover .col-thumb .emboss-tilt {
+    transform: rotateY(4deg) rotateX(2deg);
+    box-shadow: 0 8px 18px rgba(18, 19, 26, 0.22);
+  }
+  .row:hover .col-thumb .vf-shimmer {
+    opacity: 1;
+    animation: vf-foil-sweep 900ms ease forwards;
+  }
+
   .col-name {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.25rem;
     min-width: 0;
   }
   .row-name {
-    font-family: var(--font-sans);
-    font-weight: 500;
-    font-size: 14px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.01em;
     color: var(--ink);
     white-space: nowrap;
     overflow: hidden;
@@ -351,7 +610,8 @@ const jsonLd = {
   .badge {
     display: inline-flex;
     align-items: center;
-    padding: 0.15rem 0.4rem;
+    padding: 0.18rem 0.45rem;
+    border-radius: 999px;
     font-family: var(--font-mono);
     font-size: 9px;
     font-weight: 700;
@@ -364,39 +624,45 @@ const jsonLd = {
     color: var(--ink);
   }
   .badge-credit {
-    border-color: color-mix(in oklab, var(--accent) 50%, var(--rule));
-    color: var(--accent);
+    border-color: color-mix(in oklab, var(--rupay) 45%, var(--rule));
+    color: var(--rupay);
+    background: color-mix(in oklab, var(--rupay) 8%, transparent);
   }
   .badge-debit {
-    border-color: color-mix(in oklab, var(--brass, #b8923a) 60%, var(--rule));
-    color: var(--brass, #b8923a);
+    border-color: color-mix(in oklab, var(--foil) 60%, var(--rule));
+    color: var(--foil-deep);
+    background: color-mix(in oklab, var(--foil) 10%, transparent);
   }
   .badge-prepaid {
-    border-color: color-mix(in oklab, var(--vermilion, #c2410c) 40%, var(--rule));
-    color: var(--vermilion, #c2410c);
+    border-color: color-mix(in oklab, var(--danger) 40%, var(--rule));
+    color: var(--danger);
+    background: color-mix(in oklab, var(--danger) 7%, transparent);
   }
 
   /* ── Benefit icons + tooltips ───────────────────────────────────────── */
   .col-perks {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem;
+    gap: 0.28rem;
     align-items: center;
   }
   .perk-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     font-size: 12px;
     border: 1px solid var(--rule);
+    border-radius: 6px;
     background: var(--paper);
     cursor: help;
     line-height: 1;
+    transition: border-color 120ms, background 120ms;
   }
   .perk-icon:hover {
-    border-color: var(--accent);
+    border-color: var(--foil);
+    background: color-mix(in oklab, var(--foil) 12%, var(--paper));
   }
 
   .col-num {
@@ -407,17 +673,19 @@ const jsonLd = {
     font-feature-settings: 'tnum' 1, 'zero' 1, 'calt' 0;
   }
   .num-neg {
-    color: var(--vermilion, #c2410c);
+    color: var(--danger);
   }
   .ltf-tag {
     display: inline-block;
-    padding: 0.125rem 0.375rem;
-    background: linear-gradient(135deg, var(--brass-light, #ecd28a) 0%, var(--brass, #b8923a) 60%, var(--brass-deep, #8b6e2a) 100%);
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--foil-light) 0%, var(--foil) 55%, var(--foil-deep) 100%);
     color: #1a1410;
     font-family: var(--font-mono);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.08em;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
   .col-cmp {
     display: flex;
@@ -427,7 +695,7 @@ const jsonLd = {
   .cmp-check {
     width: 18px;
     height: 18px;
-    accent-color: var(--accent);
+    accent-color: var(--rupay);
   }
 
   /* ── Pagination ─────────────────────────────────────────────────────── */
@@ -436,23 +704,25 @@ const jsonLd = {
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
-    padding: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 0.5rem 0;
     border-top: 1px solid var(--rule);
-    background: var(--paper-deep);
   }
   .pager-btn {
-    padding: 0.4rem 0.75rem;
-    background: var(--paper);
+    padding: 0.45rem 0.85rem;
+    background: var(--paper-raised);
     border: 1px solid var(--rule);
+    border-radius: 8px;
     color: var(--ink);
     font-family: var(--font-mono);
     font-size: 12px;
     letter-spacing: 0.08em;
     cursor: pointer;
+    transition: color 120ms, border-color 120ms;
   }
   .pager-btn:hover:not(:disabled) {
-    border-color: var(--accent);
-    color: var(--accent);
+    border-color: var(--rupay);
+    color: var(--rupay);
   }
   .pager-btn:disabled {
     opacity: 0.35;
@@ -476,7 +746,7 @@ const jsonLd = {
   .ledger-empty button {
     background: transparent;
     border: 0;
-    color: var(--accent);
+    color: var(--rupay);
     text-decoration: underline;
     cursor: pointer;
     font-family: inherit;
@@ -501,6 +771,9 @@ const jsonLd = {
     .ledger-header span:nth-child(6) {
       display: none;
     }
+    .row {
+      grid-template-columns: 1fr 40px;
+    }
     .row-link {
       grid-template-columns: 120px minmax(140px, 1fr) 96px 90px;
     }
@@ -519,14 +792,16 @@ const jsonLd = {
     width: 320px;
     background: var(--paper-raised);
     border: 1px solid var(--rule);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(18, 19, 26, 0.18);
   }
   .cmp-toggle {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0.625rem 0.875rem;
+    padding: 0.7rem 0.95rem;
     background: var(--paper-deep);
     border: 0;
     border-bottom: 1px solid var(--rule);
@@ -537,7 +812,7 @@ const jsonLd = {
     cursor: pointer;
   }
   .cmp-toggle-icon {
-    color: var(--ink-mute);
+    color: var(--foil-deep);
     transition: transform 120ms;
   }
   .cmp-drawer.open .cmp-toggle-icon {
@@ -570,14 +845,16 @@ const jsonLd = {
     grid-template-rows: auto auto;
     column-gap: 0.5rem;
     align-items: center;
-    padding: 0.4rem 0.5rem;
+    padding: 0.45rem 0.55rem;
     background: var(--paper);
     border: 1px solid var(--rule);
+    border-radius: 8px;
   }
   .cmp-item-name {
     font-size: 12px;
     color: var(--ink);
-    font-family: var(--font-sans);
+    font-family: var(--font-display);
+    font-weight: 600;
     grid-column: 1;
   }
   .cmp-item-bank {
@@ -595,32 +872,34 @@ const jsonLd = {
     height: 28px;
     background: transparent;
     border: 1px solid var(--rule);
+    border-radius: 6px;
     color: var(--ink-mute);
     cursor: pointer;
     font-size: 14px;
   }
   .cmp-item-x:hover {
-    border-color: var(--vermilion, #c2410c);
-    color: var(--vermilion, #c2410c);
+    border-color: var(--danger);
+    color: var(--danger);
   }
   .cmp-go {
     appearance: none;
     display: block;
     text-align: center;
     text-decoration: none;
-    background: var(--paper);
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    padding: 0.5rem;
+    background: var(--rupay);
+    border: 1px solid var(--rupay);
+    border-radius: 8px;
+    color: #fff;
+    padding: 0.6rem;
     font-family: var(--font-mono);
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.12em;
     cursor: pointer;
+    transition: background 120ms;
   }
   .cmp-go:hover:not(.cmp-go-disabled) {
-    background: var(--accent);
-    color: var(--accent-fg, #fff);
+    background: var(--rupay-deep);
   }
   .cmp-go-disabled {
     opacity: 0.4;
@@ -630,6 +909,21 @@ const jsonLd = {
   @media (max-width: 480px) {
     .cmp-drawer {
       width: calc(100vw - 2rem);
+    }
+  }
+
+  /* ── Reduced motion: kill the tilt + shimmer, keep it readable ──────── */
+  @media (prefers-reduced-motion: reduce) {
+    .emboss-tilt,
+    .row,
+    .row:hover .col-thumb .emboss-tilt,
+    .vf-hero-card:hover .emboss-thumb-static,
+    .vf-hero-card:hover.emboss-tilt {
+      transform: none !important;
+      transition: none !important;
+    }
+    .vf-shimmer {
+      display: none !important;
     }
   }
 </style>

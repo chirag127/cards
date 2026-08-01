@@ -1,28 +1,25 @@
 @import 'tailwindcss';
+@import './tokens.css';
 
 /*
- * oriz-cards — v2 Bloomberg-terminal-for-Indian-credit-cards.
+ * cards.oriz.in — "Vault & Foil" surface.
  *
- * Surface: slate (cool-archival, distinct from oriz-finance's warm graph paper
- * and the cream / dark family). Display: Geist Mono — the wide-mono display
- * face reinforces the screener / terminal metaphor (every card is a row in a
- * database, every fee is a number in a column). Sans body: Inter Tight.
+ * Grounded in the physical material world of Indian payment cards: embossed
+ * plastic, brass EMV chips, holographic foil, network holograms. Warm
+ * statement-paper bg, magstripe-black ink, brass-gold foil as the ONE signature
+ * accent (used sparingly), RuPay blue as the authentic secondary.
+ *
+ * Display: Hanken Grotesk — wide confident grotesque for headings. Body: Inter.
  * Numerics: JetBrains Mono with tabular-nums + slashed zero — non-negotiable
- * because joining fees, APRs, and reward rates have to align vertically across
- * hundreds of rows.
+ * because joining fees, APRs, and reward rates align vertically across rows.
  *
- * Vermilion is RESERVED on this site — only on negative deltas, late-fee
- * figures, and the lone "Apply" CTA on detail pages. Brass is the chip motif
- * accent and the wordmark middle-dot — never anything else.
- *
- * Tokens are family-anchor compatible: --paper / --ink / --rule / --accent
- * mirror oriz-home's contract; --vermilion + --brass are the cards-specific
- * additions.
+ * All color/font/scale tokens live in tokens.css (imported above). This file
+ * owns base element styles + shared component classes only.
  */
 
 @theme {
-  --font-display: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
-  --font-sans: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Hanken Grotesk', 'Clash Display', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --container-spine: 1280px;
@@ -31,46 +28,6 @@
 }
 
 @layer base {
-  :root {
-    color-scheme: light;
-
-    /* Slate paper — distinct cool-archival surface. */
-    --paper: #e8eaee;
-    --paper-raised: #f2f4f7;
-    --paper-deep: #dde0e6;
-    --ink: #0e1116;
-    --ink-mute: #5c6470;
-    --rule: #c9cdd4;
-
-    /* Primary accent: carbon blue. NOT vermilion. */
-    --accent: #2b3a55;
-    --accent-fg: #f2f4f7;
-
-    /* Reserved tokens. */
-    --vermilion: #b8362a; /* negative numbers, late-fee disclosures, ONE Apply CTA */
-    --brass: #b8923a; /* chip motif + wordmark middot only */
-    --brass-deep: #8b6e2a;
-    --brass-light: #d4b163;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      color-scheme: dark;
-      --paper: #171922;
-      --paper-raised: #21232e;
-      --paper-deep: #0e1018;
-      --ink: #e6e8ee;
-      --ink-mute: #8b92a0;
-      --rule: #2e323d;
-      --accent: #7c9ad4;
-      --accent-fg: #0e1116;
-      --vermilion: #e26a5c;
-      --brass: #d4ae5c;
-      --brass-deep: #a8893f;
-      --brass-light: #ecd28a;
-    }
-  }
-
   html {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -82,10 +39,10 @@
   body {
     background: var(--paper);
     color: var(--ink);
-    font-family: var(--font-sans);
-    font-size: 15px;
-    line-height: 1.55;
-    letter-spacing: -0.005em;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: var(--leading-normal, 1.6);
+    letter-spacing: -0.003em;
     margin: 0;
     overflow-y: scroll;
     -webkit-font-smoothing: antialiased;
@@ -276,4 +233,66 @@
 }
 .skip-link:focus {
   left: 0;
+}
+
+/*
+ * Signature interaction — the ONE bold thing. On hover the embossed card tilts
+ * in 3D and a foil-shimmer sweep catches the light, like real holographic foil.
+ * Everything else on the site stays quiet. Fully disabled under reduced-motion.
+ */
+.emboss,
+.emboss-static {
+  transition:
+    transform 260ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 260ms ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.emboss:hover,
+.emboss-static:hover {
+  transform: perspective(900px) rotateY(4deg) rotateX(2deg);
+}
+
+/* Foil shimmer overlay — the .emboss-shimmer div in EmbossedCard, plus an
+   ::after on static thumbnails. Swept across on hover. */
+.emboss-shimmer,
+.emboss-static::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: var(--foil-gradient);
+  background-size: 250% 250%;
+  background-position: 150% 150%;
+  opacity: 0;
+  mix-blend-mode: screen;
+  transition:
+    background-position 620ms ease,
+    opacity 220ms ease;
+}
+.emboss:hover .emboss-shimmer,
+.emboss-static:hover::after {
+  opacity: 1;
+  background-position: -50% -50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emboss,
+  .emboss-static {
+    transition: none;
+  }
+  .emboss:hover,
+  .emboss-static:hover {
+    transform: none;
+  }
+  .emboss-shimmer,
+  .emboss-static::after,
+  .emboss:hover .emboss-shimmer,
+  .emboss-static:hover::after {
+    display: none;
+    background: none;
+    opacity: 0;
+    transition: none;
+  }
 }

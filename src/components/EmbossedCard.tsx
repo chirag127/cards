@@ -127,6 +127,7 @@ export default function EmbossedCard({
       <div className="emboss-network emboss-text" data-emboss-text>
         {networkLabel}
       </div>
+      <div className="emboss-shimmer" aria-hidden="true" />
 
       <style>{`
         /* All sizes share the same proportions and emboss treatment — only
@@ -142,6 +143,39 @@ export default function EmbossedCard({
           overflow: hidden;
           isolation: isolate;
           /* The card sheen — a subtle linear highlight crossing diagonally. */
+          transform: perspective(800px) rotateY(0) rotateX(0) scale(1);
+          transform-style: preserve-3d;
+          transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+          will-change: transform;
+        }
+        .emboss:hover {
+          transform: perspective(800px) rotateY(4deg) rotateX(2deg) scale(1.02);
+        }
+        /* Foil-shimmer sweep — diagonal light bar catching the foil on hover. */
+        .emboss-shimmer {
+          position: absolute;
+          inset: -40% -20%;
+          z-index: 3;
+          pointer-events: none;
+          background: linear-gradient(
+            115deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.28) 45%,
+            rgba(228, 206, 150, 0.55) 50%,
+            rgba(255, 255, 255, 0.28) 55%,
+            transparent 70%
+          );
+          transform: translateX(-120%);
+          opacity: 0;
+          transition: opacity 120ms ease-out;
+        }
+        .emboss:hover .emboss-shimmer {
+          opacity: 1;
+          animation: emboss-shimmer-sweep 900ms ease-out;
+        }
+        @keyframes emboss-shimmer-sweep {
+          from { transform: translateX(-120%); }
+          to { transform: translateX(120%); }
         }
         .emboss::before {
           content: "";
@@ -311,7 +345,18 @@ export default function EmbossedCard({
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .emboss { transition: none; }
+          .emboss,
+          .emboss:hover {
+            transition: box-shadow 200ms ease-out;
+            transform: none;
+          }
+          .emboss:hover {
+            box-shadow:
+              0 1px 0 rgba(255, 255, 255, 0.08) inset,
+              0 0 0 1px rgba(0, 0, 0, 0.3),
+              0 22px 44px rgba(0, 0, 0, 0.4);
+          }
+          .emboss-shimmer { display: none; }
         }
       `}</style>
     </div>

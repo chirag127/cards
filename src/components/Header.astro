@@ -1,125 +1,226 @@
 ---
 /*
- * Header — 56px slate-on-slate-deep terminal bar. NO mega-nav, NO dropdowns.
- * Left: brass-chip wordmark. Right: ⌘K hint, theme indicator, sign in.
+ * Header — Vault & Foil top nav for cards.oriz.in.
  *
- * The filter rail on the home page IS the navigation — there is no dropdown
- * menu of categories. The header is intentionally sparse: a Bloomberg
- * terminal does not have hamburger menus.
+ * Left: wordmark "oriz / cards" (display grotesque, the "/" in foil).
+ * Nav (>=768px): All cards . Credit . Debit . Prepaid . RuPay . Banks . Compare.
+ * Right: search affordance + Firebase auth island. <768px: hamburger -> drawer.
+ *
+ * Sticky, warm --paper, backdrop-blur, bottom --rule hairline. Active link =
+ * foil underline; hover = RuPay. Reduced-motion respected in the drawer island.
  */
-import Wordmark from '~/components/Wordmark.astro'
 import AuthButton from '~/components/AuthButton.tsx'
+import MobileNavDrawer from '~/components/MobileNavDrawer.tsx'
+
+const links = [
+  { href: '/', label: 'All cards' },
+  { href: '/credit/', label: 'Credit' },
+  { href: '/debit/', label: 'Debit' },
+  { href: '/prepaid/', label: 'Prepaid' },
+  { href: '/rupay/', label: 'RuPay' },
+  { href: '/banks/', label: 'Banks' },
+  { href: '/compare/', label: 'Compare' },
+]
+
+const current = Astro.url.pathname
+const isActive = (href: string) => (href === '/' ? current === '/' : current.startsWith(href))
 ---
 
-<header class="header">
-  <div class="spine header-row">
-    <Wordmark href="/" size={18} />
-    <nav class="header-nav" aria-label="Primary">
-      <a href="/about/" class="nav-link mono">about</a>
-      <a href="/contact/" class="nav-link mono">contact</a>
+<header class="hdr">
+  <div class="spine hdr-row">
+    <a class="wm" href="/" aria-label="oriz cards home">
+      <span class="wm-a">oriz</span>
+      <span class="wm-sep" aria-hidden="true">/</span>
+      <span class="wm-b">cards</span>
+    </a>
+
+    <nav class="hdr-nav" aria-label="Primary">
+      {
+        links.map((item) => (
+          <a href={item.href} class="nav-link" aria-current={isActive(item.href) ? 'page' : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
     </nav>
-    <div class="header-controls">
-      <kbd class="kbd mono" title="Filter rail focus is search on this site">⌘K</kbd>
-      <span class="theme-hint mono" aria-hidden="true">◐</span>
-      <AuthButton client:load />
+
+    <div class="hdr-right">
+      <a class="search-btn" href="/search/" aria-label="Search cards">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none">
+          <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"></circle>
+          <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+          ></line>
+        </svg>
+        <span class="search-label">Search</span>
+      </a>
+      <div class="auth-slot"><AuthButton client:load /></div>
+      <div class="mnav-slot"><MobileNavDrawer client:load links={links} current={current} /></div>
     </div>
   </div>
-  <hr class="hairline" />
 </header>
 
 <style>
-  .header {
+  .hdr {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: var(--paper-deep);
-    color: var(--ink);
+    background: color-mix(in oklab, var(--paper) 82%, transparent);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid var(--rule);
   }
-  .header-row {
+  .hdr-row {
     display: flex;
     align-items: center;
-    height: 56px;
-    gap: 1.25rem;
+    height: 60px;
+    gap: 1.5rem;
   }
-  .header-nav {
+
+  /* Wordmark */
+  .wm {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.34em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .wm-sep {
+    color: var(--foil);
+    font-weight: 800;
+  }
+  .wm-b {
+    color: var(--ink-mute);
+    font-weight: 600;
+  }
+
+  /* Desktop nav */
+  .hdr-nav {
     display: none;
+    align-items: center;
+    gap: 1.4rem;
     flex: 1;
-    gap: 1.25rem;
+    min-width: 0;
   }
   .nav-link {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: var(--ink-mute);
+    position: relative;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    padding-block: 0.35rem;
+    transition: color 0.15s ease;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: var(--foil);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.18s ease;
   }
   .nav-link:hover {
-    color: var(--accent);
+    color: var(--rupay);
   }
-  .header-controls {
+  .nav-link[aria-current='page'] {
+    color: var(--ink);
+  }
+  .nav-link[aria-current='page']::after {
+    transform: scaleX(1);
+  }
+  .nav-link:focus-visible {
+    outline: 2px solid var(--rupay);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Right cluster */
+  .hdr-right {
     margin-left: auto;
     display: inline-flex;
     align-items: center;
-    gap: 0.875rem;
+    gap: 0.75rem;
+    flex-shrink: 0;
   }
-  .kbd {
+  .search-btn {
     display: inline-flex;
     align-items: center;
-    height: 22px;
-    padding-inline: 0.5rem;
-    background: var(--paper);
+    gap: 0.45rem;
+    height: 36px;
+    padding-inline: 0.75rem;
+    color: var(--ink-mute);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--paper-raised);
     border: 1px solid var(--rule);
-    color: var(--ink-mute);
-    font-size: 11px;
-    letter-spacing: 0.04em;
+    border-radius: 999px;
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease;
   }
-  .theme-hint {
-    color: var(--ink-mute);
-    font-size: 14px;
-    cursor: default;
+  .search-btn:hover {
+    color: var(--rupay);
+    border-color: color-mix(in oklab, var(--rupay) 45%, var(--rule));
   }
-  .sign-in {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    text-transform: lowercase;
-    color: var(--ink);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-    text-decoration-color: var(--ink-mute);
-    letter-spacing: 0.04em;
-  }
-  .sign-in:hover {
-    color: var(--accent);
-    text-decoration-color: var(--accent);
-  }
-  .sign-in:focus-visible {
-    outline: 2px solid var(--accent);
+  .search-btn:focus-visible {
+    outline: 2px solid var(--rupay);
     outline-offset: 2px;
-    text-decoration-color: var(--accent);
   }
+  .search-label {
+    display: none;
+  }
+
+  .auth-slot {
+    display: none;
+  }
+  .mnav-slot {
+    display: inline-flex;
+  }
+
+  /* Auth island — embossed-foil skin (island renders .auth-btn/.auth-dot) */
   :global(.auth-btn) {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    max-width: 180px;
-    font-size: 12px;
-    text-transform: lowercase;
+    gap: 0.45rem;
+    max-width: 190px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
     color: var(--ink);
+    cursor: pointer;
     text-decoration: none;
-    letter-spacing: 0.04em;
-    border: 1px solid var(--rule);
-    padding: 0.3rem 0.6rem;
-    background: var(--paper);
+    border: 1.5px solid var(--foil);
+    border-radius: 10px;
+    padding: 0.4rem 0.85rem;
+    background: linear-gradient(180deg, #fffdf7 0%, var(--paper) 100%);
+    box-shadow:
+      0 1px 0 var(--foil-light) inset,
+      0 1px 2px color-mix(in oklab, var(--foil-deep) 18%, transparent);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    transition:
+      box-shadow 0.18s ease,
+      transform 0.18s ease;
   }
   :global(.auth-btn:hover) {
-    border-color: var(--accent);
-    color: var(--accent);
+    box-shadow:
+      0 1px 0 var(--foil-light) inset,
+      0 4px 12px color-mix(in oklab, var(--foil-deep) 30%, transparent);
+    transform: translateY(-1px);
   }
   :global(.auth-btn:focus-visible) {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--rupay);
     outline-offset: 2px;
   }
   :global(.auth-dot) {
@@ -130,13 +231,133 @@ import AuthButton from '~/components/AuthButton.tsx'
     flex-shrink: 0;
   }
   :global(.auth-dot[data-on='true']) {
-    background: var(--accent);
-    box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent) 30%, transparent);
+    background: var(--foil);
+    box-shadow: 0 0 0 2px color-mix(in oklab, var(--foil) 35%, transparent);
   }
+
+  /* --- Mobile drawer island (global — island markup is unscoped) --- */
+  :global(.mnav-trigger) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  :global(.mnav-trigger:focus-visible) {
+    outline: 2px solid var(--rupay);
+    outline-offset: 2px;
+  }
+  :global(.mnav-bars) {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 18px;
+  }
+  :global(.mnav-bars span) {
+    display: block;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+  :global(.mnav-bars[data-open='true'] span:nth-child(1)) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  :global(.mnav-bars[data-open='true'] span:nth-child(2)) {
+    opacity: 0;
+  }
+  :global(.mnav-bars[data-open='true'] span:nth-child(3)) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  :global(.mnav-overlay) {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: color-mix(in oklab, var(--ink) 45%, transparent);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+  :global(.mnav-panel) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 61;
+    display: flex;
+    flex-direction: column;
+    width: min(82vw, 320px);
+    height: 100dvh;
+    padding: 1.5rem 1.25rem;
+    background: var(--paper);
+    border-left: 1px solid var(--rule);
+    box-shadow: -12px 0 40px color-mix(in oklab, var(--ink) 18%, transparent);
+    transform: translateX(100%);
+    transition: transform 0.24s ease;
+  }
+  :global(.mnav-panel[data-open='true']) {
+    transform: translateX(0);
+  }
+  :global(.mnav-links) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 2.5rem;
+  }
+  :global(.mnav-link) {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--ink);
+    padding: 0.6rem 0.25rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  :global(.mnav-link:hover) {
+    color: var(--rupay);
+  }
+  :global(.mnav-link[aria-current='page']) {
+    box-shadow: inset 3px 0 0 var(--foil);
+    padding-left: 0.65rem;
+  }
+  :global(.mnav-link:focus-visible) {
+    outline: 2px solid var(--rupay);
+    outline-offset: 2px;
+  }
+  :global(.mnav-foot) {
+    margin-top: auto;
+    padding-top: 1.25rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(.mnav-panel),
+    :global(.mnav-bars span),
+    :global(.auth-btn),
+    .nav-link::after {
+      transition: none;
+    }
+    :global(.auth-btn:hover) {
+      transform: none;
+    }
+  }
+
   @media (min-width: 768px) {
-    .header-nav {
+    .hdr-nav {
       display: inline-flex;
-      margin-left: 1rem;
+    }
+    .search-label {
+      display: inline;
+    }
+    .auth-slot {
+      display: inline-flex;
+    }
+    .mnav-slot {
+      display: none;
     }
   }
 </style>

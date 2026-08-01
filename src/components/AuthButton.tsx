@@ -1,34 +1,39 @@
 /*
  * AuthButton — compact top-right sign-in / account island (client:load).
- * Reflects the shared Firebase auth state (oriz family SSO). Signed out →
- * "sign in"; signed in → the user's name/email linking to /account/.
+ * Vault & Foil styled Clerk auth. Signed out → foil-bordered "Sign in"
+ * button opening a modal; signed in → Clerk <UserButton>.
  *
  * Per the no-auth rule this gates only saved-cards/compare-sync, never the
- * free ledger. This repo has no Clerk dependency — Firebase is the family
- * auth provider, so the "auth button island" is wired to it.
+ * free ledger.
  */
-import { onAuthStateChanged, type User } from 'firebase/auth'
-import { useEffect, useState } from 'react'
-import { auth } from '~/lib/firebase'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
+import ClerkProvider from './auth/ClerkProvider'
 
 export default function AuthButton() {
-  const [user, setUser] = useState<User | null>(null)
-  const [ready, setReady] = useState(false)
-
-  useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (u) => {
-      setUser(u)
-      setReady(true)
-    })
-    return unsub
-  }, [])
-
-  const label = !ready ? 'sign in' : user ? (user.displayName ?? user.email ?? 'account') : 'sign in'
-
   return (
-    <a className="auth-btn mono" href="/account/" aria-label={user ? 'Account' : 'Sign in'}>
-      <span className="auth-dot" data-on={user ? 'true' : 'false'} aria-hidden="true" />
-      {label}
-    </a>
+    <ClerkProvider>
+      <SignedOut>
+        <SignInButton mode="modal">
+          <button className="auth-btn" type="button" aria-label="Sign in">
+            Sign in
+          </button>
+        </SignInButton>
+      </SignedOut>
+      <SignedIn>
+        <UserButton
+          afterSignOutUrl="/"
+          appearance={{
+            elements: {
+              userButtonAvatarBox: {
+                width: '28px',
+                height: '28px',
+                border: '1.5px solid #C6A15B',
+                boxShadow: '0 0 0 2px rgba(198,161,91,0.25)',
+              },
+            },
+          }}
+        />
+      </SignedIn>
+    </ClerkProvider>
   )
 }

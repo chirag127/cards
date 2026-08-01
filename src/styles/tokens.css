@@ -1,0 +1,121 @@
+/*
+ * cards.oriz.in — "Vault & Foil" design tokens.
+ *
+ * Grounded in the physical material world of Indian payment cards: embossed
+ * plastic, brass EMV chips, holographic foil, RuPay/Visa/Mastercard holograms,
+ * tactile ridges. NOT a Bloomberg terminal. Warm statement-paper surface,
+ * magstripe-black ink, brass-gold foil as the ONE signature accent (used
+ * sparingly), RuPay blue as the authentic secondary.
+ *
+ * Type: wide confident grotesque display (Hanken Grotesk) + Inter body +
+ * JetBrains Mono for data/fees (tabular-nums + slashed-zero).
+ *
+ * Imported AFTER global.css so these :root values win. Old slate/terminal token
+ * names (--accent / --brass* / --vermilion / --paper-deep / --font-sans) are
+ * remapped to the new palette so the whole site inherits Vault & Foil without
+ * touching every component. Vault & Foil is a single warm-light identity — the
+ * dark block is neutralised so paper stays warm.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ── Core palette ─────────────────────────────────────────────────────── */
+  --ink: #12131a; /* magstripe near-black — text on light */
+  --paper: #faf8f3; /* warm statement-paper off-white — main bg */
+  --paper-raised: #ffffff; /* cards / panels */
+  --paper-deep: #f3efe6; /* recessed panels (rail / toolbar) */
+  --ink-mute: #6b6a63;
+  --rule: #e8e3d6; /* warm hairline */
+
+  /* ── Foil — the SIGNATURE accent, used sparingly ──────────────────────── */
+  --foil: #c6a15b; /* embossed brass-gold */
+  --foil-light: #e4ce96;
+  --foil-deep: #9a7736;
+
+  /* ── Authentic secondary ──────────────────────────────────────────────── */
+  --rupay: #097dc6; /* RuPay blue — links / active */
+  --rupay-deep: #0a5f96;
+
+  /* ── Semantic ─────────────────────────────────────────────────────────── */
+  --danger: #c1440e; /* fees / negatives only */
+
+  /* Foil shimmer sweep — the hover catch-light on real foil. */
+  --foil-gradient: linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 35%,
+    color-mix(in oklab, var(--foil-light) 70%, transparent) 47%,
+    color-mix(in oklab, #ffffff 85%, transparent) 50%,
+    color-mix(in oklab, var(--foil-light) 70%, transparent) 53%,
+    transparent 65%,
+    transparent 100%
+  );
+
+  /* ── Type ─────────────────────────────────────────────────────────────── */
+  --font-display: 'Hanken Grotesk', 'Clash Display', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ── Type scale ───────────────────────────────────────────────────────── */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.375rem; /* 22px */
+  --text-2xl: clamp(1.75rem, 3vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 5vw, 3.25rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+
+  /* ── Spacing scale ────────────────────────────────────────────────────── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* ── Radii ────────────────────────────────────────────────────────────── */
+  --radius-card: 12px; /* real card corner */
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ── Layout ───────────────────────────────────────────────────────────── */
+  --container-spine: 1280px;
+  --container-prose: 720px;
+  --rail-width: 320px;
+
+  /* ── Back-compat aliases (old slate/terminal names → Vault & Foil) ─────── */
+  --accent: var(--rupay); /* primary accent is now RuPay blue */
+  --accent-fg: #ffffff;
+  --vermilion: var(--danger);
+  --brass: var(--foil);
+  --brass-deep: var(--foil-deep);
+  --brass-light: var(--foil-light);
+  --font-sans: var(--font-body);
+}
+
+/* Single warm-light identity — neutralise global.css's dark block. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+    --ink: #12131a;
+    --paper: #faf8f3;
+    --paper-raised: #ffffff;
+    --paper-deep: #f3efe6;
+    --ink-mute: #6b6a63;
+    --rule: #e8e3d6;
+    --accent: var(--rupay);
+    --accent-fg: #ffffff;
+    --vermilion: var(--danger);
+    --brass: var(--foil);
+    --brass-deep: var(--foil-deep);
+    --brass-light: var(--foil-light);
+  }
+}

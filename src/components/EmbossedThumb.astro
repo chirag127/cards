@@ -57,6 +57,7 @@ const redactedName = '•••• •••• ••••'
   <span class="emboss-bin">{binPrefix} •••• •••• ••••</span>
   <span class="emboss-name">{redactedName}</span>
   <span class="emboss-network">{networkLabel}</span>
+  <span class="emboss-shimmer"></span>
 </div>
 
 <style is:global>
@@ -79,6 +80,38 @@ const redactedName = '•••• •••• ••••'
       0 1px 0 rgba(255, 255, 255, 0.08) inset,
       0 0 0 1px rgba(0, 0, 0, 0.25),
       0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: perspective(800px) rotateY(0) rotateX(0) scale(1);
+    transform-style: preserve-3d;
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+    will-change: transform;
+  }
+  .emboss-thumb-static:hover {
+    transform: perspective(800px) rotateY(4deg) rotateX(2deg) scale(1.02);
+  }
+  .emboss-thumb-static .emboss-shimmer {
+    position: absolute;
+    inset: -40% -20%;
+    z-index: 3;
+    pointer-events: none;
+    background: linear-gradient(
+      115deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.28) 45%,
+      rgba(228, 206, 150, 0.55) 50%,
+      rgba(255, 255, 255, 0.28) 55%,
+      transparent 70%
+    );
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: opacity 120ms ease-out;
+  }
+  .emboss-thumb-static:hover .emboss-shimmer {
+    opacity: 1;
+    animation: emboss-shimmer-sweep 900ms ease-out;
+  }
+  @keyframes emboss-shimmer-sweep {
+    from { transform: translateX(-120%); }
+    to { transform: translateX(120%); }
   }
   .emboss-thumb-static::before {
     content: "";
@@ -150,5 +183,19 @@ const redactedName = '•••• •••• ••••'
     bottom: 8px;
     font-size: 7px;
     letter-spacing: 0.12em;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .emboss-thumb-static,
+    .emboss-thumb-static:hover {
+      transition: box-shadow 200ms ease-out;
+      transform: none;
+    }
+    .emboss-thumb-static:hover {
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.08) inset,
+        0 0 0 1px rgba(0, 0, 0, 0.25),
+        0 8px 16px rgba(0, 0, 0, 0.28);
+    }
+    .emboss-thumb-static .emboss-shimmer { display: none; }
   }
 </style>

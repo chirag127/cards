@@ -1,23 +1,7 @@
 ---
-import FinishSignIn from '~/components/FinishSignIn.tsx'
-import BaseLayout from '~/layouts/BaseLayout.astro'
+/*
+ * Legacy Firebase email-link landing. Clerk handles sign-in via its own modal
+ * (hash routing on /account/), so this route just redirects there.
+ */
+return Astro.redirect('/account/')
 ---
-
-<BaseLayout
-  title="Finishing sign-in — oriz · cards"
-  description="Completing email-link sign-in."
-  noindex={true}
->
-  <div class="spine-prose">
-    <section class="finish">
-      <FinishSignIn client:load />
-    </section>
-  </div>
-</BaseLayout>
-
-<style>
-  .finish {
-    padding-block: 5rem 4rem;
-    text-align: center;
-  }
-</style>
