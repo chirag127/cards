@@ -1,13 +1,19 @@
 /*
- * CardScreener — the home-ledger filter island (client:load). Owns search,
- * the full filter rail, sort, pagination (50/page) and the compare drawer for
- * all 750 cards. Receives the derived `CardRow[]` inline from index.astro so
- * there's no fetch. Pure React 19 + local state; no extra deps (fuzzy match is
- * a small subsequence scorer, not a library — ladder rung 6).
+ * CardScreener — the dense full-width card screener island (client:load). Owns
+ * search, the full filter rail, sort, pagination (120/page) and the compare
+ * drawer for all 750 cards. Filter rail + results grid live in ONE React island
+ * so selecting a filter immediately narrows the grid (the previous bug: the
+ * results felt un-filterable because the shell capped width at 1280px and the
+ * table columns were crushed — now edge-to-edge dense text tiles).
  *
- * The embossed thumbnail markup mirrors EmbossedThumb.astro; the shared static
- * CSS (`.emboss-thumb-static`) is emitted once by a hidden EmbossedThumb in the
- * Astro page so this island reuses it.
+ * NO card images / embossed thumbnails — text-only tiles pack far more per
+ * screen. Pure React 19 + local state; fuzzy match is a small subsequence
+ * scorer, not a library (ladder rung 6).
+ *
+ * Compare state lives in the shared `oriz:cards:compare` sessionStorage bucket
+ * (rich {slug,issuer,name,bank,network} schema) + an `oriz:compare-change`
+ * event; the global CompareDrawer island (BaseLayout) renders the drawer. This
+ * island does NOT render its own drawer — one drawer, one bucket.
  */
 import { useEffect, useMemo, useState } from 'react'
 import type { CardRow, CardType } from '~/lib/cards'
@@ -19,15 +25,6 @@ interface Props {
   cardTypes: Array<{ type: CardType; count: number }>
   maxFee: number
   total: number
-}
-
-const NETWORK_LABEL: Record<string, string> = {
-  Visa: 'VISA',
-  Mastercard: 'MASTERCARD',
-  RuPay: 'RuPay',
-  Amex: 'AMEX',
-  DinersClub: 'DINERS',
-  Discover: 'DISCOVER',
 }
 
 const TYPE_LABEL: Record<CardType, string> = {
@@ -55,10 +52,32 @@ const SORTS: Array<{ key: string; label: string; cmp: (a: CardRow, b: CardRow) =
   { key: 'bank', label: 'Bank A→Z', cmp: (a, b) => a.bank.localeCompare(b.bank) },
 ]
 
-const PAGE_SIZE = 50
+const PAGE_SIZE = 120
 const CMP_KEY = 'oriz:cards:compare'
+const CMP_MAX = 3
 const inr = (n: number) => new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 }).format(n)
-const fmtApr = (n: number) => (n ? `${n.toFixed(2)}% p.a.` : '—')
+
+interface CmpEntry {
+  slug: string
+  issuer: string
+  name: string
+  bank: string
+  network: string
+}
+
+function readCompare(): CmpEntry[] {
+  try {
+    const arr = JSON.parse(sessionStorage.getItem(CMP_KEY) ?? '[]')
+    return Array.isArray(arr) ? arr.filter((e) => e?.slug && e?.issuer) : []
+  } catch {
+    return []
+  }
+}
+
+function writeCompare(entries: CmpEntry[]) {
+  sessionStorage.setItem(CMP_KEY, JSON.stringify(entries))
+  window.dispatchEvent(new CustomEvent('oriz:compare-change'))
+}
 
 /** Subsequence fuzzy score over card name + bank. Higher = better; -1 = no match. */
 function fuzzyScore(haystack: string, needle: string): number {
@@ -80,29 +99,6 @@ function fuzzyScore(haystack: string, needle: string): number {
   return score
 }
 
-function EmbossThumb({ row }: { row: CardRow }) {
-  const [a, b] = row.stockGradient
-  return (
-    <div
-      className="emboss-static emboss-thumb-static"
-      style={{ ['--card-stock-a' as string]: a, ['--card-stock-b' as string]: b }}
-      aria-hidden="true"
-    >
-      <span className="emboss-issuer">{(row.bankCode || row.bank).toUpperCase()}</span>
-      <span className="emboss-chip">
-        <span className="emboss-chip-line" />
-        <span className="emboss-chip-line" />
-        <span className="emboss-chip-line" />
-        <span className="emboss-chip-line" />
-        <span className="emboss-chip-line" />
-      </span>
-      <span className="emboss-bin">{row.binPrefix} •••• •••• ••••</span>
-      <span className="emboss-name">•••• •••• ••••</span>
-      <span className="emboss-network">{NETWORK_LABEL[row.network] ?? row.network.toUpperCase()}</span>
-    </div>
-  )
-}
-
 export default function CardScreener({ rows, issuers, networks, cardTypes, maxFee, total }: Props) {
   const [q, setQ] = useState('')
   const [types, setTypes] = useState<Set<string>>(new Set())
@@ -113,22 +109,19 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
   const [ltfOnly, setLtfOnly] = useState(false)
   const [sortKey, setSortKey] = useState('name')
   const [page, setPage] = useState(0)
-  const [compare, setCompare] = useState<CardRow[]>([])
-  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [compareSlugs, setCompareSlugs] = useState<Set<string>>(new Set())
+  const [filtersOpen, setFiltersOpen] = useState(false)
 
   useEffect(() => {
-    try {
-      const saved = JSON.parse(sessionStorage.getItem(CMP_KEY) ?? '[]') as Array<{ slug: string }>
-      const bySlug = new Map(rows.map((r) => [r.slug, r]))
-      setCompare(saved.map((s) => bySlug.get(s.slug)).filter((r): r is CardRow => !!r).slice(0, 4))
-    } catch {
-      /* ignore */
+    const sync = () => setCompareSlugs(new Set(readCompare().map((e) => e.slug)))
+    sync()
+    window.addEventListener('storage', sync)
+    window.addEventListener('oriz:compare-change', sync)
+    return () => {
+      window.removeEventListener('storage', sync)
+      window.removeEventListener('oriz:compare-change', sync)
     }
-  }, [rows])
-
-  useEffect(() => {
-    sessionStorage.setItem(CMP_KEY, JSON.stringify(compare.map((c) => ({ slug: c.slug }))))
-  }, [compare])
+  }, [])
 
   const filtered = useMemo(() => {
     const scored: Array<{ row: CardRow; score: number }> = []
@@ -169,11 +162,17 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
   }
 
   const toggleCompare = (r: CardRow) => {
-    setCompare((prev) => {
-      if (prev.some((x) => x.slug === r.slug)) return prev.filter((x) => x.slug !== r.slug)
-      if (prev.length >= 4) return prev
-      return [...prev, r]
-    })
+    const cur = readCompare()
+    const exists = cur.some((x) => x.slug === r.slug)
+    if (exists) {
+      writeCompare(cur.filter((x) => x.slug !== r.slug))
+      return
+    }
+    if (cur.length >= CMP_MAX) return
+    writeCompare([
+      ...cur,
+      { slug: r.slug, issuer: r.bankCode, name: r.name, bank: r.bank, network: r.network },
+    ])
   }
 
   const reset = () => {
@@ -186,321 +185,232 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
     setLtfOnly(false)
   }
 
-  const compareSlugs = new Set(compare.map((c) => c.slug))
-  const compareHref =
-    compare.length >= 2 ? `/compare/?cards=${compare.map((c) => c.slug).join(',')}` : undefined
+  const activeCount =
+    types.size + nets.size + banks.size + benefits.size + (ltfOnly ? 1 : 0) + (feeMax < maxFee ? 1 : 0)
+  const compareCount = compareSlugs.size
 
   return (
-    <>
-      <header className="vf-hero" aria-label="Every card in India, in one ledger">
-        <div className="vf-hero-copy">
-          <p className="vf-hero-eyebrow mono">The card ledger · India</p>
-          <h1 className="vf-hero-title">
-            Every card in India, <span className="vf-hero-foil">in one ledger.</span>
-          </h1>
-          <p className="vf-hero-lede">
-            Credit, debit and prepaid — fees, rewards and benefits, side by side. Search, filter and
-            compare across every issuer.
-          </p>
-          <p className="vf-hero-count mono">
-            <span className="vf-hero-count-num">{total.toLocaleString('en-IN')}</span> cards indexed
-          </p>
-        </div>
-        <div className="vf-hero-art" aria-hidden="true">
-          <div className="vf-hero-card emboss-tilt">
-            <div className="emboss-static emboss-thumb-static vf-hero-thumb" style={{ ['--card-stock-a' as string]: '#1F2A44', ['--card-stock-b' as string]: '#0E1524' }}>
-              <span className="emboss-issuer">ORIZ</span>
-              <span className="emboss-chip">
-                <span className="emboss-chip-line" />
-                <span className="emboss-chip-line" />
-                <span className="emboss-chip-line" />
-                <span className="emboss-chip-line" />
-                <span className="emboss-chip-line" />
-              </span>
-              <span className="emboss-bin">4242 •••• •••• ••••</span>
-              <span className="emboss-name">•••• •••• ••••</span>
-              <span className="emboss-network">RuPay</span>
-            </div>
-            <span className="vf-shimmer" aria-hidden="true" />
+    <div className="scr-shell">
+      <aside
+        className={`scr-rail ${filtersOpen ? 'open' : ''}`}
+        aria-label="Filter cards"
+      >
+        <div className="scr-rail-inner">
+          <div className="scr-rail-summary">
+            <span className="scr-count">{filtered.length.toLocaleString('en-IN')}</span>
+            <span className="scr-total">/ {total.toLocaleString('en-IN')} cards</span>
           </div>
-        </div>
-      </header>
 
-      <section className="ledger-shell" aria-label="Card screener">
-        <aside className="rail" aria-label="Filter rail">
-          <div className="rail-inner">
-            <div className="rail-summary">
-              <span className="rail-count mono">{filtered.length.toLocaleString('en-IN')}</span>
-              <span className="rail-total mono">/ {total.toLocaleString('en-IN')} CARDS</span>
-            </div>
+          <input
+            type="search"
+            className="scr-search"
+            placeholder="Search card or bank…"
+            aria-label="Search cards"
+            value={q}
+            onInput={(e) => setQ((e.target as HTMLInputElement).value)}
+          />
 
-            <div className="rail-search">
-              <input
-                type="search"
-                className="rail-search-input mono"
-                placeholder="search card or bank…"
-                aria-label="Search cards"
-                value={q}
-                onInput={(e) => setQ((e.target as HTMLInputElement).value)}
-              />
-            </div>
-
-            <fieldset className="rail-section">
-              <legend className="rail-h mono">Card type</legend>
-              <div className="rail-checks">
-                {cardTypes.map((t) => (
-                  <label className="rail-check" key={t.type}>
-                    <input
-                      type="checkbox"
-                      checked={types.has(t.type)}
-                      onChange={() => toggleSet(types, t.type, setTypes)}
-                    />
-                    <span className="mono">{TYPE_LABEL[t.type]}</span>
-                    <span className="mono issuer-count">{t.count}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-
-            <fieldset className="rail-section">
-              <legend className="rail-h mono">Network</legend>
-              <div className="rail-checks">
-                {networks.map((n) => (
-                  <label className="rail-check" key={n}>
-                    <input
-                      type="checkbox"
-                      checked={nets.has(n)}
-                      onChange={() => toggleSet(nets, n, setNets)}
-                    />
-                    <span className="mono">{n}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-
-            <fieldset className="rail-section">
-              <legend className="rail-h mono">
-                Annual fee ≤ <span className="mono">₹{inr(feeMax)}</span>
-              </legend>
-              <input
-                type="range"
-                className="rail-range"
-                min={0}
-                max={maxFee}
-                step={500}
-                value={feeMax}
-                aria-label="Maximum annual fee"
-                onInput={(e) => setFeeMax(Number((e.target as HTMLInputElement).value))}
-              />
-              <div className="rail-range-ends mono">
-                <span>₹0</span>
-                <span>₹{inr(maxFee)}</span>
-              </div>
-              <label className="rail-check">
-                <input type="checkbox" checked={ltfOnly} onChange={() => setLtfOnly((v) => !v)} />
-                <span className="mono">Lifetime free only</span>
+          <fieldset className="scr-sect">
+            <legend className="scr-h">Card type</legend>
+            {cardTypes.map((t) => (
+              <label className="scr-check" key={t.type}>
+                <input
+                  type="checkbox"
+                  checked={types.has(t.type)}
+                  onChange={() => toggleSet(types, t.type, setTypes)}
+                />
+                <span>{TYPE_LABEL[t.type]}</span>
+                <span className="scr-check-n">{t.count}</span>
               </label>
-            </fieldset>
+            ))}
+          </fieldset>
 
-            <fieldset className="rail-section">
-              <legend className="rail-h mono">Benefits</legend>
-              <div className="rail-checks">
-                {BENEFITS.map((b) => (
-                  <label className="rail-check" key={b.key}>
-                    <input
-                      type="checkbox"
-                      checked={benefits.has(b.key)}
-                      onChange={() => toggleSet(benefits, b.key, setBenefits)}
-                    />
-                    <span className="mono">
-                      <span aria-hidden="true">{b.glyph}</span> {b.label}
-                    </span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
+          <fieldset className="scr-sect">
+            <legend className="scr-h">Network</legend>
+            {networks.map((n) => (
+              <label className="scr-check" key={n}>
+                <input
+                  type="checkbox"
+                  checked={nets.has(n)}
+                  onChange={() => toggleSet(nets, n, setNets)}
+                />
+                <span>{n}</span>
+              </label>
+            ))}
+          </fieldset>
 
-            <fieldset className="rail-section rail-issuers">
-              <legend className="rail-h mono">Bank</legend>
-              <div className="rail-issuers-scroll">
-                {issuers.map((i) => (
-                  <label className="rail-check" key={i.code}>
-                    <input
-                      type="checkbox"
-                      checked={banks.has(i.code)}
-                      onChange={() => toggleSet(banks, i.code, setBanks)}
-                    />
-                    <span className="mono issuer-name">{i.name}</span>
-                    <span className="mono issuer-count">{i.count}</span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-
-            <button type="button" className="rail-reset mono" onClick={reset}>
-              [ × CLEAR ALL ]
-            </button>
-          </div>
-        </aside>
-
-        <div className="ledger">
-          <div className="ledger-toolbar">
-            <label className="sort-wrap mono">
-              SORT
-              <select
-                className="rail-select sort-select mono"
-                value={sortKey}
-                aria-label="Sort cards"
-                onChange={(e) => setSortKey((e.target as HTMLSelectElement).value)}
-              >
-                {SORTS.map((s) => (
-                  <option value={s.key} key={s.key}>
-                    {s.label}
-                  </option>
-                ))}
-              </select>
+          <fieldset className="scr-sect">
+            <legend className="scr-h">
+              Annual fee ≤ ₹{inr(feeMax)}
+            </legend>
+            <input
+              type="range"
+              className="scr-range"
+              min={0}
+              max={maxFee}
+              step={500}
+              value={feeMax}
+              aria-label="Maximum annual fee"
+              onInput={(e) => setFeeMax(Number((e.target as HTMLInputElement).value))}
+            />
+            <div className="scr-range-ends">
+              <span>₹0</span>
+              <span>₹{inr(maxFee)}</span>
+            </div>
+            <label className="scr-check">
+              <input type="checkbox" checked={ltfOnly} onChange={() => setLtfOnly((v) => !v)} />
+              <span>Lifetime free only</span>
             </label>
-            <span className="toolbar-count mono">
-              {filtered.length.toLocaleString('en-IN')} match
-            </span>
-          </div>
+          </fieldset>
 
-          <div className="ledger-header" role="row">
-            <span className="col-thumb">CARD</span>
-            <span className="col-name">NAME</span>
-            <span className="col-badges">TYPE · NET</span>
-            <span className="col-perks">BENEFITS</span>
-            <span className="col-num">ANNUAL</span>
-            <span className="col-num">APR p.a.</span>
-            <span className="col-cmp" aria-label="Compare">
-              ▢
-            </span>
-          </div>
+          <fieldset className="scr-sect">
+            <legend className="scr-h">Benefits</legend>
+            {BENEFITS.map((b) => (
+              <label className="scr-check" key={b.key}>
+                <input
+                  type="checkbox"
+                  checked={benefits.has(b.key)}
+                  onChange={() => toggleSet(benefits, b.key, setBenefits)}
+                />
+                <span>
+                  <span aria-hidden="true">{b.glyph}</span> {b.label}
+                </span>
+              </label>
+            ))}
+          </fieldset>
 
-          <div className="ledger-body">
-            {pageRows.map((r) => (
-              <div className="row" key={r.slug + r.bankCode}>
-                <a className="row-link" href={`/${r.cardType}/${r.bankCode}/${r.slug}/`} aria-label={r.name}>
-                  <span className="col-thumb">
-                    <span className="emboss-tilt">
-                      <EmbossThumb row={r} />
-                      <span className="vf-shimmer" aria-hidden="true" />
-                    </span>
-                  </span>
-                  <span className="col-name">
-                    <span className="row-name">{r.name}</span>
-                    <span className="row-bank mono">
-                      {r.bank} · {r.tier ?? 'card'}
-                    </span>
-                  </span>
-                  <span className="col-badges">
-                    <span className={`badge badge-type badge-${r.cardType}`}>{TYPE_LABEL[r.cardType]}</span>
-                    <span className="badge badge-net">{r.network}</span>
-                  </span>
-                  <span className="col-perks">
-                    {BENEFITS.filter((b) => Boolean(r[b.field])).map((b) => (
-                      <span className="perk-icon" title={b.label} aria-label={b.label} key={b.key}>
-                        {b.glyph}
-                      </span>
-                    ))}
-                  </span>
-                  <span className="col-num num">
-                    {r.annualFee === 0 ? <span className="ltf-tag">LTF</span> : `₹${inr(r.annualFee)}`}
-                  </span>
-                  <span className={`col-num num ${r.apr >= 36 ? 'num-neg' : ''}`}>{fmtApr(r.apr)}</span>
-                </a>
-                <span className="col-cmp">
+          <fieldset className="scr-sect">
+            <legend className="scr-h">Bank</legend>
+            <div className="scr-banks">
+              {issuers.map((i) => (
+                <label className="scr-check" key={i.code}>
                   <input
                     type="checkbox"
-                    className="cmp-check"
-                    checked={compareSlugs.has(r.slug)}
-                    disabled={!compareSlugs.has(r.slug) && compare.length >= 4}
-                    aria-label={`Add ${r.name} to compare`}
-                    onChange={() => toggleCompare(r)}
+                    checked={banks.has(i.code)}
+                    onChange={() => toggleSet(banks, i.code, setBanks)}
                   />
-                </span>
-              </div>
-            ))}
-            {filtered.length === 0 && (
-              <div className="ledger-empty mono">
-                0 cards match.{' '}
-                <button type="button" className="rail-reset" onClick={reset}>
-                  clear filters
-                </button>
-              </div>
-            )}
-          </div>
-
-          {filtered.length > PAGE_SIZE && (
-            <nav className="pager mono" aria-label="Pagination">
-              <button
-                type="button"
-                className="pager-btn"
-                disabled={page === 0}
-                onClick={() => setPage((p) => Math.max(0, p - 1))}
-              >
-                ← prev
-              </button>
-              <span className="pager-status">
-                {page * PAGE_SIZE + 1}–{Math.min(filtered.length, (page + 1) * PAGE_SIZE)} of{' '}
-                {filtered.length.toLocaleString('en-IN')} · pg {page + 1}/{pageCount}
-              </span>
-              <button
-                type="button"
-                className="pager-btn"
-                disabled={page >= pageCount - 1}
-                onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
-              >
-                next →
-              </button>
-            </nav>
-          )}
-        </div>
-      </section>
-
-      <aside className={`cmp-drawer ${drawerOpen ? 'open' : ''}`} aria-label="Compare drawer">
-        <button
-          type="button"
-          className="cmp-toggle mono"
-          aria-expanded={drawerOpen}
-          onClick={() => setDrawerOpen((v) => !v)}
-        >
-          <span>COMPARE · {compare.length} / 4</span>
-          <span className="cmp-toggle-icon" aria-hidden="true">
-            ▴
-          </span>
-        </button>
-        {drawerOpen && (
-          <div className="cmp-body">
-            {compare.length === 0 && <p className="cmp-empty mono">add up to 4 cards from the ledger</p>}
-            <ul className="cmp-list">
-              {compare.map((c) => (
-                <li className="cmp-item" key={c.slug}>
-                  <span className="cmp-item-name mono">{c.name}</span>
-                  <span className="cmp-item-bank mono">
-                    {c.bank} · {c.network}
-                  </span>
-                  <button
-                    type="button"
-                    className="cmp-item-x"
-                    aria-label={`Remove ${c.name}`}
-                    onClick={() => toggleCompare(c)}
-                  >
-                    ×
-                  </button>
-                </li>
+                  <span className="scr-bank-name">{i.name}</span>
+                  <span className="scr-check-n">{i.count}</span>
+                </label>
               ))}
-            </ul>
-            <a
-              className={`cmp-go mono ${compareHref ? '' : 'cmp-go-disabled'}`}
-              href={compareHref ?? undefined}
-              aria-disabled={!compareHref}
+            </div>
+          </fieldset>
+
+          <button type="button" className="scr-reset" onClick={reset}>
+            Clear all{activeCount ? ` (${activeCount})` : ''}
+          </button>
+        </div>
+      </aside>
+
+      <div className="scr-main">
+        <div className="scr-toolbar">
+          <button
+            type="button"
+            className="scr-filter-btn"
+            aria-expanded={filtersOpen}
+            onClick={() => setFiltersOpen((v) => !v)}
+          >
+            Filters{activeCount ? ` · ${activeCount}` : ''}
+          </button>
+          <span className="scr-toolbar-count">
+            {filtered.length.toLocaleString('en-IN')} cards
+          </span>
+          <label className="scr-sort">
+            <span className="scr-sort-lbl">Sort</span>
+            <select
+              className="scr-select"
+              value={sortKey}
+              aria-label="Sort cards"
+              onChange={(e) => setSortKey((e.target as HTMLSelectElement).value)}
             >
-              [ COMPARE → ]
-            </a>
+              {SORTS.map((s) => (
+                <option value={s.key} key={s.key}>
+                  {s.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        {filtered.length === 0 ? (
+          <div className="scr-empty">
+            No cards match.{' '}
+            <button type="button" onClick={reset}>
+              Clear filters
+            </button>
+          </div>
+        ) : (
+          <div className="scr-grid">
+            {pageRows.map((r) => (
+              <a
+                className="tile"
+                key={r.slug + r.bankCode}
+                href={`/${r.cardType}/${r.bankCode}/${r.slug}/`}
+              >
+                <div className="tile-top">
+                  <span className="tile-name" title={r.name}>
+                    {r.name}
+                  </span>
+                  <span className={`tile-fee ${r.annualFee === 0 ? 'is-ltf' : ''}`}>
+                    {r.annualFee === 0 ? 'LTF' : `₹${inr(r.annualFee)}`}
+                  </span>
+                </div>
+                <div className="tile-meta">
+                  {r.bank} · {r.network} · {TYPE_LABEL[r.cardType]}
+                </div>
+                <div className="tile-perks" aria-hidden="true">
+                  {BENEFITS.filter((b) => Boolean(r[b.field])).map((b) => (
+                    <span className="tile-perk" title={b.label} key={b.key}>
+                      {b.glyph}
+                    </span>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  className={`tile-cmp ${compareSlugs.has(r.slug) ? 'on' : ''}`}
+                  aria-label={`${compareSlugs.has(r.slug) ? 'Remove' : 'Add'} ${r.name} ${
+                    compareSlugs.has(r.slug) ? 'from' : 'to'
+                  } compare`}
+                  aria-pressed={compareSlugs.has(r.slug)}
+                  disabled={!compareSlugs.has(r.slug) && compareCount >= CMP_MAX}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    e.stopPropagation()
+                    toggleCompare(r)
+                  }}
+                >
+                  {compareSlugs.has(r.slug) ? '✓' : '+'}
+                </button>
+              </a>
+            ))}
           </div>
         )}
-      </aside>
-    </>
+
+        {filtered.length > PAGE_SIZE && (
+          <nav className="scr-pager" aria-label="Pagination">
+            <button
+              type="button"
+              className="scr-pager-btn"
+              disabled={page === 0}
+              onClick={() => setPage((p) => Math.max(0, p - 1))}
+            >
+              ← Prev
+            </button>
+            <span className="scr-pager-status">
+              {page * PAGE_SIZE + 1}–{Math.min(filtered.length, (page + 1) * PAGE_SIZE)} of{' '}
+              {filtered.length.toLocaleString('en-IN')} · pg {page + 1}/{pageCount}
+            </span>
+            <button
+              type="button"
+              className="scr-pager-btn"
+              disabled={page >= pageCount - 1}
+              onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            >
+              Next →
+            </button>
+          </nav>
+        )}
+      </div>
+    </div>
   )
 }

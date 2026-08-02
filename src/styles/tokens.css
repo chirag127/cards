@@ -1,121 +1,105 @@
 /*
- * cards.oriz.in — "Vault & Foil" design tokens.
+ * cards.oriz.in — DENSE + FULL-WIDTH design tokens.
  *
- * Grounded in the physical material world of Indian payment cards: embossed
- * plastic, brass EMV chips, holographic foil, RuPay/Visa/Mastercard holograms,
- * tactile ridges. NOT a Bloomberg terminal. Warm statement-paper surface,
- * magstripe-black ink, brass-gold foil as the ONE signature accent (used
- * sparingly), RuPay blue as the authentic secondary.
+ * Clean white surface, near-black ink, ONE indigo accent (#635BFF) for active
+ * filters + links, light borders. Text-only tiles packed edge-to-edge — no
+ * embossed images, no centered max-width column. Small tight type (Inter,
+ * 13-14px base) for maximum information density while staying scannable.
  *
- * Type: wide confident grotesque display (Hanken Grotesk) + Inter body +
- * JetBrains Mono for data/fees (tabular-nums + slashed-zero).
- *
- * Imported AFTER global.css so these :root values win. Old slate/terminal token
- * names (--accent / --brass* / --vermilion / --paper-deep / --font-sans) are
- * remapped to the new palette so the whole site inherits Vault & Foil without
- * touching every component. Vault & Foil is a single warm-light identity — the
- * dark block is neutralised so paper stays warm.
+ * Imported AFTER global.css so these :root values win. Old palette/scale token
+ * names (--foil* / --rupay / --paper-deep / --container-spine …) are remapped
+ * so existing components keep resolving without a per-file rewrite.
  */
 
 :root {
   color-scheme: light;
 
-  /* ── Core palette ─────────────────────────────────────────────────────── */
-  --ink: #12131a; /* magstripe near-black — text on light */
-  --paper: #faf8f3; /* warm statement-paper off-white — main bg */
-  --paper-raised: #ffffff; /* cards / panels */
-  --paper-deep: #f3efe6; /* recessed panels (rail / toolbar) */
-  --ink-mute: #6b6a63;
-  --rule: #e8e3d6; /* warm hairline */
+  /* ── Core palette (dense-friendly, clean white) ───────────────────────── */
+  --ink: #0d0d12; /* near-black text */
+  --ink-mute: #6e6e80; /* muted meta line */
+  --paper: #ffffff; /* main bg — pure white */
+  --paper-raised: #ffffff; /* tiles/panels — white, borders separate */
+  --paper-deep: #fafafc; /* recessed rail / toolbar / tile hover */
+  --rule: #ececf1; /* light border */
+  --rule-strong: #dcdce3; /* slightly darker divider */
 
-  /* ── Foil — the SIGNATURE accent, used sparingly ──────────────────────── */
-  --foil: #c6a15b; /* embossed brass-gold */
-  --foil-light: #e4ce96;
-  --foil-deep: #9a7736;
-
-  /* ── Authentic secondary ──────────────────────────────────────────────── */
-  --rupay: #097dc6; /* RuPay blue — links / active */
-  --rupay-deep: #0a5f96;
+  /* ── Accent — the ONE indigo, active filters + links ──────────────────── */
+  --accent: #635bff;
+  --accent-deep: #4c44e0;
+  --accent-fg: #ffffff;
+  --accent-tint: #f0efff; /* active-filter fill */
 
   /* ── Semantic ─────────────────────────────────────────────────────────── */
-  --danger: #c1440e; /* fees / negatives only */
-
-  /* Foil shimmer sweep — the hover catch-light on real foil. */
-  --foil-gradient: linear-gradient(
-    115deg,
-    transparent 0%,
-    transparent 35%,
-    color-mix(in oklab, var(--foil-light) 70%, transparent) 47%,
-    color-mix(in oklab, #ffffff 85%, transparent) 50%,
-    color-mix(in oklab, var(--foil-light) 70%, transparent) 53%,
-    transparent 65%,
-    transparent 100%
-  );
+  --danger: #d0342c; /* fees / negatives only */
+  --ltf: #0f9d58; /* lifetime-free green pill */
+  --ltf-tint: #e7f7ee;
 
   /* ── Type ─────────────────────────────────────────────────────────────── */
-  --font-display: 'Hanken Grotesk', 'Clash Display', system-ui, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* ── Type scale ───────────────────────────────────────────────────────── */
-  --text-xs: 0.75rem; /* 12px */
-  --text-sm: 0.875rem; /* 14px */
-  --text-base: 1rem; /* 16px */
-  --text-lg: 1.125rem; /* 18px */
-  --text-xl: 1.375rem; /* 22px */
-  --text-2xl: clamp(1.75rem, 3vw, 2.25rem);
-  --text-3xl: clamp(2.25rem, 5vw, 3.25rem);
+  /* ── Type scale (tight/small — dense) ─────────────────────────────────── */
+  --text-xs: 0.6875rem; /* 11px */
+  --text-sm: 0.8125rem; /* 13px */
+  --text-base: 0.875rem; /* 14px */
+  --text-lg: 1rem; /* 16px */
+  --text-xl: 1.125rem; /* 18px */
+  --text-2xl: clamp(1.25rem, 2vw, 1.5rem);
+  --text-3xl: clamp(1.5rem, 3vw, 2rem);
 
-  --leading-tight: 1.08;
-  --leading-snug: 1.35;
-  --leading-normal: 1.6;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.45;
 
-  /* ── Spacing scale ────────────────────────────────────────────────────── */
+  /* ── Spacing scale (compressed) ───────────────────────────────────────── */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
-  --space-7: 3rem;
-  --space-8: 4rem;
+  --space-3: 0.625rem;
+  --space-4: 0.875rem;
+  --space-5: 1.25rem;
+  --space-6: 1.75rem;
+  --space-7: 2.5rem;
+  --space-8: 3.5rem;
 
   /* ── Radii ────────────────────────────────────────────────────────────── */
-  --radius-card: 12px; /* real card corner */
-  --radius-sm: 6px;
-  --radius-lg: 16px;
+  --radius-card: 8px;
+  --radius-sm: 5px;
+  --radius-lg: 12px;
   --radius-pill: 999px;
 
-  /* ── Layout ───────────────────────────────────────────────────────────── */
-  --container-spine: 1280px;
-  --container-prose: 720px;
-  --rail-width: 320px;
+  /* ── Layout — full-width dense shell ──────────────────────────────────── */
+  --rail-width: 260px; /* fixed filter sidebar */
+  --tile-min: 240px; /* grid auto-fill minmax floor */
+  --grid-gap: 9px; /* tight tile gap */
+  --nav-h: 52px; /* top-bar height (sticky offset) */
+  --container-prose: 720px; /* legal/about prose still reads narrow */
 
-  /* ── Back-compat aliases (old slate/terminal names → Vault & Foil) ─────── */
-  --accent: var(--rupay); /* primary accent is now RuPay blue */
-  --accent-fg: #ffffff;
+  /* ── Back-compat aliases (old Vault & Foil / terminal names) ──────────── */
+  --rupay: var(--accent);
+  --rupay-deep: var(--accent-deep);
+  --foil: var(--accent);
+  --foil-light: var(--accent-tint);
+  --foil-deep: var(--accent-deep);
+  --brass: var(--accent);
+  --brass-deep: var(--accent-deep);
+  --brass-light: var(--accent-tint);
   --vermilion: var(--danger);
-  --brass: var(--foil);
-  --brass-deep: var(--foil-deep);
-  --brass-light: var(--foil-light);
   --font-sans: var(--font-body);
+  --container-spine: none; /* no centered column — full width */
 }
 
-/* Single warm-light identity — neutralise global.css's dark block. */
+/* Single clean-light identity — neutralise any dark block. */
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: light;
-    --ink: #12131a;
-    --paper: #faf8f3;
+    --ink: #0d0d12;
+    --ink-mute: #6e6e80;
+    --paper: #ffffff;
     --paper-raised: #ffffff;
-    --paper-deep: #f3efe6;
-    --ink-mute: #6b6a63;
-    --rule: #e8e3d6;
-    --accent: var(--rupay);
+    --paper-deep: #fafafc;
+    --rule: #ececf1;
+    --accent: #635bff;
     --accent-fg: #ffffff;
-    --vermilion: var(--danger);
-    --brass: var(--foil);
-    --brass-deep: var(--foil-deep);
-    --brass-light: var(--foil-light);
   }
 }
