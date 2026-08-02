@@ -27,10 +27,6 @@
  * 1px dark shadow (bottom-right). Combined with `transform: translateZ(0)`
  * the text reads as physically pressed plastic.
  */
-import { onAuthStateChanged } from 'firebase/auth'
-import { useEffect, useState } from 'react'
-import { auth } from '~/lib/firebase'
-
 interface Props {
   size?: 'hero' | 'thumb'
   cardName?: string
@@ -64,14 +60,10 @@ export default function EmbossedCard({
   binPrefix = '4242',
   redactName,
 }: Props) {
-  const [displayName, setDisplayName] = useState<string | null>(null)
-  useEffect(
-    () =>
-      onAuthStateChanged(auth, (u) => {
-        setDisplayName(u?.displayName ?? null)
-      }),
-    [],
-  )
+  // Cardholder name comes from an optional prop; when absent we show the
+  // placeholder. (Personalised embossing with the signed-in name is wired on
+  // the account page where a ClerkProvider is in scope.)
+  const displayName: string | null = null
 
   const isThumb = size === 'thumb'
   const shouldRedact = redactName ?? isThumb
