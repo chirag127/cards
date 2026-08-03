@@ -1,45 +1,51 @@
 /*
- * cards.oriz.in — DENSE + FULL-WIDTH design tokens.
+ * cards.oriz.in — ORIZ·CARDS v2 tokens: slate terminal.
  *
- * Clean white surface, near-black ink, ONE indigo accent (#635BFF) for active
- * filters + links, light borders. Text-only tiles packed edge-to-edge — no
- * embossed images, no centered max-width column. Small tight type (Inter,
- * 13-14px base) for maximum information density while staying scannable.
+ * "A Bloomberg terminal for Indian credit cards." Cool-archival slate paper,
+ * near-black ink, carbon-blue accent, RESERVED vermilion (negatives + the
+ * Apply CTA on detail pages ONLY), brass (chip motif + wordmark dot ONLY).
+ * Geist Mono display (wordmark/H1/big numerics), Inter Tight body,
+ * JetBrains Mono numerics with tabular-nums + slashed zero.
  *
- * Imported AFTER global.css so these :root values win. Old palette/scale token
- * names (--foil* / --rupay / --paper-deep / --container-spine …) are remapped
+ * Imported AFTER global.css so these :root values win. Old palette/scale
+ * names (--foil* / --rupay / --vermilion / --container-spine …) are remapped
  * so existing components keep resolving without a per-file rewrite.
  */
 
 :root {
   color-scheme: light;
 
-  /* ── Core palette (dense-friendly, clean white) ───────────────────────── */
-  --ink: #0d0d12; /* near-black text */
-  --ink-mute: #6e6e80; /* muted meta line */
-  --paper: #ffffff; /* main bg — pure white */
-  --paper-raised: #ffffff; /* tiles/panels — white, borders separate */
-  --paper-deep: #fafafc; /* recessed rail / toolbar / tile hover */
-  --rule: #ececf1; /* light border */
-  --rule-strong: #dcdce3; /* slightly darker divider */
+  /* ── Core palette — cool slate paper (terminal, not cream) ───────────── */
+  --paper: #e8eaee; /* main surface — slate paper */
+  --paper-raised: #f2f4f7; /* tiles / panels / compare drawer / row hover */
+  --paper-deep: #dfe2e9; /* recessed rail / toolbar */
+  --ink: #0e1116; /* near-black text */
+  --ink-mute: #5c6470; /* muted meta line */
+  --rule: #c9cdd4; /* light border */
+  --rule-strong: #aeb4bf; /* stronger divider / input borders */
 
-  /* ── Accent — the ONE indigo, active filters + links ──────────────────── */
-  --accent: #635bff;
-  --accent-deep: #4c44e0;
-  --accent-fg: #ffffff;
-  --accent-tint: #f0efff; /* active-filter fill */
+  /* ── Accent — carbon blue (PRIMARY) ───────────────────────────────────── */
+  --accent: #2b3a55;
+  --accent-deep: #1c2740;
+  --accent-fg: #e8eaee; /* text on carbon-blue fills */
+  --accent-tint: #d6dce6; /* active-filter fill */
 
   /* ── Semantic ─────────────────────────────────────────────────────────── */
-  --danger: #d0342c; /* fees / negatives only */
-  --ltf: #0f9d58; /* lifetime-free green pill */
-  --ltf-tint: #e7f7ee;
+  --danger: #b8362a; /* stamp vermilion — negatives / Apply CTA only */
+  --vermilion: #b8362a; /* alias (spec name) */
+  --ltf: #a67f2e; /* lifetime-free = BRASS tag (not green) */
+  --ltf-tint: #ede3c9;
+  --brass: #b8923a; /* chip motif + wordmark dot ONLY */
+  --brass-light: #d4ae5c;
+  --brass-deep: #8b6e2a;
 
-  /* ── Type ─────────────────────────────────────────────────────────────── */
-  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* ── Type — Geist Mono (display) · Inter Tight (body) · JetBrains (nums) */
+  --font-display: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-body: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-body);
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* ── Type scale (tight/small — dense) ─────────────────────────────────── */
+  /* ── Type scale (tight — terminal density) ────────────────────────────── */
   --text-xs: 0.6875rem; /* 11px */
   --text-sm: 0.8125rem; /* 13px */
   --text-base: 0.875rem; /* 14px */
@@ -62,44 +68,28 @@
   --space-7: 2.5rem;
   --space-8: 3.5rem;
 
-  /* ── Radii ────────────────────────────────────────────────────────────── */
-  --radius-card: 8px;
-  --radius-sm: 5px;
-  --radius-lg: 12px;
+  /* ── Radii (terminal — near-sharp) ────────────────────────────────────── */
+  --radius-card: 2px;
+  --radius-sm: 0;
+  --radius-lg: 6px;
   --radius-pill: 999px;
 
   /* ── Layout — full-width dense shell ──────────────────────────────────── */
-  --rail-width: 260px; /* fixed filter sidebar */
-  --tile-min: 240px; /* grid auto-fill minmax floor */
-  --grid-gap: 9px; /* tight tile gap */
-  --nav-h: 52px; /* top-bar height (sticky offset) */
-  --container-prose: 720px; /* legal/about prose still reads narrow */
+  --rail-width: 320px; /* fixed filter sidebar (v2 spec) */
+  --tile-min: 240px;
+  --grid-gap: 9px;
+  --nav-h: 56px; /* header height (sticky offset) */
+  --container-prose: 720px;
 
   /* ── Back-compat aliases (old Vault & Foil / terminal names) ──────────── */
+  --surface: var(--paper);
+  --surface-raised: var(--paper-raised);
+  --ink-muted: var(--ink-mute);
+  --negative: var(--vermilion);
   --rupay: var(--accent);
   --rupay-deep: var(--accent-deep);
   --foil: var(--accent);
   --foil-light: var(--accent-tint);
   --foil-deep: var(--accent-deep);
-  --brass: var(--accent);
-  --brass-deep: var(--accent-deep);
-  --brass-light: var(--accent-tint);
-  --vermilion: var(--danger);
-  --font-sans: var(--font-body);
   --container-spine: none; /* no centered column — full width */
-}
-
-/* Single clean-light identity — neutralise any dark block. */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: light;
-    --ink: #0d0d12;
-    --ink-mute: #6e6e80;
-    --paper: #ffffff;
-    --paper-raised: #ffffff;
-    --paper-deep: #fafafc;
-    --rule: #ececf1;
-    --accent: #635bff;
-    --accent-fg: #ffffff;
-  }
 }

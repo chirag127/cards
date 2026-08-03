@@ -12,7 +12,7 @@
 import { useEffect, useState } from 'react'
 
 const KEY = 'oriz:cards:compare'
-const MAX = 3
+const MAX = 4
 
 interface Entry {
   slug: string
@@ -54,8 +54,6 @@ export default function CompareDrawer() {
     window.dispatchEvent(new CustomEvent('oriz:compare-change'))
   }
 
-  if (items.length === 0) return null
-
   const ids = items.map((e) => `${e.issuer}:${e.slug}`).join(',')
 
   return (
@@ -74,28 +72,33 @@ export default function CompareDrawer() {
 
       {open && (
         <div className="cmp-drw-body">
-          <ul className="cmp-drw-list">
-            {items.map((e) => (
-              <li key={`${e.issuer}:${e.slug}`} className="cmp-drw-item">
-                <span className="cmp-drw-name">{e.name}</span>
-                <span className="cmp-drw-bank mono">
-                  {e.bank} · {e.network}
-                </span>
-                <button
-                  type="button"
-                  className="cmp-drw-x"
-                  aria-label={`Remove ${e.name}`}
-                  onClick={() => remove(e.slug)}
-                >
-                  ×
-                </button>
-              </li>
-            ))}
-          </ul>
+          {items.length === 0 ? (
+            <p className="cmp-drw-empty mono">add up to {MAX} cards</p>
+          ) : (
+            <ul className="cmp-drw-list">
+              {items.map((e) => (
+                <li key={`${e.issuer}:${e.slug}`} className="cmp-drw-item">
+                  <span className="cmp-drw-name">{e.name}</span>
+                  <span className="cmp-drw-bank mono">
+                    {e.bank} · {e.network}
+                  </span>
+                  <button
+                    type="button"
+                    className="cmp-drw-x"
+                    aria-label={`Remove ${e.name}`}
+                    onClick={() => remove(e.slug)}
+                  >
+                    ×
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
           <a
             className={`cmp-drw-go mono${items.length < 2 ? ' is-disabled' : ''}`}
             href={items.length < 2 ? undefined : `/compare?ids=${encodeURIComponent(ids)}`}
             aria-disabled={items.length < 2}
+            aria-label={items.length < 2 ? 'Select at least 2 cards to compare' : 'Compare selected cards'}
           >
             [ COMPARE ({items.length}) → ]
           </a>
@@ -108,10 +111,10 @@ export default function CompareDrawer() {
           right: clamp(0.75rem, 2vw, 1.5rem);
           bottom: clamp(0.75rem, 2vw, 1.5rem);
           z-index: 60;
-          width: min(320px, calc(100vw - 1.5rem));
-          background: var(--paper-raised);
+          width: min(360px, calc(100vw - 1.5rem));
+          background: var(--surface-raised);
           border: 1px solid var(--rule);
-          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.18);
+          box-shadow: none;
           font-family: var(--font-sans);
         }
         @media (max-width: 767px) {
@@ -132,12 +135,20 @@ export default function CompareDrawer() {
           letter-spacing: 0.14em;
           text-transform: uppercase;
           cursor: pointer;
+          font-family: var(--font-mono);
         }
         .cmp-drw-body {
           padding: 0.75rem 0.875rem 0.875rem;
           display: flex;
           flex-direction: column;
           gap: 0.75rem;
+        }
+        .cmp-drw-empty {
+          margin: 0;
+          color: var(--ink-mute);
+          font-size: 12px;
+          letter-spacing: 0.06em;
+          text-align: center;
         }
         .cmp-drw-list {
           list-style: none;
@@ -188,15 +199,16 @@ export default function CompareDrawer() {
           display: block;
           text-align: center;
           padding: 0.6rem;
-          background: var(--ink);
-          color: var(--paper);
+          background: var(--accent);
+          color: var(--accent-fg);
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 0.1em;
           text-transform: uppercase;
+          font-family: var(--font-mono);
         }
         .cmp-drw-go:hover {
-          background: color-mix(in oklab, var(--ink) 82%, var(--accent));
+          background: var(--accent-deep);
         }
         .cmp-drw-go.is-disabled {
           background: var(--paper-deep);

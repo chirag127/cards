@@ -1,16 +1,15 @@
 ---
 /*
- * Header — Vault & Foil top nav for cards.oriz.in.
+ * Header — ORIZ·CARDS v2 terminal top bar (56px, no border).
  *
- * Left: wordmark "oriz / cards" (display grotesque, the "/" in foil).
- * Nav (>=768px): All cards . Credit . Debit . Prepaid . RuPay . Banks . Compare.
- * Right: search affordance + Firebase auth island. <768px: hamburger -> drawer.
- *
- * Sticky, warm --paper, backdrop-blur, bottom --rule hairline. Active link =
- * foil underline; hover = RuPay. Reduced-motion respected in the drawer island.
+ * Left: wordmark `oriz·cards` in Geist Mono 700 — the middle `·` is an 8×8
+ * brass-gradient square (the chip motif). Nav: quiet mono links with
+ * carbon-blue hover/active. Right: live card count (JetBrains Mono) + auth
+ * avatar. No mega-nav, no dropdowns — the filter rail on home is the search.
  */
 import AuthButton from '~/components/AuthButton.tsx'
 import MobileNavDrawer from '~/components/MobileNavDrawer.tsx'
+import { TOTAL_CARD_COUNT } from '~/lib/cards'
 
 const links = [
   { href: '/', label: 'All cards' },
@@ -24,13 +23,14 @@ const links = [
 
 const current = Astro.url.pathname
 const isActive = (href: string) => (href === '/' ? current === '/' : current.startsWith(href))
+const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
 ---
 
 <header class="hdr">
-  <div class="spine hdr-row">
+  <div class="hdr-row spine">
     <a class="wm" href="/" aria-label="oriz cards home">
       <span class="wm-a">oriz</span>
-      <span class="wm-sep" aria-hidden="true">/</span>
+      <span class="wm-chip" aria-hidden="true"></span>
       <span class="wm-b">cards</span>
     </a>
 
@@ -45,14 +45,7 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     </nav>
 
     <div class="hdr-right">
-      <a class="search-btn" href="/search/" aria-label="Search cards">
-        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none">
-          <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.6"></circle>
-          <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-          ></line>
-        </svg>
-        <span class="search-label">Search</span>
-      </a>
+      <span class="hdr-count mono">{cardCount} cards</span>
       <div class="auth-slot"><AuthButton client:load /></div>
       <div class="mnav-slot"><MobileNavDrawer client:load links={links} current={current} /></div>
     </div>
@@ -64,55 +57,56 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     position: sticky;
     top: 0;
     z-index: 50;
-    background: color-mix(in oklab, var(--paper) 82%, transparent);
-    -webkit-backdrop-filter: saturate(1.4) blur(12px);
-    backdrop-filter: saturate(1.4) blur(12px);
+    height: var(--nav-h, 56px);
+    background: var(--paper);
     border-bottom: 1px solid var(--rule);
   }
   .hdr-row {
     display: flex;
     align-items: center;
-    height: 60px;
-    gap: 1.5rem;
+    height: 100%;
+    gap: 1.75rem;
   }
 
-  /* Wordmark */
+  /* Wordmark — Geist Mono, middle dot is the brass chip square. */
   .wm {
     display: inline-flex;
-    align-items: baseline;
-    gap: 0.34em;
+    align-items: center;
+    gap: 0.45em;
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
-    letter-spacing: -0.015em;
+    letter-spacing: 0.02em;
     color: var(--ink);
     white-space: nowrap;
     flex-shrink: 0;
   }
-  .wm-sep {
-    color: var(--foil);
-    font-weight: 800;
+  .wm-chip {
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+    background: linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 60%, var(--brass-deep) 100%);
   }
   .wm-b {
     color: var(--ink-mute);
-    font-weight: 600;
+    font-weight: 500;
   }
 
-  /* Desktop nav */
+  /* Desktop nav — quiet mono links. */
   .hdr-nav {
     display: none;
     align-items: center;
-    gap: 1.4rem;
+    gap: 1.35rem;
     flex: 1;
     min-width: 0;
   }
   .nav-link {
     position: relative;
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    color: var(--ink);
+    color: var(--ink-mute);
     padding-block: 0.35rem;
     transition: color 0.15s ease;
   }
@@ -123,13 +117,13 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     right: 0;
     bottom: -2px;
     height: 2px;
-    background: var(--foil);
+    background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.18s ease;
   }
   .nav-link:hover {
-    color: var(--rupay);
+    color: var(--ink);
   }
   .nav-link[aria-current='page'] {
     color: var(--ink);
@@ -138,48 +132,26 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     transform: scaleX(1);
   }
   .nav-link:focus-visible {
-    outline: 2px solid var(--rupay);
+    outline: 2px solid var(--accent);
     outline-offset: 3px;
     border-radius: 2px;
   }
 
-  /* Right cluster */
+  /* Right cluster — count + auth. */
   .hdr-right {
     margin-left: auto;
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     flex-shrink: 0;
   }
-  .search-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    height: 36px;
-    padding-inline: 0.75rem;
+  .hdr-count {
+    font-size: 12px;
     color: var(--ink-mute);
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 500;
-    background: var(--paper-raised);
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    transition:
-      color 0.15s ease,
-      border-color 0.15s ease;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
-  .search-btn:hover {
-    color: var(--rupay);
-    border-color: color-mix(in oklab, var(--rupay) 45%, var(--rule));
-  }
-  .search-btn:focus-visible {
-    outline: 2px solid var(--rupay);
-    outline-offset: 2px;
-  }
-  .search-label {
-    display: none;
-  }
-
   .auth-slot {
     display: none;
   }
@@ -187,7 +159,7 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     display: inline-flex;
   }
 
-  /* Auth island — embossed-foil skin (island renders .auth-btn/.auth-dot) */
+  /* Auth island — carbon-blue border skin (island renders .auth-btn/.auth-dot). */
   :global(.auth-btn) {
     display: inline-flex;
     align-items: center;
@@ -195,32 +167,27 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     max-width: 190px;
     font-family: var(--font-body);
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--ink);
     cursor: pointer;
     text-decoration: none;
-    border: 1.5px solid var(--foil);
-    border-radius: 10px;
+    border: 1px solid var(--rule-strong);
+    border-radius: 0;
     padding: 0.4rem 0.85rem;
-    background: linear-gradient(180deg, #fffdf7 0%, var(--paper) 100%);
-    box-shadow:
-      0 1px 0 var(--foil-light) inset,
-      0 1px 2px color-mix(in oklab, var(--foil-deep) 18%, transparent);
+    background: var(--paper-raised);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     transition:
-      box-shadow 0.18s ease,
-      transform 0.18s ease;
+      border-color 0.18s ease,
+      color 0.18s ease;
   }
   :global(.auth-btn:hover) {
-    box-shadow:
-      0 1px 0 var(--foil-light) inset,
-      0 4px 12px color-mix(in oklab, var(--foil-deep) 30%, transparent);
-    transform: translateY(-1px);
+    border-color: var(--accent);
+    color: var(--accent);
   }
   :global(.auth-btn:focus-visible) {
-    outline: 2px solid var(--rupay);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
   :global(.auth-dot) {
@@ -231,11 +198,11 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     flex-shrink: 0;
   }
   :global(.auth-dot[data-on='true']) {
-    background: var(--foil);
-    box-shadow: 0 0 0 2px color-mix(in oklab, var(--foil) 35%, transparent);
+    background: var(--accent);
+    box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent) 35%, transparent);
   }
 
-  /* --- Mobile drawer island (global — island markup is unscoped) --- */
+  /* Mobile drawer island (global — island markup is unscoped). */
   :global(.mnav-trigger) {
     display: inline-flex;
     align-items: center;
@@ -244,12 +211,11 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     height: 40px;
     background: transparent;
     border: 1px solid var(--rule);
-    border-radius: 10px;
     color: var(--ink);
     cursor: pointer;
   }
   :global(.mnav-trigger:focus-visible) {
-    outline: 2px solid var(--rupay);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
   :global(.mnav-bars) {
@@ -276,7 +242,6 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
   :global(.mnav-bars[data-open='true'] span:nth-child(3)) {
     transform: translateY(-6px) rotate(-45deg);
   }
-
   :global(.mnav-overlay) {
     position: fixed;
     inset: 0;
@@ -319,14 +284,14 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     border-bottom: 1px solid var(--rule);
   }
   :global(.mnav-link:hover) {
-    color: var(--rupay);
+    color: var(--accent);
   }
   :global(.mnav-link[aria-current='page']) {
-    box-shadow: inset 3px 0 0 var(--foil);
+    box-shadow: inset 3px 0 0 var(--accent);
     padding-left: 0.65rem;
   }
   :global(.mnav-link:focus-visible) {
-    outline: 2px solid var(--rupay);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
   :global(.mnav-foot) {
@@ -349,9 +314,6 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
   @media (min-width: 768px) {
     .hdr-nav {
       display: inline-flex;
-    }
-    .search-label {
-      display: inline;
     }
     .auth-slot {
       display: inline-flex;

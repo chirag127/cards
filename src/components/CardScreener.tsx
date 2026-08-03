@@ -1,22 +1,18 @@
 /*
- * CardScreener — the dense full-width card screener island (client:load). Owns
+ * CardScreener — the ORIZ·CARDS v2 slate ledger island (client:load). Owns
  * search, the full filter rail, sort, pagination (120/page) and the compare
- * drawer for all 750 cards. Filter rail + results grid live in ONE React island
- * so selecting a filter immediately narrows the grid (the previous bug: the
- * results felt un-filterable because the shell capped width at 1280px and the
- * table columns were crushed — now edge-to-edge dense text tiles).
+ * state for all ~1,300 cards. Filter rail + LEDGER of rows live in ONE React
+ * island so selecting a filter immediately narrows the ledger.
  *
- * NO card images / embossed thumbnails — text-only tiles pack far more per
- * screen. Pure React 19 + local state; fuzzy match is a small subsequence
- * scorer, not a library (ladder rung 6).
- *
- * Compare state lives in the shared `oriz:cards:compare` sessionStorage bucket
- * (rich {slug,issuer,name,bank,network} schema) + an `oriz:compare-change`
- * event; the global CompareDrawer island (BaseLayout) renders the drawer. This
- * island does NOT render its own drawer — one drawer, one bucket.
+ * Layout (v2 spec): 320px filter rail + fluid 64px-row ledger. Active filters
+ * render as `[ × ICICI ]` mono chips at the rail top. Compare state lives in
+ * the shared `oriz:cards:compare` sessionStorage bucket (rich
+ * {slug,issuer,name,bank,network} schema) + an `oriz:compare-change` event;
+ * the global CompareDrawer island (BaseLayout) renders the drawer. This
+ * island does NOT render its own drawer — one drawer, one bucket, max 4.
  */
-import { useEffect, useMemo, useState } from 'react'
-import type { CardRow, CardType } from '~/lib/cards'
+import { useEffect, useMemo, useState, type CSSProperties } from 'react'
+import { type CardRow, type CardType, fmtApr } from '~/lib/cards'
 
 interface Props {
   rows: CardRow[]
@@ -54,7 +50,7 @@ const SORTS: Array<{ key: string; label: string; cmp: (a: CardRow, b: CardRow) =
 
 const PAGE_SIZE = 120
 const CMP_KEY = 'oriz:cards:compare'
-const CMP_MAX = 3
+const CMP_MAX = 4
 const inr = (n: number) => new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 }).format(n)
 
 interface CmpEntry {
@@ -97,6 +93,47 @@ function fuzzyScore(haystack: string, needle: string): number {
     hi = found + 1
   }
   return score
+}
+
+const NET_LABEL: Record<string, string> = {
+  Visa: 'VISA',
+  Mastercard: 'MASTERCARD',
+  RuPay: 'RuPay',
+  Amex: 'AMEX',
+  DinersClub: 'DINERS',
+  Discover: 'DISCOVER',
+}
+
+/** Static 140×88 embossed-card thumbnail (scaled to 96×60 by .scr-thumb).
+ * Markup matches EmbossedThumb.astro; CSS is shared in global.css. */
+function LedgerThumb({ row }: { row: CardRow }) {
+  return (
+    <span
+      className="emboss-thumb-static"
+      style={
+        {
+          '--card-stock-a': row.stockGradient[0],
+          '--card-stock-b': row.stockGradient[1],
+        } as CSSProperties
+      }
+      aria-hidden="true"
+    >
+      <span className="emboss-issuer">{(row.bankCode || row.bank).toUpperCase()}</span>
+      <span className="emboss-chip">
+        <span className="emboss-chip-line" />
+        <span className="emboss-chip-line" />
+        <span className="emboss-chip-line" />
+        <span className="emboss-chip-line" />
+        <span className="emboss-chip-line" />
+      </span>
+      <span className="emboss-bin">
+        {row.binPrefix} •••• •••• ••••
+      </span>
+      <span className="emboss-name">•••• •••• ••••</span>
+      <span className="emboss-network">{NET_LABEL[row.network] ?? row.network.toUpperCase()}</span>
+      <span className="emboss-shimmer" />
+    </span>
+  )
 }
 
 export default function CardScreener({ rows, issuers, networks, cardTypes, maxFee, total }: Props) {
@@ -185,6 +222,28 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
     setLtfOnly(false)
   }
 
+  const issuerName = (code: string) => issuers.find((i) => i.code === code)?.name ?? code
+
+  /** Active-filter mono chips at the rail top: `[ × ICICI ]`. */
+  const activeChips: Array<{ key: string; label: string; remove: () => void }> = []
+  for (const t of types) {
+    activeChips.push({ key: `type-${t}`, label: TYPE_LABEL[t as CardType] ?? t, remove: () => toggleSet(types, t, setTypes) })
+  }
+  for (const n of nets) {
+    activeChips.push({ key: `net-${n}`, label: n, remove: () => toggleSet(nets, n, setNets) })
+  }
+  for (const b of benefits) {
+    const label = BENEFITS.find((x) => x.key === b)?.label ?? b
+    activeChips.push({ key: `ben-${b}`, label, remove: () => toggleSet(benefits, b, setBenefits) })
+  }
+  for (const c of banks) {
+    activeChips.push({ key: `bank-${c}`, label: issuerName(c), remove: () => toggleSet(banks, c, setBanks) })
+  }
+  if (ltfOnly) activeChips.push({ key: 'ltf', label: 'LIFETIME FREE', remove: () => setLtfOnly(false) })
+  if (feeMax < maxFee) {
+    activeChips.push({ key: 'fee', label: `≤ ₹${inr(feeMax)}`, remove: () => setFeeMax(maxFee) })
+  }
+
   const activeCount =
     types.size + nets.size + banks.size + benefits.size + (ltfOnly ? 1 : 0) + (feeMax < maxFee ? 1 : 0)
   const compareCount = compareSlugs.size
@@ -209,6 +268,23 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
             value={q}
             onInput={(e) => setQ((e.target as HTMLInputElement).value)}
           />
+
+          {activeChips.length > 0 && (
+            <div className="scr-chips" role="list" aria-label="Active filters">
+              {activeChips.map((c) => (
+                <button
+                  key={c.key}
+                  type="button"
+                  className="scr-chip"
+                  onClick={c.remove}
+                  aria-label={`Remove ${c.label} filter`}
+                >
+                  <span className="scr-chip-x" aria-hidden="true">×</span>
+                  {c.label}
+                </button>
+              ))}
+            </div>
+          )}
 
           <fieldset className="scr-sect">
             <legend className="scr-h">Card type</legend>
@@ -240,9 +316,7 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
           </fieldset>
 
           <fieldset className="scr-sect">
-            <legend className="scr-h">
-              Annual fee ≤ ₹{inr(feeMax)}
-            </legend>
+            <legend className="scr-h">Annual fee ≤ ₹{inr(feeMax)}</legend>
             <input
               type="range"
               className="scr-range"
@@ -340,34 +414,46 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
             </button>
           </div>
         ) : (
-          <div className="scr-grid">
+          <div className="scr-ledger">
+            <div className="scr-ledger-header" role="row">
+              <span>Card</span>
+              <span>Name</span>
+              <span className="scr-h-num">Join</span>
+              <span className="scr-h-num">Annual</span>
+              <span className="scr-h-num">Rewards</span>
+              <span className="scr-h-num">APR p.a.</span>
+              <span aria-hidden="true" />
+            </div>
             {pageRows.map((r) => (
-              <a
-                className="tile"
-                key={r.slug + r.bankCode}
-                href={`/${r.cardType}/${r.bankCode}/${r.slug}/`}
-              >
-                <div className="tile-top">
-                  <span className="tile-name" title={r.name}>
-                    {r.name}
+              <div className="scr-row" key={r.slug + r.bankCode}>
+                <a
+                  className="scr-row-link"
+                  href={`/${r.cardType}/${r.bankCode}/${r.slug}/`}
+                  aria-label={`${r.name} — details`}
+                >
+                  <span className="scr-thumb">
+                    <LedgerThumb row={r} />
                   </span>
-                  <span className={`tile-fee ${r.annualFee === 0 ? 'is-ltf' : ''}`}>
-                    {r.annualFee === 0 ? 'LTF' : `₹${inr(r.annualFee)}`}
-                  </span>
-                </div>
-                <div className="tile-meta">
-                  {r.bank} · {r.network} · {TYPE_LABEL[r.cardType]}
-                </div>
-                <div className="tile-perks" aria-hidden="true">
-                  {BENEFITS.filter((b) => Boolean(r[b.field])).map((b) => (
-                    <span className="tile-perk" title={b.label} key={b.key}>
-                      {b.glyph}
+                  <span className="scr-name-col">
+                    <span className="scr-row-name" title={r.name}>
+                      {r.name}
                     </span>
-                  ))}
-                </div>
+                    <span className="scr-row-bank">
+                      {r.bank} · {r.network} · {TYPE_LABEL[r.cardType]}
+                    </span>
+                  </span>
+                  <span className="scr-num">
+                    {r.joiningFee === 0 ? <span className="scr-ltf">LTF</span> : `₹${inr(r.joiningFee)}`}
+                  </span>
+                  <span className="scr-num">
+                    {r.annualFee === 0 ? <span className="scr-ltf">LTF</span> : `₹${inr(r.annualFee)}`}
+                  </span>
+                  <span className="scr-num">{r.rewardsLabel}</span>
+                  <span className={`scr-num ${r.apr >= 36 ? 'is-neg' : ''}`}>{fmtApr(r.apr)}</span>
+                </a>
                 <button
                   type="button"
-                  className={`tile-cmp ${compareSlugs.has(r.slug) ? 'on' : ''}`}
+                  className={`scr-cmp ${compareSlugs.has(r.slug) ? 'on' : ''}`}
                   aria-label={`${compareSlugs.has(r.slug) ? 'Remove' : 'Add'} ${r.name} ${
                     compareSlugs.has(r.slug) ? 'from' : 'to'
                   } compare`}
@@ -381,7 +467,7 @@ export default function CardScreener({ rows, issuers, networks, cardTypes, maxFe
                 >
                   {compareSlugs.has(r.slug) ? '✓' : '+'}
                 </button>
-              </a>
+              </div>
             ))}
           </div>
         )}

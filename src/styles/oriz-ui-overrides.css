@@ -1,12 +1,35 @@
 /*
  * oriz-ui overrides — site-local styling for AccountPanel + FinishSignIn +
- * ContactForm islands (which emit unstyled markup with [data-oriz-*] hooks).
+ * ContactForm islands (which emit unstyled markup with [data-oriz-*] hooks),
+ * plus slate alignment of the astro-chrome chrome (footer/sidebar/bottombar).
  *
  * cards.oriz.in palette: slate paper + carbon-blue accent + reserved
  * vermilion for destructive (sign-out hover) and reserved brass for chip
  * motif accents (not used in form chrome — auth uses the carbon-blue accent
  * with mono-uppercase labels to keep terminal feel).
  */
+
+/* ── Chrome alignment — map astro-shell --color-* tokens to the slate set ── */
+
+:root {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-mute: var(--ink-mute);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-danger: var(--vermilion);
+}
+
+/* Footer statement-stub colophon (v2 spec). */
+.ftr-stub {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  line-height: 1.7;
+}
 
 /* ── AccountPanel ───────────────────────────────────────────────────────── */
 

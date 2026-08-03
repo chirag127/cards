@@ -1,8 +1,8 @@
 ---
+import '@chirag127/astro-shell/tokens.css'
 import '~/styles/global.css'
 import '~/styles/tokens.css'
 import '~/styles/oriz-ui-overrides.css'
-import '@chirag127/astro-shell/tokens.css'
 import BottomBar from '@chirag127/astro-chrome/BottomBar.astro'
 import Footer from '@chirag127/astro-chrome/Footer.astro'
 import Sidebar from '@chirag127/astro-chrome/Sidebar.astro'
@@ -10,6 +10,7 @@ import AppSidebarContent from '~/components/AppSidebarContent.astro'
 import CompareDrawer from '~/components/CompareDrawer.tsx'
 import Header from '~/components/Header.astro'
 import { bottomBarActions } from '~/data/bottombar-actions'
+import { listIssuers, TOTAL_CARD_COUNT } from '~/lib/cards'
 import { SITE_CONFIG } from '~/lib/siteConfig'
 
 interface Props {
@@ -20,6 +21,8 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[]
   /** Hide the site chrome — use for full-bleed layouts (the home ledger needs the chrome). */
   hideChrome?: boolean
+  /** Hide the left chrome sidebar only (home screener is full-width, has its own filter rail). */
+  hideSidebar?: boolean
 }
 
 const {
@@ -29,9 +32,51 @@ const {
   noindex = false,
   jsonLd,
   hideChrome = false,
+  hideSidebar = false,
 } = Astro.props
 
 const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN
+const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
+const issuerCount = String(listIssuers().length)
+const footerCols = [
+  {
+    label: 'Catalog',
+    items: [
+      { name: 'All cards', url: '/' },
+      { name: 'Credit', url: '/credit/' },
+      { name: 'Debit', url: '/debit/' },
+      { name: 'Prepaid', url: '/prepaid/' },
+      { name: 'RuPay', url: '/rupay/' },
+      { name: 'Banks', url: '/banks/' },
+      { name: 'Compare', url: '/compare/' },
+    ],
+  },
+  {
+    label: 'Methodology',
+    items: [
+      { name: 'About', url: '/about/' },
+      { name: 'Contact', url: '/contact/' },
+      { name: 'Account', url: '/account/' },
+    ],
+  },
+  {
+    label: 'Data',
+    items: [
+      { name: 'cards.json', url: '/cards.json' },
+      { name: 'compare-data.json', url: '/compare-data.json' },
+    ],
+  },
+  {
+    label: 'Legal',
+    items: [
+      { name: 'Privacy', url: '/legal/privacy/' },
+      { name: 'Terms', url: '/legal/terms/' },
+      { name: 'Cookies', url: '/legal/cookies/' },
+      { name: 'Disclaimer', url: '/legal/disclaimer/' },
+      { name: 'Grievance', url: '/legal/grievance/' },
+    ],
+  },
+]
 ---
 
 <!doctype html>
@@ -56,7 +101,7 @@ const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700;900&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -84,11 +129,20 @@ const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN
     ) : (
       <>
         <Header />
-        <div class="layout-body has-sidebar">
-          <Sidebar><AppSidebarContent /></Sidebar>
+        <div class={`layout-body${hideSidebar ? '' : ' has-sidebar'}`}>
+          {!hideSidebar && (
+            <Sidebar><AppSidebarContent /></Sidebar>
+          )}
           <main id="main" class="layout-main"><slot /></main>
         </div>
-        <Footer />
+        <Footer
+          columns={footerCols}
+          showNewsletter={false}
+          showSupport={false}
+        >
+          <p class="ftr-stub mono">LAST REFRESHED 2026-08-01 · {cardCount} CARDS · {issuerCount} ISSUERS · SOURCE: ISSUER WEBSITES</p>
+          <p class="ftr-stub mono">© oriz 2026</p>
+        </Footer>
         <BottomBar actions={bottomBarActions} />
         <CompareDrawer client:load />
       </>

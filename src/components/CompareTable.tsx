@@ -34,7 +34,7 @@ function idsFromUrl(): string[] {
     .split(',')
     .map((s) => s.trim())
     .filter(Boolean)
-    .slice(0, 3)
+    .slice(0, 4)
 }
 
 export default function CompareTable() {
