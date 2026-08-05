@@ -1,18 +1,19 @@
 ---
 /*
- * Header — ORIZ·CARDS v2 terminal top bar (56px, no border).
+ * Header — "The Specimen Registry" masthead (60px).
  *
- * Left: wordmark `oriz·cards` in Geist Mono 700 — the middle `·` is an 8×8
- * brass-gradient square (the chip motif). Nav: quiet mono links with
- * carbon-blue hover/active. Right: live card count (JetBrains Mono) + auth
- * avatar. No mega-nav, no dropdowns — the filter rail on home is the search.
+ * Left: the registry wordmark — `oriz` in Instrument Serif italic + a
+ * gold-foil EMV chip mark + `cards` in Martian Mono, sitting on an engine-turn
+ * hairline. Nav: quiet mono links, phosphor-mint on hover/active. Right: an
+ * `oriz.in` family link (themed), live card count, auth avatar. The filter rail
+ * on home is the search — no mega-nav.
  */
 import AuthButton from '~/components/AuthButton.tsx'
 import MobileNavDrawer from '~/components/MobileNavDrawer.tsx'
 import { TOTAL_CARD_COUNT } from '~/lib/cards'
 
 const links = [
-  { href: '/', label: 'All cards' },
+  { href: '/', label: 'Register' },
   { href: '/credit/', label: 'Credit' },
   { href: '/debit/', label: 'Debit' },
   { href: '/prepaid/', label: 'Prepaid' },
@@ -28,10 +29,12 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
 
 <header class="hdr">
   <div class="hdr-row spine">
-    <a class="wm" href="/" aria-label="oriz cards home">
-      <span class="wm-a">oriz</span>
-      <span class="wm-chip" aria-hidden="true"></span>
-      <span class="wm-b">cards</span>
+    <a class="wm" href="/" aria-label="oriz cards — the card registry, home">
+      <span class="wm-mark">
+        <span class="wm-a">oriz</span>
+        <span class="wm-chip" aria-hidden="true"></span>
+        <span class="wm-b">cards</span>
+      </span>
     </a>
 
     <nav class="hdr-nav" aria-label="Primary">
@@ -45,11 +48,13 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     </nav>
 
     <div class="hdr-right">
-      <span class="hdr-count mono">{cardCount} cards</span>
+      <a class="hdr-family" href="https://oriz.in" rel="noopener">oriz.in ↗</a>
+      <span class="hdr-count mono">{cardCount} filed</span>
       <div class="auth-slot"><AuthButton client:load /></div>
       <div class="mnav-slot"><MobileNavDrawer client:load links={links} current={current} /></div>
     </div>
   </div>
+  <div class="hdr-guilloche guilloche-rule" aria-hidden="true"></div>
 </header>
 
 <style>
@@ -57,40 +62,61 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     position: sticky;
     top: 0;
     z-index: 50;
-    height: var(--nav-h, 56px);
-    background: var(--paper);
+    background: color-mix(in oklab, var(--paper) 88%, transparent);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--rule);
   }
   .hdr-row {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: var(--nav-h, 60px);
     gap: 1.75rem;
   }
+  .hdr-guilloche {
+    height: 6px;
+    opacity: 0.7;
+  }
 
-  /* Wordmark — Geist Mono, middle dot is the brass chip square. */
+  /* Wordmark — Instrument Serif italic `oriz`, gold-foil chip, Martian Mono `cards`. */
   .wm {
     display: inline-flex;
     align-items: center;
-    gap: 0.45em;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 18px;
     line-height: 1;
-    letter-spacing: 0.02em;
     color: var(--ink);
     white-space: nowrap;
     flex-shrink: 0;
   }
+  .wm-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+  .wm-a {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
   .wm-chip {
-    width: 8px;
-    height: 8px;
-    border-radius: 1px;
-    background: linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 60%, var(--brass-deep) 100%);
+    width: 15px;
+    height: 11px;
+    border-radius: 2px;
+    background:
+      linear-gradient(180deg, transparent 28%, color-mix(in oklab, var(--brass-deep) 55%, transparent) 28% 33%, transparent 33% 63%, color-mix(in oklab, var(--brass-deep) 55%, transparent) 63% 68%, transparent 68%),
+      linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 55%, var(--brass-deep) 100%);
+    border: 0.5px solid var(--brass-deep);
+    box-shadow: inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
   }
   .wm-b {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.04em;
     color: var(--ink-mute);
-    font-weight: 500;
+    text-transform: lowercase;
   }
 
   /* Desktop nav — quiet mono links. */
@@ -98,14 +124,14 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     display: none;
     align-items: center;
     gap: 1.35rem;
-    flex: 1;
     min-width: 0;
   }
   .nav-link {
     position: relative;
-    font-family: var(--font-body);
-    font-size: 13px;
+    font-family: var(--font-mono);
+    font-size: 12px;
     font-weight: 500;
+    letter-spacing: 0.04em;
     color: var(--ink-mute);
     padding-block: 0.35rem;
     transition: color 0.15s ease;
@@ -126,7 +152,7 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     color: var(--ink);
   }
   .nav-link[aria-current='page'] {
-    color: var(--ink);
+    color: var(--accent-deep);
   }
   .nav-link[aria-current='page']::after {
     transform: scaleX(1);
@@ -137,13 +163,30 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     border-radius: 2px;
   }
 
-  /* Right cluster — count + auth. */
+  /* Right cluster — family link + count + auth. */
   .hdr-right {
     margin-left: auto;
     display: inline-flex;
     align-items: center;
     gap: 1rem;
     flex-shrink: 0;
+  }
+  .hdr-family {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--accent-deep);
+    padding: 0.25rem 0.5rem;
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .hdr-family:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .hdr-family:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
   .hdr-count {
     font-size: 12px;
@@ -159,20 +202,20 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     display: inline-flex;
   }
 
-  /* Auth island — carbon-blue border skin (island renders .auth-btn/.auth-dot). */
+  /* Auth island — security-cyan border skin. */
   :global(.auth-btn) {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
     max-width: 190px;
-    font-family: var(--font-body);
+    font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 500;
     color: var(--ink);
     cursor: pointer;
     text-decoration: none;
     border: 1px solid var(--rule-strong);
-    border-radius: 0;
+    border-radius: var(--radius-sm);
     padding: 0.4rem 0.85rem;
     background: var(--paper-raised);
     overflow: hidden;
@@ -211,6 +254,7 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     height: 40px;
     background: transparent;
     border: 1px solid var(--rule);
+    border-radius: var(--radius-sm);
     color: var(--ink);
     cursor: pointer;
   }
@@ -277,8 +321,9 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
   }
   :global(.mnav-link) {
     font-family: var(--font-display);
-    font-size: 19px;
-    font-weight: 600;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 500;
     color: var(--ink);
     padding: 0.6rem 0.25rem;
     border-bottom: 1px solid var(--rule);
@@ -319,6 +364,12 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
       display: inline-flex;
     }
     .mnav-slot {
+      display: none;
+    }
+  }
+  @media (max-width: 520px) {
+    .hdr-family,
+    .hdr-count {
       display: none;
     }
   }

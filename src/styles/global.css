@@ -2,23 +2,24 @@
 @import './tokens.css';
 
 /*
- * cards.oriz.in — ORIZ·CARDS v2 slate terminal surface.
+ * cards.oriz.in — "The Specimen Registry" surface.
  *
- * Cool-archival slate paper (--paper #E8EAEE), near-black ink, carbon-blue
- * accent (#2B3A55), RESERVED vermilion (negatives + detail Apply CTA only),
- * brass (chip motif + wordmark dot only). Geist Mono display, Inter Tight
- * body, JetBrains Mono numerics (tabular-nums + slashed zero). Home = a
- * 320px filter rail + a 64px-row LEDGER (never a marketing grid).
+ * Warm manila statement stock (--paper #F3EEE3), deep petrol vault ink,
+ * security-print cyan accent (#0E7C86), RESERVED oxblood (negatives + detail
+ * Apply CTA only), gold foil (EMV chip + wordmark only). Fraunces display,
+ * Public Sans body, Spline Sans Mono numerics (tabular-nums + slashed zero).
+ * Home = a specimen thesis strip, then a 320px filter rail + ruled LEDGER of
+ * filed card rows.
  *
  * All color/font/scale tokens live in tokens.css (imported above). This file
  * owns base element styles + the ledger shell / filter rail / ledger rows /
- * embossed-thumbnail component classes.
+ * embossed-thumbnail component classes + the guilloché signature.
  */
 
 @theme {
-  --font-display: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-sans: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'Archivo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Martian Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --container-prose: 720px;
   --rail-width: 320px;
@@ -35,11 +36,18 @@
 
   body {
     background: var(--paper);
+    /* Brushed-steel deck: a faint vertical mill grain + two cool light pools
+       so the graphite reads as a machined press bed, not flat dark UI. */
+    background-image:
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.012) 0 1px, transparent 1px 3px),
+      radial-gradient(circle at 18% 8%, color-mix(in oklab, var(--accent) 7%, transparent) 0, transparent 42%),
+      radial-gradient(circle at 90% 2%, color-mix(in oklab, var(--brass) 6%, transparent) 0, transparent 38%);
+    background-attachment: fixed;
     color: var(--ink);
     font-family: var(--font-body);
-    font-size: 14px;
-    line-height: var(--leading-normal, 1.45);
-    letter-spacing: -0.005em;
+    font-size: 15px;
+    line-height: var(--leading-normal, 1.55);
+    letter-spacing: -0.003em;
     margin: 0;
     overflow-y: scroll;
     -webkit-font-smoothing: antialiased;
@@ -353,9 +361,9 @@
 .scr-ledger-header,
 .scr-row {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr) 88px 88px 120px 104px 36px;
+  grid-template-columns: 76px minmax(120px, 1fr) 72px 76px 92px 84px 34px;
   align-items: center;
-  column-gap: 12px;
+  column-gap: 10px;
   padding-inline: 14px;
 }
 .scr-ledger-header {
@@ -382,7 +390,7 @@
 }
 .scr-row-link {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr) 88px 88px 120px 104px;
+  grid-template-columns: subgrid;
   align-items: center;
   column-gap: 12px;
   grid-column: 1 / 7;
@@ -401,8 +409,8 @@
   text-align: right;
 }
 .scr-thumb {
-  width: 96px;
-  height: 60px;
+  width: 76px;
+  height: 48px;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 4px;
@@ -410,11 +418,11 @@
 .scr-thumb .emboss-thumb-static {
   width: 140px;
   height: 88px;
-  transform: scale(0.686);
+  transform: scale(0.543);
   transform-origin: 0 0;
 }
 .scr-thumb .emboss-thumb-static:hover {
-  transform: scale(0.686);
+  transform: scale(0.543);
 }
 .scr-name-col {
   display: flex;
@@ -905,5 +913,175 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   SIGNATURE — the guilloché security rule + the specimen thesis strip.
+   The guilloché band (SVG spirograph line-art, --guilloche ink) is the ONE
+   bold element: it backs the home specimen hero and underlines the wordmark.
+   Everything else stays quiet manila + ruled rows.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* A thin milled engine-turn rule: repeated sine waves in phosphor-mint + brass. */
+.guilloche-rule {
+  height: 10px;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='10' viewBox='0 0 80 10'%3E%3Cpath d='M0 5 C10 0 10 10 20 5 C30 0 30 10 40 5 C50 0 50 10 60 5 C70 0 70 10 80 5' fill='none' stroke='%235fd0a8' stroke-opacity='0.55' stroke-width='1'/%3E%3Cpath d='M0 5 C10 10 10 0 20 5 C30 10 30 0 40 5 C50 10 50 0 60 5 C70 10 70 0 80 5' fill='none' stroke='%23c69a5b' stroke-opacity='0.42' stroke-width='0.75'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: auto 10px;
+}
+
+/* Home specimen thesis strip — one large card + a filed-record stamp. */
+.specimen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 2.75rem) clamp(0.75rem, 2vw, 1.25rem) clamp(1.25rem, 3vw, 2rem);
+  background:
+    linear-gradient(180deg, var(--paper-raised) 0%, var(--paper) 100%);
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+}
+.specimen::before {
+  /* faint over-print guilloché medallion behind the copy */
+  content: '';
+  position: absolute;
+  inset: -30% auto -30% -12%;
+  width: 460px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%235fd0a8' stroke-opacity='0.11'%3E%3Ccircle cx='100' cy='100' r='90'/%3E%3Ccircle cx='100' cy='100' r='72'/%3E%3Ccircle cx='100' cy='100' r='54'/%3E%3Ccircle cx='100' cy='100' r='36'/%3E%3Cpath d='M100 10 A90 90 0 0 1 190 100 A90 90 0 0 1 100 190 A90 90 0 0 1 10 100 A90 90 0 0 1 100 10'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+.specimen-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 46ch;
+}
+.specimen-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.specimen-eyebrow::before {
+  content: '';
+  width: 26px;
+  height: 1px;
+  background: var(--accent);
+}
+.specimen-h1 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: clamp(1.9rem, 4.6vw, 3.35rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  margin: 0;
+  color: var(--ink);
+}
+.specimen-h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent-deep);
+}
+.specimen-lede {
+  margin: 0;
+  color: var(--ink-mute);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 52ch;
+}
+.specimen-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin-top: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+}
+.specimen-meta b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.specimen-jump {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 42px;
+  padding-inline: 1.1rem;
+  background: var(--accent);
+  color: var(--accent-fg);
+  border: 1px solid var(--accent-deep);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.specimen-jump:hover {
+  background: var(--accent-deep);
+}
+.specimen-jump:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* The filed specimen (card + stamp) on the right — seated in a milled recess. */
+.specimen-plate {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding: clamp(1rem, 2.4vw, 1.75rem);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in oklab, var(--accent) 8%, transparent) 0, transparent 60%),
+    var(--paper-deep);
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px var(--rule-strong),
+    0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.specimen-stamp {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--danger);
+  border: 1.5px solid color-mix(in oklab, var(--danger) 55%, transparent);
+  border-radius: 3px;
+  padding: 4px 10px;
+  transform: rotate(-4deg);
+  opacity: 0.85;
+}
+@media (max-width: 860px) {
+  .specimen {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .specimen-plate {
+    order: -1;
   }
 }

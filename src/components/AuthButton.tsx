@@ -27,8 +27,8 @@ export default function AuthButton() {
               userButtonAvatarBox: {
                 width: '28px',
                 height: '28px',
-                border: '1.5px solid #C6A15B',
-                boxShadow: '0 0 0 2px rgba(198,161,91,0.25)',
+                border: '1.5px solid #C69A5B',
+                boxShadow: '0 0 0 2px rgba(198,154,91,0.28)',
               },
             },
           }}

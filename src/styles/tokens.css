@@ -1,64 +1,70 @@
 /*
- * cards.oriz.in — ORIZ·CARDS v2 tokens: slate terminal.
+ * cards.oriz.in — "The Embossing Plate" tokens.
  *
- * "A Bloomberg terminal for Indian credit cards." Cool-archival slate paper,
- * near-black ink, carbon-blue accent, RESERVED vermilion (negatives + the
- * Apply CTA on detail pages ONLY), brass (chip motif + wordmark dot ONLY).
- * Geist Mono display (wordmark/H1/big numerics), Inter Tight body,
- * JetBrains Mono numerics with tabular-nums + slashed zero.
+ * Not warm bureau paper. This is the PRESS BED where cards are physically
+ * made: a cool graphite-steel deck, ink-on-metal foil type, a PHOSPHOR-MINT
+ * hot-foil signal used the way a live terminal glows (legibility, primary
+ * actions), OXIDIZED BRASS for the EMV chip + tipping foil + lifetime-free
+ * tags, and SIGNAL-CORAL reserved for alarms (high APR, late fees, Apply).
+ * The register reads like a manufacturing catalogue of every card ever
+ * pressed — milled, embossed, filed by BIN.
  *
- * Imported AFTER global.css so these :root values win. Old palette/scale
- * names (--foil* / --rupay / --vermilion / --container-spine …) are remapped
- * so existing components keep resolving without a per-file rewrite.
+ * Type trio (deliberate, NOT Fraunces/Public Sans/Spline defaults):
+ *   display = Instrument Serif — high-contrast literary serif, plate-engraving
+ *   body    = Archivo — dense grotesque, terminal-grade forms
+ *   mono    = Martian Mono — square mechanical mono for every numeral
+ *
+ * Imported AFTER global.css so these :root values win. Legacy token names
+ * kept alive as aliases so every existing component/page keeps resolving.
  */
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
-  /* ── Core palette — cool slate paper (terminal, not cream) ───────────── */
-  --paper: #e8eaee; /* main surface — slate paper */
-  --paper-raised: #f2f4f7; /* tiles / panels / compare drawer / row hover */
-  --paper-deep: #dfe2e9; /* recessed rail / toolbar */
-  --ink: #0e1116; /* near-black text */
-  --ink-mute: #5c6470; /* muted meta line */
-  --rule: #c9cdd4; /* light border */
-  --rule-strong: #aeb4bf; /* stronger divider / input borders */
+  /* ── Core palette — cool graphite steel deck + ink-on-metal foil ───────── */
+  --paper: #14181d; /* main surface — brushed graphite press bed */
+  --paper-raised: #1b2027; /* tiles / panels / row hover — raised steel plate */
+  --paper-deep: #0e1216; /* recessed rail / toolbar — milled channel */
+  --ink: #e8e4d8; /* ink-on-metal foil (warm off-white, high legibility) */
+  --ink-mute: #8b97a0; /* muted steel annotation */
+  --rule: #262d35; /* hairline steel seam */
+  --rule-strong: #3a434d; /* stronger divider / input borders */
 
-  /* ── Accent — carbon blue (PRIMARY) ───────────────────────────────────── */
-  --accent: #2b3a55;
-  --accent-deep: #1c2740;
-  --accent-fg: #e8eaee; /* text on carbon-blue fills */
-  --accent-tint: #d6dce6; /* active-filter fill */
+  /* ── Accent — phosphor-mint hot-foil (PRIMARY, the live-terminal glow) ─── */
+  --accent: #5fd0a8;
+  --accent-deep: #38a882;
+  --accent-fg: #0b1a15; /* text on mint fills */
+  --accent-tint: #17332b; /* active-filter fill (deep mint channel) */
 
-  /* ── Semantic ─────────────────────────────────────────────────────────── */
-  --danger: #b8362a; /* stamp vermilion — negatives / Apply CTA only */
-  --vermilion: #b8362a; /* alias (spec name) */
-  --ltf: #a67f2e; /* lifetime-free = BRASS tag (not green) */
-  --ltf-tint: #ede3c9;
-  --brass: #b8923a; /* chip motif + wordmark dot ONLY */
-  --brass-light: #d4ae5c;
-  --brass-deep: #8b6e2a;
+  /* ── Semantic ──────────────────────────────────────────────────────────── */
+  --danger: #e2674f; /* signal-coral — negatives / Apply CTA only */
+  --vermilion: #e2674f; /* alias (legacy name) → coral */
+  --ltf: #c69a5b; /* lifetime-free = OXIDIZED BRASS tag */
+  --ltf-tint: #2a2216;
+  --brass: #c69a5b; /* EMV chip foil + wordmark mark ONLY */
+  --brass-light: #e7c88a;
+  --brass-deep: #96702f;
 
-  /* ── Type — Geist Mono (display) · Inter Tight (body) · JetBrains (nums) */
-  --font-display: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-body: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* ── Type — Instrument (display) · Archivo (body) · Martian (nums) ─────── */
+  --font-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Archivo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-sans: var(--font-body);
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-mono: 'Martian Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* ── Type scale (tight — terminal density) ────────────────────────────── */
+  /* ── Type scale (terminal density) ─────────────────────────────────────── */
   --text-xs: 0.6875rem; /* 11px */
   --text-sm: 0.8125rem; /* 13px */
-  --text-base: 0.875rem; /* 14px */
-  --text-lg: 1rem; /* 16px */
-  --text-xl: 1.125rem; /* 18px */
-  --text-2xl: clamp(1.25rem, 2vw, 1.5rem);
-  --text-3xl: clamp(1.5rem, 3vw, 2rem);
+  --text-base: 0.9375rem; /* 15px */
+  --text-lg: 1.0625rem; /* 17px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: clamp(1.4rem, 2.2vw, 1.75rem);
+  --text-3xl: clamp(1.75rem, 3.4vw, 2.5rem);
 
-  --leading-tight: 1.1;
-  --leading-snug: 1.3;
-  --leading-normal: 1.45;
+  --leading-tight: 1.08;
+  --leading-snug: 1.32;
+  --leading-normal: 1.55;
 
-  /* ── Spacing scale (compressed) ───────────────────────────────────────── */
+  /* ── Spacing scale ─────────────────────────────────────────────────────── */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.625rem;
@@ -68,20 +74,23 @@
   --space-7: 2.5rem;
   --space-8: 3.5rem;
 
-  /* ── Radii (terminal — near-sharp) ────────────────────────────────────── */
-  --radius-card: 2px;
-  --radius-sm: 0;
-  --radius-lg: 6px;
+  /* ── Radii (milled-plate corners — crisp, minimal) ─────────────────────── */
+  --radius-card: 3px;
+  --radius-sm: 2px;
+  --radius-lg: 8px;
   --radius-pill: 999px;
 
-  /* ── Layout — full-width dense shell ──────────────────────────────────── */
-  --rail-width: 320px; /* fixed filter sidebar (v2 spec) */
+  /* ── Layout — full-width dense registry shell ──────────────────────────── */
+  --rail-width: 320px; /* fixed filter sidebar */
   --tile-min: 240px;
   --grid-gap: 9px;
-  --nav-h: 56px; /* header height (sticky offset) */
+  --nav-h: 60px; /* header height (sticky offset) */
   --container-prose: 720px;
 
-  /* ── Back-compat aliases (old Vault & Foil / terminal names) ──────────── */
+  /* Engine-turn stroke color (milled-steel security signature). */
+  --guilloche: color-mix(in oklab, var(--accent) 42%, transparent);
+
+  /* ── Back-compat aliases (old slate / Foil / manila names) ─────────────── */
   --surface: var(--paper);
   --surface-raised: var(--paper-raised);
   --ink-muted: var(--ink-mute);
@@ -91,5 +100,5 @@
   --foil: var(--accent);
   --foil-light: var(--accent-tint);
   --foil-deep: var(--accent-deep);
-  --container-spine: none; /* no centered column — full width */
+  --container-spine: none;
 }

@@ -1,57 +1,58 @@
 import { ClerkProvider as ClerkReactProvider } from '@clerk/clerk-react'
 import type { ReactNode } from 'react'
 
-const publishableKey =
-  import.meta.env.PUBLIC_CLERK_PUBLISHABLE_KEY ?? 'pk_live_Y2xlcmsub3Jpei5pbiQ'
+const publishableKey = import.meta.env.PUBLIC_CLERK_PUBLISHABLE_KEY
 
-// Vault & Foil — brass-gold embossed accent on warm statement paper.
+// The Embossing Plate — phosphor-mint primary on a graphite-steel deck,
+// Instrument Serif headings, oxidized-brass avatar ring. Themed to this
+// site's palette.
 const appearance = {
   variables: {
-    colorPrimary: '#C6A15B',
-    colorText: '#12131A',
-    colorTextSecondary: '#6B6A63',
-    colorBackground: '#FFFFFF',
-    colorInputBackground: '#FAF8F3',
-    colorInputText: '#12131A',
-    colorDanger: '#C1440E',
-    borderRadius: '12px',
-    fontFamily: 'Inter, system-ui, sans-serif',
+    colorPrimary: '#5FD0A8',
+    colorText: '#E8E4D8',
+    colorTextSecondary: '#8B97A0',
+    colorBackground: '#1B2027',
+    colorInputBackground: '#14181D',
+    colorInputText: '#E8E4D8',
+    colorDanger: '#E2674F',
+    borderRadius: '3px',
+    fontFamily: "'Archivo', system-ui, sans-serif",
   },
   elements: {
     card: {
-      backgroundColor: '#FFFFFF',
-      border: '1px solid #E8E3D6',
-      boxShadow: '0 1px 0 #E4CE96, 0 12px 40px rgba(18,19,26,0.12)',
-      borderRadius: '16px',
+      backgroundColor: '#1B2027',
+      border: '1px solid #3A434D',
+      boxShadow: '0 1px 0 #96702F, 0 12px 40px rgba(0,0,0,0.5)',
+      borderRadius: '8px',
     },
     headerTitle: {
-      fontFamily: "'Hanken Grotesk', system-ui, sans-serif",
-      color: '#12131A',
+      fontFamily: "'Instrument Serif', Georgia, serif",
+      fontStyle: 'italic',
+      color: '#E8E4D8',
       letterSpacing: '-0.01em',
     },
-    headerSubtitle: { color: '#6B6A63' },
+    headerSubtitle: { color: '#8B97A0' },
     formButtonPrimary: {
-      backgroundColor: '#C6A15B',
-      backgroundImage: 'linear-gradient(180deg, #E4CE96 0%, #C6A15B 55%, #9A7736 100%)',
-      color: '#12131A',
+      backgroundColor: '#5FD0A8',
+      color: '#0B1A15',
       fontWeight: '600',
-      borderRadius: '12px',
-      boxShadow: '0 1px 0 rgba(255,255,255,0.4) inset, 0 2px 8px rgba(154,119,54,0.35)',
+      borderRadius: '3px',
       textTransform: 'none',
     },
     formFieldInput: {
-      backgroundColor: '#FAF8F3',
-      borderColor: '#E8E3D6',
-      color: '#12131A',
+      backgroundColor: '#14181D',
+      borderColor: '#3A434D',
+      color: '#E8E4D8',
     },
-    formFieldLabel: { color: '#12131A' },
-    footerActionLink: { color: '#097DC6' },
-    identityPreviewEditButton: { color: '#097DC6' },
+    formFieldLabel: { color: '#E8E4D8' },
+    footerActionLink: { color: '#5FD0A8' },
+    identityPreviewEditButton: { color: '#5FD0A8' },
     logoBox: { height: '28px' },
   },
 } as const
 
 export default function ClerkProvider({ children }: { children: ReactNode }) {
+  if (!publishableKey) return <>{children}</>
   return (
     <ClerkReactProvider publishableKey={publishableKey} appearance={appearance}>
       {children}

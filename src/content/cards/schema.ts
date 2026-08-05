@@ -395,7 +395,7 @@ const valueSchema = z
     tenYearNetValue: z.number().optional(),
     totalAnnualCharges: z.number().optional(),
     totalAnnualBenefits: z.number().optional(),
-    roiPercent: z.number().optional(),
+    roiPercent: z.any().optional(),
   })
   .partial()
   .passthrough()

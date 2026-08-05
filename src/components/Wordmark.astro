@@ -75,32 +75,41 @@ const Tag = asHeading ? 'h1' : ('div' as const)
     align-items: center;
     gap: 0.4em;
     margin: 0;
-    font-family: var(--font-display);
-    font-weight: 700;
     font-size: var(--wm-size, 18px);
     line-height: 1;
-    letter-spacing: -0.01em;
     color: var(--ink);
   }
   .wordmark-mark {
     display: inline-flex;
     align-items: center;
-    gap: 0.32em;
+    gap: 0.3em;
   }
   .wordmark-text {
     display: inline-block;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
-  /* The brass chip — EMV-canonical proportions, miniaturised. */
+  .wordmark-text + .wordmark-text {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.72em;
+    letter-spacing: 0.04em;
+    color: var(--ink-mute);
+    text-transform: lowercase;
+  }
+  /* The gold-foil EMV chip — the cards-site mark, never reused elsewhere. */
   .wordmark-chip {
     display: inline-block;
-    width: 0.5em;
-    height: 0.4em;
-    background: linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 50%, var(--brass-deep) 100%);
+    width: 0.68em;
+    height: 0.5em;
+    border-radius: 0.08em;
     border: 0.5px solid var(--brass-deep);
-    /* Two horizontal hairlines hint at the chip contact pattern. */
     background-image:
-      linear-gradient(180deg, transparent 28%, color-mix(in oklab, var(--brass-deep) 60%, transparent) 28% 33%, transparent 33% 65%, color-mix(in oklab, var(--brass-deep) 60%, transparent) 65% 70%, transparent 70%),
-      linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 50%, var(--brass-deep) 100%);
+      linear-gradient(180deg, transparent 28%, color-mix(in oklab, var(--brass-deep) 55%, transparent) 28% 33%, transparent 33% 63%, color-mix(in oklab, var(--brass-deep) 55%, transparent) 63% 68%, transparent 68%),
+      linear-gradient(135deg, var(--brass-light) 0%, var(--brass) 55%, var(--brass-deep) 100%);
   }
   .wordmark-sep {
     margin-inline: 0.18em;
@@ -108,8 +117,9 @@ const Tag = asHeading ? 'h1' : ('div' as const)
     font-weight: 400;
   }
   .wordmark-sub {
-    color: var(--accent);
+    font-family: var(--font-mono);
+    color: var(--accent-deep);
     font-weight: 500;
+    font-size: 0.72em;
   }
-  /* Light-vs-dark token swap is automatic via root --brass / --brass-deep. */
 </style>

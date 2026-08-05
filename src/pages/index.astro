@@ -1,16 +1,15 @@
 ---
+import EmbossedCard from '~/components/EmbossedCard.tsx'
 import CardScreener from '~/components/CardScreener.tsx'
 /*
- * Home — the ORIZ·CARDS v2 slate terminal ledger. Left filter rail (320px) +
- * a fluid LEDGER of 64px rows filling the remaining viewport width. NO hero,
- * NO marketing grid — every card is a row in a database, every fee a number
- * in a column.
+ * Home — "The Specimen Registry". Opens with a SPECIMEN thesis strip (one
+ * large embossed card, filed-record stamp, the registry's one-line premise +
+ * live counts), then drops straight into the working instrument: a 320px
+ * filter rail + a ruled LEDGER of every filed card.
  *
  * Filters + results are ONE React island (CardScreener, client:load) so
  * selecting a filter narrows the ledger instantly. Rows serialise inline as
- * a compact CardRow[] so the island runs without a fetch (all 1,300 cards).
- *
- * All screener/ledger styles live in src/styles/global.css (v2 slate system).
+ * a compact CardRow[] so the island runs without a fetch (all ~1,300 cards).
  */
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import {
@@ -28,6 +27,16 @@ const issuers = listIssuers()
 const networks = listNetworks()
 const cardTypes = listCardTypes()
 
+const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
+const issuerCount = issuers.length
+const ltfCount = rows.filter((r) => r.annualFee === 0).length
+
+/* Pick a recognisable premium specimen for the plate (fallback: first row). */
+const specimen =
+  rows.find((r) => /infinia|magnus|reserve|emeralde|atlas/i.test(r.name)) ??
+  rows.find((r) => r.cardType === 'credit') ??
+  rows[0]
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -40,13 +49,52 @@ const jsonLd = {
 ---
 
 <BaseLayout jsonLd={jsonLd} hideSidebar={true}>
-  <CardScreener
-    client:load
-    rows={rows}
-    issuers={issuers}
-    networks={networks}
-    cardTypes={cardTypes}
-    maxFee={MAX_ANNUAL_FEE}
-    total={TOTAL_CARD_COUNT}
-  />
+  <section class="specimen" aria-label="The card registry">
+    <div class="specimen-copy">
+      <p class="specimen-eyebrow">The card registry</p>
+      <h1 class="specimen-h1">
+        Every card India ever pressed, <em>filed by the number.</em>
+      </h1>
+      <p class="specimen-lede">
+        A registry of {cardCount} credit, debit and prepaid cards — joining fee,
+        annual fee, APR, rewards and the small print, each entered as a plain
+        number. No rosettes, no editor's picks, no affiliate steering.
+      </p>
+      <p class="specimen-meta">
+        <span><b>{cardCount}</b> filed</span>
+        <span><b>{issuerCount}</b> issuers</span>
+        <span><b>{ltfCount}</b> lifetime-free</span>
+      </p>
+      <a class="specimen-jump" href="#registry">Open the register ↓</a>
+    </div>
+    <div class="specimen-plate">
+      {specimen && (
+        <EmbossedCard
+          client:load
+          size="hero"
+          cardName={specimen.name}
+          bankCode={specimen.bankCode}
+          bankName={specimen.bank}
+          network={specimen.network}
+          stock={specimen.stockGradient}
+          binPrefix={specimen.binPrefix}
+          redactName={true}
+        />
+      )}
+      <span class="specimen-stamp" aria-hidden="true">Specimen · not for use</span>
+    </div>
+  </section>
+  <div class="guilloche-rule" aria-hidden="true"></div>
+
+  <div id="registry">
+    <CardScreener
+      client:load
+      rows={rows}
+      issuers={issuers}
+      networks={networks}
+      cardTypes={cardTypes}
+      maxFee={MAX_ANNUAL_FEE}
+      total={TOTAL_CARD_COUNT}
+    />
+  </div>
 </BaseLayout>
