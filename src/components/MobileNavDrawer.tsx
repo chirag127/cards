@@ -7,7 +7,6 @@
  * the desktop nav. prefers-reduced-motion disables the slide transition.
  */
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
-import AuthButton from '~/components/AuthButton.tsx'
 
 interface NavItem {
   href: string
@@ -115,7 +114,9 @@ export default function MobileNavDrawer({
           ))}
         </nav>
         <div className="mnav-foot">
-          <AuthButton />
+          <a className="auth-btn" href="/account/">
+            Sign in
+          </a>
         </div>
       </div>
     </>

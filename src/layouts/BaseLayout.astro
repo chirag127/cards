@@ -23,6 +23,11 @@ interface Props {
   hideChrome?: boolean
   /** Hide the left chrome sidebar only (home screener is full-width, has its own filter rail). */
   hideSidebar?: boolean
+  /**
+   * Suppress the header's Clerk auth island. Set on pages that mount their own
+   * <ClerkProvider> (e.g. /account) — only one provider may mount per page.
+   */
+  hideHeaderAuth?: boolean
 }
 
 const {
@@ -33,6 +38,7 @@ const {
   jsonLd,
   hideChrome = false,
   hideSidebar = false,
+  hideHeaderAuth = false,
 } = Astro.props
 
 const beaconToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN
@@ -128,7 +134,7 @@ const footerCols = [
       <main id="main"><slot /></main>
     ) : (
       <>
-        <Header />
+        <Header hideAuthIsland={hideHeaderAuth} />
         <div class={`layout-body${hideSidebar ? '' : ' has-sidebar'}`}>
           {!hideSidebar && (
             <Sidebar><AppSidebarContent /></Sidebar>

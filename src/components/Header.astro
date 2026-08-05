@@ -12,6 +12,18 @@ import AuthButton from '~/components/AuthButton.tsx'
 import MobileNavDrawer from '~/components/MobileNavDrawer.tsx'
 import { TOTAL_CARD_COUNT } from '~/lib/cards'
 
+interface Props {
+  /**
+   * Suppress the header's Clerk auth island. Astro islands are independent
+   * React roots but clerk-react's provider guard is a page-global counter, so
+   * a page may mount only ONE <ClerkProvider>. On /account the ClerkAccountPanel
+   * owns that single provider — the header then shows a plain link instead.
+   */
+  hideAuthIsland?: boolean
+}
+
+const { hideAuthIsland = false } = Astro.props
+
 const links = [
   { href: '/', label: 'Register' },
   { href: '/credit/', label: 'Credit' },
@@ -50,7 +62,13 @@ const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
     <div class="hdr-right">
       <a class="hdr-family" href="https://oriz.in" rel="noopener">oriz.in ↗</a>
       <span class="hdr-count mono">{cardCount} filed</span>
-      <div class="auth-slot"><AuthButton client:load /></div>
+      <div class="auth-slot">
+        {hideAuthIsland ? (
+          <a class="auth-btn" href="/account/">Account</a>
+        ) : (
+          <AuthButton client:load />
+        )}
+      </div>
       <div class="mnav-slot"><MobileNavDrawer client:load links={links} current={current} /></div>
     </div>
   </div>
