@@ -47,6 +47,16 @@ export default function CompareDrawer() {
     }
   }, [])
 
+  // Reserve space so the fixed tray never covers footer / last row / body copy.
+  // Only when the tray is actually shown (>=1 card).
+  useEffect(() => {
+    document.body.classList.toggle('has-cmp-drw', items.length > 0)
+    return () => document.body.classList.remove('has-cmp-drw')
+  }, [items.length])
+
+  // Empty compare set → no tray at all. Appears once a card is added.
+  if (items.length === 0) return null
+
   const remove = (slug: string) => {
     const next = read().filter((x) => x.slug !== slug)
     sessionStorage.setItem(KEY, JSON.stringify(next))
@@ -72,28 +82,24 @@ export default function CompareDrawer() {
 
       {open && (
         <div className="cmp-drw-body">
-          {items.length === 0 ? (
-            <p className="cmp-drw-empty mono">add up to {MAX} cards</p>
-          ) : (
-            <ul className="cmp-drw-list">
-              {items.map((e) => (
-                <li key={`${e.issuer}:${e.slug}`} className="cmp-drw-item">
-                  <span className="cmp-drw-name">{e.name}</span>
-                  <span className="cmp-drw-bank mono">
-                    {e.bank} · {e.network}
-                  </span>
-                  <button
-                    type="button"
-                    className="cmp-drw-x"
-                    aria-label={`Remove ${e.name}`}
-                    onClick={() => remove(e.slug)}
-                  >
-                    ×
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul className="cmp-drw-list">
+            {items.map((e) => (
+              <li key={`${e.issuer}:${e.slug}`} className="cmp-drw-item">
+                <span className="cmp-drw-name">{e.name}</span>
+                <span className="cmp-drw-bank mono">
+                  {e.bank} · {e.network}
+                </span>
+                <button
+                  type="button"
+                  className="cmp-drw-x"
+                  aria-label={`Remove ${e.name}`}
+                  onClick={() => remove(e.slug)}
+                >
+                  ×
+                </button>
+              </li>
+            ))}
+          </ul>
           <a
             className={`cmp-drw-go mono${items.length < 2 ? ' is-disabled' : ''}`}
             href={items.length < 2 ? undefined : `/compare?ids=${encodeURIComponent(ids)}`}
@@ -142,13 +148,6 @@ export default function CompareDrawer() {
           display: flex;
           flex-direction: column;
           gap: 0.75rem;
-        }
-        .cmp-drw-empty {
-          margin: 0;
-          color: var(--ink-mute);
-          font-size: 12px;
-          letter-spacing: 0.06em;
-          text-align: center;
         }
         .cmp-drw-list {
           list-style: none;

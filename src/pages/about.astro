@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro'
+import { listIssuers, TOTAL_CARD_COUNT } from '~/lib/cards'
 import { SITE_CONFIG } from '~/lib/siteConfig'
 
 const updated = '2026-06-20'
+const cardCount = TOTAL_CARD_COUNT.toLocaleString('en-IN')
+const issuerCount = String(listIssuers().length)
 ---
 
 <BaseLayout
@@ -24,8 +27,8 @@ const updated = '2026-06-20'
     <article class="prose">
       <h2 id="what-this-is">What this is</h2>
       <p>
-        cards.oriz.in is a static catalogue of <strong>750 cards</strong> issued
-        in India — credit, debit, and prepaid — across 35 issuers including
+        cards.oriz.in is a static catalogue of <strong>{cardCount} cards</strong> issued
+        in India — credit, debit, and prepaid — across {issuerCount} issuers including
         Amex, Axis, AU SFB, Bandhan, BoB, BoM, Canara, CUB, DCB, Dhanlaxmi,
         ESAF, Federal, HDFC, HSBC, ICICI, IDBI, IDFC, Indian Bank, IndusInd,
         IOB, J&K Bank, Karnataka Bank, Kotak, KVB, PNB, PSB, RBL, Saraswat,
@@ -51,7 +54,7 @@ const updated = '2026-06-20'
       <p>
         We don't take affiliate commissions and we don't accept paid placement.
         The choice of which cards to list is the entire universe of cards
-        published by the 35 issuers — there is no editor.
+        published by the {issuerCount} issuers — there is no editor.
       </p>
 
       <h2 id="sources">Sources</h2>

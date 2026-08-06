@@ -158,9 +158,14 @@ const footerCols = [
       .layout-main { min-height: 50vh; }
       .layout-body.has-sidebar { display: flex; align-items: flex-start; }
       .layout-body.has-sidebar .layout-main { flex: 1 1 auto; min-width: 0; }
+      /* Compare tray is position:fixed bottom-right. When present, reserve
+         space at page bottom so it never covers footer / last row / body copy. */
+      body.has-cmp-drw { padding-bottom: 240px; }
       @media (max-width: 767px) {
         .layout-body.has-sidebar { display: block; }
         .layout-main { padding-bottom: 64px; }
+        /* Mobile tray sits above the 64px BottomBar; reserve a bit more. */
+        body.has-cmp-drw { padding-bottom: 200px; }
       }
     </style>
   </body>
